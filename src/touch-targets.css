@@ -1,0 +1,77 @@
+/*
+  Tap/click target sizes (WCAG 2.2: 2.5.8 minimum 24px; 2.5.5 enhanced 44px).
+  Loaded last so it can enlarge targets without editing the original rules.
+  Only hit areas change; text and icon sizes stay the same.
+*/
+
+/* --- Standalone text links that sit on their own line --- */
+.reveal-evidence-strip > a,
+.comparison-verify-grid div > a,
+.history-act > a,
+.inv-text-link,
+.verify-panel div > a,
+.public-experience > footer > a,
+.atlas-evidence-links > a {
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+}
+
+/* --- Standalone links that sit inline / side by side --- */
+.atlas-view-notes > a,
+.evidence-ladder > a,
+.dated-evidence-links > a,
+.atlas-section-heading > a,
+.atlas-meaning div > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+}
+
+/* --- Small "show more" toggles (large evidence cards are left alone) --- */
+details:not([class]) > summary,
+.runtime-evidence > summary {
+  min-height: 24px;
+}
+
+/* --- Touch screens: 44px minimum for everything above, plus small buttons --- */
+@media (pointer: coarse) {
+  .reveal-evidence-strip > a,
+  .comparison-verify-grid div > a,
+  .history-act > a,
+  .inv-text-link,
+  .verify-panel div > a,
+  .public-experience > footer > a,
+  .atlas-evidence-links > a,
+  .atlas-view-notes > a,
+  .evidence-ladder > a,
+  .dated-evidence-links > a,
+  .atlas-section-heading > a,
+  .atlas-meaning div > a,
+  .brand {
+    min-height: 44px;
+  }
+
+  details:not([class]) > summary,
+  .runtime-evidence > summary {
+    min-height: 44px;
+    padding-block: 11px;
+  }
+
+  /* Icon and short-label buttons that were narrower than 44px */
+  .reveal-view-tools button,
+  .theater-tools button,
+  .playback button,
+  .evidence-tabs [role='tab'],
+  .inv-path a,
+  .atlas-zoom button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Buttons and menus a few pixels short */
+  .quick-next,
+  .playback select {
+    min-height: 44px;
+  }
+}
