@@ -1,0 +1,42 @@
+/*
+  Short landscape screens (phones turned sideways, small laptop windows).
+  Image viewers were sized for portrait and grew taller than the screen
+  (430-714px on a 375px-tall phone), so the image and its controls could
+  not be seen together. Cap each viewer at 85% of the visible height;
+  square viewers stay square.
+*/
+/* Wavelength A/B control row: wrap instead of pushing the page sideways
+   (it overflowed by 18px in an 812px-wide window). */
+.reveal-channel-bar {
+  flex-wrap: wrap;
+}
+
+@media (orientation: landscape) and (max-height: 600px) {
+  /* Spectral comparison (wavelength A / B divider) */
+  .reveal-stage,
+  .light-act .reveal-stage {
+    height: 85svh !important;
+    min-height: 0 !important;
+  }
+
+  /* Single-wavelength viewer: sizes itself to fit this stage. Only once the
+     visitor has entered; the landing intro overlays text that needs the
+     original height. */
+  .entered .theater-stage {
+    height: 85svh;
+    min-height: 0;
+  }
+
+  /* 3I/ATLAS comet viewer */
+  .atlas-canvas-wrap {
+    max-width: 85svh;
+    max-height: 85svh;
+    margin-inline: auto;
+  }
+
+  /* R Draconis investigation viewer (single observation) */
+  .inv-viewers:not(.is-pair) .inv-image-wrap {
+    max-width: min(100%, 85svh);
+    margin-inline: auto;
+  }
+}

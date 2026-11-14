@@ -13,6 +13,7 @@ import './style.css';
 import Journey from './journey';
 import './journey.css';
 import './touch-targets.css';
+import './responsive.css';
 const regionNames:Record<string,string>={pixel:'Selected pixel',disk:'Custom circular region',target_pixel:'M101 reference pixel',core_30arcsec:'Central 30″ aperture',central_120arcsec:'Central 120″ aperture',reference_annulus_240_360arcsec:'Reference annulus · 240–360″',full_frame:'Full mosaic frame'};
 function modeForHash(hash:string){return /^#(dated=|time$|dated-evidence$)/.test(hash)?'time':/^#(reveal=|compare=|spectral$|single$|evidence$|comparison-evidence$|wavelength-navigation$)/.test(hash)?'spectral':'investigation';}
 function Boot(){const [route,setRoute]=useState(location.hash);useEffect(()=>{const update=()=>setRoute(location.hash);window.addEventListener('hashchange',update);return()=>window.removeEventListener('hashchange',update)},[]);return !route||route.startsWith('#journey')?<Journey/>:route.startsWith('#atlas')?<AtlasInvestigation/>:<DatasetBoot/>}
