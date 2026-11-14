@@ -1,0 +1,11 @@
+# Preserve the exact bytes of pinned scientific assets across Windows and Linux.
+public/dataset/** -text
+public/investigations/** -text
+public/temporal/** -text
+public/reveals.json -text
+tests/fixtures/** -text
+*.fits binary
+*.f32 binary
+*.f64 binary
+*.u32 binary
+*.u8 binary

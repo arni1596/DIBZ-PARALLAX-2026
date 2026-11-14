@@ -1,0 +1,11 @@
+import type {Plane} from './types.ts';
+export interface Contrast{low:number;high:number;soft:number}
+export function contrastSettings(p:Pick<Plane,'image'|'mask'>):Contrast{const values=Array.from(p.image).filter((v,i)=>p.mask[i]&&Number.isFinite(v)).sort((a,b)=>a-b);if(!values.length)return {low:0,high:1,soft:.01};const at=(q:number)=>{const k=(values.length-1)*q,a=Math.floor(k);return values[a]+(values[Math.ceil(k)]-values[a])*(k-a)};const low=at(.005),high=Math.max(values.at(-1)!,low+1e-9),soft=Math.max((at(.99)-low)*.12,(high-low)*.0001,1e-9);return {low,high,soft}}
+export function tone(value:number,s:Contrast){return Math.min(1,Math.max(0,Math.asinh(Math.max(0,value-s.low)/s.soft)/Math.asinh((s.high-s.low)/s.soft)))}
+export function renderPresentation(p:Pick<Plane,'image'|'mask'>,width:number,height:number,size:number,smooth:boolean,settings=contrastSettings(p),preset:'asinh'|'linear'='asinh'):Uint8ClampedArray{
+ const levels=new Float32Array(width*height);for(let i=0;i<levels.length;i++)if(p.mask[i])levels[i]=(preset==='linear'?Math.max(0,Math.min(1,(p.image[i]-settings.low)/(settings.high-settings.low))):tone(p.image[i],settings))*255;
+ const rgba=new Uint8ClampedArray(size*size*4);
+ for(let sy=0;sy<size;sy++)for(let sx=0;sx<size;sx++){const fx=(sx+.5)/size*width-.5,fy=height-.5-(sy+.5)/size*height;const nx=Math.max(0,Math.min(width-1,Math.floor(fx+.5))),ny=Math.max(0,Math.min(height-1,Math.floor(fy+.5))),native=ny*width+nx,j=(sy*size+sx)*4;if(!p.mask[native])continue;let value=levels[native];if(smooth){const x0=Math.max(0,Math.min(width-1,Math.floor(fx))),x1=Math.min(width-1,x0+1),y0=Math.max(0,Math.min(height-1,Math.floor(fy))),y1=Math.min(height-1,y0+1);const ids=[y0*width+x0,y0*width+x1,y1*width+x0,y1*width+x1];if(ids.every(i=>p.mask[i])){const dx=Math.max(0,Math.min(1,fx-x0)),dy=Math.max(0,Math.min(1,fy-y0));value=levels[ids[0]]*(1-dx)*(1-dy)+levels[ids[1]]*dx*(1-dy)+levels[ids[2]]*(1-dx)*dy+levels[ids[3]]*dx*dy}}rgba[j]=rgba[j+1]=rgba[j+2]=value;rgba[j+3]=255}
+ return rgba;
+}
+export function clampView(p:{x:number;y:number},zoom:number,size:number){const limit=Math.max(0,size*(zoom-1)/2);if(limit===0)return {x:0,y:0};return {x:Math.min(limit,Math.max(-limit,p.x)),y:Math.min(limit,Math.max(-limit,p.y))}}

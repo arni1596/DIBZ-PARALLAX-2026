@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "decision": "NO-GO_LEVEL_2",
+  "classification": "DATED_IMAGES_ONLY",
+  "level1_pass": true,
+  "level2_pass": false,
+  "level3_pass": false,
+  "original_pair_count": 55,
+  "enabled_pair_count": 0,
+  "enabled_pairs": [],
+  "selected_pair_ids": [
+    "temporal-20",
+    "temporal-53"
+  ],
+  "evidence": [
+    "11 authentic dated FITS inspected and checksummed",
+    "All 55 original pairs audited; two closest same-detector pairs underwent actual WCS resampling and conservative mask propagation",
+    "Best approximate rectangular overlap is only about 55%; no measured matched response established",
+    "No independent common-background-source residual solution established"
+  ],
+  "unresolved": [
+    "External CWAVE/CBAND available for D2 but provenance unverified; remaining external values unavailable; effective spectral-response compatibility unvalidated",
+    "Independent geometric residual uncertainty unavailable",
+    "Pipeline differences and source-core flags preclude quantitative interpretation"
+  ],
+  "permitted_experience": "Authentic native dated-observation gallery with provenance; no registered blink/divider or variability/motion claims",
+  "scientific_inputs_unchanged": true
+}

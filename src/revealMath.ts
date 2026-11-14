@@ -1,0 +1,7 @@
+import type {Bundle} from './types.ts';import type {ComparisonState} from './comparison.ts';import {buildRecord,decodeRecord} from './comparison.ts';
+export function syncPan(p:{x:number;y:number},zoom:number,base:number,paneWidth:number,paneHeight:number){const x=Math.max(0,(base*zoom-paneWidth)*267/(2*base)),y=Math.max(0,(base*zoom-paneHeight)*267/(2*base));return {x:x?Math.max(-x,Math.min(x,p.x)):0,y:y?Math.max(-y,Math.min(y,p.y)):0}}
+export function sourcePoint(u:number,v:number,width:number){if(!Number.isFinite(u+v)||u<0||v<0||u>=1||v>=1)return null;return {x:Math.floor(u*width),y:width-1-Math.floor(v*width)}}
+const empty={commonCount:0,total:0,coverageFraction:0,meanA:null,meanB:null,difference:null,ratio:null,excludedA:0,excludedB:0};
+type Metadata=Pick<Bundle,'channels'|'science'|'verification'>;
+export function compactLink(state:ComparisonState,d:Metadata){buildRecord(state,d,empty);return '#reveal='+encodeURIComponent(JSON.stringify({v:1,cube:d.science.cube.sha256,state}))}
+export function restoreLink(fragment:string,d:Metadata):ComparisonState{if(fragment.startsWith('#compare='))return decodeRecord(fragment,d).state;if(!fragment.startsWith('#reveal=')||fragment.length>20000)throw Error('Unsupported saved view');const value=JSON.parse(decodeURIComponent(fragment.slice(8)));if(value.v!==1||value.cube!==d.science.cube.sha256)throw Error('Saved view belongs to a different dataset');return buildRecord(value.state,d,empty).state}

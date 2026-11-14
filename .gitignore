@@ -1,0 +1,14 @@
+node_modules/
+__pycache__/
+dist/
+playwright-report/
+test-results/
+.venv/
+.test-work/
+
+# Local scientific assets withheld pending redistribution review.
+/public/
+/tests/fixtures/
+/.local-data/
+/.openai/
+/.github/workflows/

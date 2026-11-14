@@ -1,0 +1,257 @@
+{
+  "status": "PASS",
+  "automated_tests": {
+    "passed": 61,
+    "failed": 0,
+    "log": "test-results.txt"
+  },
+  "source_and_built_dataset_artifacts_checked": 532,
+  "accepted_source_zip_sha256": "840dfc08cd7f69a03b8ab028a4ae01bda1bf883ea3eb04c9ac5fdee5f7fcdb03",
+  "dataset_regenerated": false,
+  "original_research_inputs": [
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-M101-cube\\M101_irsa.fits",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Downloads\\spectral_channels_spx_cal-sch-v1-2026-106.fits.gz",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\observations_11.csv",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\validation_report.json",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\calibration_provenance.json",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\spectral_coverage.json",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row0.fits",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row52.fits",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row136.fits",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row53.fits",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row137.fits",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row186.fits",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row187.fits",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row239.fits",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row240.fits",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row321.fits",
+      "available": true,
+      "unchanged": true
+    },
+    {
+      "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D6_row322.fits",
+      "available": true,
+      "unchanged": true
+    }
+  ],
+  "browser_acceptance": {
+    "source": "mission-browser-results.json",
+    "scope": "Current standalone browser execution; not human usability research",
+    "stats": {
+      "startTime": "2026-11-06T02:53:21.210Z",
+      "duration": 42125.919,
+      "expected": 18,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "typecheck_and_production_build": "PASS (npm run build)",
+  "limitations": [
+    "Exploratory means of eligible IMAGE pixels; no validated photometry or uncertainty.",
+    "All 55 exposure comparison pairs disabled.",
+    "Cube origin and calibration lineage remain unverified."
+  ],
+  "temporal": {
+    "classification": "DATED_IMAGES_ONLY",
+    "original_pairs": 55,
+    "enabled_pairs": 0,
+    "source_and_built_native_previews_checked": 11,
+    "independent_native_pixel_verification": {
+      "status": "PASS",
+      "pair_count": 55,
+      "candidate_resamplings": 2,
+      "images_checked": 11,
+      "pixel_checks": [
+        {
+          "filename": "sample_D1_row0.fits",
+          "pixels": 529,
+          "eligible": 520,
+          "png_matches_native_values_and_mask": true,
+          "original_sha256_unchanged": true
+        },
+        {
+          "filename": "sample_D1_row52.fits",
+          "pixels": 529,
+          "eligible": 511,
+          "png_matches_native_values_and_mask": true,
+          "original_sha256_unchanged": true
+        },
+        {
+          "filename": "sample_D2_row136.fits",
+          "pixels": 552,
+          "eligible": 547,
+          "png_matches_native_values_and_mask": true,
+          "original_sha256_unchanged": true
+        },
+        {
+          "filename": "sample_D2_row53.fits",
+          "pixels": 529,
+          "eligible": 521,
+          "png_matches_native_values_and_mask": true,
+          "original_sha256_unchanged": true
+        },
+        {
+          "filename": "sample_D3_row137.fits",
+          "pixels": 529,
+          "eligible": 523,
+          "png_matches_native_values_and_mask": true,
+          "original_sha256_unchanged": true
+        },
+        {
+          "filename": "sample_D3_row186.fits",
+          "pixels": 529,
+          "eligible": 527,
+          "png_matches_native_values_and_mask": true,
+          "original_sha256_unchanged": true
+        },
+        {
+          "filename": "sample_D4_row187.fits",
+          "pixels": 529,
+          "eligible": 527,
+          "png_matches_native_values_and_mask": true,
+          "original_sha256_unchanged": true
+        },
+        {
+          "filename": "sample_D4_row239.fits",
+          "pixels": 529,
+          "eligible": 525,
+          "png_matches_native_values_and_mask": true,
+          "original_sha256_unchanged": true
+        },
+        {
+          "filename": "sample_D5_row240.fits",
+          "pixels": 529,
+          "eligible": 525,
+          "png_matches_native_values_and_mask": true,
+          "original_sha256_unchanged": true
+        },
+        {
+          "filename": "sample_D5_row321.fits",
+          "pixels": 529,
+          "eligible": 508,
+          "png_matches_native_values_and_mask": true,
+          "original_sha256_unchanged": true
+        },
+        {
+          "filename": "sample_D6_row322.fits",
+          "pixels": 529,
+          "eligible": 527,
+          "png_matches_native_values_and_mask": true,
+          "original_sha256_unchanged": true
+        }
+      ],
+      "registration_gate": "NOT PASSED",
+      "original_input_hashes_unchanged": 17
+    }
+  },
+  "investigation": {
+    "native_assets_checked": 14,
+    "original_fits_checksums_checked": 2,
+    "independent_fits_validation": {
+      "status": "PASS",
+      "input_kind": "Observed curated IRSA FITS cutouts",
+      "checks": [
+        {
+          "id": "rdra_row_0001",
+          "source_sha256": "3d5dbe6632da1755a8ea45a3569c2a39d166a81e395935d72816de2f9faa260e",
+          "native_pixels": 2209,
+          "accepted_pixels": 2051,
+          "core_measurement_available": false,
+          "all_native_arrays_and_preview_alpha_match": true,
+          "primary_sip_retained": true
+        },
+        {
+          "id": "rdra_row_0052",
+          "source_sha256": "8d416539f59b7dbb355ea06109a348e99a2a3c10f26773efaf2cec35eb6ceaf3",
+          "native_pixels": 2209,
+          "accepted_pixels": 2077,
+          "core_measurement_available": false,
+          "all_native_arrays_and_preview_alpha_match": true,
+          "primary_sip_retained": true
+        }
+      ],
+      "calibrated_wavelength_or_cross_epoch_registration_validated": false
+    },
+    "browser_acceptance": {
+      "source": "mission-browser-results.json",
+      "scope": "Current standalone browser execution; not human usability research",
+      "stats": {
+        "startTime": "2026-11-06T02:53:21.210Z",
+        "duration": 42125.919,
+        "expected": 18,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "remote_ci_executed": false,
+    "standalone_playwright_runner_executed": true
+  },
+  "atlas": {
+    "assets_checked": 24,
+    "original_observations": 4,
+    "claim_scope": "Attributed external finding; no independently established motion, brightening or composition"
+  }
+}

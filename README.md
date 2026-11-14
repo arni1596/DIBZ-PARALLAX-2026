@@ -1,3 +1,5 @@
+> **Current branch: application source is now integrated.** The older coordination snapshot below is retained for history. Read [current setup and restrictions](#current-collaboration-branch--dibz-parallax-2026). Scientific runtime assets remain local pending redistribution clearance; a fresh clone is source-review/build ready, not data-complete.
+
 # PARALLAX — DIBZ
 
 **FIND → SEE → VERIFY** · NASA Space Apps Challenge 2026
@@ -47,3 +49,34 @@ Do not claim that the app independently proved R Draconis brightness changes or 
 - [Team issues](../../issues)
 
 **DIBZ** owns the team presentation; **PARALLAX** is the product name. NASA/IPAC data attribution does not imply NASA sponsorship or endorsement.
+
+
+## Current collaboration branch — DIBZ-PARALLAX-2026
+
+This section supersedes the scaffold-only status above **on this branch**. The actual React/Vite/TypeScript RC2 application source, lockfile and tests are now integrated. Remote main/team documents and their history are preserved. The source was imported from frozen RC2 commit `d30040923e8a3d8999174e4f8f4bc753a42bf4e2` into a new child of the independent collaboration history, without merging unrelated histories, rewriting dates or claiming new event-period authorship. Historical details remain in docs/RC2_APPLICATION_README.md and the scientific notes.
+
+### Browse and run
+
+```powershell
+git clone --branch release/rc2-collaboration https://github.com/arni1596/DIBZ-PARALLAX-2026.git DIBZ-PARALLAX-2026
+Set-Location -LiteralPath DIBZ-PARALLAX-2026
+# On a new computer, install the locked existing dependencies when permitted:
+npm.cmd ci
+# Provision approved, hash-verified scientific assets as described below.
+npm.cmd run build
+npm.cmd run dev
+```
+
+Open http://127.0.0.1:5173/ . Build/typecheck work without the scientific data; the investigation and scientific tests require the withheld local asset bundle. Do not mistake a missing-data/error screen in a fresh clone for the functioning data-enabled release. No dependencies were installed during this integration. For a production preview use `npm.cmd run preview -- --port 5183`.
+
+### Scientific assets — explicit limitation
+
+**GitHub does not contain the 624 public runtime assets or six scientific test fixtures.** Rights/redistribution clearance remains unresolved. The local neutral working copy retains those files unchanged for real regression testing; ignored local data is never staged. See [exact paths/hashes and exclusions](docs/LOCAL_ASSET_REQUIREMENTS.json) and [safe provisioning instructions](docs/LOCAL_DATA_SETUP.md). A new clone can review/build the source immediately, but cannot reproduce the full data-enabled experience until the approved assets are supplied. No replacement/synthetic data was introduced.
+
+### Review and release restrictions
+
+All55 unverified M101 temporal comparisons stay blocked. Wavelength is not time. No independent R Draconis variability, motion or comet detection is established. Verify source provenance; don't change FITS, masks or manifest bytes, regenerate datasets, merge this branch, publish or change DNS without specific authorization. This branch intentionally contains no hosting identity or deployment workflow. GitHub/host-wide webhooks could not be independently inspected through the available connection; no deployment is requested or performed.
+
+Existing scientific preparation uses relative paths or explicit parameters. Optional Atlas reproduction uses `PARALLAX_ATLAS_RECORDS` (or `.local-data/atlas/observation-evidence.json`); that source record/FITS dependency is not distributed. Preserved historical reports may name old local paths as provenance; those are not current runtime configuration.
+
+Current submission-copy locations: [submission package](submission/RC2/FINAL_RELEASE_HANDOFF.md), [project](submission/RC2/FINAL_PROJECT_DESCRIPTION.md), [methods](submission/RC2/FINAL_SCIENTIFIC_METHODS.md), [credits](submission/RC2/FINAL_SOURCES_AND_CREDITS.md), [provenance](submission/RC2/HACKATHON_PROVENANCE.md), [demo script](submission/RC2/FINAL_DEMO_SCRIPT.md), [checklist](submission/RC2/FINAL_SUBMISSION_CHECKLIST.md). These are local-delivery records, not evidence of competition eligibility, rights clearance or public deployment.

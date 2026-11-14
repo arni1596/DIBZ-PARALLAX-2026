@@ -22,3 +22,8 @@ Parallel **read-only** reviews are fine. Only one authorized integration writer 
 - No unverified deployment, human sign-off, or test claims.
 
 Every review reports: observed issue, evidence/source, P0/P1 severity, smallest corrective action and owner.
+
+
+## Current release branch addendum
+
+On release/rc2-collaboration, the RC2 application source is imported and locally tested with ignored, hash-verified assets. Earlier scaffold-only statements remain historical context. Source comes from d30040923e8a3d8999174e4f8f4bc753a42bf4e2; do not claim this is a wholly new event-period implementation. Public scientific assets/test fixtures are excluded from Git until redistribution clearance is recorded. Read README.md and docs/LOCAL_DATA_SETUP.md before testing a clone. Preserve the existing team documents. No merge, deployment, DNS modification or submission is authorized by branch upload.

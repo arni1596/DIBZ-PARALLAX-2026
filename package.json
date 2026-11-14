@@ -1,0 +1,32 @@
+{
+  "name": "parallax-m101-explorer",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 5173 --strictPort",
+    "test": "node --test tests/*.test.mjs",
+    "lint": "eslint src/investigation --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "check:contracts": "node --test tests/investigation.test.mjs"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "10.14.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "8.72.1",
+    "vite": "8.3.5"
+  },
+  "overrides": {
+    "minimatch": "11.0.3"
+  }
+}
