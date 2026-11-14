@@ -34,6 +34,12 @@ details:not([class]) > summary,
   min-height: 24px;
 }
 
+/* --- Wavelength profile chart: invisible plot-wide area that selects the nearest dot --- */
+.profile-hit-area {
+  fill: transparent;
+  cursor: pointer;
+}
+
 /* --- Touch screens: 44px minimum for everything above, plus small buttons --- */
 @media (pointer: coarse) {
   .reveal-evidence-strip > a,

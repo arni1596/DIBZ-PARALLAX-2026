@@ -1,4 +1,5 @@
 import {useEffect,useRef,useState} from 'react';
+import type {KeyboardEvent,MouseEvent} from 'react';
 import type {Channel,Plane,Selection,Science,ProfilePoint} from './types.ts';
 import {classifyPixel,pixelToSky} from './science.ts';
 export const number=(n:number|null|undefined,d=5)=>n==null||!Number.isFinite(n)?'Unavailable':n.toLocaleString('en-US',{maximumFractionDigits:d});
@@ -10,13 +11,36 @@ export function CoverageCanvas({plane,width,height}:{plane:Plane;width:number;he
 export function Profile({points,active,onChoose,progress,error,retry}:{points:ProfilePoint[];active:number;onChoose:(n:number)=>void;progress:number;error:string;retry:()=>void}){
  const values=points.filter(p=>p.value!=null).map(p=>p.value!);const min=Math.min(0,...values),max=Math.max(0.000001,...values);const span=max-min||1;
  const left=65,right=740,top=24,bottom=204;const x=(w:number)=>left+(w-.7)/4.4*(right-left),y=(v:number)=>bottom-(v-min)/span*(bottom-top);
+ // Keyboard: the chart is one Tab stop (the selected dot); arrow keys, Home and End move between measured channels.
+ const chartRef=useRef<SVGSVGElement>(null);
+ const measured=points.filter(p=>p.value!=null);
+ const tabStop=measured.some(p=>p.channel.global_channel===active)?active:measured[0]?.channel.global_channel;
+ function moveTo(id:number){onChoose(id);chartRef.current?.querySelector<SVGElement>(`[data-channel="${id}"]`)?.focus()}
+ function pointKey(e:KeyboardEvent,id:number){
+  const i=measured.findIndex(p=>p.channel.global_channel===id);let next=-1;
+  if(e.key==='ArrowRight'||e.key==='ArrowUp')next=Math.min(measured.length-1,i+1);
+  else if(e.key==='ArrowLeft'||e.key==='ArrowDown')next=Math.max(0,i-1);
+  else if(e.key==='Home')next=0;
+  else if(e.key==='End')next=measured.length-1;
+  else if(e.key==='Enter'||e.key===' '){e.preventDefault();onChoose(id);return}
+  else return;
+  e.preventDefault();moveTo(measured[next].channel.global_channel);
+ }
+ // Pointer: a click or tap anywhere in the plot area selects the nearest measured channel, so the small dots need not be hit exactly.
+ function chooseNearest(e:MouseEvent<SVGRectElement>){
+  const m=chartRef.current?.getScreenCTM();if(!m||!measured.length)return;
+  const px=new DOMPoint(e.clientX,e.clientY).matrixTransform(m.inverse()).x;
+  let best=measured[0];for(const p of measured)if(Math.abs(x(p.channel.wavelength_um)-px)<Math.abs(x(best.channel.wavelength_um)-px))best=p;
+  onChoose(best.channel.global_channel);
+ }
  function download(){const csv=['channel,wavelength_um,mean_image_MJy_per_sr,eligible_pixels,in_frame_pixels,outside_frame_pixels,missing_pixels,rejected_pixels,status',...points.map(p=>[p.channel.global_channel,p.channel.wavelength_um,p.value??'',p.eligible,p.total,p.outside??0,p.missing,p.rejected,p.availability].join(','))].join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='PARALLAX-exploratory-profile.csv';a.click();URL.revokeObjectURL(a.href)}
  return <section className="profile-card"><div className="card-heading"><div><span className="eyebrow">INVESTIGATE / ORIGINAL NUMERICAL BUFFERS</span><h2>A profile of your selected sky region.</h2></div><button className="outline" onClick={download} disabled={!points.length}>Export values ↓</button></div><p className="muted">Mean IMAGE surface brightness of eligible native pixels. No background subtraction, PSF matching, uncertainty model or calibrated photometry.</p>
- {error?<div className="inline-error" role="alert">{error}<button onClick={retry}>Retry numerical profile</button></div>:progress<102?<div className="profile-loading" role="status"><span className="spinner"/>Reading verified numerical planes · {progress} / 102<progress max={102} value={progress}/></div>:!values.length?<div className="empty-state">No eligible values in this region. Missing and quality-rejected pixels are excluded, never replaced with zero.</div>:<svg className="profile-chart" viewBox="0 0 780 246" role="group" aria-label="Exploratory mean surface brightness versus nominal wavelength. Each dot is a measured channel sample, not an interpolated spectrum.">
+ {error?<div className="inline-error" role="alert">{error}<button onClick={retry}>Retry numerical profile</button></div>:progress<102?<div className="profile-loading" role="status"><span className="spinner"/>Reading verified numerical planes · {progress} / 102<progress max={102} value={progress}/></div>:!values.length?<div className="empty-state">No eligible values in this region. Missing and quality-rejected pixels are excluded, never replaced with zero.</div>:<svg ref={chartRef} className="profile-chart" viewBox="0 0 780 246" role="group" aria-label="Exploratory mean surface brightness versus nominal wavelength. Each dot is a measured channel sample, not an interpolated spectrum. Use the arrow keys to move between channels; Home and End jump to the first and last.">
  {[0,.25,.5,.75,1].map(t=><g key={t}><line x1={left} x2={right} y1={y(min+t*span)} y2={y(min+t*span)} className="gridline"/><text x={left-10} y={y(min+t*span)+4} textAnchor="end">{number(min+t*span,3)}</text></g>)}
  {[1,2,3,4,5].map(w=><text key={w} x={x(w)} y={228} textAnchor="middle">{w.toFixed(1)}</text>)}
  <text x="10" y="13">MJy/sr</text><text x="750" y="244" textAnchor="end">Nominal wavelength · µm</text>
- {points.map(p=>p.value==null?<path key={p.channel.global_channel} d={`M ${x(p.channel.wavelength_um)-2} ${bottom-3} l 4 6 M ${x(p.channel.wavelength_um)-2} ${bottom+3} l 4 -6`} className="missing-point"><title>CH {p.channel.global_channel}: unavailable in selected region</title></path>:<circle key={p.channel.global_channel} cx={x(p.channel.wavelength_um)} cy={y(p.value)} r={p.channel.global_channel===active?5:2.7} className={p.channel.global_channel===active?'profile-point active':'profile-point'} role="button" tabIndex={0} aria-label={`Channel ${p.channel.global_channel}, ${p.channel.wavelength_um.toFixed(3)} micrometers, mean ${p.value.toPrecision(6)} MJy per steradian, ${p.eligible} eligible pixels`} onClick={()=>onChoose(p.channel.global_channel)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();onChoose(p.channel.global_channel)}}}><title>CH {p.channel.global_channel} · {number(p.value,6)} MJy/sr · {p.eligible}/{p.total} pixels</title></circle>)}
+ <rect className="profile-hit-area" x={left} y={top-12} width={right-left} height={bottom-top+24} onClick={chooseNearest} aria-hidden="true"/>
+ {points.map(p=>p.value==null?<path key={p.channel.global_channel} d={`M ${x(p.channel.wavelength_um)-2} ${bottom-3} l 4 6 M ${x(p.channel.wavelength_um)-2} ${bottom+3} l 4 -6`} className="missing-point"><title>CH {p.channel.global_channel}: unavailable in selected region</title></path>:<circle key={p.channel.global_channel} cx={x(p.channel.wavelength_um)} cy={y(p.value)} r={p.channel.global_channel===active?5:2.7} className={p.channel.global_channel===active?'profile-point active':'profile-point'} role="button" data-channel={p.channel.global_channel} tabIndex={p.channel.global_channel===tabStop?0:-1} aria-pressed={p.channel.global_channel===active} aria-label={`Channel ${p.channel.global_channel}, ${p.channel.wavelength_um.toFixed(3)} micrometers, mean ${p.value.toPrecision(6)} MJy per steradian, ${p.eligible} eligible pixels`} onClick={()=>onChoose(p.channel.global_channel)} onKeyDown={e=>pointKey(e,p.channel.global_channel)}><title>CH {p.channel.global_channel} · {number(p.value,6)} MJy/sr · {p.eligible}/{p.total} pixels</title></circle>)}
  </svg>}
  <div className="profile-caption"><span><i/>Actual channel sample · no interpolated values</span><span>Missing or rejected samples are unavailable</span></div>
  {points.length>0&&<details className="values-table"><summary>Inspect all 102 numerical samples</summary><div className="table-scroll"><table><thead><tr><th>Channel</th><th>λ / µm</th><th>Mean IMAGE / MJy sr⁻¹</th><th>Eligible / total</th><th>Status</th></tr></thead><tbody>{points.map(p=><tr key={p.channel.global_channel}><td><button onClick={()=>onChoose(p.channel.global_channel)}>CH {p.channel.global_channel}</button></td><td>{p.channel.wavelength_um.toFixed(3)}</td><td>{number(p.value,7)}</td><td>{p.eligible} / {p.total}</td><td>{p.availability}</td></tr>)}</tbody></table></div></details>}
