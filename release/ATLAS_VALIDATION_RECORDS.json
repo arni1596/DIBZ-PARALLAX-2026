@@ -1,0 +1,840 @@
+[
+  {
+    "product_id": "2025W31_2A_0156_1D6",
+    "predicted_radec": [
+      252.66330208911876,
+      -17.490409029955288
+    ],
+    "utc_start": "2025-08-01T08:00:09.189",
+    "utc_end": "2025-08-01T08:02:04.307",
+    "parent_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W31_2A/l2b-v20-2025-264/6/level2_2025W31_2A_0156_1D6_spx_l2b-v20-2025-264.fits",
+    "release": "qr2",
+    "coordinate_source": "IRSA official obscore_3I_Atlas.vot exposure-specific comet_ra/comet_dec; predicted, not measured",
+    "status": "RETRIEVED",
+    "path": ".local-data/atlas/2025W31_2A_0156_1D6.cutout.fits",
+    "sha256": "6b3ebdc65678c2180786bf532bb9650ed55b6860c9991bf3939152f351ada7f9",
+    "bytes": 5279040,
+    "retrieved_kind": "IRSA spatial cutout; parent full-file hash not calculated",
+    "actual_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W31_2A/l2b-v20-2025-264/6/level2_2025W31_2A_0156_1D6_spx_l2b-v20-2025-264.fits?center=252.66330208911876%2C-17.490409029955288d&size=.2",
+    "FITS_verified": true,
+    "source_dimensions_yx": [
+      117,
+      117
+    ],
+    "roi_dimensions_yx": [
+      117,
+      117
+    ],
+    "roi_source_bounds_yx": [
+      [
+        0,
+        117
+      ],
+      [
+        0,
+        117
+      ]
+    ],
+    "predicted_source_xy_zero_based": [
+      57.64509990713401,
+      58.34141540040949
+    ],
+    "predicted_roi_xy_zero_based": [
+      57.64509990713401,
+      58.34141540040949
+    ],
+    "predicted_inside": true,
+    "timestamp_fits": "2025-08-01T08:00:09.189",
+    "mjd_obs": 60888.333439688,
+    "timesys": "UTC",
+    "pipeline": "6.4+psffix1",
+    "detector": 6,
+    "units": "MJy / sr",
+    "variance_units": "MJy2 / sr2",
+    "spatial_ctype": [
+      "RA---TAN-SIP",
+      "DEC--TAN-SIP"
+    ],
+    "SIP_retained": true,
+    "approximate_wavelength_um": 4.746611861033597,
+    "approximate_bandwidth_um": 0.0361562326542897,
+    "spectral_scope": "WCS-WAVE visualization approximation, not calibrated response equivalence",
+    "extensions": [
+      "PRIMARY",
+      "IMAGE",
+      "FLAGS",
+      "VARIANCE",
+      "ZODI",
+      "PSF",
+      "WCS-WAVE"
+    ],
+    "flag_definitions": {
+      "TRANSIENT": {
+        "bit": 0,
+        "meaning": "Transient detected during SUR"
+      },
+      "OVERFLOW": {
+        "bit": 1,
+        "meaning": "Overflow detected during SUR"
+      },
+      "SUR_ERROR": {
+        "bit": 2,
+        "meaning": "Error in onboard processing"
+      },
+      "PHANTOM": {
+        "bit": 4,
+        "meaning": "Phantom pixel"
+      },
+      "REFERENCE": {
+        "bit": 5,
+        "meaning": "Reference pixel"
+      },
+      "NONFUNC": {
+        "bit": 6,
+        "meaning": "Permanently unusable"
+      },
+      "DICHROIC": {
+        "bit": 7,
+        "meaning": "Low efficiency due to dichroic"
+      },
+      "MISSING_DATA": {
+        "bit": 9,
+        "meaning": "Onboard data lost"
+      },
+      "HOT": {
+        "bit": 10,
+        "meaning": "Hot pixel"
+      },
+      "COLD": {
+        "bit": 11,
+        "meaning": "Anomalously low signal"
+      },
+      "FULLSAMPLE": {
+        "bit": 12,
+        "meaning": "Pixel full sample history is available"
+      },
+      "PHANMISS": {
+        "bit": 14,
+        "meaning": "Phantom correction was not applied"
+      },
+      "NONLINEAR": {
+        "bit": 15,
+        "meaning": "Nonlinearity correction cannot be applied reliably"
+      },
+      "PERSIST": {
+        "bit": 17,
+        "meaning": "Persistent charge above threshold"
+      },
+      "OUTLIER": {
+        "bit": 19,
+        "meaning": "Pixel flagged by Detect Outliers"
+      },
+      "SOURCE": {
+        "bit": 21,
+        "meaning": "Pixel mapped to a known source"
+      }
+    },
+    "mask_policy": "Finite IMAGE, finite positive VARIANCE; SOURCE bit21 alone retained; all other set bits excluded conservatively. This is a project display policy, not universal scientific validity.",
+    "eligible_pixels": 13476,
+    "total_roi_pixels": 13689,
+    "regions": {
+      "predicted_r2p5": {
+        "pixel_count": 20,
+        "eligible": 20,
+        "finite_image": 20,
+        "median_mjysr": 0.5092893838882446,
+        "flag_values": {
+          "0": 1,
+          "2097152": 19
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "predicted_r5": {
+        "pixel_count": 81,
+        "eligible": 80,
+        "finite_image": 81,
+        "median_mjysr": 0.5081714391708374,
+        "flag_values": {
+          "0": 24,
+          "2097152": 56,
+          "2097157": 1
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "predicted_r10": {
+        "pixel_count": 316,
+        "eligible": 314,
+        "finite_image": 316,
+        "median_mjysr": 0.49096447229385376,
+        "flag_values": {
+          "0": 73,
+          "524288": 1,
+          "2097152": 241,
+          "2097157": 1
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "annulus10_20": {
+        "pixel_count": 944,
+        "eligible": 930,
+        "finite_image": 944,
+        "median_mjysr": 0.4879395663738251,
+        "flag_values": {
+          "0": 216,
+          "64": 2,
+          "2053": 1,
+          "524288": 5,
+          "655429": 1,
+          "2097152": 714,
+          "2097157": 3,
+          "2097216": 1,
+          "2099205": 1
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      }
+    },
+    "display": {
+      "algorithm": "Independent per-image2\u201399.5percentile grayscale asinh; asinh(8*clip((IMAGE-low)/(high-low),0,1))/asinh(8)",
+      "low_mjysr": 0.37187841534614563,
+      "high_mjysr": 3.969594717025757,
+      "interpolation": "nearest native pixels",
+      "excluded": "black; no filling"
+    },
+    "motion_measured": false,
+    "flux_change_measured": false,
+    "composition_measured": false,
+    "source_association": "Official predicted position and visible structure only; no independent comet localization/detection significance"
+  },
+  {
+    "product_id": "2025W50_2A_0813_4D6",
+    "predicted_radec": [
+      166.5979022275181,
+      5.358661326362121
+    ],
+    "utc_start": "2025-12-14T19:11:50.355",
+    "utc_end": "2025-12-14T19:13:45.473",
+    "parent_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/6/level2_2025W50_2A_0813_4D6_spx_l2b-v20-2025-349.fits",
+    "release": "qr2",
+    "coordinate_source": "IRSA official obscore_3I_Atlas.vot exposure-specific comet_ra/comet_dec; predicted, not measured",
+    "status": "RETRIEVED",
+    "path": ".local-data/atlas/2025W50_2A_0813_4D6.cutout.fits",
+    "sha256": "b759a088e2086388cb6ae66a69e6497d32e1156cfd3a4775aaec959d121d5e42",
+    "bytes": 5279040,
+    "retrieved_kind": "IRSA spatial cutout; parent full-file hash not calculated",
+    "actual_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/6/level2_2025W50_2A_0813_4D6_spx_l2b-v20-2025-349.fits?center=166.5979022275181%2C5.358661326362121d&size=.2",
+    "FITS_verified": true,
+    "source_dimensions_yx": [
+      117,
+      117
+    ],
+    "roi_dimensions_yx": [
+      117,
+      117
+    ],
+    "roi_source_bounds_yx": [
+      [
+        0,
+        117
+      ],
+      [
+        0,
+        117
+      ]
+    ],
+    "predicted_source_xy_zero_based": [
+      57.54542354295779,
+      58.48762447909258
+    ],
+    "predicted_roi_xy_zero_based": [
+      57.54542354295779,
+      58.48762447909258
+    ],
+    "predicted_inside": true,
+    "timestamp_fits": "2025-12-14T19:11:50.355",
+    "mjd_obs": 61023.799888368,
+    "timesys": "UTC",
+    "pipeline": "6.4+psffix1",
+    "detector": 6,
+    "units": "MJy / sr",
+    "variance_units": "MJy2 / sr2",
+    "spatial_ctype": [
+      "RA---TAN-SIP",
+      "DEC--TAN-SIP"
+    ],
+    "SIP_retained": true,
+    "approximate_wavelength_um": 4.955477511279404,
+    "approximate_bandwidth_um": 0.037300481847194325,
+    "spectral_scope": "WCS-WAVE visualization approximation, not calibrated response equivalence",
+    "extensions": [
+      "PRIMARY",
+      "IMAGE",
+      "FLAGS",
+      "VARIANCE",
+      "ZODI",
+      "PSF",
+      "WCS-WAVE"
+    ],
+    "flag_definitions": {
+      "TRANSIENT": {
+        "bit": 0,
+        "meaning": "Transient detected during SUR"
+      },
+      "OVERFLOW": {
+        "bit": 1,
+        "meaning": "Overflow detected during SUR"
+      },
+      "SUR_ERROR": {
+        "bit": 2,
+        "meaning": "Error in onboard processing"
+      },
+      "PHANTOM": {
+        "bit": 4,
+        "meaning": "Phantom pixel"
+      },
+      "REFERENCE": {
+        "bit": 5,
+        "meaning": "Reference pixel"
+      },
+      "NONFUNC": {
+        "bit": 6,
+        "meaning": "Permanently unusable"
+      },
+      "DICHROIC": {
+        "bit": 7,
+        "meaning": "Low efficiency due to dichroic"
+      },
+      "MISSING_DATA": {
+        "bit": 9,
+        "meaning": "Onboard data lost"
+      },
+      "HOT": {
+        "bit": 10,
+        "meaning": "Hot pixel"
+      },
+      "COLD": {
+        "bit": 11,
+        "meaning": "Anomalously low signal"
+      },
+      "FULLSAMPLE": {
+        "bit": 12,
+        "meaning": "Pixel full sample history is available"
+      },
+      "PHANMISS": {
+        "bit": 14,
+        "meaning": "Phantom correction was not applied"
+      },
+      "NONLINEAR": {
+        "bit": 15,
+        "meaning": "Nonlinearity correction cannot be applied reliably"
+      },
+      "PERSIST": {
+        "bit": 17,
+        "meaning": "Persistent charge above threshold"
+      },
+      "OUTLIER": {
+        "bit": 19,
+        "meaning": "Pixel flagged by Detect Outliers"
+      },
+      "SOURCE": {
+        "bit": 21,
+        "meaning": "Pixel mapped to a known source"
+      }
+    },
+    "mask_policy": "Finite IMAGE, finite positive VARIANCE; SOURCE bit21 alone retained; all other set bits excluded conservatively. This is a project display policy, not universal scientific validity.",
+    "eligible_pixels": 13343,
+    "total_roi_pixels": 13689,
+    "regions": {
+      "predicted_r2p5": {
+        "pixel_count": 16,
+        "eligible": 7,
+        "finite_image": 16,
+        "median_mjysr": 2.1726431846618652,
+        "flag_values": {
+          "0": 3,
+          "524288": 9,
+          "2097152": 4
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "predicted_r5": {
+        "pixel_count": 80,
+        "eligible": 63,
+        "finite_image": 80,
+        "median_mjysr": 1.634414553642273,
+        "flag_values": {
+          "0": 46,
+          "524288": 17,
+          "2097152": 17
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "predicted_r10": {
+        "pixel_count": 316,
+        "eligible": 295,
+        "finite_image": 316,
+        "median_mjysr": 1.2981703281402588,
+        "flag_values": {
+          "0": 245,
+          "524288": 21,
+          "2097152": 50
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "annulus10_20": {
+        "pixel_count": 950,
+        "eligible": 927,
+        "finite_image": 950,
+        "median_mjysr": 1.1029884815216064,
+        "flag_values": {
+          "0": 784,
+          "1": 1,
+          "5": 3,
+          "64": 1,
+          "524288": 17,
+          "2097152": 143,
+          "2097157": 1
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      }
+    },
+    "display": {
+      "algorithm": "Independent per-image2\u201399.5percentile grayscale asinh; asinh(8*clip((IMAGE-low)/(high-low),0,1))/asinh(8)",
+      "low_mjysr": 0.8497545623779297,
+      "high_mjysr": 1.6535942769050551,
+      "interpolation": "nearest native pixels",
+      "excluded": "black; no filling"
+    },
+    "motion_measured": false,
+    "flux_change_measured": false,
+    "composition_measured": false,
+    "source_association": "Official predicted position and visible structure only; no independent comet localization/detection significance"
+  },
+  {
+    "product_id": "2025W32_2D_0091_3D6",
+    "predicted_radec": [
+      248.0853110114758,
+      -16.964259289715006
+    ],
+    "utc_start": "2025-08-07T23:53:19.284",
+    "utc_end": "2025-08-07T23:55:14.402",
+    "parent_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W32_2D/l2b-v20-2025-265/6/level2_2025W32_2D_0091_3D6_spx_l2b-v20-2025-265.fits",
+    "release": "qr2",
+    "coordinate_source": "IRSA official obscore_3I_Atlas.vot exposure-specific comet_ra/comet_dec; predicted, not measured",
+    "status": "RETRIEVED",
+    "path": ".local-data/atlas/2025W32_2D_0091_3D6.parent.fits",
+    "sha256": "cda878ed879261724c7b281392be87d4ebcef81786501690e00a0374d98b81b0",
+    "bytes": 71634240,
+    "retrieved_kind": "Full original cloud-hosted parent MEF",
+    "actual_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W32_2D/l2b-v20-2025-265/6/level2_2025W32_2D_0091_3D6_spx_l2b-v20-2025-265.fits",
+    "listing_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/?list-type=2&prefix=qr2%2Flevel2%2F2025W32_2D%2Fl2b-v20-2025-265%2F6%2Flevel2_2025W32_2D_0091_3D6_spx_l2b-v20-2025-265.fits&max-keys=2",
+    "headers": {
+      "x-amz-request-id": "EZ7EFZRZAN21X8MT",
+      "x-amz-id-2": "23Auxu1BQGXS9kKMeYAwvUc2gE8h064xZ9E5LORJ7M3oFlR0HWcYizwRTeNLXwWrZ28LNEKBOPY=",
+      "Content-Length": "71634240",
+      "Accept-Ranges": "bytes",
+      "Date": "Wed, 04 Nov 2026 08:02:19 GMT",
+      "Server": "AmazonS3",
+      "Last-Modified": "Fri, 03 Apr 2026 11:57:21 GMT",
+      "ETag": "\"73e5df07e40f94783304d936a56004b6\"",
+      "Content-Type": "binary/octet-stream",
+      "x-amz-server-side-encryption": "AES256",
+      "x-amz-storage-class": "INTELLIGENT_TIERING",
+      "Connection": "close"
+    },
+    "FITS_verified": true,
+    "source_dimensions_yx": [
+      2040,
+      2040
+    ],
+    "roi_dimensions_yx": [
+      117,
+      117
+    ],
+    "roi_source_bounds_yx": [
+      [
+        114,
+        231
+      ],
+      [
+        767,
+        884
+      ]
+    ],
+    "predicted_source_xy_zero_based": [
+      825.2750800304351,
+      172.34402827025906
+    ],
+    "predicted_roi_xy_zero_based": [
+      58.275080030435106,
+      58.34402827025906
+    ],
+    "predicted_inside": true,
+    "timestamp_fits": "2025-08-07T23:53:19.284",
+    "mjd_obs": 60894.995362083,
+    "timesys": "UTC",
+    "pipeline": "6.4+psffix1",
+    "detector": 6,
+    "units": "MJy / sr",
+    "variance_units": "MJy2 / sr2",
+    "spatial_ctype": [
+      "RA---TAN-SIP",
+      "DEC--TAN-SIP"
+    ],
+    "SIP_retained": true,
+    "approximate_wavelength_um": 4.947077767422105,
+    "approximate_bandwidth_um": 0.03717692794881783,
+    "spectral_scope": "WCS-WAVE visualization approximation, not calibrated response equivalence",
+    "extensions": [
+      "PRIMARY",
+      "IMAGE",
+      "FLAGS",
+      "VARIANCE",
+      "ZODI",
+      "PSF",
+      "WCS-WAVE"
+    ],
+    "flag_definitions": {
+      "TRANSIENT": {
+        "bit": 0,
+        "meaning": "Transient detected during SUR"
+      },
+      "OVERFLOW": {
+        "bit": 1,
+        "meaning": "Overflow detected during SUR"
+      },
+      "SUR_ERROR": {
+        "bit": 2,
+        "meaning": "Error in onboard processing"
+      },
+      "PHANTOM": {
+        "bit": 4,
+        "meaning": "Phantom pixel"
+      },
+      "REFERENCE": {
+        "bit": 5,
+        "meaning": "Reference pixel"
+      },
+      "NONFUNC": {
+        "bit": 6,
+        "meaning": "Permanently unusable"
+      },
+      "DICHROIC": {
+        "bit": 7,
+        "meaning": "Low efficiency due to dichroic"
+      },
+      "MISSING_DATA": {
+        "bit": 9,
+        "meaning": "Onboard data lost"
+      },
+      "HOT": {
+        "bit": 10,
+        "meaning": "Hot pixel"
+      },
+      "COLD": {
+        "bit": 11,
+        "meaning": "Anomalously low signal"
+      },
+      "FULLSAMPLE": {
+        "bit": 12,
+        "meaning": "Pixel full sample history is available"
+      },
+      "PHANMISS": {
+        "bit": 14,
+        "meaning": "Phantom correction was not applied"
+      },
+      "NONLINEAR": {
+        "bit": 15,
+        "meaning": "Nonlinearity correction cannot be applied reliably"
+      },
+      "PERSIST": {
+        "bit": 17,
+        "meaning": "Persistent charge above threshold"
+      },
+      "OUTLIER": {
+        "bit": 19,
+        "meaning": "Pixel flagged by Detect Outliers"
+      },
+      "SOURCE": {
+        "bit": 21,
+        "meaning": "Pixel mapped to a known source"
+      }
+    },
+    "mask_policy": "Finite IMAGE, finite positive VARIANCE; SOURCE bit21 alone retained; all other set bits excluded conservatively. This is a project display policy, not universal scientific validity.",
+    "eligible_pixels": 13405,
+    "total_roi_pixels": 13689,
+    "regions": {
+      "predicted_r2p5": {
+        "pixel_count": 20,
+        "eligible": 20,
+        "finite_image": 20,
+        "median_mjysr": 0.6899378299713135,
+        "flag_values": {
+          "0": 13,
+          "2097152": 7
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "predicted_r5": {
+        "pixel_count": 79,
+        "eligible": 78,
+        "finite_image": 79,
+        "median_mjysr": 0.692142128944397,
+        "flag_values": {
+          "0": 43,
+          "524288": 1,
+          "2097152": 35
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "predicted_r10": {
+        "pixel_count": 316,
+        "eligible": 309,
+        "finite_image": 316,
+        "median_mjysr": 0.6830124258995056,
+        "flag_values": {
+          "0": 202,
+          "1": 1,
+          "524288": 6,
+          "2097152": 107
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "annulus10_20": {
+        "pixel_count": 940,
+        "eligible": 917,
+        "finite_image": 939,
+        "median_mjysr": 0.6881394386291504,
+        "flag_values": {
+          "0": 512,
+          "1": 1,
+          "5": 6,
+          "131142": 1,
+          "524288": 7,
+          "655360": 1,
+          "2097152": 405,
+          "2097157": 3,
+          "2097216": 1,
+          "2097217": 1,
+          "2228224": 1,
+          "2228290": 1
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      }
+    },
+    "display": {
+      "algorithm": "Independent per-image2\u201399.5percentile grayscale asinh; asinh(8*clip((IMAGE-low)/(high-low),0,1))/asinh(8)",
+      "low_mjysr": 0.5409670329093933,
+      "high_mjysr": 1.7054331183433507,
+      "interpolation": "nearest native pixels",
+      "excluded": "black; no filling"
+    },
+    "motion_measured": false,
+    "flux_change_measured": false,
+    "composition_measured": false,
+    "source_association": "Official predicted position and visible structure only; no independent comet localization/detection significance"
+  },
+  {
+    "product_id": "2025W50_2A_0797_2D6",
+    "predicted_radec": [
+      166.67789008715204,
+      5.33086227023499
+    ],
+    "utc_start": "2025-12-14T17:28:15.584",
+    "utc_end": "2025-12-14T17:30:10.702",
+    "parent_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/6/level2_2025W50_2A_0797_2D6_spx_l2b-v20-2025-349.fits",
+    "release": "qr2",
+    "coordinate_source": "IRSA official obscore_3I_Atlas.vot exposure-specific comet_ra/comet_dec; predicted, not measured",
+    "status": "RETRIEVED",
+    "path": ".local-data/atlas/2025W50_2A_0797_2D6.cutout.fits",
+    "sha256": "1efe6871ea0f79f39a509046432923d8de4198ccdedc10ceb52218b0c91e5479",
+    "bytes": 5279040,
+    "retrieved_kind": "IRSA spatial cutout; parent full-file hash not calculated",
+    "actual_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_2A/l2b-v20-2025-349/6/level2_2025W50_2A_0797_2D6_spx_l2b-v20-2025-349.fits?center=166.67789008715204%2C5.33086227023499d&size=.2",
+    "FITS_verified": true,
+    "source_dimensions_yx": [
+      117,
+      117
+    ],
+    "roi_dimensions_yx": [
+      117,
+      117
+    ],
+    "roi_source_bounds_yx": [
+      [
+        0,
+        117
+      ],
+      [
+        0,
+        117
+      ]
+    ],
+    "predicted_source_xy_zero_based": [
+      57.501401744029046,
+      58.06449332632275
+    ],
+    "predicted_roi_xy_zero_based": [
+      57.501401744029046,
+      58.06449332632275
+    ],
+    "predicted_inside": true,
+    "timestamp_fits": "2025-12-14T17:28:15.584",
+    "mjd_obs": 61023.727958148,
+    "timesys": "UTC",
+    "pipeline": "6.4+psffix1",
+    "detector": 6,
+    "units": "MJy / sr",
+    "variance_units": "MJy2 / sr2",
+    "spatial_ctype": [
+      "RA---TAN-SIP",
+      "DEC--TAN-SIP"
+    ],
+    "SIP_retained": true,
+    "approximate_wavelength_um": 4.743627091989252,
+    "approximate_bandwidth_um": 0.036451515448267816,
+    "spectral_scope": "WCS-WAVE visualization approximation, not calibrated response equivalence",
+    "extensions": [
+      "PRIMARY",
+      "IMAGE",
+      "FLAGS",
+      "VARIANCE",
+      "ZODI",
+      "PSF",
+      "WCS-WAVE"
+    ],
+    "flag_definitions": {
+      "TRANSIENT": {
+        "bit": 0,
+        "meaning": "Transient detected during SUR"
+      },
+      "OVERFLOW": {
+        "bit": 1,
+        "meaning": "Overflow detected during SUR"
+      },
+      "SUR_ERROR": {
+        "bit": 2,
+        "meaning": "Error in onboard processing"
+      },
+      "PHANTOM": {
+        "bit": 4,
+        "meaning": "Phantom pixel"
+      },
+      "REFERENCE": {
+        "bit": 5,
+        "meaning": "Reference pixel"
+      },
+      "NONFUNC": {
+        "bit": 6,
+        "meaning": "Permanently unusable"
+      },
+      "DICHROIC": {
+        "bit": 7,
+        "meaning": "Low efficiency due to dichroic"
+      },
+      "MISSING_DATA": {
+        "bit": 9,
+        "meaning": "Onboard data lost"
+      },
+      "HOT": {
+        "bit": 10,
+        "meaning": "Hot pixel"
+      },
+      "COLD": {
+        "bit": 11,
+        "meaning": "Anomalously low signal"
+      },
+      "FULLSAMPLE": {
+        "bit": 12,
+        "meaning": "Pixel full sample history is available"
+      },
+      "PHANMISS": {
+        "bit": 14,
+        "meaning": "Phantom correction was not applied"
+      },
+      "NONLINEAR": {
+        "bit": 15,
+        "meaning": "Nonlinearity correction cannot be applied reliably"
+      },
+      "PERSIST": {
+        "bit": 17,
+        "meaning": "Persistent charge above threshold"
+      },
+      "OUTLIER": {
+        "bit": 19,
+        "meaning": "Pixel flagged by Detect Outliers"
+      },
+      "SOURCE": {
+        "bit": 21,
+        "meaning": "Pixel mapped to a known source"
+      }
+    },
+    "mask_policy": "Finite IMAGE, finite positive VARIANCE; SOURCE bit21 alone retained; all other set bits excluded conservatively. This is a project display policy, not universal scientific validity.",
+    "eligible_pixels": 13317,
+    "total_roi_pixels": 13689,
+    "regions": {
+      "predicted_r2p5": {
+        "pixel_count": 19,
+        "eligible": 4,
+        "finite_image": 19,
+        "median_mjysr": 1.88789701461792,
+        "flag_values": {
+          "0": 4,
+          "524288": 15
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "predicted_r5": {
+        "pixel_count": 80,
+        "eligible": 58,
+        "finite_image": 80,
+        "median_mjysr": 1.3110551834106445,
+        "flag_values": {
+          "0": 53,
+          "524288": 22,
+          "2097152": 5
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "predicted_r10": {
+        "pixel_count": 314,
+        "eligible": 288,
+        "finite_image": 314,
+        "median_mjysr": 1.0526292324066162,
+        "flag_values": {
+          "0": 202,
+          "524288": 26,
+          "2097152": 86
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "annulus10_20": {
+        "pixel_count": 940,
+        "eligible": 917,
+        "finite_image": 940,
+        "median_mjysr": 0.8639451265335083,
+        "flag_values": {
+          "0": 735,
+          "1": 1,
+          "5": 1,
+          "131136": 1,
+          "524288": 18,
+          "524293": 1,
+          "2097152": 182,
+          "2099205": 1
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      }
+    },
+    "display": {
+      "algorithm": "Independent per-image2\u201399.5percentile grayscale asinh; asinh(8*clip((IMAGE-low)/(high-low),0,1))/asinh(8)",
+      "low_mjysr": 0.6373397850990296,
+      "high_mjysr": 1.3552245259284976,
+      "interpolation": "nearest native pixels",
+      "excluded": "black; no filling"
+    },
+    "motion_measured": false,
+    "flux_change_measured": false,
+    "composition_measured": false,
+    "source_association": "Official predicted position and visible structure only; no independent comet localization/detection significance"
+  }
+]

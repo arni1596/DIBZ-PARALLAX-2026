@@ -1,3 +1,5 @@
+> **Verified scientific-data clearance update — November14,2026:** full public M101 remote bytes now match the local parent exactly; IRSA public-data terms and IPAC image-use conditions resolve distribution of the630 recorded scientific assets. See ../../release/ATTRIBUTION.md and ../../release/PARALLAX_ASSET_RIGHTS_SUMMARY.md. No M101 release DOI, original-code license, eligibility or calibration validation is inferred. Earlier uncertainty text below is retained as the historical record and superseded only as specified here.
+
 # PARALLAX â€” sources and credits
 
 Verified references, November 14, 2026 UTC. Citation is not rights clearance.

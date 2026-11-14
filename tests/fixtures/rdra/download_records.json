@@ -1,0 +1,30 @@
+[
+  {
+    "index": 52,
+    "archive_time": "61019.873482",
+    "source_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_1A/l2b-v20-2025-345/2/level2_2025W50_1A_0661_2D2_spx_l2b-v20-2025-345.fits",
+    "cutout_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_1A/l2b-v20-2025-345/2/level2_2025W50_1A_0661_2D2_spx_l2b-v20-2025-345.fits?center=248.167610833%2C66.754979417d&size=0.08000",
+    "file": "cutout_row_0052.fits",
+    "sha256": "8d416539f59b7dbb355ea06109a348e99a2a3c10f26773efaf2cec35eb6ceaf3",
+    "bytes": 5094720,
+    "shape": [
+      47,
+      47
+    ],
+    "finite_fraction": 0.9927569035762789,
+    "wavelength_um": 1.4395879412912633,
+    "version": "6.4+psffix1",
+    "detector": "",
+    "spatial_ctype": [
+      "RA---TAN-SIP",
+      "DEC--TAN-SIP"
+    ],
+    "flags_unique": [
+      2097152,
+      2097153,
+      2097154,
+      2097157,
+      2097158
+    ]
+  }
+]

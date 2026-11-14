@@ -1,0 +1,1064 @@
+{
+  "calibrations": {
+    "spectral_channels": {
+      "path": "C:\\Users\\ishan\\Downloads\\spectral_channels_spx_cal-sch-v1-2026-106.fits.gz",
+      "exists": true,
+      "identity_verified": false,
+      "sha256": "b0fa238dcbc5bcbfcc786b35676cd9e0c735ab2e10e234d3a05f7d327ab9b095",
+      "headers": [
+        {
+          "extension": "PRIMARY",
+          "cards": [
+            [
+              "SIMPLE",
+              true,
+              "conforms to FITS standard"
+            ],
+            [
+              "BITPIX",
+              8,
+              "array data type"
+            ],
+            [
+              "NAXIS",
+              0,
+              "number of array dimensions"
+            ],
+            [
+              "EXTEND",
+              true,
+              ""
+            ],
+            [
+              "DATE",
+              "2026-04-14T19:25:18",
+              "UTC file creation time"
+            ],
+            [
+              "TELESCOP",
+              "SPHEREx",
+              "project name"
+            ],
+            [
+              "INSTRUME",
+              "SPHEREx",
+              "instrument name"
+            ],
+            [
+              "HISTORY",
+              "[SSDC] Channel map from 20260311_LVF_contour_17Ch.FITS",
+              ""
+            ],
+            [
+              "HISTORY",
+              "[SSDC] Metadata from SPHEREx SpectralBandDef 202601, revision 2/24",
+              ""
+            ]
+          ]
+        },
+        {
+          "extension": "CHANNEL_MAP",
+          "cards": [
+            [
+              "XTENSION",
+              "IMAGE",
+              "IMAGE extension"
+            ],
+            [
+              "BITPIX",
+              8,
+              "number of bits per data pixel"
+            ],
+            [
+              "NAXIS",
+              2,
+              "number of data axes"
+            ],
+            [
+              "NAXIS1",
+              2040,
+              "length of data axis 1"
+            ],
+            [
+              "NAXIS2",
+              2040,
+              "length of data axis 2"
+            ],
+            [
+              "PCOUNT",
+              0,
+              "required keyword; must = 0"
+            ],
+            [
+              "GCOUNT",
+              1,
+              "required keyword; must = 1"
+            ],
+            [
+              "EXTNAME",
+              "CHANNEL_MAP",
+              "pixel-to-spectral-channel lookup map"
+            ],
+            [
+              "DATE",
+              "2026-03-11T12:00:00",
+              "UTC HDU creation time"
+            ],
+            [
+              "ORIGIN",
+              "SPHEREx Instrument Team",
+              "institution that created this HDU"
+            ],
+            [
+              "AUTHOR",
+              "Howard Hui",
+              "contact person for this content"
+            ],
+            [
+              "TELESCOP",
+              "SPHEREx",
+              "project name"
+            ],
+            [
+              "INSTRUME",
+              "SPHEREx",
+              "instrument name"
+            ],
+            [
+              "DETECTOR",
+              "ALL",
+              "detector array identifier (1-6 or ALL)"
+            ],
+            [
+              "DETSER",
+              "ALL",
+              "detector serial number"
+            ],
+            [
+              "TESTENV",
+              "TVAC4 + FPA + IOC",
+              "locations of spectral channel input data"
+            ],
+            [
+              "DETCOORD",
+              "sky",
+              "pixel coordinates matched to L2 spectral images"
+            ],
+            [
+              "HISTORY",
+              "[INST] Version 2.1.2",
+              ""
+            ]
+          ]
+        },
+        {
+          "extension": "SPECTRAL_CHANNELS",
+          "cards": [
+            [
+              "XTENSION",
+              "BINTABLE",
+              "binary table extension"
+            ],
+            [
+              "BITPIX",
+              8,
+              "array data type"
+            ],
+            [
+              "NAXIS",
+              2,
+              "number of array dimensions"
+            ],
+            [
+              "NAXIS1",
+              26,
+              "length of dimension 1"
+            ],
+            [
+              "NAXIS2",
+              102,
+              "length of dimension 2"
+            ],
+            [
+              "PCOUNT",
+              0,
+              "number of group parameters"
+            ],
+            [
+              "GCOUNT",
+              1,
+              "number of groups"
+            ],
+            [
+              "TFIELDS",
+              8,
+              "number of table fields"
+            ],
+            [
+              "EXTNAME",
+              "SPECTRAL_CHANNELS",
+              "extension name"
+            ],
+            [
+              "TTYPE1",
+              "DETECTOR",
+              ""
+            ],
+            [
+              "TFORM1",
+              "B",
+              ""
+            ],
+            [
+              "TTYPE2",
+              "SUBCHAN",
+              ""
+            ],
+            [
+              "TFORM2",
+              "B",
+              ""
+            ],
+            [
+              "TTYPE3",
+              "WAVELENGTH",
+              ""
+            ],
+            [
+              "TFORM3",
+              "E",
+              ""
+            ],
+            [
+              "TUNIT3",
+              "um",
+              ""
+            ],
+            [
+              "TDISP3",
+              "F10.3",
+              ""
+            ],
+            [
+              "TTYPE4",
+              "WL_MIN",
+              ""
+            ],
+            [
+              "TFORM4",
+              "E",
+              ""
+            ],
+            [
+              "TUNIT4",
+              "um",
+              ""
+            ],
+            [
+              "TDISP4",
+              "F10.3",
+              ""
+            ],
+            [
+              "TTYPE5",
+              "WL_MAX",
+              ""
+            ],
+            [
+              "TFORM5",
+              "E",
+              ""
+            ],
+            [
+              "TUNIT5",
+              "um",
+              ""
+            ],
+            [
+              "TDISP5",
+              "F10.3",
+              ""
+            ],
+            [
+              "TTYPE6",
+              "R",
+              ""
+            ],
+            [
+              "TFORM6",
+              "E",
+              ""
+            ],
+            [
+              "TDISP6",
+              "F10.0",
+              ""
+            ],
+            [
+              "TTYPE7",
+              "R_STD",
+              ""
+            ],
+            [
+              "TFORM7",
+              "E",
+              ""
+            ],
+            [
+              "TDISP7",
+              "F10.1",
+              ""
+            ],
+            [
+              "TTYPE8",
+              "BANDWIDTH",
+              ""
+            ],
+            [
+              "TFORM8",
+              "E",
+              ""
+            ],
+            [
+              "TUNIT8",
+              "um",
+              ""
+            ],
+            [
+              "TDISP8",
+              "F10.3",
+              ""
+            ],
+            [
+              "COMMENT",
+              "WAVELENGTH is median per-pixel wavelength [um]",
+              ""
+            ],
+            [
+              "COMMENT",
+              "R is median per-pixel spectral resolution",
+              ""
+            ],
+            [
+              "COMMENT",
+              "BANDWIDTH is calculated as WAVELENGTH/R",
+              ""
+            ],
+            [
+              "HISTORY",
+              "Metadata from SPHEREx SpectralBandDef 202601, revision 2/24",
+              ""
+            ],
+            [
+              "HISTORY",
+              "Derived from SpecCal_202509",
+              ""
+            ]
+          ]
+        }
+      ],
+      "uuid_occurrences": [],
+      "identity_reason": "No independently authenticated mapping from external file identity to observation processing UUID supplied; UUID occurrences alone do not establish identity."
+    },
+    "external_d2": {
+      "path": "C:\\Users\\ishan\\Downloads\\spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits",
+      "exists": true,
+      "identity_verified": false,
+      "sha256": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7",
+      "headers": [
+        {
+          "extension": "PRIMARY",
+          "cards": [
+            [
+              "SIMPLE",
+              true,
+              "conforms to FITS standard"
+            ],
+            [
+              "BITPIX",
+              8,
+              "array data type"
+            ],
+            [
+              "NAXIS",
+              0,
+              "number of array dimensions"
+            ],
+            [
+              "EXTEND",
+              true,
+              ""
+            ],
+            [
+              "DATE",
+              "2025-09-11T19:12:38.881",
+              "HDU creation time (UTC)"
+            ],
+            [
+              "ORIGIN",
+              "SPHEREx SSDC Team",
+              ""
+            ],
+            [
+              "TELESCOP",
+              "SPHEREx",
+              ""
+            ],
+            [
+              "INSTRUME",
+              "SPHEREx",
+              ""
+            ],
+            [
+              "DATE",
+              "2025-09-11T19:12:38.881",
+              "HDU creation time (UTC)"
+            ],
+            [
+              "WLERRMAX",
+              0.162886,
+              "[um] Maximum error in wavelength lookup"
+            ],
+            [
+              "BWERRMAX",
+              0.012884,
+              "[um] Maximum error in bandwidth lookup"
+            ],
+            [
+              "WLERRP99",
+              0.000726,
+              "[um] 99-th quantile error in wavelength lookup"
+            ],
+            [
+              "BWERRP99",
+              0.000928,
+              "[um] 99-th quantile error in bandwidth lookup"
+            ],
+            [
+              "DETCOORD",
+              "sky",
+              "MWIR pixels flipped on X to match SWIR view"
+            ],
+            [
+              "COMMENT",
+              "CWAVE is Central wavelength from SpecCal 20250901",
+              ""
+            ],
+            [
+              "COMMENT",
+              "CBAND is Central bandwidth from SpecCal 20250901",
+              ""
+            ],
+            [
+              "HISTORY",
+              "Version 2.2",
+              ""
+            ]
+          ]
+        },
+        {
+          "extension": "CWAVE",
+          "cards": [
+            [
+              "XTENSION",
+              "IMAGE",
+              "Image extension"
+            ],
+            [
+              "BITPIX",
+              -32,
+              "array data type"
+            ],
+            [
+              "NAXIS",
+              2,
+              "number of array dimensions"
+            ],
+            [
+              "NAXIS1",
+              2040,
+              ""
+            ],
+            [
+              "NAXIS2",
+              2040,
+              ""
+            ],
+            [
+              "PCOUNT",
+              0,
+              "number of parameters"
+            ],
+            [
+              "GCOUNT",
+              1,
+              "number of groups"
+            ],
+            [
+              "DETECTOR",
+              2,
+              "1-3: SWIR, 4-6: MWIR"
+            ],
+            [
+              "BUNIT",
+              "um",
+              "Unit"
+            ],
+            [
+              "WCSAXES",
+              2,
+              "Two output axes: wavelength and bandwidth"
+            ],
+            [
+              "WCSNAME",
+              "Approximated per-pixel wavelength and bandwidth",
+              "WCS label"
+            ],
+            [
+              "CTYPE1",
+              "WAVE-TAB",
+              "Bilinear lookup table, FITS Paper 3, Sect 6.1"
+            ],
+            [
+              "CTYPE2",
+              "WAVE-TAB",
+              "Bilinear lookup table, FITS Paper 3, Sect 6.1"
+            ],
+            [
+              "CNAME1",
+              "Wavelength",
+              "First output axis is central wavelength"
+            ],
+            [
+              "CNAME2",
+              "Bandwidth",
+              "Second output axis is bandwidth"
+            ],
+            [
+              "CUNIT1",
+              "um",
+              "Wavelength is reported in microns"
+            ],
+            [
+              "CUNIT2",
+              "um",
+              "Bandpass is reported in microns"
+            ],
+            [
+              "CRPIX1",
+              1,
+              "Lookup table is in raw FITS coordinates"
+            ],
+            [
+              "CRPIX2",
+              1,
+              "Lookup table is in raw FITS coordinates"
+            ],
+            [
+              "CRVAL1",
+              1,
+              "[pixel] Lookup table is in raw FITS coordinates"
+            ],
+            [
+              "CRVAL2",
+              1,
+              "[pixel] Lookup table is in raw FITS coordinates"
+            ],
+            [
+              "CDELT1",
+              1,
+              "[pixel] Lookup table is in raw FITS coordinates"
+            ],
+            [
+              "CDELT2",
+              1,
+              "[pixel] Lookup table is in raw FITS coordinates"
+            ],
+            [
+              "PC1_1",
+              1,
+              ""
+            ],
+            [
+              "PC1_2",
+              0,
+              ""
+            ],
+            [
+              "PC2_1",
+              0,
+              ""
+            ],
+            [
+              "PC2_2",
+              1,
+              ""
+            ],
+            [
+              "PS1_0",
+              "WCS-WAVE",
+              "Extension with wavelength lookup table"
+            ],
+            [
+              "PS2_0",
+              "WCS-WAVE",
+              "Extension with bandwidth lookup table"
+            ],
+            [
+              "PS1_1",
+              "VALUES",
+              "Column with values for wavelength"
+            ],
+            [
+              "PS2_1",
+              "VALUES",
+              "Column with values for bandwidth"
+            ],
+            [
+              "PS1_2",
+              "X",
+              "Column with control points for detector in X"
+            ],
+            [
+              "PS2_2",
+              "Y",
+              "Column with control points for detector in Y"
+            ],
+            [
+              "PV1_3",
+              1,
+              "Index of wavelength in VALUES array"
+            ],
+            [
+              "PV2_3",
+              2,
+              "Index of bandwidth in VALUES array"
+            ],
+            [
+              "EXTNAME",
+              "CWAVE",
+              "extension name"
+            ],
+            [
+              "DETCOORD",
+              "sky",
+              "MWIR pixels flipped on X to match SWIR view"
+            ]
+          ]
+        },
+        {
+          "extension": "CBAND",
+          "cards": [
+            [
+              "XTENSION",
+              "IMAGE",
+              "Image extension"
+            ],
+            [
+              "BITPIX",
+              -32,
+              "array data type"
+            ],
+            [
+              "NAXIS",
+              2,
+              "number of array dimensions"
+            ],
+            [
+              "NAXIS1",
+              2040,
+              ""
+            ],
+            [
+              "NAXIS2",
+              2040,
+              ""
+            ],
+            [
+              "PCOUNT",
+              0,
+              "number of parameters"
+            ],
+            [
+              "GCOUNT",
+              1,
+              "number of groups"
+            ],
+            [
+              "DETECTOR",
+              2,
+              "1-3: SWIR, 4-6: MWIR"
+            ],
+            [
+              "BUNIT",
+              "um",
+              "Unit"
+            ],
+            [
+              "WCSAXES",
+              2,
+              "Two output axes: wavelength and bandwidth"
+            ],
+            [
+              "WCSNAME",
+              "Approximated per-pixel wavelength and bandwidth",
+              "WCS label"
+            ],
+            [
+              "CTYPE1",
+              "WAVE-TAB",
+              "Bilinear lookup table, FITS Paper 3, Sect 6.1"
+            ],
+            [
+              "CTYPE2",
+              "WAVE-TAB",
+              "Bilinear lookup table, FITS Paper 3, Sect 6.1"
+            ],
+            [
+              "CNAME1",
+              "Wavelength",
+              "First output axis is central wavelength"
+            ],
+            [
+              "CNAME2",
+              "Bandwidth",
+              "Second output axis is bandwidth"
+            ],
+            [
+              "CUNIT1",
+              "um",
+              "Wavelength is reported in microns"
+            ],
+            [
+              "CUNIT2",
+              "um",
+              "Bandpass is reported in microns"
+            ],
+            [
+              "CRPIX1",
+              1,
+              "Lookup table is in raw FITS coordinates"
+            ],
+            [
+              "CRPIX2",
+              1,
+              "Lookup table is in raw FITS coordinates"
+            ],
+            [
+              "CRVAL1",
+              1,
+              "[pixel] Lookup table is in raw FITS coordinates"
+            ],
+            [
+              "CRVAL2",
+              1,
+              "[pixel] Lookup table is in raw FITS coordinates"
+            ],
+            [
+              "CDELT1",
+              1,
+              "[pixel] Lookup table is in raw FITS coordinates"
+            ],
+            [
+              "CDELT2",
+              1,
+              "[pixel] Lookup table is in raw FITS coordinates"
+            ],
+            [
+              "PC1_1",
+              1,
+              ""
+            ],
+            [
+              "PC1_2",
+              0,
+              ""
+            ],
+            [
+              "PC2_1",
+              0,
+              ""
+            ],
+            [
+              "PC2_2",
+              1,
+              ""
+            ],
+            [
+              "PS1_0",
+              "WCS-WAVE",
+              "Extension with wavelength lookup table"
+            ],
+            [
+              "PS2_0",
+              "WCS-WAVE",
+              "Extension with bandwidth lookup table"
+            ],
+            [
+              "PS1_1",
+              "VALUES",
+              "Column with values for wavelength"
+            ],
+            [
+              "PS2_1",
+              "VALUES",
+              "Column with values for bandwidth"
+            ],
+            [
+              "PS1_2",
+              "X",
+              "Column with control points for detector in X"
+            ],
+            [
+              "PS2_2",
+              "Y",
+              "Column with control points for detector in Y"
+            ],
+            [
+              "PV1_3",
+              1,
+              "Index of wavelength in VALUES array"
+            ],
+            [
+              "PV2_3",
+              2,
+              "Index of bandwidth in VALUES array"
+            ],
+            [
+              "EXTNAME",
+              "CBAND",
+              "extension name"
+            ],
+            [
+              "DETCOORD",
+              "sky",
+              "MWIR pixels flipped on X to match SWIR view"
+            ]
+          ]
+        },
+        {
+          "extension": "WCS-WAVE",
+          "cards": [
+            [
+              "XTENSION",
+              "BINTABLE",
+              "binary table extension"
+            ],
+            [
+              "BITPIX",
+              8,
+              "array data type"
+            ],
+            [
+              "NAXIS",
+              2,
+              "number of array dimensions"
+            ],
+            [
+              "NAXIS1",
+              1056,
+              "length of dimension 1"
+            ],
+            [
+              "NAXIS2",
+              1,
+              "length of dimension 2"
+            ],
+            [
+              "PCOUNT",
+              0,
+              "number of group parameters"
+            ],
+            [
+              "GCOUNT",
+              1,
+              "number of groups"
+            ],
+            [
+              "TFIELDS",
+              3,
+              "number of table fields"
+            ],
+            [
+              "EXTNAME",
+              "WCS-WAVE",
+              "extension name"
+            ],
+            [
+              "TTYPE1",
+              "X",
+              ""
+            ],
+            [
+              "TFORM1",
+              "11J",
+              ""
+            ],
+            [
+              "TDIM1",
+              "(11)",
+              ""
+            ],
+            [
+              "TTYPE2",
+              "Y",
+              ""
+            ],
+            [
+              "TFORM2",
+              "11J",
+              ""
+            ],
+            [
+              "TDIM2",
+              "(11)",
+              ""
+            ],
+            [
+              "TTYPE3",
+              "VALUES",
+              ""
+            ],
+            [
+              "TFORM3",
+              "242E",
+              ""
+            ],
+            [
+              "TDIM3",
+              "(2,11,11)",
+              ""
+            ]
+          ]
+        }
+      ],
+      "uuid_occurrences": [],
+      "identity_reason": "No independently authenticated mapping from external file identity to observation processing UUID supplied; UUID occurrences alone do not establish identity."
+    }
+  },
+  "observations": [
+    {
+      "filename": "sample_D1_row0.fits",
+      "sha256": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b",
+      "history_uuids": [
+        "15a36c9f-e41f-451f-96a6-fede67db772b",
+        "cd042489-a2c5-49ca-97f5-4bbf880d9900"
+      ],
+      "final_recorded_uuid": "cd042489-a2c5-49ca-97f5-4bbf880d9900",
+      "verified": false,
+      "reason": "External file identity linkage not independently established"
+    },
+    {
+      "filename": "sample_D1_row52.fits",
+      "sha256": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6",
+      "history_uuids": [
+        "cd042489-a2c5-49ca-97f5-4bbf880d9900"
+      ],
+      "final_recorded_uuid": "cd042489-a2c5-49ca-97f5-4bbf880d9900",
+      "verified": false,
+      "reason": "External file identity linkage not independently established"
+    },
+    {
+      "filename": "sample_D2_row136.fits",
+      "sha256": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+      "history_uuids": [
+        "a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+      ],
+      "final_recorded_uuid": "a9cb438e-e37d-4888-a1a5-5a9db6ad0737",
+      "verified": false,
+      "reason": "External file identity linkage not independently established"
+    },
+    {
+      "filename": "sample_D2_row53.fits",
+      "sha256": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+      "history_uuids": [
+        "bd447bc4-4f65-481b-84e9-a5f30a4f8715",
+        "a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+      ],
+      "final_recorded_uuid": "a9cb438e-e37d-4888-a1a5-5a9db6ad0737",
+      "verified": false,
+      "reason": "External file identity linkage not independently established"
+    },
+    {
+      "filename": "sample_D3_row137.fits",
+      "sha256": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b",
+      "history_uuids": [
+        "59b2d69e-bee1-4a58-8f03-8fa4ec553910",
+        "0d47d467-abe7-4583-b55d-3e9357b06aae"
+      ],
+      "final_recorded_uuid": "0d47d467-abe7-4583-b55d-3e9357b06aae",
+      "verified": false,
+      "reason": "External file identity linkage not independently established"
+    },
+    {
+      "filename": "sample_D3_row186.fits",
+      "sha256": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03",
+      "history_uuids": [
+        "0d47d467-abe7-4583-b55d-3e9357b06aae"
+      ],
+      "final_recorded_uuid": "0d47d467-abe7-4583-b55d-3e9357b06aae",
+      "verified": false,
+      "reason": "External file identity linkage not independently established"
+    },
+    {
+      "filename": "sample_D4_row187.fits",
+      "sha256": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa",
+      "history_uuids": [
+        "1303e33f-8b3c-460d-a2d2-042d176e0a8b",
+        "4cf935ad-6e0a-4075-a642-198bc6a728e6"
+      ],
+      "final_recorded_uuid": "4cf935ad-6e0a-4075-a642-198bc6a728e6",
+      "verified": false,
+      "reason": "External file identity linkage not independently established"
+    },
+    {
+      "filename": "sample_D4_row239.fits",
+      "sha256": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b",
+      "history_uuids": [
+        "4cf935ad-6e0a-4075-a642-198bc6a728e6"
+      ],
+      "final_recorded_uuid": "4cf935ad-6e0a-4075-a642-198bc6a728e6",
+      "verified": false,
+      "reason": "External file identity linkage not independently established"
+    },
+    {
+      "filename": "sample_D5_row240.fits",
+      "sha256": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66",
+      "history_uuids": [
+        "a12d3790-e8e8-4d2f-95fc-eaa0efe07af0",
+        "e106c789-52b3-4e5e-b7b2-23dc3aa2f86b"
+      ],
+      "final_recorded_uuid": "e106c789-52b3-4e5e-b7b2-23dc3aa2f86b",
+      "verified": false,
+      "reason": "External file identity linkage not independently established"
+    },
+    {
+      "filename": "sample_D5_row321.fits",
+      "sha256": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd",
+      "history_uuids": [
+        "e106c789-52b3-4e5e-b7b2-23dc3aa2f86b"
+      ],
+      "final_recorded_uuid": "e106c789-52b3-4e5e-b7b2-23dc3aa2f86b",
+      "verified": false,
+      "reason": "External file identity linkage not independently established"
+    },
+    {
+      "filename": "sample_D6_row322.fits",
+      "sha256": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219",
+      "history_uuids": [
+        "272d2e65-1ba5-4089-9401-a33fb100729f",
+        "2dc965d6-bad3-4916-83ca-54e9e9cfcbd3"
+      ],
+      "final_recorded_uuid": "2dc965d6-bad3-4916-83ca-54e9e9cfcbd3",
+      "verified": false,
+      "reason": "External file identity linkage not independently established"
+    }
+  ],
+  "metadata_sources": {
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\spectral_coverage.json": "b53c34f6282359bc4cbde387ef7aa64592920be64baed9605c27f267a1c7f5dc",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\footprint_matches.csv": "62807ef2f52d033ccb6ada1ac83a284ebdd74f24aafbc42b36693c74b8403694",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sampled_wavelengths.csv": "7251aad4f8e0a0fcbeee5b3801be71c8e7c18597353b50dc90e62539246b5382",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\query.adql": "e463f89dd3fc9d0c487bfe47550c827c15f6649d4acf31e50e60fad9f8dd20ad"
+  },
+  "network_requests": 0
+}

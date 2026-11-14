@@ -6,7 +6,7 @@ test-results/
 .venv/
 .test-work/
 
-# Local scientific assets withheld pending redistribution review.
+# Unreviewed scientific files stay ignored; only the630 explicitly cleared manifest paths are force-added and tracked.
 /public/
 /tests/fixtures/
 /.local-data/

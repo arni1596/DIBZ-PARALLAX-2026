@@ -38,3 +38,8 @@
 - Neither a passing local build nor a NASA URL automatically resolves submission/IP requirements.
 
 **Acceptance gate:** Only mark complete when an actual rights-evidence matrix exists, all assets necessary for the promised public experience are marked CLEARED with appropriate attribution, their hashes match, and the resulting site is tested with the legally provisioned bundle.
+
+
+## Verified closure — November14,2026
+
+The preceding hold statements document the initial state. They are superseded for the enumerated630 scientific files by ASSET_RIGHTS_DECISIONS.csv and ../release/PARALLAX_ASSET_RIGHTS_SUMMARY.md:630CLEARED,0HOLD,0EXCLUDE,114,751,955bytes. New decisive evidence: IRSA public-data terms and full M101 remote/local byte equality. Do not infer a M101 release DOI, calibration validation, original application license or competition eligibility. The preserved630-file bytes/hashes remain unchanged.

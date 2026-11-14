@@ -1,0 +1,15 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/data/demos/notebooks/spherex/M101_irsa.fits",
+  "retrievalUtc": "2026-11-14T21:44:33.856437+00:00",
+  "status": 200,
+  "finalUrl": "https://irsa.ipac.caltech.edu/data/demos/notebooks/spherex/M101_irsa.fits",
+  "headers": {
+    "Content-Type": "application/fits",
+    "Content-Length": "87295680",
+    "Last-Modified": "Fri, 26 Jun 2026 20:16:39 GMT",
+    "ETag": "\"53406c0-6552dc94989e5\""
+  },
+  "bytes": 87295680,
+  "sha256": "44e89f460c55f46f7e384ba7dfe8927fa8e56163875aba3766499a5646813447",
+  "matchesKnownLocal": true
+}

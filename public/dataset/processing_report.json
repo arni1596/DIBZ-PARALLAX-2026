@@ -1,0 +1,918 @@
+{
+  "schema_version": 1,
+  "status": "PASSED_COVERAGE_AND_ASSET_ACCEPTANCE_WITH_LIMITATIONS",
+  "dataset_ready_for_exploratory_interface": true,
+  "final_public_website_implemented": false,
+  "summary": {
+    "official_channels": 102,
+    "image_planes": 102,
+    "visualization_assets": 102,
+    "channels_with_visualization_at_target": 102,
+    "channels_with_positive_hits_at_target": 102,
+    "channels_with_full_frame_visualization": 0,
+    "channels_with_partial_frame_visualization": 102,
+    "scientifically_verified_channels": 0,
+    "dated_exposures": 11,
+    "enabled_time_comparisons": 0
+  },
+  "stop_conditions": {
+    "cube_load_failed": false,
+    "required_extension_missing": false,
+    "ordering_unconfirmed": false
+  },
+  "acceptance": {
+    "exactly_102_official_channels": true,
+    "all_images_from_original_cube": true,
+    "all_wavelengths_match_cube_metadata": true,
+    "all_assets_have_real_planes": true,
+    "all_missing_rejected_pixels_transparent": true,
+    "all_channels_have_region_hit_flag_assessments": true,
+    "numerical_assets_lossless": true,
+    "identical_sky_framing": true,
+    "input_hashes_unchanged": true,
+    "no_unsupported_science_or_variability_claim": true,
+    "deterministic_algorithm_and_assets": true,
+    "full_second_run_hash_verification": "See verification_results.json from verify_dataset.py"
+  },
+  "per_channel_tests": [
+    {
+      "global_channel": 1,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 2,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 3,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 4,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 5,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 6,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 7,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 8,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 9,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 10,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 11,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 12,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 13,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 14,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 15,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 16,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 17,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 18,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 19,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 20,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 21,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 22,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 23,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 24,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 25,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 26,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 27,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 28,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 29,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 30,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 31,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 32,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 33,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 34,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 35,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 36,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 37,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 38,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 39,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 40,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 41,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 42,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 43,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 44,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 45,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 46,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 47,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 48,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 49,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 50,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 51,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 52,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 53,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 54,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 55,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 56,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 57,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 58,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 59,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 60,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 61,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 62,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 63,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 64,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 65,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 66,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 67,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 68,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 69,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 70,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 71,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 72,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 73,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 74,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 75,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 76,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 77,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 78,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 79,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 80,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 81,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 82,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 83,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 84,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 85,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 86,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 87,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 88,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 89,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 90,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 91,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 92,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 93,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 94,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 95,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 96,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 97,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 98,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 99,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 100,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 101,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    },
+    {
+      "global_channel": 102,
+      "numerical_IMAGE_NHITS_FLAGS_roundtrip": true,
+      "png_matches_source_and_mask": true,
+      "no_filled_missing_pixels": true,
+      "wavelength_matches_cube_lookup": true,
+      "image_path_has_asset": true
+    }
+  ],
+  "wcs_warnings": [
+    "The WCS transformation has more axes (4) than the image it is associated with (3)"
+  ],
+  "warnings": [
+    "No source receipt, authenticated remote checksum, job parameters, exposure list, processing date, archive release or calibration UUID lineage is embedded in the cube.",
+    "NHITS counts per-pixel contributing images; it is neither a distinct exposure inventory nor integration time.",
+    "Mosaic tool version v4.2 does not establish archive release.",
+    "Not every sky pixel has data or passes visualization masking in every plane.",
+    "Shared mosaic WCS is a common grid, not independent certification of astrometric accuracy.",
+    "Conservative OR-based masking does not certify remaining pixels for science.",
+    "Zero flags do not restore unpropagated source-level quality information.",
+    "No flux, SED, line, discovery or variability claim is certified.",
+    "Reference regions are coverage tests, not validated photometry or blank sky."
+  ],
+  "input_hashes_before": {
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-M101-cube\\M101_irsa.fits": "44e89f460c55f46f7e384ba7dfe8927fa8e56163875aba3766499a5646813447",
+    "C:\\Users\\ishan\\Downloads\\spectral_channels_spx_cal-sch-v1-2026-106.fits.gz": "b0fa238dcbc5bcbfcc786b35676cd9e0c735ab2e10e234d3a05f7d327ab9b095",
+    "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\observations_11.csv": "4850de265227a38aec206da9d6591ad4614b8e340294f2fb87df86ee070cb235",
+    "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\validation_report.json": "3aa48a636e93093139892d6f2af66924b0f4045b42cea1ff9bac519cebf2a989",
+    "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\calibration_provenance.json": "c1b46dd938dd8695aaa35e61e7e4cca25d3865dd73a910cc7a80e72e4ca11d2a",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\spectral_coverage.json": "b53c34f6282359bc4cbde387ef7aa64592920be64baed9605c27f267a1c7f5dc",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row0.fits": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row52.fits": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row136.fits": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row53.fits": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row137.fits": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row186.fits": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row187.fits": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row239.fits": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row240.fits": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row321.fits": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D6_row322.fits": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219"
+  },
+  "input_hashes_after": {
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-M101-cube\\M101_irsa.fits": "44e89f460c55f46f7e384ba7dfe8927fa8e56163875aba3766499a5646813447",
+    "C:\\Users\\ishan\\Downloads\\spectral_channels_spx_cal-sch-v1-2026-106.fits.gz": "b0fa238dcbc5bcbfcc786b35676cd9e0c735ab2e10e234d3a05f7d327ab9b095",
+    "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\observations_11.csv": "4850de265227a38aec206da9d6591ad4614b8e340294f2fb87df86ee070cb235",
+    "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\validation_report.json": "3aa48a636e93093139892d6f2af66924b0f4045b42cea1ff9bac519cebf2a989",
+    "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\calibration_provenance.json": "c1b46dd938dd8695aaa35e61e7e4cca25d3865dd73a910cc7a80e72e4ca11d2a",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\spectral_coverage.json": "b53c34f6282359bc4cbde387ef7aa64592920be64baed9605c27f267a1c7f5dc",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row0.fits": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row52.fits": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row136.fits": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row53.fits": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row137.fits": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row186.fits": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row187.fits": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row239.fits": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row240.fits": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row321.fits": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D6_row322.fits": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219"
+  },
+  "software": {
+    "python": "3.14.0",
+    "numpy": "2.5.4",
+    "astropy": "8.0.2",
+    "zlib": "1.3.1.zlib-ng",
+    "generator_sha256": "a436cad88ac78d7172f152ac41fc09d1cd3e1dd8c9fc66016c339ce11c1fc542"
+  },
+  "network_requests_by_generator": 0,
+  "detector_pixel_mapping_repeated": false,
+  "observations_downloaded": 0,
+  "failures": []
+}

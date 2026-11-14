@@ -9,3 +9,6 @@ tests/fixtures/** -text
 *.f64 binary
 *.u32 binary
 *.u8 binary
+
+# Preserve approved legacy runtime numerical/metadata bytes as well.
+public/data/** -text

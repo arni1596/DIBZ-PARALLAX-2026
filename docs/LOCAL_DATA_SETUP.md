@@ -1,3 +1,5 @@
+> **Superseded for the current630-file data release:** assets are included in the collaboration branch under the evidence/terms in ../release/PARALLAX_ASSET_RIGHTS_SUMMARY.md. Use ../release/PARALLAX_DATA_INSTALL.md. The earlier source-only restrictions below are preserved as historical context; original provenance/JSON is not rewritten.
+
 # Scientific asset provisioning — local only
 
 No dataset redistribution authorization is recorded. The branch intentionally excludes `public/` and `tests/fixtures/`. All exact630 relative paths, native byte sizes and SHA-256 values are in LOCAL_ASSET_REQUIREMENTS.json. This preserves the distinction between source review and a data-enabled working copy. Do not commit these files or upload an entire local release archive, whose history/assets may include restricted data.

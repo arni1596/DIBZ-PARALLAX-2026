@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-14T21:48:47.348387+00:00",
+  "M101ParentHash": "44e89f460c55f46f7e384ba7dfe8927fa8e56163875aba3766499a5646813447",
+  "numericalArrayFilesDirectlyMatchedToRemoteParent": 306,
+  "planes": 102,
+  "externalSpectralTableColumnsMatchedToPublicCube": [
+    "DETECTOR",
+    "SUBCHAN",
+    "WAVELENGTH",
+    "WL_MIN",
+    "WL_MAX",
+    "BANDWIDTH",
+    "R",
+    "R_STD"
+  ],
+  "note": "PNG/mask correctness is checked by existing Node tests. Matching identity does not assign an archive release/DOI or validate astronomical measurements."
+}

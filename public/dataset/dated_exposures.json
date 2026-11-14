@@ -1,0 +1,3520 @@
+{
+  "product_kind": "dated_exposures_separate_from_mosaic",
+  "exposures": [
+    {
+      "filename": "sample_D1_row0.fits",
+      "sha256": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b",
+      "errors": [],
+      "warnings": [
+        "No matching external detector calibration supplied"
+      ],
+      "CHANNEL_ASSIGNED_PROVISIONAL": true,
+      "CWAVE_CROSSCHECK_PASSED": false,
+      "CALIBRATION_PROVENANCE_VERIFIED": false,
+      "MISSING_EXTERNAL_CALIBRATION": true,
+      "FAILED_CHANNEL_LOOKUP": false,
+      "USABLE_FOR_SCIENCE": false,
+      "image_available": true,
+      "flags_available": true,
+      "detector": 1,
+      "image_dimensions_xy": [
+        23,
+        23
+      ],
+      "observation_id": "2025W21_1B_0485_2",
+      "observation_timestamp": "2025-05-21T12:21:34.537",
+      "mjd_obs": 60816.514983067,
+      "pipeline_version": "6.4+psffix1",
+      "detcoord": "sky",
+      "alternate_a": {
+        "WCSAXESA": 2,
+        "CRPIX1A": -1613.0,
+        "CRPIX2A": -1963.0,
+        "CDELT1A": 1.0,
+        "CDELT2A": 1.0,
+        "CUNIT1A": "pixel",
+        "CUNIT2A": "pixel",
+        "CTYPE1A": "LINEAR",
+        "CTYPE2A": "LINEAR",
+        "CRVAL1A": 0.0,
+        "CRVAL2A": 0.0,
+        "LATPOLEA": 90.0,
+        "WCSNAMEA": "0-based active pixel coordinates"
+      },
+      "alternate_w": {
+        "WCSAXESW": 2,
+        "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+        "CNAME1W": "Wavelength",
+        "CNAME2W": "Bandwidth",
+        "CRPIX1W": -1613.0,
+        "CRPIX2W": -1963.0,
+        "CDELT1W": 1,
+        "CDELT2W": 1,
+        "CUNIT1W": "um",
+        "CUNIT2W": "um",
+        "CTYPE1W": "WAVE-TAB",
+        "CTYPE2W": "WAVE-TAB",
+        "CRVAL1W": 1,
+        "CRVAL2W": 1,
+        "PV1_3W": 1,
+        "PV2_3W": 2,
+        "PS1_0W": "WCS-WAVE",
+        "PS2_0W": "WCS-WAVE",
+        "PS1_1W": "VALUES",
+        "PS2_1W": "VALUES",
+        "PS1_2W": "X",
+        "PS2_2W": "Y"
+      },
+      "approximate_spectral_wcs_present": true,
+      "spectral_wcs_history": [
+        "[CALIB] spectral_wcs 15a36c9f-e41f-451f-96a6-fede67db772b",
+        "[CALIB] spectral_wcs 15a36c9f-e41f-451f-96a6-fede67db772b",
+        "[CALIB] spectral_wcs cd042489-a2c5-49ca-97f5-4bbf880d9900"
+      ],
+      "spectral_wcs_uuids": [
+        "15a36c9f-e41f-451f-96a6-fede67db772b",
+        "cd042489-a2c5-49ca-97f5-4bbf880d9900"
+      ],
+      "final_recorded_spectral_wcs_uuid": "cd042489-a2c5-49ca-97f5-4bbf880d9900",
+      "inventory_metadata": {
+        "row": "0",
+        "band": "SPHEREx-D1",
+        "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W21_1B/l2b-v20-2025-248/1/level2_2025W21_1B_0485_2D1_spx_l2b-v20-2025-248.fits",
+        "time_start": "60816.514983",
+        "time_end": "60816.516315",
+        "provenance_version": "6.4",
+        "version": "6.4+psffix1",
+        "wavelength_um": "0.7484803688911392",
+        "bandwidth_um": "0.0176653394139452",
+        "status": "MEASURED_VISUALIZATION_WCS",
+        "fits_sha256": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b",
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W21_1B/l2b-v20-2025-248/1/level2_2025W21_1B_0485_2D1_spx_l2b-v20-2025-248.fits?center=210.802270000,54.348950000d&size=0.04",
+        "error": ""
+      },
+      "archive_release": "qr2",
+      "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W21_1B/l2b-v20-2025-248/1/level2_2025W21_1B_0485_2D1_spx_l2b-v20-2025-248.fits",
+      "reference_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "position_kind": "saved_M101_reference",
+      "cutout_xy_fractional": [
+        10.778883631242113,
+        11.247073778212048
+      ],
+      "cutout_center_xy": [
+        11.0,
+        11.0
+      ],
+      "detector_xy_fractional": [
+        1624.778883631242,
+        1975.247073778212
+      ],
+      "detector_xy_selected": [
+        1625,
+        1975
+      ],
+      "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+      "near_pixel_boundary": false,
+      "alternate_a_simplified_formula_valid": true,
+      "flags_at_selected_cutout_pixel": 2097152,
+      "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+      "l1dqaflg": "Pass",
+      "l2dqaflg": "Pass",
+      "approximate_wavelength_um": 0.7484803688911392,
+      "approximate_bandwidth_um": 0.0176653394139452,
+      "subchannel": 1,
+      "global_channel": 1,
+      "nominal_wavelength_um": 0.753000020980835,
+      "wl_min_um": 0.7429999709129333,
+      "wl_max_um": 0.7620000243186951,
+      "nominal_bandwidth_um": 0.017999999225139618,
+      "R": 42.0,
+      "R_STD": 1.100000023841858,
+      "channel_map_value": 1,
+      "cwave_um": null,
+      "cband_um": null,
+      "channel_map_orientation_agrees": true,
+      "channel_map_version_linkage_verified": false,
+      "near_channel_boundary": false,
+      "external_wavelength_status": "CWAVE_NOT_AVAILABLE",
+      "external_values_valid": null,
+      "cwave_in_nominal_interval": null,
+      "external_detector_agrees": null,
+      "external_orientation_agrees": null,
+      "cwave_minus_approx_um": null,
+      "cband_minus_approx_um": null,
+      "spatial_registration": {
+        "status": "NATIVE_WCS_ONLY_NOT_INDEPENDENTLY_REGISTERED",
+        "footprint_corners_ra_dec_deg": [
+          [
+            210.79803892344742,
+            54.375137684333616
+          ],
+          [
+            210.75710663042784,
+            54.3458940773515
+          ],
+          [
+            210.80844314582785,
+            54.32295401989494
+          ],
+          [
+            210.84938366259212,
+            54.352182167731414
+          ]
+        ],
+        "pixel_scale_arcsec": [
+          6.157319032989391,
+          6.153337139978683
+        ],
+        "residual_pixels": null,
+        "reprojected": false
+      },
+      "timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "product_kind": "dated_single_exposure_cutout",
+      "source_reference": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row0.fits",
+        "sha256": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b"
+      },
+      "preview": {
+        "path": "exposure_previews/sample_D1_row0.png",
+        "sha256": "a99cc0c0f6a002b0dcfe7d74613ff446ee2f5e2af19f81caa6d2eaec9e3cd8c5",
+        "byte_length": 709,
+        "source_fits_sha256": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b",
+        "display_method": "Per-exposure linear 1st/99th percentile grayscale, native pixels, finite mask only",
+        "low": 0.6691096544265747,
+        "high": 4.817248401641858,
+        "unit": "MJy / sr",
+        "quality_status": "EXPOSURE_FLAGS_UNASSESSED_INSPECTION_ONLY",
+        "registration_status": "NATIVE_GRID_NOT_REGISTERED",
+        "compare_brightness_across_previews": false
+      }
+    },
+    {
+      "filename": "sample_D1_row52.fits",
+      "sha256": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6",
+      "errors": [],
+      "warnings": [
+        "No matching external detector calibration supplied"
+      ],
+      "CHANNEL_ASSIGNED_PROVISIONAL": true,
+      "CWAVE_CROSSCHECK_PASSED": false,
+      "CALIBRATION_PROVENANCE_VERIFIED": false,
+      "MISSING_EXTERNAL_CALIBRATION": true,
+      "FAILED_CHANNEL_LOOKUP": false,
+      "USABLE_FOR_SCIENCE": false,
+      "image_available": true,
+      "flags_available": true,
+      "detector": 1,
+      "image_dimensions_xy": [
+        23,
+        23
+      ],
+      "observation_id": "2026W25_1A_0614_1",
+      "observation_timestamp": "2026-06-18T00:38:42.293",
+      "mjd_obs": 61209.026878391,
+      "pipeline_version": "6.5.7",
+      "detcoord": "sky",
+      "alternate_a": {
+        "WCSAXESA": 2,
+        "CRPIX1A": -1469.0,
+        "CRPIX2A": -746.0,
+        "CDELT1A": 1.0,
+        "CDELT2A": 1.0,
+        "CUNIT1A": "pixel",
+        "CUNIT2A": "pixel",
+        "CTYPE1A": "LINEAR",
+        "CTYPE2A": "LINEAR",
+        "CRVAL1A": 0.0,
+        "CRVAL2A": 0.0,
+        "LATPOLEA": 90.0,
+        "WCSNAMEA": "0-based active pixel coordinates"
+      },
+      "alternate_w": {
+        "WCSAXESW": 2,
+        "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+        "CNAME1W": "Wavelength",
+        "CNAME2W": "Bandwidth",
+        "CRPIX1W": -1469.0,
+        "CRPIX2W": -746.0,
+        "CDELT1W": 1,
+        "CDELT2W": 1,
+        "CUNIT1W": "um",
+        "CUNIT2W": "um",
+        "CTYPE1W": "WAVE-TAB",
+        "CTYPE2W": "WAVE-TAB",
+        "CRVAL1W": 1,
+        "CRVAL2W": 1,
+        "PV1_3W": 1,
+        "PV2_3W": 2,
+        "PS1_0W": "WCS-WAVE",
+        "PS2_0W": "WCS-WAVE",
+        "PS1_1W": "VALUES",
+        "PS2_1W": "VALUES",
+        "PS1_2W": "X",
+        "PS2_2W": "Y"
+      },
+      "approximate_spectral_wcs_present": true,
+      "spectral_wcs_history": [
+        "[CALIB] spectral_wcs cd042489-a2c5-49ca-97f5-4bbf880d9900",
+        "[CALIB] spectral_wcs cd042489-a2c5-49ca-97f5-4bbf880d9900"
+      ],
+      "spectral_wcs_uuids": [
+        "cd042489-a2c5-49ca-97f5-4bbf880d9900"
+      ],
+      "final_recorded_spectral_wcs_uuid": "cd042489-a2c5-49ca-97f5-4bbf880d9900",
+      "inventory_metadata": {
+        "row": "52",
+        "band": "SPHEREx-D1",
+        "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W25_1A/l2b-v25-2026-172/1/level2_2026W25_1A_0614_1D1_spx_l2b-v25-2026-172.fits",
+        "time_start": "61209.026878",
+        "time_end": "61209.028211",
+        "provenance_version": "6.5.7",
+        "version": "6.5.7",
+        "wavelength_um": "0.9566945260553066",
+        "bandwidth_um": "0.02434181680717791",
+        "status": "MEASURED_VISUALIZATION_WCS",
+        "fits_sha256": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6",
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W25_1A/l2b-v25-2026-172/1/level2_2026W25_1A_0614_1D1_spx_l2b-v25-2026-172.fits?center=210.802270000,54.348950000d&size=0.04",
+        "error": ""
+      },
+      "archive_release": "qr2",
+      "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W25_1A/l2b-v25-2026-172/1/level2_2026W25_1A_0614_1D1_spx_l2b-v25-2026-172.fits",
+      "reference_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "position_kind": "saved_M101_reference",
+      "cutout_xy_fractional": [
+        10.714312580846187,
+        11.163224744145776
+      ],
+      "cutout_center_xy": [
+        11.0,
+        11.0
+      ],
+      "detector_xy_fractional": [
+        1480.7143125808461,
+        758.1632247441457
+      ],
+      "detector_xy_selected": [
+        1481,
+        758
+      ],
+      "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+      "near_pixel_boundary": false,
+      "alternate_a_simplified_formula_valid": true,
+      "flags_at_selected_cutout_pixel": 2097152,
+      "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+      "l1dqaflg": "Pass",
+      "l2dqaflg": "Pass",
+      "approximate_wavelength_um": 0.9566945260553066,
+      "approximate_bandwidth_um": 0.02434181680717791,
+      "subchannel": 11,
+      "global_channel": 11,
+      "nominal_wavelength_um": 0.9549999833106995,
+      "wl_min_um": 0.9419999718666077,
+      "wl_max_um": 0.9670000076293945,
+      "nominal_bandwidth_um": 0.02500000037252903,
+      "R": 39.0,
+      "R_STD": 0.5,
+      "channel_map_value": 11,
+      "cwave_um": null,
+      "cband_um": null,
+      "channel_map_orientation_agrees": true,
+      "channel_map_version_linkage_verified": false,
+      "near_channel_boundary": false,
+      "external_wavelength_status": "CWAVE_NOT_AVAILABLE",
+      "external_values_valid": null,
+      "cwave_in_nominal_interval": null,
+      "external_detector_agrees": null,
+      "external_orientation_agrees": null,
+      "cwave_minus_approx_um": null,
+      "cband_minus_approx_um": null,
+      "spatial_registration": {
+        "status": "NATIVE_WCS_ONLY_NOT_INDEPENDENTLY_REGISTERED",
+        "footprint_corners_ra_dec_deg": [
+          [
+            210.79778944979168,
+            54.374823590388964
+          ],
+          [
+            210.75736874414403,
+            54.34559073693979
+          ],
+          [
+            210.80867361118516,
+            54.32291787860921
+          ],
+          [
+            210.84910357329204,
+            54.35213523689579
+          ]
+        ],
+        "pixel_scale_arcsec": [
+          6.158564383244922,
+          6.151062239284022
+        ],
+        "residual_pixels": null,
+        "reprojected": false
+      },
+      "timestamp_utc": "2026-06-18T00:38:42.293Z",
+      "product_kind": "dated_single_exposure_cutout",
+      "source_reference": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row52.fits",
+        "sha256": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6"
+      },
+      "preview": {
+        "path": "exposure_previews/sample_D1_row52.png",
+        "sha256": "95e6db7658656774bf35d7987bb0d76cc1c8006d48f6add51f71a0201c276d19",
+        "byte_length": 712,
+        "source_fits_sha256": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6",
+        "display_method": "Per-exposure linear 1st/99th percentile grayscale, native pixels, finite mask only",
+        "low": 0.8104232716560363,
+        "high": 5.754172134399427,
+        "unit": "MJy / sr",
+        "quality_status": "EXPOSURE_FLAGS_UNASSESSED_INSPECTION_ONLY",
+        "registration_status": "NATIVE_GRID_NOT_REGISTERED",
+        "compare_brightness_across_previews": false
+      }
+    },
+    {
+      "filename": "sample_D2_row136.fits",
+      "sha256": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+      "errors": [],
+      "warnings": [],
+      "CHANNEL_ASSIGNED_PROVISIONAL": true,
+      "CWAVE_CROSSCHECK_PASSED": true,
+      "CALIBRATION_PROVENANCE_VERIFIED": false,
+      "MISSING_EXTERNAL_CALIBRATION": false,
+      "FAILED_CHANNEL_LOOKUP": false,
+      "USABLE_FOR_SCIENCE": false,
+      "image_available": true,
+      "flags_available": true,
+      "detector": 2,
+      "image_dimensions_xy": [
+        24,
+        23
+      ],
+      "observation_id": "2026W26_1A_0500_1",
+      "observation_timestamp": "2026-06-24T03:19:00.063",
+      "mjd_obs": 61215.138195174,
+      "pipeline_version": "6.5.7",
+      "detcoord": "sky",
+      "alternate_a": {
+        "WCSAXESA": 2,
+        "CRPIX1A": -25.0,
+        "CRPIX2A": -534.0,
+        "CDELT1A": 1.0,
+        "CDELT2A": 1.0,
+        "CUNIT1A": "pixel",
+        "CUNIT2A": "pixel",
+        "CTYPE1A": "LINEAR",
+        "CTYPE2A": "LINEAR",
+        "CRVAL1A": 0.0,
+        "CRVAL2A": 0.0,
+        "LATPOLEA": 90.0,
+        "WCSNAMEA": "0-based active pixel coordinates"
+      },
+      "alternate_w": {
+        "WCSAXESW": 2,
+        "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+        "CNAME1W": "Wavelength",
+        "CNAME2W": "Bandwidth",
+        "CRPIX1W": -25.0,
+        "CRPIX2W": -534.0,
+        "CDELT1W": 1,
+        "CDELT2W": 1,
+        "CUNIT1W": "um",
+        "CUNIT2W": "um",
+        "CTYPE1W": "WAVE-TAB",
+        "CTYPE2W": "WAVE-TAB",
+        "CRVAL1W": 1,
+        "CRVAL2W": 1,
+        "PV1_3W": 1,
+        "PV2_3W": 2,
+        "PS1_0W": "WCS-WAVE",
+        "PS2_0W": "WCS-WAVE",
+        "PS1_1W": "VALUES",
+        "PS2_1W": "VALUES",
+        "PS1_2W": "X",
+        "PS2_2W": "Y"
+      },
+      "approximate_spectral_wcs_present": true,
+      "spectral_wcs_history": [
+        "[CALIB] spectral_wcs a9cb438e-e37d-4888-a1a5-5a9db6ad0737",
+        "[CALIB] spectral_wcs a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+      ],
+      "spectral_wcs_uuids": [
+        "a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+      ],
+      "final_recorded_spectral_wcs_uuid": "a9cb438e-e37d-4888-a1a5-5a9db6ad0737",
+      "inventory_metadata": {
+        "row": "136",
+        "band": "SPHEREx-D2",
+        "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W26_1A/l2b-v25-2026-180/2/level2_2026W26_1A_0500_1D2_spx_l2b-v25-2026-180.fits",
+        "time_start": "61215.138195",
+        "time_end": "61215.139528",
+        "provenance_version": "6.5.7",
+        "version": "6.5.7",
+        "wavelength_um": "1.489988171739384",
+        "bandwidth_um": "0.03645982019042382",
+        "status": "MEASURED_VISUALIZATION_WCS",
+        "fits_sha256": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W26_1A/l2b-v25-2026-180/2/level2_2026W26_1A_0500_1D2_spx_l2b-v25-2026-180.fits?center=210.802270000,54.348950000d&size=0.04",
+        "error": ""
+      },
+      "archive_release": "qr2",
+      "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W26_1A/l2b-v25-2026-180/2/level2_2026W26_1A_0500_1D2_spx_l2b-v25-2026-180.fits",
+      "reference_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "position_kind": "saved_M101_reference",
+      "cutout_xy_fractional": [
+        11.814901481031805,
+        11.094652738394064
+      ],
+      "cutout_center_xy": [
+        11.5,
+        11.0
+      ],
+      "detector_xy_fractional": [
+        37.814901481031804,
+        546.0946527383941
+      ],
+      "detector_xy_selected": [
+        38,
+        546
+      ],
+      "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+      "near_pixel_boundary": false,
+      "alternate_a_simplified_formula_valid": true,
+      "flags_at_selected_cutout_pixel": 2097152,
+      "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+      "l1dqaflg": "Pass",
+      "l2dqaflg": "Pass",
+      "approximate_wavelength_um": 1.489988171739384,
+      "approximate_bandwidth_um": 0.03645982019042382,
+      "subchannel": 13,
+      "global_channel": 30,
+      "nominal_wavelength_um": 1.4809999465942383,
+      "wl_min_um": 1.4609999656677246,
+      "wl_max_um": 1.5,
+      "nominal_bandwidth_um": 0.035999998450279236,
+      "R": 41.0,
+      "R_STD": 0.30000001192092896,
+      "channel_map_value": 13,
+      "cwave_um": 1.489738941192627,
+      "cband_um": 0.03702513128519058,
+      "channel_map_orientation_agrees": true,
+      "channel_map_version_linkage_verified": false,
+      "near_channel_boundary": false,
+      "external_wavelength_status": "EXTERNAL_CWAVE_MEASURED_PROVENANCE_UNVERIFIED",
+      "external_values_valid": true,
+      "cwave_in_nominal_interval": true,
+      "external_detector_agrees": true,
+      "external_orientation_agrees": true,
+      "cwave_minus_approx_um": -0.0002492305467569622,
+      "cband_minus_approx_um": 0.0005653110947667628,
+      "spatial_registration": {
+        "status": "NATIVE_WCS_ONLY_NOT_INDEPENDENTLY_REGISTERED",
+        "footprint_corners_ra_dec_deg": [
+          [
+            210.7971424850566,
+            54.376172938119666
+          ],
+          [
+            210.75496336727616,
+            54.347855429725605
+          ],
+          [
+            210.8063448540325,
+            54.32265753798698
+          ],
+          [
+            210.84852907572298,
+            54.350959052143956
+          ]
+        ],
+        "pixel_scale_arcsec": [
+          6.126292106349048,
+          6.143859819922099
+        ],
+        "residual_pixels": null,
+        "reprojected": false
+      },
+      "timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "product_kind": "dated_single_exposure_cutout",
+      "source_reference": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row136.fits",
+        "sha256": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604"
+      },
+      "preview": {
+        "path": "exposure_previews/sample_D2_row136.png",
+        "sha256": "4b3dc4fe71405f5a7791b32f070cc3b825f596f711450b2bd0ec90a5434b186b",
+        "byte_length": 722,
+        "source_fits_sha256": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+        "display_method": "Per-exposure linear 1st/99th percentile grayscale, native pixels, finite mask only",
+        "low": 1.0118060672283173,
+        "high": 8.395218858718879,
+        "unit": "MJy / sr",
+        "quality_status": "EXPOSURE_FLAGS_UNASSESSED_INSPECTION_ONLY",
+        "registration_status": "NATIVE_GRID_NOT_REGISTERED",
+        "compare_brightness_across_previews": false
+      }
+    },
+    {
+      "filename": "sample_D2_row53.fits",
+      "sha256": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+      "errors": [],
+      "warnings": [],
+      "CHANNEL_ASSIGNED_PROVISIONAL": true,
+      "CWAVE_CROSSCHECK_PASSED": true,
+      "CALIBRATION_PROVENANCE_VERIFIED": false,
+      "MISSING_EXTERNAL_CALIBRATION": false,
+      "FAILED_CHANNEL_LOOKUP": false,
+      "USABLE_FOR_SCIENCE": false,
+      "image_available": true,
+      "flags_available": true,
+      "detector": 2,
+      "image_dimensions_xy": [
+        23,
+        23
+      ],
+      "observation_id": "2025W19_2B_0346_1",
+      "observation_timestamp": "2025-05-10T17:04:37.741",
+      "mjd_obs": 60805.711547928,
+      "pipeline_version": "6.4+psffix1",
+      "detcoord": "sky",
+      "alternate_a": {
+        "WCSAXESA": 2,
+        "CRPIX1A": -1771.0,
+        "CRPIX2A": -463.0,
+        "CDELT1A": 1.0,
+        "CDELT2A": 1.0,
+        "CUNIT1A": "pixel",
+        "CUNIT2A": "pixel",
+        "CTYPE1A": "LINEAR",
+        "CTYPE2A": "LINEAR",
+        "CRVAL1A": 0.0,
+        "CRVAL2A": 0.0,
+        "LATPOLEA": 90.0,
+        "WCSNAMEA": "0-based active pixel coordinates"
+      },
+      "alternate_w": {
+        "WCSAXESW": 2,
+        "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+        "CNAME1W": "Wavelength",
+        "CNAME2W": "Bandwidth",
+        "CRPIX1W": -1771.0,
+        "CRPIX2W": -463.0,
+        "CDELT1W": 1,
+        "CDELT2W": 1,
+        "CUNIT1W": "um",
+        "CUNIT2W": "um",
+        "CTYPE1W": "WAVE-TAB",
+        "CTYPE2W": "WAVE-TAB",
+        "CRVAL1W": 1,
+        "CRVAL2W": 1,
+        "PV1_3W": 1,
+        "PV2_3W": 2,
+        "PS1_0W": "WCS-WAVE",
+        "PS2_0W": "WCS-WAVE",
+        "PS1_1W": "VALUES",
+        "PS2_1W": "VALUES",
+        "PS1_2W": "X",
+        "PS2_2W": "Y"
+      },
+      "approximate_spectral_wcs_present": true,
+      "spectral_wcs_history": [
+        "[CALIB] spectral_wcs bd447bc4-4f65-481b-84e9-a5f30a4f8715",
+        "[CALIB] spectral_wcs bd447bc4-4f65-481b-84e9-a5f30a4f8715",
+        "[CALIB] spectral_wcs a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+      ],
+      "spectral_wcs_uuids": [
+        "bd447bc4-4f65-481b-84e9-a5f30a4f8715",
+        "a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+      ],
+      "final_recorded_spectral_wcs_uuid": "a9cb438e-e37d-4888-a1a5-5a9db6ad0737",
+      "inventory_metadata": {
+        "row": "53",
+        "band": "SPHEREx-D2",
+        "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/2/level2_2025W19_2B_0346_1D2_spx_l2b-v20-2025-247.fits",
+        "time_start": "60805.711548",
+        "time_end": "60805.71288",
+        "provenance_version": "6.4",
+        "version": "6.4+psffix1",
+        "wavelength_um": "1.50641873138115",
+        "bandwidth_um": "0.03695268870639086",
+        "status": "MEASURED_VISUALIZATION_WCS",
+        "fits_sha256": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/2/level2_2025W19_2B_0346_1D2_spx_l2b-v20-2025-247.fits?center=210.802270000,54.348950000d&size=0.04",
+        "error": ""
+      },
+      "archive_release": "qr2",
+      "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/2/level2_2025W19_2B_0346_1D2_spx_l2b-v20-2025-247.fits",
+      "reference_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "position_kind": "saved_M101_reference",
+      "cutout_xy_fractional": [
+        10.924705056147175,
+        10.506868791049214
+      ],
+      "cutout_center_xy": [
+        11.0,
+        11.0
+      ],
+      "detector_xy_fractional": [
+        1782.924705056147,
+        474.5068687910492
+      ],
+      "detector_xy_selected": [
+        1783,
+        475
+      ],
+      "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+      "near_pixel_boundary": true,
+      "alternate_a_simplified_formula_valid": true,
+      "flags_at_selected_cutout_pixel": 2097152,
+      "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+      "l1dqaflg": "Pass",
+      "l2dqaflg": "Pass",
+      "approximate_wavelength_um": 1.50641873138115,
+      "approximate_bandwidth_um": 0.03695268870639086,
+      "subchannel": 14,
+      "global_channel": 31,
+      "nominal_wavelength_um": 1.5169999599456787,
+      "wl_min_um": 1.496000051498413,
+      "wl_max_um": 1.5369999408721924,
+      "nominal_bandwidth_um": 0.03700000047683716,
+      "R": 41.0,
+      "R_STD": 0.30000001192092896,
+      "channel_map_value": 14,
+      "cwave_um": 1.5058438777923584,
+      "cband_um": 0.03694658353924751,
+      "channel_map_orientation_agrees": true,
+      "channel_map_version_linkage_verified": false,
+      "near_channel_boundary": false,
+      "external_wavelength_status": "EXTERNAL_CWAVE_MEASURED_PROVENANCE_UNVERIFIED",
+      "external_values_valid": true,
+      "cwave_in_nominal_interval": true,
+      "external_detector_agrees": true,
+      "external_orientation_agrees": true,
+      "cwave_minus_approx_um": -0.0005748535887915018,
+      "cband_minus_approx_um": -6.105167143347079e-06,
+      "spatial_registration": {
+        "status": "NATIVE_WCS_ONLY_NOT_INDEPENDENTLY_REGISTERED",
+        "footprint_corners_ra_dec_deg": [
+          [
+            210.80227997939926,
+            54.37491275253722
+          ],
+          [
+            210.75625265913132,
+            54.34871888446687
+          ],
+          [
+            210.80049889969965,
+            54.32162400567765
+          ],
+          [
+            210.84652070065997,
+            54.347803480777564
+          ]
+        ],
+        "pixel_scale_arcsec": [
+          6.1302909802124965,
+          6.144084219639946
+        ],
+        "residual_pixels": null,
+        "reprojected": false
+      },
+      "timestamp_utc": "2025-05-10T17:04:37.741Z",
+      "product_kind": "dated_single_exposure_cutout",
+      "source_reference": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row53.fits",
+        "sha256": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4"
+      },
+      "preview": {
+        "path": "exposure_previews/sample_D2_row53.png",
+        "sha256": "6386ec2bed6c22670cad621f7e1641118589314ac201fa21cd4b153031e72f39",
+        "byte_length": 693,
+        "source_fits_sha256": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+        "display_method": "Per-exposure linear 1st/99th percentile grayscale, native pixels, finite mask only",
+        "low": 1.056543641090393,
+        "high": 8.893211326599122,
+        "unit": "MJy / sr",
+        "quality_status": "EXPOSURE_FLAGS_UNASSESSED_INSPECTION_ONLY",
+        "registration_status": "NATIVE_GRID_NOT_REGISTERED",
+        "compare_brightness_across_previews": false
+      }
+    },
+    {
+      "filename": "sample_D3_row137.fits",
+      "sha256": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b",
+      "errors": [],
+      "warnings": [
+        "No matching external detector calibration supplied"
+      ],
+      "CHANNEL_ASSIGNED_PROVISIONAL": true,
+      "CWAVE_CROSSCHECK_PASSED": false,
+      "CALIBRATION_PROVENANCE_VERIFIED": false,
+      "MISSING_EXTERNAL_CALIBRATION": true,
+      "FAILED_CHANNEL_LOOKUP": false,
+      "USABLE_FOR_SCIENCE": false,
+      "image_available": true,
+      "flags_available": true,
+      "detector": 3,
+      "image_dimensions_xy": [
+        23,
+        23
+      ],
+      "observation_id": "2025W19_2B_0101_1",
+      "observation_timestamp": "2025-05-09T03:33:55.113",
+      "mjd_obs": 60804.148554549,
+      "pipeline_version": "6.4+psffix1",
+      "detcoord": "sky",
+      "alternate_a": {
+        "WCSAXESA": 2,
+        "CRPIX1A": -1135.0,
+        "CRPIX2A": -499.0,
+        "CDELT1A": 1.0,
+        "CDELT2A": 1.0,
+        "CUNIT1A": "pixel",
+        "CUNIT2A": "pixel",
+        "CTYPE1A": "LINEAR",
+        "CTYPE2A": "LINEAR",
+        "CRVAL1A": 0.0,
+        "CRVAL2A": 0.0,
+        "LATPOLEA": 90.0,
+        "WCSNAMEA": "0-based active pixel coordinates"
+      },
+      "alternate_w": {
+        "WCSAXESW": 2,
+        "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+        "CNAME1W": "Wavelength",
+        "CNAME2W": "Bandwidth",
+        "CRPIX1W": -1135.0,
+        "CRPIX2W": -499.0,
+        "CDELT1W": 1,
+        "CDELT2W": 1,
+        "CUNIT1W": "um",
+        "CUNIT2W": "um",
+        "CTYPE1W": "WAVE-TAB",
+        "CTYPE2W": "WAVE-TAB",
+        "CRVAL1W": 1,
+        "CRVAL2W": 1,
+        "PV1_3W": 1,
+        "PV2_3W": 2,
+        "PS1_0W": "WCS-WAVE",
+        "PS2_0W": "WCS-WAVE",
+        "PS1_1W": "VALUES",
+        "PS2_1W": "VALUES",
+        "PS1_2W": "X",
+        "PS2_2W": "Y"
+      },
+      "approximate_spectral_wcs_present": true,
+      "spectral_wcs_history": [
+        "[CALIB] spectral_wcs 59b2d69e-bee1-4a58-8f03-8fa4ec553910",
+        "[CALIB] spectral_wcs 59b2d69e-bee1-4a58-8f03-8fa4ec553910",
+        "[CALIB] spectral_wcs 0d47d467-abe7-4583-b55d-3e9357b06aae"
+      ],
+      "spectral_wcs_uuids": [
+        "59b2d69e-bee1-4a58-8f03-8fa4ec553910",
+        "0d47d467-abe7-4583-b55d-3e9357b06aae"
+      ],
+      "final_recorded_spectral_wcs_uuid": "0d47d467-abe7-4583-b55d-3e9357b06aae",
+      "inventory_metadata": {
+        "row": "137",
+        "band": "SPHEREx-D3",
+        "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/3/level2_2025W19_2B_0101_1D3_spx_l2b-v20-2025-247.fits",
+        "time_start": "60804.148555",
+        "time_end": "60804.149887",
+        "provenance_version": "6.4",
+        "version": "6.4+psffix1",
+        "wavelength_um": "2.1955285420062847",
+        "bandwidth_um": "0.05533337729961879",
+        "status": "MEASURED_VISUALIZATION_WCS",
+        "fits_sha256": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b",
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/3/level2_2025W19_2B_0101_1D3_spx_l2b-v20-2025-247.fits?center=210.802270000,54.348950000d&size=0.04",
+        "error": ""
+      },
+      "archive_release": "qr2",
+      "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/3/level2_2025W19_2B_0101_1D3_spx_l2b-v20-2025-247.fits",
+      "reference_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "position_kind": "saved_M101_reference",
+      "cutout_xy_fractional": [
+        10.717363619439627,
+        10.904193111234541
+      ],
+      "cutout_center_xy": [
+        11.0,
+        11.0
+      ],
+      "detector_xy_fractional": [
+        1146.7173636194395,
+        510.9041931112345
+      ],
+      "detector_xy_selected": [
+        1147,
+        511
+      ],
+      "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+      "near_pixel_boundary": false,
+      "alternate_a_simplified_formula_valid": true,
+      "flags_at_selected_cutout_pixel": 2097152,
+      "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+      "l1dqaflg": "Pass",
+      "l2dqaflg": "Pass",
+      "approximate_wavelength_um": 2.1955285420062847,
+      "approximate_bandwidth_um": 0.05533337729961879,
+      "subchannel": 13,
+      "global_channel": 47,
+      "nominal_wavelength_um": 2.188999891281128,
+      "wl_min_um": 2.1600000858306885,
+      "wl_max_um": 2.2160000801086426,
+      "nominal_bandwidth_um": 0.054999999701976776,
+      "R": 40.0,
+      "R_STD": 0.30000001192092896,
+      "channel_map_value": 13,
+      "cwave_um": null,
+      "cband_um": null,
+      "channel_map_orientation_agrees": true,
+      "channel_map_version_linkage_verified": false,
+      "near_channel_boundary": false,
+      "external_wavelength_status": "CWAVE_NOT_AVAILABLE",
+      "external_values_valid": null,
+      "cwave_in_nominal_interval": null,
+      "external_detector_agrees": null,
+      "external_orientation_agrees": null,
+      "cwave_minus_approx_um": null,
+      "cband_minus_approx_um": null,
+      "spatial_registration": {
+        "status": "NATIVE_WCS_ONLY_NOT_INDEPENDENTLY_REGISTERED",
+        "footprint_corners_ra_dec_deg": [
+          [
+            210.80762141748045,
+            54.37536997999893
+          ],
+          [
+            210.75818657936816,
+            54.35131640006353
+          ],
+          [
+            210.79750299985963,
+            54.32155073457754
+          ],
+          [
+            210.84692236325918,
+            54.345591285987645
+          ]
+        ],
+        "pixel_scale_arcsec": [
+          6.164499930340711,
+          6.151547770992057
+        ],
+        "residual_pixels": null,
+        "reprojected": false
+      },
+      "timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "product_kind": "dated_single_exposure_cutout",
+      "source_reference": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row137.fits",
+        "sha256": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b"
+      },
+      "preview": {
+        "path": "exposure_previews/sample_D3_row137.png",
+        "sha256": "8f9ea63ed146283fb2bbb532d58772ffe01c6a54e9a5ffa3b92131ff5900b0c1",
+        "byte_length": 693,
+        "source_fits_sha256": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b",
+        "display_method": "Per-exposure linear 1st/99th percentile grayscale, native pixels, finite mask only",
+        "low": 0.8780144166946411,
+        "high": 7.634598217010524,
+        "unit": "MJy / sr",
+        "quality_status": "EXPOSURE_FLAGS_UNASSESSED_INSPECTION_ONLY",
+        "registration_status": "NATIVE_GRID_NOT_REGISTERED",
+        "compare_brightness_across_previews": false
+      }
+    },
+    {
+      "filename": "sample_D3_row186.fits",
+      "sha256": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03",
+      "errors": [],
+      "warnings": [
+        "No matching external detector calibration supplied"
+      ],
+      "CHANNEL_ASSIGNED_PROVISIONAL": true,
+      "CWAVE_CROSSCHECK_PASSED": false,
+      "CALIBRATION_PROVENANCE_VERIFIED": false,
+      "MISSING_EXTERNAL_CALIBRATION": true,
+      "FAILED_CHANNEL_LOOKUP": false,
+      "USABLE_FOR_SCIENCE": false,
+      "image_available": true,
+      "flags_available": true,
+      "detector": 3,
+      "image_dimensions_xy": [
+        23,
+        23
+      ],
+      "observation_id": "2026W25_1A_0641_1",
+      "observation_timestamp": "2026-06-18T03:54:38.021",
+      "mjd_obs": 61209.162940058,
+      "pipeline_version": "6.5.7",
+      "detcoord": "sky",
+      "alternate_a": {
+        "WCSAXESA": 2,
+        "CRPIX1A": -478.0,
+        "CRPIX2A": -690.0,
+        "CDELT1A": 1.0,
+        "CDELT2A": 1.0,
+        "CUNIT1A": "pixel",
+        "CUNIT2A": "pixel",
+        "CTYPE1A": "LINEAR",
+        "CTYPE2A": "LINEAR",
+        "CRVAL1A": 0.0,
+        "CRVAL2A": 0.0,
+        "LATPOLEA": 90.0,
+        "WCSNAMEA": "0-based active pixel coordinates"
+      },
+      "alternate_w": {
+        "WCSAXESW": 2,
+        "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+        "CNAME1W": "Wavelength",
+        "CNAME2W": "Bandwidth",
+        "CRPIX1W": -478.0,
+        "CRPIX2W": -690.0,
+        "CDELT1W": 1,
+        "CDELT2W": 1,
+        "CUNIT1W": "um",
+        "CUNIT2W": "um",
+        "CTYPE1W": "WAVE-TAB",
+        "CTYPE2W": "WAVE-TAB",
+        "CRVAL1W": 1,
+        "CRVAL2W": 1,
+        "PV1_3W": 1,
+        "PV2_3W": 2,
+        "PS1_0W": "WCS-WAVE",
+        "PS2_0W": "WCS-WAVE",
+        "PS1_1W": "VALUES",
+        "PS2_1W": "VALUES",
+        "PS1_2W": "X",
+        "PS2_2W": "Y"
+      },
+      "approximate_spectral_wcs_present": true,
+      "spectral_wcs_history": [
+        "[CALIB] spectral_wcs 0d47d467-abe7-4583-b55d-3e9357b06aae",
+        "[CALIB] spectral_wcs 0d47d467-abe7-4583-b55d-3e9357b06aae"
+      ],
+      "spectral_wcs_uuids": [
+        "0d47d467-abe7-4583-b55d-3e9357b06aae"
+      ],
+      "final_recorded_spectral_wcs_uuid": "0d47d467-abe7-4583-b55d-3e9357b06aae",
+      "inventory_metadata": {
+        "row": "186",
+        "band": "SPHEREx-D3",
+        "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W25_1A/l2b-v25-2026-172/3/level2_2026W25_1A_0641_1D3_spx_l2b-v25-2026-172.fits",
+        "time_start": "61209.16294",
+        "time_end": "61209.164272",
+        "provenance_version": "6.5.7",
+        "version": "6.5.7",
+        "wavelength_um": "2.1186715310246047",
+        "bandwidth_um": "0.053084538078467386",
+        "status": "MEASURED_VISUALIZATION_WCS",
+        "fits_sha256": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03",
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W25_1A/l2b-v25-2026-172/3/level2_2026W25_1A_0641_1D3_spx_l2b-v25-2026-172.fits?center=210.802270000,54.348950000d&size=0.04",
+        "error": ""
+      },
+      "archive_release": "qr2",
+      "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W25_1A/l2b-v25-2026-172/3/level2_2026W25_1A_0641_1D3_spx_l2b-v25-2026-172.fits",
+      "reference_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "position_kind": "saved_M101_reference",
+      "cutout_xy_fractional": [
+        11.056253652845493,
+        11.141160608421442
+      ],
+      "cutout_center_xy": [
+        11.0,
+        11.0
+      ],
+      "detector_xy_fractional": [
+        490.0562536528455,
+        702.1411606084214
+      ],
+      "detector_xy_selected": [
+        490,
+        702
+      ],
+      "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+      "near_pixel_boundary": false,
+      "alternate_a_simplified_formula_valid": true,
+      "flags_at_selected_cutout_pixel": 2097152,
+      "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+      "l1dqaflg": "Pass",
+      "l2dqaflg": "Pass",
+      "approximate_wavelength_um": 2.1186715310246047,
+      "approximate_bandwidth_um": 0.053084538078467386,
+      "subchannel": 12,
+      "global_channel": 46,
+      "nominal_wavelength_um": 2.1389999389648438,
+      "wl_min_um": 2.1110000610351562,
+      "wl_max_um": 2.1659998893737793,
+      "nominal_bandwidth_um": 0.05400000140070915,
+      "R": 40.0,
+      "R_STD": 0.30000001192092896,
+      "channel_map_value": 12,
+      "cwave_um": null,
+      "cband_um": null,
+      "channel_map_orientation_agrees": true,
+      "channel_map_version_linkage_verified": false,
+      "near_channel_boundary": false,
+      "external_wavelength_status": "CWAVE_NOT_AVAILABLE",
+      "external_values_valid": null,
+      "cwave_in_nominal_interval": null,
+      "external_detector_agrees": null,
+      "external_orientation_agrees": null,
+      "cwave_minus_approx_um": null,
+      "cband_minus_approx_um": null,
+      "spatial_registration": {
+        "status": "NATIVE_WCS_ONLY_NOT_INDEPENDENTLY_REGISTERED",
+        "footprint_corners_ra_dec_deg": [
+          [
+            210.80585789056715,
+            54.37602858451662
+          ],
+          [
+            210.75773556050564,
+            54.35107659342299
+          ],
+          [
+            210.7990906301457,
+            54.3223341602022
+          ],
+          [
+            210.847201455084,
+            54.34727250890744
+          ]
+        ],
+        "pixel_scale_arcsec": [
+          6.159510489667616,
+          6.151805290074007
+        ],
+        "residual_pixels": null,
+        "reprojected": false
+      },
+      "timestamp_utc": "2026-06-18T03:54:38.021Z",
+      "product_kind": "dated_single_exposure_cutout",
+      "source_reference": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row186.fits",
+        "sha256": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03"
+      },
+      "preview": {
+        "path": "exposure_previews/sample_D3_row186.png",
+        "sha256": "91442e3df61ab3335da5bfc05c0164d635fe66dd8cab915234c3ccc4ebc462bb",
+        "byte_length": 703,
+        "source_fits_sha256": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03",
+        "display_method": "Per-exposure linear 1st/99th percentile grayscale, native pixels, finite mask only",
+        "low": 0.90417564868927,
+        "high": 7.468460483551038,
+        "unit": "MJy / sr",
+        "quality_status": "EXPOSURE_FLAGS_UNASSESSED_INSPECTION_ONLY",
+        "registration_status": "NATIVE_GRID_NOT_REGISTERED",
+        "compare_brightness_across_previews": false
+      }
+    },
+    {
+      "filename": "sample_D4_row187.fits",
+      "sha256": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa",
+      "errors": [],
+      "warnings": [
+        "No matching external detector calibration supplied"
+      ],
+      "CHANNEL_ASSIGNED_PROVISIONAL": true,
+      "CWAVE_CROSSCHECK_PASSED": false,
+      "CALIBRATION_PROVENANCE_VERIFIED": false,
+      "MISSING_EXTERNAL_CALIBRATION": true,
+      "FAILED_CHANNEL_LOOKUP": false,
+      "USABLE_FOR_SCIENCE": false,
+      "image_available": true,
+      "flags_available": true,
+      "detector": 4,
+      "image_dimensions_xy": [
+        23,
+        23
+      ],
+      "observation_id": "2025W21_1B_0485_2",
+      "observation_timestamp": "2025-05-21T12:21:34.537",
+      "mjd_obs": 60816.514983067,
+      "pipeline_version": "6.4+psffix1",
+      "detcoord": "sky",
+      "alternate_a": {
+        "WCSAXESA": 2,
+        "CRPIX1A": -1618.0,
+        "CRPIX2A": -1950.0,
+        "CDELT1A": 1.0,
+        "CDELT2A": 1.0,
+        "CUNIT1A": "pixel",
+        "CUNIT2A": "pixel",
+        "CTYPE1A": "LINEAR",
+        "CTYPE2A": "LINEAR",
+        "CRVAL1A": 0.0,
+        "CRVAL2A": 0.0,
+        "LATPOLEA": 90.0,
+        "WCSNAMEA": "0-based active pixel coordinates"
+      },
+      "alternate_w": {
+        "WCSAXESW": 2,
+        "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+        "CNAME1W": "Wavelength",
+        "CNAME2W": "Bandwidth",
+        "CRPIX1W": -1618.0,
+        "CRPIX2W": -1950.0,
+        "CDELT1W": 1,
+        "CDELT2W": 1,
+        "CUNIT1W": "um",
+        "CUNIT2W": "um",
+        "CTYPE1W": "WAVE-TAB",
+        "CTYPE2W": "WAVE-TAB",
+        "CRVAL1W": 1,
+        "CRVAL2W": 1,
+        "PV1_3W": 1,
+        "PV2_3W": 2,
+        "PS1_0W": "WCS-WAVE",
+        "PS2_0W": "WCS-WAVE",
+        "PS1_1W": "VALUES",
+        "PS2_1W": "VALUES",
+        "PS1_2W": "X",
+        "PS2_2W": "Y"
+      },
+      "approximate_spectral_wcs_present": true,
+      "spectral_wcs_history": [
+        "[CALIB] spectral_wcs 1303e33f-8b3c-460d-a2d2-042d176e0a8b",
+        "[CALIB] spectral_wcs 1303e33f-8b3c-460d-a2d2-042d176e0a8b",
+        "[CALIB] spectral_wcs 4cf935ad-6e0a-4075-a642-198bc6a728e6"
+      ],
+      "spectral_wcs_uuids": [
+        "1303e33f-8b3c-460d-a2d2-042d176e0a8b",
+        "4cf935ad-6e0a-4075-a642-198bc6a728e6"
+      ],
+      "final_recorded_spectral_wcs_uuid": "4cf935ad-6e0a-4075-a642-198bc6a728e6",
+      "inventory_metadata": {
+        "row": "187",
+        "band": "SPHEREx-D4",
+        "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W21_1B/l2b-v20-2025-248/4/level2_2025W21_1B_0485_2D4_spx_l2b-v20-2025-248.fits",
+        "time_start": "60816.514983",
+        "time_end": "60816.516315",
+        "provenance_version": "6.4",
+        "version": "6.4+psffix1",
+        "wavelength_um": "2.4366961283908726",
+        "bandwidth_um": "0.04938818351189377",
+        "status": "MEASURED_VISUALIZATION_WCS",
+        "fits_sha256": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa",
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W21_1B/l2b-v20-2025-248/4/level2_2025W21_1B_0485_2D4_spx_l2b-v20-2025-248.fits?center=210.802270000,54.348950000d&size=0.04",
+        "error": ""
+      },
+      "archive_release": "qr2",
+      "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W21_1B/l2b-v20-2025-248/4/level2_2025W21_1B_0485_2D4_spx_l2b-v20-2025-248.fits",
+      "reference_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "position_kind": "saved_M101_reference",
+      "cutout_xy_fractional": [
+        10.9456603733874,
+        10.936609952754484
+      ],
+      "cutout_center_xy": [
+        11.0,
+        11.0
+      ],
+      "detector_xy_fractional": [
+        1629.9456603733875,
+        1961.9366099527545
+      ],
+      "detector_xy_selected": [
+        1630,
+        1962
+      ],
+      "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+      "near_pixel_boundary": false,
+      "alternate_a_simplified_formula_valid": true,
+      "flags_at_selected_cutout_pixel": 2097152,
+      "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+      "l1dqaflg": "Pass",
+      "l2dqaflg": "Pass",
+      "approximate_wavelength_um": 2.4366961283908726,
+      "approximate_bandwidth_um": 0.04938818351189377,
+      "subchannel": 1,
+      "global_channel": 52,
+      "nominal_wavelength_um": 2.444999933242798,
+      "wl_min_um": 2.421999931335449,
+      "wl_max_um": 2.4739999771118164,
+      "nominal_bandwidth_um": 0.057999998331069946,
+      "R": 42.0,
+      "R_STD": 7.599999904632568,
+      "channel_map_value": 1,
+      "cwave_um": null,
+      "cband_um": null,
+      "channel_map_orientation_agrees": true,
+      "channel_map_version_linkage_verified": false,
+      "near_channel_boundary": false,
+      "external_wavelength_status": "CWAVE_NOT_AVAILABLE",
+      "external_values_valid": null,
+      "cwave_in_nominal_interval": null,
+      "external_detector_agrees": null,
+      "external_orientation_agrees": null,
+      "cwave_minus_approx_um": null,
+      "cband_minus_approx_um": null,
+      "spatial_registration": {
+        "status": "NATIVE_WCS_ONLY_NOT_INDEPENDENTLY_REGISTERED",
+        "footprint_corners_ra_dec_deg": [
+          [
+            210.7971466419515,
+            54.37491817205768
+          ],
+          [
+            210.7560961030247,
+            54.345711159416034
+          ],
+          [
+            210.8074008650361,
+            54.32269639456998
+          ],
+          [
+            210.84845939175668,
+            54.351887750615994
+          ]
+        ],
+        "pixel_scale_arcsec": [
+          6.169049614098487,
+          6.156746908698023
+        ],
+        "residual_pixels": null,
+        "reprojected": false
+      },
+      "timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "product_kind": "dated_single_exposure_cutout",
+      "source_reference": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row187.fits",
+        "sha256": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa"
+      },
+      "preview": {
+        "path": "exposure_previews/sample_D4_row187.png",
+        "sha256": "0c0010cbba6d1caecabdf9b25ee1f0fd01a022ea2fecb40c88cce7f66bfee134",
+        "byte_length": 707,
+        "source_fits_sha256": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa",
+        "display_method": "Per-exposure linear 1st/99th percentile grayscale, native pixels, finite mask only",
+        "low": 0.5963138198852539,
+        "high": 4.797976093292251,
+        "unit": "MJy / sr",
+        "quality_status": "EXPOSURE_FLAGS_UNASSESSED_INSPECTION_ONLY",
+        "registration_status": "NATIVE_GRID_NOT_REGISTERED",
+        "compare_brightness_across_previews": false
+      }
+    },
+    {
+      "filename": "sample_D4_row239.fits",
+      "sha256": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b",
+      "errors": [],
+      "warnings": [
+        "No matching external detector calibration supplied"
+      ],
+      "CHANNEL_ASSIGNED_PROVISIONAL": true,
+      "CWAVE_CROSSCHECK_PASSED": false,
+      "CALIBRATION_PROVENANCE_VERIFIED": false,
+      "MISSING_EXTERNAL_CALIBRATION": true,
+      "FAILED_CHANNEL_LOOKUP": false,
+      "USABLE_FOR_SCIENCE": false,
+      "image_available": true,
+      "flags_available": true,
+      "detector": 4,
+      "image_dimensions_xy": [
+        23,
+        23
+      ],
+      "observation_id": "2026W25_1A_0614_1",
+      "observation_timestamp": "2026-06-18T00:38:42.292",
+      "mjd_obs": 61209.02687838,
+      "pipeline_version": "6.5.7",
+      "detcoord": "sky",
+      "alternate_a": {
+        "WCSAXESA": 2,
+        "CRPIX1A": -1472.0,
+        "CRPIX2A": -734.0,
+        "CDELT1A": 1.0,
+        "CDELT2A": 1.0,
+        "CUNIT1A": "pixel",
+        "CUNIT2A": "pixel",
+        "CTYPE1A": "LINEAR",
+        "CTYPE2A": "LINEAR",
+        "CRVAL1A": 0.0,
+        "CRVAL2A": 0.0,
+        "LATPOLEA": 90.0,
+        "WCSNAMEA": "0-based active pixel coordinates"
+      },
+      "alternate_w": {
+        "WCSAXESW": 2,
+        "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+        "CNAME1W": "Wavelength",
+        "CNAME2W": "Bandwidth",
+        "CRPIX1W": -1472.0,
+        "CRPIX2W": -734.0,
+        "CDELT1W": 1,
+        "CDELT2W": 1,
+        "CUNIT1W": "um",
+        "CUNIT2W": "um",
+        "CTYPE1W": "WAVE-TAB",
+        "CTYPE2W": "WAVE-TAB",
+        "CRVAL1W": 1,
+        "CRVAL2W": 1,
+        "PV1_3W": 1,
+        "PV2_3W": 2,
+        "PS1_0W": "WCS-WAVE",
+        "PS2_0W": "WCS-WAVE",
+        "PS1_1W": "VALUES",
+        "PS2_1W": "VALUES",
+        "PS1_2W": "X",
+        "PS2_2W": "Y"
+      },
+      "approximate_spectral_wcs_present": true,
+      "spectral_wcs_history": [
+        "[CALIB] spectral_wcs 4cf935ad-6e0a-4075-a642-198bc6a728e6",
+        "[CALIB] spectral_wcs 4cf935ad-6e0a-4075-a642-198bc6a728e6"
+      ],
+      "spectral_wcs_uuids": [
+        "4cf935ad-6e0a-4075-a642-198bc6a728e6"
+      ],
+      "final_recorded_spectral_wcs_uuid": "4cf935ad-6e0a-4075-a642-198bc6a728e6",
+      "inventory_metadata": {
+        "row": "239",
+        "band": "SPHEREx-D4",
+        "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W25_1A/l2b-v25-2026-172/4/level2_2026W25_1A_0614_1D4_spx_l2b-v25-2026-172.fits",
+        "time_start": "61209.026878",
+        "time_end": "61209.028211",
+        "provenance_version": "6.5.7",
+        "version": "6.5.7",
+        "wavelength_um": "3.220096347631241",
+        "bandwidth_um": "0.0932156328122756",
+        "status": "MEASURED_VISUALIZATION_WCS",
+        "fits_sha256": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b",
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W25_1A/l2b-v25-2026-172/4/level2_2026W25_1A_0614_1D4_spx_l2b-v25-2026-172.fits?center=210.802270000,54.348950000d&size=0.04",
+        "error": ""
+      },
+      "archive_release": "qr2",
+      "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W25_1A/l2b-v25-2026-172/4/level2_2026W25_1A_0614_1D4_spx_l2b-v25-2026-172.fits",
+      "reference_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "position_kind": "saved_M101_reference",
+      "cutout_xy_fractional": [
+        10.71440446365723,
+        11.039278343665499
+      ],
+      "cutout_center_xy": [
+        11.0,
+        11.0
+      ],
+      "detector_xy_fractional": [
+        1483.7144044636573,
+        746.0392783436655
+      ],
+      "detector_xy_selected": [
+        1484,
+        746
+      ],
+      "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+      "near_pixel_boundary": false,
+      "alternate_a_simplified_formula_valid": true,
+      "flags_at_selected_cutout_pixel": 2097152,
+      "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+      "l1dqaflg": "Pass",
+      "l2dqaflg": "Pass",
+      "approximate_wavelength_um": 3.220096347631241,
+      "approximate_bandwidth_um": 0.0932156328122756,
+      "subchannel": 11,
+      "global_channel": 62,
+      "nominal_wavelength_um": 3.2039999961853027,
+      "wl_min_um": 3.1549999713897705,
+      "wl_max_um": 3.252000093460083,
+      "nominal_bandwidth_um": 0.09300000220537186,
+      "R": 35.0,
+      "R_STD": 0.5,
+      "channel_map_value": 11,
+      "cwave_um": null,
+      "cband_um": null,
+      "channel_map_orientation_agrees": true,
+      "channel_map_version_linkage_verified": false,
+      "near_channel_boundary": false,
+      "external_wavelength_status": "CWAVE_NOT_AVAILABLE",
+      "external_values_valid": null,
+      "cwave_in_nominal_interval": null,
+      "external_detector_agrees": null,
+      "external_orientation_agrees": null,
+      "cwave_minus_approx_um": null,
+      "cband_minus_approx_um": null,
+      "spatial_registration": {
+        "status": "NATIVE_WCS_ONLY_NOT_INDEPENDENTLY_REGISTERED",
+        "footprint_corners_ra_dec_deg": [
+          [
+            210.79764204221152,
+            54.37468846841447
+          ],
+          [
+            210.75709035973156,
+            54.34546986661039
+          ],
+          [
+            210.80836482260796,
+            54.32272186517774
+          ],
+          [
+            210.84892558759907,
+            54.35192496138694
+          ]
+        ],
+        "pixel_scale_arcsec": [
+          6.158203964184898,
+          6.156388704636455
+        ],
+        "residual_pixels": null,
+        "reprojected": false
+      },
+      "timestamp_utc": "2026-06-18T00:38:42.292Z",
+      "product_kind": "dated_single_exposure_cutout",
+      "source_reference": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row239.fits",
+        "sha256": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b"
+      },
+      "preview": {
+        "path": "exposure_previews/sample_D4_row239.png",
+        "sha256": "7043e2a3451f59e1441ce18dffbf4738baa8eefc15c6be2120b1469f64c6f30f",
+        "byte_length": 690,
+        "source_fits_sha256": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b",
+        "display_method": "Per-exposure linear 1st/99th percentile grayscale, native pixels, finite mask only",
+        "low": 0.5040081334114075,
+        "high": 4.387181797027599,
+        "unit": "MJy / sr",
+        "quality_status": "EXPOSURE_FLAGS_UNASSESSED_INSPECTION_ONLY",
+        "registration_status": "NATIVE_GRID_NOT_REGISTERED",
+        "compare_brightness_across_previews": false
+      }
+    },
+    {
+      "filename": "sample_D5_row240.fits",
+      "sha256": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66",
+      "errors": [],
+      "warnings": [
+        "No matching external detector calibration supplied"
+      ],
+      "CHANNEL_ASSIGNED_PROVISIONAL": true,
+      "CWAVE_CROSSCHECK_PASSED": false,
+      "CALIBRATION_PROVENANCE_VERIFIED": false,
+      "MISSING_EXTERNAL_CALIBRATION": true,
+      "FAILED_CHANNEL_LOOKUP": false,
+      "USABLE_FOR_SCIENCE": false,
+      "image_available": true,
+      "flags_available": true,
+      "detector": 5,
+      "image_dimensions_xy": [
+        23,
+        23
+      ],
+      "observation_id": "2025W19_2B_0346_1",
+      "observation_timestamp": "2025-05-10T17:04:37.742",
+      "mjd_obs": 60805.71154794,
+      "pipeline_version": "6.4+psffix1",
+      "detcoord": "sky",
+      "alternate_a": {
+        "WCSAXESA": 2,
+        "CRPIX1A": -1770.0,
+        "CRPIX2A": -449.0,
+        "CDELT1A": 1.0,
+        "CDELT2A": 1.0,
+        "CUNIT1A": "pixel",
+        "CUNIT2A": "pixel",
+        "CTYPE1A": "LINEAR",
+        "CTYPE2A": "LINEAR",
+        "CRVAL1A": 0.0,
+        "CRVAL2A": 0.0,
+        "LATPOLEA": 90.0,
+        "WCSNAMEA": "0-based active pixel coordinates"
+      },
+      "alternate_w": {
+        "WCSAXESW": 2,
+        "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+        "CNAME1W": "Wavelength",
+        "CNAME2W": "Bandwidth",
+        "CRPIX1W": -1770.0,
+        "CRPIX2W": -449.0,
+        "CDELT1W": 1,
+        "CDELT2W": 1,
+        "CUNIT1W": "um",
+        "CUNIT2W": "um",
+        "CTYPE1W": "WAVE-TAB",
+        "CTYPE2W": "WAVE-TAB",
+        "CRVAL1W": 1,
+        "CRVAL2W": 1,
+        "PV1_3W": 1,
+        "PV2_3W": 2,
+        "PS1_0W": "WCS-WAVE",
+        "PS2_0W": "WCS-WAVE",
+        "PS1_1W": "VALUES",
+        "PS2_1W": "VALUES",
+        "PS1_2W": "X",
+        "PS2_2W": "Y"
+      },
+      "approximate_spectral_wcs_present": true,
+      "spectral_wcs_history": [
+        "[CALIB] spectral_wcs a12d3790-e8e8-4d2f-95fc-eaa0efe07af0",
+        "[CALIB] spectral_wcs a12d3790-e8e8-4d2f-95fc-eaa0efe07af0",
+        "[CALIB] spectral_wcs e106c789-52b3-4e5e-b7b2-23dc3aa2f86b"
+      ],
+      "spectral_wcs_uuids": [
+        "a12d3790-e8e8-4d2f-95fc-eaa0efe07af0",
+        "e106c789-52b3-4e5e-b7b2-23dc3aa2f86b"
+      ],
+      "final_recorded_spectral_wcs_uuid": "e106c789-52b3-4e5e-b7b2-23dc3aa2f86b",
+      "inventory_metadata": {
+        "row": "240",
+        "band": "SPHEREx-D5",
+        "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/5/level2_2025W19_2B_0346_1D5_spx_l2b-v20-2025-247.fits",
+        "time_start": "60805.711548",
+        "time_end": "60805.71288",
+        "provenance_version": "6.4",
+        "version": "6.4+psffix1",
+        "wavelength_um": "4.279348375710111",
+        "bandwidth_um": "0.037102582977708236",
+        "status": "MEASURED_VISUALIZATION_WCS",
+        "fits_sha256": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66",
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/5/level2_2025W19_2B_0346_1D5_spx_l2b-v20-2025-247.fits?center=210.802270000,54.348950000d&size=0.04",
+        "error": ""
+      },
+      "archive_release": "qr2",
+      "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/5/level2_2025W19_2B_0346_1D5_spx_l2b-v20-2025-247.fits",
+      "reference_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "position_kind": "saved_M101_reference",
+      "cutout_xy_fractional": [
+        10.612952131164263,
+        11.35865432791903
+      ],
+      "cutout_center_xy": [
+        11.0,
+        11.0
+      ],
+      "detector_xy_fractional": [
+        1781.6129521311643,
+        461.35865432791906
+      ],
+      "detector_xy_selected": [
+        1782,
+        461
+      ],
+      "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+      "near_pixel_boundary": false,
+      "alternate_a_simplified_formula_valid": true,
+      "flags_at_selected_cutout_pixel": 2097152,
+      "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+      "l1dqaflg": "Pass",
+      "l2dqaflg": "Pass",
+      "approximate_wavelength_um": 4.279348375710111,
+      "approximate_bandwidth_um": 0.037102582977708236,
+      "subchannel": 14,
+      "global_channel": 82,
+      "nominal_wavelength_um": 4.288000106811523,
+      "wl_min_um": 4.264999866485596,
+      "wl_max_um": 4.307000160217285,
+      "nominal_bandwidth_um": 0.03700000047683716,
+      "R": 115.0,
+      "R_STD": 0.800000011920929,
+      "channel_map_value": 14,
+      "cwave_um": null,
+      "cband_um": null,
+      "channel_map_orientation_agrees": true,
+      "channel_map_version_linkage_verified": false,
+      "near_channel_boundary": false,
+      "external_wavelength_status": "CWAVE_NOT_AVAILABLE",
+      "external_values_valid": null,
+      "cwave_in_nominal_interval": null,
+      "external_detector_agrees": null,
+      "external_orientation_agrees": null,
+      "cwave_minus_approx_um": null,
+      "cband_minus_approx_um": null,
+      "spatial_registration": {
+        "status": "NATIVE_WCS_ONLY_NOT_INDEPENDENTLY_REGISTERED",
+        "footprint_corners_ra_dec_deg": [
+          [
+            210.80490731793702,
+            54.37556113627341
+          ],
+          [
+            210.75861694766792,
+            54.349473693941746
+          ],
+          [
+            210.80269221253695,
+            54.32222653822202
+          ],
+          [
+            210.84897650090852,
+            54.348299464916735
+          ]
+        ],
+        "pixel_scale_arcsec": [
+          6.1396747526030895,
+          6.145910172845189
+        ],
+        "residual_pixels": null,
+        "reprojected": false
+      },
+      "timestamp_utc": "2025-05-10T17:04:37.742Z",
+      "product_kind": "dated_single_exposure_cutout",
+      "source_reference": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row240.fits",
+        "sha256": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66"
+      },
+      "preview": {
+        "path": "exposure_previews/sample_D5_row240.png",
+        "sha256": "c3492ff340bf6cbd8fcd36f0c6fcc0a82c83671bf0e899e9c33f4c83c6e9cde8",
+        "byte_length": 750,
+        "source_fits_sha256": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66",
+        "display_method": "Per-exposure linear 1st/99th percentile grayscale, native pixels, finite mask only",
+        "low": 0.42603793382644656,
+        "high": 2.308429403305054,
+        "unit": "MJy / sr",
+        "quality_status": "EXPOSURE_FLAGS_UNASSESSED_INSPECTION_ONLY",
+        "registration_status": "NATIVE_GRID_NOT_REGISTERED",
+        "compare_brightness_across_previews": false
+      }
+    },
+    {
+      "filename": "sample_D5_row321.fits",
+      "sha256": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd",
+      "errors": [],
+      "warnings": [
+        "No matching external detector calibration supplied"
+      ],
+      "CHANNEL_ASSIGNED_PROVISIONAL": true,
+      "CWAVE_CROSSCHECK_PASSED": false,
+      "CALIBRATION_PROVENANCE_VERIFIED": false,
+      "MISSING_EXTERNAL_CALIBRATION": true,
+      "FAILED_CHANNEL_LOOKUP": false,
+      "USABLE_FOR_SCIENCE": false,
+      "image_available": true,
+      "flags_available": true,
+      "detector": 5,
+      "image_dimensions_xy": [
+        23,
+        23
+      ],
+      "observation_id": "2026W26_1A_0500_1",
+      "observation_timestamp": "2026-06-24T03:19:00.063",
+      "mjd_obs": 61215.138195174,
+      "pipeline_version": "6.5.7",
+      "detcoord": "sky",
+      "alternate_a": {
+        "WCSAXESA": 2,
+        "CRPIX1A": -27.0,
+        "CRPIX2A": -529.0,
+        "CDELT1A": 1.0,
+        "CDELT2A": 1.0,
+        "CUNIT1A": "pixel",
+        "CUNIT2A": "pixel",
+        "CTYPE1A": "LINEAR",
+        "CTYPE2A": "LINEAR",
+        "CRVAL1A": 0.0,
+        "CRVAL2A": 0.0,
+        "LATPOLEA": 90.0,
+        "WCSNAMEA": "0-based active pixel coordinates"
+      },
+      "alternate_w": {
+        "WCSAXESW": 2,
+        "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+        "CNAME1W": "Wavelength",
+        "CNAME2W": "Bandwidth",
+        "CRPIX1W": -27.0,
+        "CRPIX2W": -529.0,
+        "CDELT1W": 1,
+        "CDELT2W": 1,
+        "CUNIT1W": "um",
+        "CUNIT2W": "um",
+        "CTYPE1W": "WAVE-TAB",
+        "CTYPE2W": "WAVE-TAB",
+        "CRVAL1W": 1,
+        "CRVAL2W": 1,
+        "PV1_3W": 1,
+        "PV2_3W": 2,
+        "PS1_0W": "WCS-WAVE",
+        "PS2_0W": "WCS-WAVE",
+        "PS1_1W": "VALUES",
+        "PS2_1W": "VALUES",
+        "PS1_2W": "X",
+        "PS2_2W": "Y"
+      },
+      "approximate_spectral_wcs_present": true,
+      "spectral_wcs_history": [
+        "[CALIB] spectral_wcs e106c789-52b3-4e5e-b7b2-23dc3aa2f86b",
+        "[CALIB] spectral_wcs e106c789-52b3-4e5e-b7b2-23dc3aa2f86b"
+      ],
+      "spectral_wcs_uuids": [
+        "e106c789-52b3-4e5e-b7b2-23dc3aa2f86b"
+      ],
+      "final_recorded_spectral_wcs_uuid": "e106c789-52b3-4e5e-b7b2-23dc3aa2f86b",
+      "inventory_metadata": {
+        "row": "321",
+        "band": "SPHEREx-D5",
+        "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W26_1A/l2b-v25-2026-180/5/level2_2026W26_1A_0500_1D5_spx_l2b-v25-2026-180.fits",
+        "time_start": "61215.138195",
+        "time_end": "61215.139528",
+        "provenance_version": "6.5.7",
+        "version": "6.5.7",
+        "wavelength_um": "4.262711052366933",
+        "bandwidth_um": "0.03720078724181986",
+        "status": "MEASURED_VISUALIZATION_WCS",
+        "fits_sha256": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd",
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W26_1A/l2b-v25-2026-180/5/level2_2026W26_1A_0500_1D5_spx_l2b-v25-2026-180.fits?center=210.802270000,54.348950000d&size=0.04",
+        "error": ""
+      },
+      "archive_release": "qr2",
+      "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W26_1A/l2b-v25-2026-180/5/level2_2026W26_1A_0500_1D5_spx_l2b-v25-2026-180.fits",
+      "reference_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "position_kind": "saved_M101_reference",
+      "cutout_xy_fractional": [
+        10.610184371495198,
+        11.13465168075589
+      ],
+      "cutout_center_xy": [
+        11.0,
+        11.0
+      ],
+      "detector_xy_fractional": [
+        38.610184371495194,
+        541.1346516807558
+      ],
+      "detector_xy_selected": [
+        39,
+        541
+      ],
+      "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+      "near_pixel_boundary": false,
+      "alternate_a_simplified_formula_valid": true,
+      "flags_at_selected_cutout_pixel": 2097152,
+      "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+      "l1dqaflg": "Pass",
+      "l2dqaflg": "Pass",
+      "approximate_wavelength_um": 4.262711052366933,
+      "approximate_bandwidth_um": 0.03720078724181986,
+      "subchannel": 13,
+      "global_channel": 81,
+      "nominal_wavelength_um": 4.250999927520752,
+      "wl_min_um": 4.229000091552734,
+      "wl_max_um": 4.270999908447266,
+      "nominal_bandwidth_um": 0.03700000047683716,
+      "R": 114.0,
+      "R_STD": 0.8999999761581421,
+      "channel_map_value": 13,
+      "cwave_um": null,
+      "cband_um": null,
+      "channel_map_orientation_agrees": true,
+      "channel_map_version_linkage_verified": false,
+      "near_channel_boundary": false,
+      "external_wavelength_status": "CWAVE_NOT_AVAILABLE",
+      "external_values_valid": null,
+      "cwave_in_nominal_interval": null,
+      "external_detector_agrees": null,
+      "external_orientation_agrees": null,
+      "cwave_minus_approx_um": null,
+      "cband_minus_approx_um": null,
+      "spatial_registration": {
+        "status": "NATIVE_WCS_ONLY_NOT_INDEPENDENTLY_REGISTERED",
+        "footprint_corners_ra_dec_deg": [
+          [
+            210.80013643732957,
+            54.374932610320045
+          ],
+          [
+            210.75767278279585,
+            54.346702962457556
+          ],
+          [
+            210.80665304707443,
+            54.32244997922799
+          ],
+          [
+            210.84912081209757,
+            54.35066421346788
+          ]
+        ],
+        "pixel_scale_arcsec": [
+          6.1398651460266995,
+          6.154400674905616
+        ],
+        "residual_pixels": null,
+        "reprojected": false
+      },
+      "timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "product_kind": "dated_single_exposure_cutout",
+      "source_reference": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row321.fits",
+        "sha256": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd"
+      },
+      "preview": {
+        "path": "exposure_previews/sample_D5_row321.png",
+        "sha256": "e68fefd0915a81650cd081f094fc09c542e4ca02e13c3e58b738c917b2679514",
+        "byte_length": 680,
+        "source_fits_sha256": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd",
+        "display_method": "Per-exposure linear 1st/99th percentile grayscale, native pixels, finite mask only",
+        "low": 0.47419440507888794,
+        "high": 4.118360977172866,
+        "unit": "MJy / sr",
+        "quality_status": "EXPOSURE_FLAGS_UNASSESSED_INSPECTION_ONLY",
+        "registration_status": "NATIVE_GRID_NOT_REGISTERED",
+        "compare_brightness_across_previews": false
+      }
+    },
+    {
+      "filename": "sample_D6_row322.fits",
+      "sha256": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219",
+      "errors": [],
+      "warnings": [
+        "No matching external detector calibration supplied"
+      ],
+      "CHANNEL_ASSIGNED_PROVISIONAL": true,
+      "CWAVE_CROSSCHECK_PASSED": false,
+      "CALIBRATION_PROVENANCE_VERIFIED": false,
+      "MISSING_EXTERNAL_CALIBRATION": true,
+      "FAILED_CHANNEL_LOOKUP": false,
+      "USABLE_FOR_SCIENCE": false,
+      "image_available": true,
+      "flags_available": true,
+      "detector": 6,
+      "image_dimensions_xy": [
+        23,
+        23
+      ],
+      "observation_id": "2025W19_2B_0101_1",
+      "observation_timestamp": "2025-05-09T03:33:55.113",
+      "mjd_obs": 60804.148554549,
+      "pipeline_version": "6.4+psffix1",
+      "detcoord": "sky",
+      "alternate_a": {
+        "WCSAXESA": 2,
+        "CRPIX1A": -1133.0,
+        "CRPIX2A": -488.0,
+        "CDELT1A": 1.0,
+        "CDELT2A": 1.0,
+        "CUNIT1A": "pixel",
+        "CUNIT2A": "pixel",
+        "CTYPE1A": "LINEAR",
+        "CTYPE2A": "LINEAR",
+        "CRVAL1A": 0.0,
+        "CRVAL2A": 0.0,
+        "LATPOLEA": 90.0,
+        "WCSNAMEA": "0-based active pixel coordinates"
+      },
+      "alternate_w": {
+        "WCSAXESW": 2,
+        "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+        "CNAME1W": "Wavelength",
+        "CNAME2W": "Bandwidth",
+        "CRPIX1W": -1133.0,
+        "CRPIX2W": -488.0,
+        "CDELT1W": 1,
+        "CDELT2W": 1,
+        "CUNIT1W": "um",
+        "CUNIT2W": "um",
+        "CTYPE1W": "WAVE-TAB",
+        "CTYPE2W": "WAVE-TAB",
+        "CRVAL1W": 1,
+        "CRVAL2W": 1,
+        "PV1_3W": 1,
+        "PV2_3W": 2,
+        "PS1_0W": "WCS-WAVE",
+        "PS2_0W": "WCS-WAVE",
+        "PS1_1W": "VALUES",
+        "PS2_1W": "VALUES",
+        "PS1_2W": "X",
+        "PS2_2W": "Y"
+      },
+      "approximate_spectral_wcs_present": true,
+      "spectral_wcs_history": [
+        "[CALIB] spectral_wcs 272d2e65-1ba5-4089-9401-a33fb100729f",
+        "[CALIB] spectral_wcs 272d2e65-1ba5-4089-9401-a33fb100729f",
+        "[CALIB] spectral_wcs 2dc965d6-bad3-4916-83ca-54e9e9cfcbd3"
+      ],
+      "spectral_wcs_uuids": [
+        "272d2e65-1ba5-4089-9401-a33fb100729f",
+        "2dc965d6-bad3-4916-83ca-54e9e9cfcbd3"
+      ],
+      "final_recorded_spectral_wcs_uuid": "2dc965d6-bad3-4916-83ca-54e9e9cfcbd3",
+      "inventory_metadata": {
+        "row": "322",
+        "band": "SPHEREx-D6",
+        "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/6/level2_2025W19_2B_0101_1D6_spx_l2b-v20-2025-247.fits",
+        "time_start": "60804.148555",
+        "time_end": "60804.149887",
+        "provenance_version": "6.4",
+        "version": "6.4+psffix1",
+        "wavelength_um": "4.8445100135297245",
+        "bandwidth_um": "0.036759275226334216",
+        "status": "MEASURED_VISUALIZATION_WCS",
+        "fits_sha256": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219",
+        "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/6/level2_2025W19_2B_0101_1D6_spx_l2b-v20-2025-247.fits?center=210.802270000,54.348950000d&size=0.04",
+        "error": ""
+      },
+      "archive_release": "qr2",
+      "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/6/level2_2025W19_2B_0101_1D6_spx_l2b-v20-2025-247.fits",
+      "reference_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "position_kind": "saved_M101_reference",
+      "cutout_xy_fractional": [
+        11.070939499376898,
+        10.714746205885644
+      ],
+      "cutout_center_xy": [
+        11.0,
+        11.0
+      ],
+      "detector_xy_fractional": [
+        1145.070939499377,
+        499.71474620588566
+      ],
+      "detector_xy_selected": [
+        1145,
+        500
+      ],
+      "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+      "near_pixel_boundary": false,
+      "alternate_a_simplified_formula_valid": true,
+      "flags_at_selected_cutout_pixel": 2097152,
+      "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+      "l1dqaflg": "Pass",
+      "l2dqaflg": "Pass",
+      "approximate_wavelength_um": 4.8445100135297245,
+      "approximate_bandwidth_um": 0.036759275226334216,
+      "subchannel": 13,
+      "global_channel": 98,
+      "nominal_wavelength_um": 4.836999893188477,
+      "wl_min_um": 4.815999984741211,
+      "wl_max_um": 4.855999946594238,
+      "nominal_bandwidth_um": 0.03700000047683716,
+      "R": 131.0,
+      "R_STD": 2.299999952316284,
+      "channel_map_value": 13,
+      "cwave_um": null,
+      "cband_um": null,
+      "channel_map_orientation_agrees": true,
+      "channel_map_version_linkage_verified": false,
+      "near_channel_boundary": false,
+      "external_wavelength_status": "CWAVE_NOT_AVAILABLE",
+      "external_values_valid": null,
+      "cwave_in_nominal_interval": null,
+      "external_detector_agrees": null,
+      "external_orientation_agrees": null,
+      "cwave_minus_approx_um": null,
+      "cband_minus_approx_um": null,
+      "spatial_registration": {
+        "status": "NATIVE_WCS_ONLY_NOT_INDEPENDENTLY_REGISTERED",
+        "footprint_corners_ra_dec_deg": [
+          [
+            210.80664650952846,
+            54.3756621180498
+          ],
+          [
+            210.75709208654462,
+            54.35163825856295
+          ],
+          [
+            210.79636041882185,
+            54.32180260841209
+          ],
+          [
+            210.84589909192692,
+            54.345813418292444
+          ]
+        ],
+        "pixel_scale_arcsec": [
+          6.165992253130997,
+          6.16121516477492
+        ],
+        "residual_pixels": null,
+        "reprojected": false
+      },
+      "timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "product_kind": "dated_single_exposure_cutout",
+      "source_reference": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D6_row322.fits",
+        "sha256": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219"
+      },
+      "preview": {
+        "path": "exposure_previews/sample_D6_row322.png",
+        "sha256": "98ddb0ad5cbaadbd7943901dcfb1d6a510a39c1090b0ff269f6281c9c269d675",
+        "byte_length": 737,
+        "source_fits_sha256": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219",
+        "display_method": "Per-exposure linear 1st/99th percentile grayscale, native pixels, finite mask only",
+        "low": 0.6018712711334229,
+        "high": 2.599549665451052,
+        "unit": "MJy / sr",
+        "quality_status": "EXPOSURE_FLAGS_UNASSESSED_INSPECTION_ONLY",
+        "registration_status": "NATIVE_GRID_NOT_REGISTERED",
+        "compare_brightness_across_previews": false
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2026W25_1A_0614_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2026-06-18T00:38:42.293Z",
+      "wavelength_difference_um": 0.20821415716416736,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2026W26_1A_0500_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "wavelength_difference_um": 0.7412585723014877,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2025W19_2B_0346_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2025-05-10T17:04:37.741Z",
+      "wavelength_difference_um": 0.7573635089012192,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 1.4470481731151454,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2026W25_1A_0641_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2026-06-18T03:54:38.021Z",
+      "wavelength_difference_um": 1.3701911621334655,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2025W21_1B_0485_2",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "wavelength_difference_um": 1.6882157594997333,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2026W25_1A_0614_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2026-06-18T00:38:42.292Z",
+      "wavelength_difference_um": 2.4716159787401017,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2025W19_2B_0346_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2025-05-10T17:04:37.742Z",
+      "wavelength_difference_um": 3.5308680068189715,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2026W26_1A_0500_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "wavelength_difference_um": 3.514230683475794,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 4.096029644638586,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0614_1",
+      "b": "2026W26_1A_0500_1",
+      "a_timestamp_utc": "2026-06-18T00:38:42.293Z",
+      "b_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "wavelength_difference_um": 0.5330444151373204,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0614_1",
+      "b": "2025W19_2B_0346_1",
+      "a_timestamp_utc": "2026-06-18T00:38:42.293Z",
+      "b_timestamp_utc": "2025-05-10T17:04:37.741Z",
+      "wavelength_difference_um": 0.5491493517370518,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0614_1",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2026-06-18T00:38:42.293Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 1.238834015950978,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0614_1",
+      "b": "2026W25_1A_0641_1",
+      "a_timestamp_utc": "2026-06-18T00:38:42.293Z",
+      "b_timestamp_utc": "2026-06-18T03:54:38.021Z",
+      "wavelength_difference_um": 1.1619770049692981,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0614_1",
+      "b": "2025W21_1B_0485_2",
+      "a_timestamp_utc": "2026-06-18T00:38:42.293Z",
+      "b_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "wavelength_difference_um": 1.480001602335566,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0614_1",
+      "b": "2026W25_1A_0614_1",
+      "a_timestamp_utc": "2026-06-18T00:38:42.293Z",
+      "b_timestamp_utc": "2026-06-18T00:38:42.292Z",
+      "wavelength_difference_um": 2.2634018215759344,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0614_1",
+      "b": "2025W19_2B_0346_1",
+      "a_timestamp_utc": "2026-06-18T00:38:42.293Z",
+      "b_timestamp_utc": "2025-05-10T17:04:37.742Z",
+      "wavelength_difference_um": 3.322653849654804,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0614_1",
+      "b": "2026W26_1A_0500_1",
+      "a_timestamp_utc": "2026-06-18T00:38:42.293Z",
+      "b_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "wavelength_difference_um": 3.306016526311627,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0614_1",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2026-06-18T00:38:42.293Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 3.887815487474418,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W26_1A_0500_1",
+      "b": "2025W19_2B_0346_1",
+      "a_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "b_timestamp_utc": "2025-05-10T17:04:37.741Z",
+      "wavelength_difference_um": 0.016104936599731445,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.5651651333419307,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W26_1A_0500_1",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 0.7057896008136577,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W26_1A_0500_1",
+      "b": "2026W25_1A_0641_1",
+      "a_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "b_timestamp_utc": "2026-06-18T03:54:38.021Z",
+      "wavelength_difference_um": 0.6289325898319778,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W26_1A_0500_1",
+      "b": "2025W21_1B_0485_2",
+      "a_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "b_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "wavelength_difference_um": 0.9469571871982456,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W26_1A_0500_1",
+      "b": "2026W25_1A_0614_1",
+      "a_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "b_timestamp_utc": "2026-06-18T00:38:42.292Z",
+      "wavelength_difference_um": 1.730357406438614,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W26_1A_0500_1",
+      "b": "2025W19_2B_0346_1",
+      "a_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "b_timestamp_utc": "2025-05-10T17:04:37.742Z",
+      "wavelength_difference_um": 2.7896094345174838,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W26_1A_0500_1",
+      "b": "2026W26_1A_0500_1",
+      "a_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "b_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "wavelength_difference_um": 2.7729721111743064,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W26_1A_0500_1",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 3.3547710723370976,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0346_1",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2025-05-10T17:04:37.741Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 0.6896846642139263,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0346_1",
+      "b": "2026W25_1A_0641_1",
+      "a_timestamp_utc": "2025-05-10T17:04:37.741Z",
+      "b_timestamp_utc": "2026-06-18T03:54:38.021Z",
+      "wavelength_difference_um": 0.6128276532322463,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0346_1",
+      "b": "2025W21_1B_0485_2",
+      "a_timestamp_utc": "2025-05-10T17:04:37.741Z",
+      "b_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "wavelength_difference_um": 0.9308522505985142,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0346_1",
+      "b": "2026W25_1A_0614_1",
+      "a_timestamp_utc": "2025-05-10T17:04:37.741Z",
+      "b_timestamp_utc": "2026-06-18T00:38:42.292Z",
+      "wavelength_difference_um": 1.7142524698388826,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0346_1",
+      "b": "2025W19_2B_0346_1",
+      "a_timestamp_utc": "2025-05-10T17:04:37.741Z",
+      "b_timestamp_utc": "2025-05-10T17:04:37.742Z",
+      "wavelength_difference_um": 2.7735044979177523,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0346_1",
+      "b": "2026W26_1A_0500_1",
+      "a_timestamp_utc": "2025-05-10T17:04:37.741Z",
+      "b_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "wavelength_difference_um": 2.756867174574575,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0346_1",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2025-05-10T17:04:37.741Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 3.338666135737366,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0101_1",
+      "b": "2026W25_1A_0641_1",
+      "a_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "b_timestamp_utc": "2026-06-18T03:54:38.021Z",
+      "wavelength_difference_um": 0.07685701098167996,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0101_1",
+      "b": "2025W21_1B_0485_2",
+      "a_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "b_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "wavelength_difference_um": 0.2411675863845879,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0101_1",
+      "b": "2026W25_1A_0614_1",
+      "a_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "b_timestamp_utc": "2026-06-18T00:38:42.292Z",
+      "wavelength_difference_um": 1.0245678056249563,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0101_1",
+      "b": "2025W19_2B_0346_1",
+      "a_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "b_timestamp_utc": "2025-05-10T17:04:37.742Z",
+      "wavelength_difference_um": 2.083819833703826,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0101_1",
+      "b": "2026W26_1A_0500_1",
+      "a_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "b_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "wavelength_difference_um": 2.0671825103606487,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0101_1",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 2.64898147152344,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0641_1",
+      "b": "2025W21_1B_0485_2",
+      "a_timestamp_utc": "2026-06-18T03:54:38.021Z",
+      "b_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "wavelength_difference_um": 0.31802459736626787,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0641_1",
+      "b": "2026W25_1A_0614_1",
+      "a_timestamp_utc": "2026-06-18T03:54:38.021Z",
+      "b_timestamp_utc": "2026-06-18T00:38:42.292Z",
+      "wavelength_difference_um": 1.1014248166066363,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0641_1",
+      "b": "2025W19_2B_0346_1",
+      "a_timestamp_utc": "2026-06-18T03:54:38.021Z",
+      "b_timestamp_utc": "2025-05-10T17:04:37.742Z",
+      "wavelength_difference_um": 2.160676844685506,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0641_1",
+      "b": "2026W26_1A_0500_1",
+      "a_timestamp_utc": "2026-06-18T03:54:38.021Z",
+      "b_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "wavelength_difference_um": 2.1440395213423287,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0641_1",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2026-06-18T03:54:38.021Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 2.72583848250512,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2026W25_1A_0614_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2026-06-18T00:38:42.292Z",
+      "wavelength_difference_um": 0.7834002192403684,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2025W19_2B_0346_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2025-05-10T17:04:37.742Z",
+      "wavelength_difference_um": 1.8426522473192382,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2026W26_1A_0500_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "wavelength_difference_um": 1.8260149239760608,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W21_1B_0485_2",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 2.407813885138852,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0614_1",
+      "b": "2025W19_2B_0346_1",
+      "a_timestamp_utc": "2026-06-18T00:38:42.292Z",
+      "b_timestamp_utc": "2025-05-10T17:04:37.742Z",
+      "wavelength_difference_um": 1.0592520280788698,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0614_1",
+      "b": "2026W26_1A_0500_1",
+      "a_timestamp_utc": "2026-06-18T00:38:42.292Z",
+      "b_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "wavelength_difference_um": 1.0426147047356924,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W25_1A_0614_1",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2026-06-18T00:38:42.292Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 1.6244136658984836,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0346_1",
+      "b": "2026W26_1A_0500_1",
+      "a_timestamp_utc": "2025-05-10T17:04:37.742Z",
+      "b_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "wavelength_difference_um": 0.016637323343177357,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.552909261840669,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.5.7"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2025W19_2B_0346_1",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2025-05-10T17:04:37.742Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 0.5651616378196138,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.4+psffix1",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    },
+    {
+      "a": "2026W26_1A_0500_1",
+      "b": "2025W19_2B_0101_1",
+      "a_timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "b_timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "wavelength_difference_um": 0.5817989611627912,
+      "rectangular_bandpass_overlap_fraction_of_narrower": 0.0,
+      "spectral_screen_passed": false,
+      "spectral_compatibility_validated": false,
+      "registration_quality_validated": false,
+      "registration_residual_pixels": null,
+      "processing_releases": [
+        "qr2",
+        "qr2"
+      ],
+      "pipeline_versions": [
+        "6.5.7",
+        "6.4+psffix1"
+      ],
+      "comparison_enabled": false,
+      "disabled_reasons": [
+        "Fails conservative center/bandwidth compatibility screening",
+        "Independent astrometric registration/residual quality not assessed",
+        "Calibration identity and exposure science usability not verified"
+      ]
+    }
+  ],
+  "enabled_pair_count": 0,
+  "screening_policy": {
+    "minimum_rectangular_overlap_fraction": 0.8,
+    "maximum_center_separation_fraction_of_narrower_bandwidth": 0.25,
+    "meaning": "Candidate screening only; approximate rectangular passbands do not establish equal effective responses."
+  },
+  "registration_policy": "Require independently measured astrometric residuals, shared sky grid/overlap, compatible effective bandpasses, calibration and science-specific quality before enabling. No certified tolerance is supplied."
+}
