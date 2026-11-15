@@ -1,0 +1,40 @@
+name: PARALLAX editorial regression
+on:
+  pull_request:
+    branches:
+      - release/rc2-collaboration
+    paths:
+      - 'src/**'
+      - 'scripts/generate-azure-narration.mjs'
+      - 'tests/**'
+      - 'release/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/editorial-regression.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Unit and editorial regression tests
+        run: npm test
+      - name: Scoped lint
+        run: npm run lint
+      - name: Production build
+        run: npm run build
+      - name: Verify the 630 unchanged scientific assets
+        run: python release/verify_assets.py

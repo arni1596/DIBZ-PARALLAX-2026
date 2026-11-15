@@ -1,6 +1,6 @@
 # Azure AI Speech narration for PARALLAX
 
-The optional Guided Evidence Tour uses the reviewed six-chapter script in `src/GuidedStory.tsx`. If audio files `public/narration/chapter-01.mp3` through `chapter-06.mp3` exist, it plays those; otherwise it falls back to a visitor's browser speech synthesis. Transcripts are always visible. Nothing in the astronomical data requires Azure.
+The Guided Evidence Tour uses the reviewed six-chapter script in `src/GuidedStory.tsx`. If audio files `public/narration/editorial-v2/chapter-01.mp3` through `editorial-v2/chapter-06.mp3` exist, it plays those; otherwise it falls back to a visitor's browser speech synthesis. Transcripts are always visible. Nothing in the astronomical data requires Azure.
 
 ## One-time account setup
 
@@ -10,16 +10,16 @@ In [Azure Portal](https://portal.azure.com/), create or select an **Azure AI Spe
 
 ```powershell
 # Run from this repository's root
-$env:AZURE_SPEECH_REGION = 'YOUR_RESOURCE_REGION'
+$env:AZURE_SPEECH_REGION = 'eastus'
 $env:AZURE_SPEECH_KEY = Read-Host 'Azure Speech resource key'
 $env:AZURE_SPEECH_VOICE = 'en-US-JennyNeural'
 node scripts/generate-azure-narration.mjs
 Remove-Item Env:AZURE_SPEECH_KEY
 ```
 
-The generator reads all six stories from the exact on-screen text, escapes XML safely, calls the authenticated Azure REST endpoint on the **developer machine only**, and saves validated MP3s in `public/narration/`. It fails clearly on missing credentials, API errors, or incomplete narration.
+The generator reads all six stories from the exact on-screen text, escapes XML safely, calls the authenticated Azure REST endpoint on the **developer machine only**, and saves validated MP3s in `public/narration/editorial-v2/`. It fails clearly on missing credentials, API errors, or incomplete narration.
 
-You must explicitly review the MP3s and decide whether to commit the six generated audio assets through your normal rights and release process. Do not commit or publish any secret. The current pull request contains **no Azure-generated MP3s**, so do not say Azure is live until they are actually generated, committed, deployed, and smoke-tested.
+You must explicitly review the MP3s and decide whether to commit the six generated audio assets through your normal rights and release process. Do not commit or publish any secret. The revised narration has new wording. Older six-track MP3s must not be reused for it. The new `editorial-v2` filenames deliberately separate those audio versions. Do not claim this release contains Azure audio until the revised tracks have been generated, committed, deployed and checked.
 
 ## QA and safeguards
 

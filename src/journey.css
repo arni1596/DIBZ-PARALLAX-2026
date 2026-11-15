@@ -46,3 +46,29 @@ body{background:var(--bg);color:var(--ink)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 @media(max-width:650px){.light-act .instrument-brief{display:none}}
+
+
+/* Editorial finishing pass. Keep the observation, not the chrome, in focus. */
+.entry-hero{gap:clamp(36px,6vw,112px);padding-block:clamp(72px,8vw,124px);min-height:min(88vh,880px)}
+.entry-hero h1{max-width:11ch;letter-spacing:-.055em;text-wrap:balance}
+.hero-copy .hero-description{max-width:37ch;line-height:1.55;margin-bottom:38px}
+.hero-begin{min-width:220px;justify-content:center;gap:26px}
+.hero-observation{background:transparent;border-color:var(--rule);padding:clamp(12px,2vw,20px)}
+.hero-observation figcaption{padding-top:18px}
+.investigation-index{padding-block:clamp(56px,7vw,100px)}
+.investigation-index h2{max-width:19ch}
+.investigation-rows>a{transition:background-color .15s ease}
+.instrument-brief{gap:16px;margin-top:18px}
+.instrument-brief span{border-bottom:1px solid var(--rule);padding-bottom:8px}
+.history-act{max-width:1100px;margin-inline:auto;padding-block:clamp(72px,9vw,140px)}
+.history-act h1{max-width:16ch;font-size:clamp(44px,5vw,72px)}
+.history-act>p:not(.eyebrow){max-width:62ch;font-size:clamp(16px,1.5vw,19px);line-height:1.7}
+.passport-introduction h1{text-wrap:balance}
+@media(max-width:650px){
+ .entry-hero{min-height:0;padding-block:44px 56px;gap:36px}
+ .hero-copy .hero-description{margin-bottom:27px}
+ .hero-observation{max-width:440px;justify-self:center}
+ .investigation-index{padding-block:48px 60px}
+ .history-act{padding-block:62px}
+}
+@media(prefers-reduced-motion:reduce){.investigation-rows>a{transition:none}}
