@@ -9,6 +9,7 @@ import AtlasInvestigation from './investigation/AtlasInvestigation.tsx';
 import {DatedGallery} from './datedGallery.tsx';
 import {SpectralReveal} from './reveal.tsx';
 import {SkyTheater} from './theater.tsx';
+import {SiteHeader} from './SiteHeader.tsx';
 import './style.css';
 import Journey from './journey';
 import './journey.css';
@@ -16,6 +17,7 @@ import './touch-targets.css';
 import './responsive.css';
 import './dropdowns.css';
 import './motion.css';
+import './menu.css';
 const regionNames:Record<string,string>={pixel:'Selected pixel',disk:'Custom circular region',target_pixel:'M101 reference pixel',core_30arcsec:'Central 30″ aperture',central_120arcsec:'Central 120″ aperture',reference_annulus_240_360arcsec:'Reference annulus · 240–360″',full_frame:'Full mosaic frame'};
 function modeForHash(hash:string){return /^#(dated=|time$|dated-evidence$)/.test(hash)?'time':/^#(reveal=|compare=|spectral$|single$|evidence$|comparison-evidence$|wavelength-navigation$)/.test(hash)?'spectral':'investigation';}
 function Boot(){const [route,setRoute]=useState(location.hash);useEffect(()=>{const update=()=>setRoute(location.hash);window.addEventListener('hashchange',update);return()=>window.removeEventListener('hashchange',update)},[]);return !route||route.startsWith('#journey')?<Journey/>:route.startsWith('#atlas')?<AtlasInvestigation/>:<DatasetBoot/>}
@@ -53,11 +55,7 @@ function Explorer({data:d}:{data:Bundle}){
  useEffect(()=>{const pause=()=>{if(document.hidden)setPlaying(false)};document.addEventListener('visibilitychange',pause);return()=>document.removeEventListener('visibilitychange',pause)},[]);
  const coverage=d.coverage.channels.find(c=>c.global_channel===active)!.regions.full_frame;
  function explore(){setStarted(true);document.getElementById('wavelength-navigation')?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'})}
- return <><a className="skip-link" href="#main-content">Skip to observations</a><header className="site-header"><a className="brand" href="/" aria-label="PARALLAX home"><span>◈</span> PARALLAX</a><span className="site-purpose">{mode==='investigation'?'OBSERVATION → EVIDENCE':mode==='time'?'DATED OBSERVATIONS / M101':'SPECTRAL REVEAL / M101'}</span><nav aria-label="Main navigation"><button onClick={()=>{location.hash='atlas'}}>3I / ATLAS</button>
- <button aria-pressed={mode==='investigation'} onClick={()=>navigate('investigation')}>Investigation</button>
- <button aria-pressed={mode==='spectral'} onClick={()=>navigate('spectral')}>M101 wavelengths</button>
- <button className="time-mode-nav" aria-pressed={mode==='time'} onClick={()=>navigate('time')}>M101 dates</button>
- <a onClick={()=>{const target=document.getElementById(mode==='time'?'dated-evidence':'evidence');if(target instanceof HTMLDetailsElement)target.open=true}} href={mode==='investigation'?'#investigation-verify':mode==='time'?'#dated-evidence':'#evidence'}>The evidence ↗</a></nav></header>
+ return <><a className="skip-link" href="#main-content">Skip to observations</a><SiteHeader variant="explorer" current={mode==='investigation'?'investigation':mode==='time'?'time':'spectral'} purpose={mode==='investigation'?'OBSERVATION → EVIDENCE':mode==='time'?'DATED OBSERVATIONS / M101':'SPECTRAL REVEAL / M101'} onNavigate={tab=>{if(tab==='atlas')location.hash='atlas';else navigate(tab)}} evidence={{href:mode==='investigation'?'#investigation-verify':mode==='time'?'#dated-evidence':'#evidence',onClick:()=>{const target=document.getElementById(mode==='time'?'dated-evidence':'evidence');if(target instanceof HTMLDetailsElement)target.open=true}}} m101SourceUrl={d.science.cube.candidate_documented_origin.url}/>
  <main className="public-experience" id="main-content" tabIndex={-1}>{mode==='spectral'&&!revealMode&&started&&<h1 className="sr-only">M101 single-wavelength explorer</h1>}
  {mode==='investigation'?<Investigation onExploreM101={()=>navigate('spectral')} onExploreDates={()=>navigate('time')}/>:mode==='time'?<><button className="back-to-sky" onClick={()=>navigate('spectral')}>← Back to the sky</button><DatedGallery data={d}/></>:<>
  <div className="spectral-workspace-tools"><button onClick={()=>{setRevealMode(v=>!v);history.replaceState(null,'',location.pathname+(revealMode?'#single':'#spectral'))}}>{revealMode?'Open single-wavelength viewer':'Open spectral reveal'}</button><button onClick={()=>{setStarted(true);setGuide(true)}}>A quick field guide</button><button aria-expanded={investigating} onClick={()=>{setPlaying(false);setInvestigating(v=>!v)}}>{investigating?'Close numerical investigation':'Investigate a region'}</button></div>
