@@ -1,0 +1,102 @@
+/*
+  Page transitions and hover feedback. Loaded last from main.tsx.
+  Visitors who ask for reduced motion get no movement (see the end).
+*/
+
+/* --- 1. Smoother page and chapter changes ---
+   Pages used to swap instantly. Each chapter or page now fades in and
+   rises slightly when it appears. CSS-only (@starting-style); browsers
+   without support keep the instant swap. */
+.observatory main > section,
+.public-experience > .investigation,
+.public-experience > .spectral-reveal,
+.public-experience > .sky-theater,
+.public-experience > .dated-gallery,
+.atlas-experience,
+.spectral-reveal {
+  transition:
+    opacity 0.35s ease-out,
+    translate 0.35s ease-out;
+}
+@starting-style {
+  .observatory main > section,
+  .public-experience > .investigation,
+  .public-experience > .spectral-reveal,
+  .public-experience > .sky-theater,
+  .public-experience > .dated-gallery,
+  .atlas-experience,
+  .spectral-reveal {
+    opacity: 0;
+    translate: 0 10px;
+  }
+}
+
+/* --- 2. Hover feedback on every button, link and toggle --- */
+
+/* Smooth color changes instead of instant jumps */
+button,
+a[href],
+summary,
+[role='tab'] {
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    filter 0.18s ease,
+    opacity 0.18s ease,
+    translate 0.18s ease;
+}
+
+/* Only on devices with a real mouse/trackpad, so taps on phones don't
+   leave a "stuck" hover look. */
+@media (hover: hover) and (pointer: fine) {
+  /* Light "primary" buttons and links: brighten and lift slightly */
+  button.primary:hover:not(:disabled),
+  a.primary:hover {
+    filter: brightness(1.08);
+    translate: 0 -1px;
+    box-shadow: 0 6px 18px #0006;
+    text-decoration: none;
+  }
+
+  /* Already-selected buttons (chosen case, active layout, chosen date) */
+  button[aria-pressed='true']:hover,
+  button[aria-current]:hover,
+  button.chosen:hover,
+  .atlas-date-strip button:hover,
+  .reveal-layout-controls button:hover {
+    filter: brightness(1.15);
+  }
+
+  /* "Show more" toggles: subtle tint behind the row */
+  summary:hover {
+    background-color: #ffffff0d;
+    border-radius: 6px;
+  }
+
+  /* Logo and the 3I/ATLAS page's top menu */
+  a.brand:hover,
+  .site-header nav > a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+/* --- Reduced motion: no fades, rises or lifts --- */
+@media (prefers-reduced-motion: reduce) {
+  .observatory main > section,
+  .public-experience > .investigation,
+  .public-experience > .spectral-reveal,
+  .public-experience > .sky-theater,
+  .public-experience > .dated-gallery,
+  .atlas-experience,
+  .spectral-reveal,
+  button,
+  a[href],
+  summary,
+  [role='tab'] {
+    transition: none !important;
+    translate: none !important;
+  }
+}
