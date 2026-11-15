@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "pair_count": 55,
+  "candidate_resamplings": 2,
+  "images_checked": 11,
+  "pixel_checks": [
+    {
+      "filename": "sample_D1_row0.fits",
+      "pixels": 529,
+      "eligible": 520,
+      "png_matches_native_values_and_mask": true,
+      "original_sha256_unchanged": true
+    },
+    {
+      "filename": "sample_D1_row52.fits",
+      "pixels": 529,
+      "eligible": 511,
+      "png_matches_native_values_and_mask": true,
+      "original_sha256_unchanged": true
+    },
+    {
+      "filename": "sample_D2_row136.fits",
+      "pixels": 552,
+      "eligible": 547,
+      "png_matches_native_values_and_mask": true,
+      "original_sha256_unchanged": true
+    },
+    {
+      "filename": "sample_D2_row53.fits",
+      "pixels": 529,
+      "eligible": 521,
+      "png_matches_native_values_and_mask": true,
+      "original_sha256_unchanged": true
+    },
+    {
+      "filename": "sample_D3_row137.fits",
+      "pixels": 529,
+      "eligible": 523,
+      "png_matches_native_values_and_mask": true,
+      "original_sha256_unchanged": true
+    },
+    {
+      "filename": "sample_D3_row186.fits",
+      "pixels": 529,
+      "eligible": 527,
+      "png_matches_native_values_and_mask": true,
+      "original_sha256_unchanged": true
+    },
+    {
+      "filename": "sample_D4_row187.fits",
+      "pixels": 529,
+      "eligible": 527,
+      "png_matches_native_values_and_mask": true,
+      "original_sha256_unchanged": true
+    },
+    {
+      "filename": "sample_D4_row239.fits",
+      "pixels": 529,
+      "eligible": 525,
+      "png_matches_native_values_and_mask": true,
+      "original_sha256_unchanged": true
+    },
+    {
+      "filename": "sample_D5_row240.fits",
+      "pixels": 529,
+      "eligible": 525,
+      "png_matches_native_values_and_mask": true,
+      "original_sha256_unchanged": true
+    },
+    {
+      "filename": "sample_D5_row321.fits",
+      "pixels": 529,
+      "eligible": 508,
+      "png_matches_native_values_and_mask": true,
+      "original_sha256_unchanged": true
+    },
+    {
+      "filename": "sample_D6_row322.fits",
+      "pixels": 529,
+      "eligible": 527,
+      "png_matches_native_values_and_mask": true,
+      "original_sha256_unchanged": true
+    }
+  ],
+  "registration_gate": "NOT PASSED",
+  "original_input_hashes_unchanged": 17
+}

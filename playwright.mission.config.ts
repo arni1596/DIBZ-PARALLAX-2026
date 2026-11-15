@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./tests/e2e',fullyParallel:false,retries:0,workers:1,reporter:[['list'],['json',{outputFile:'mission-browser-results.json'}]],use:{baseURL:'http://127.0.0.1:5174',channel:'chrome',trace:'retain-on-failure'},webServer:{command:'npm run preview -- --port 5174',url:'http://127.0.0.1:5174',reuseExistingServer:true},projects:[{name:'desktop',use:{viewport:{width:1440,height:900}}},{name:'mobile',use:{viewport:{width:390,height:844},isMobile:true,hasTouch:true}}]});

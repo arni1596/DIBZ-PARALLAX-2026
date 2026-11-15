@@ -1,0 +1,1713 @@
+{
+  "schema_version": 1,
+  "observations": [
+    {
+      "external_cwave_um": null,
+      "external_cband_um": null,
+      "external_calibration_status": "UNAVAILABLE",
+      "flag_header_definitions": {
+        "MP_TRANSIENT": {
+          "value": "0",
+          "comment": "Transient detected during SUR"
+        },
+        "MP_OVERFLOW": {
+          "value": "1",
+          "comment": "Overflow detected during SUR"
+        },
+        "MP_SUR_ERROR": {
+          "value": "2",
+          "comment": "Error in onboard processing"
+        },
+        "MP_PHANTOM": {
+          "value": "4",
+          "comment": "Phantom pixel"
+        },
+        "MP_REFERENCE": {
+          "value": "5",
+          "comment": "Reference pixel"
+        },
+        "MP_NONFUNC": {
+          "value": "6",
+          "comment": "Permanently unusable"
+        },
+        "MP_DICHROIC": {
+          "value": "7",
+          "comment": "Low efficiency due to dichroic"
+        },
+        "MP_MISSING_DATA": {
+          "value": "9",
+          "comment": "Onboard data lost"
+        },
+        "MP_HOT": {
+          "value": "10",
+          "comment": "Hot pixel"
+        },
+        "MP_COLD": {
+          "value": "11",
+          "comment": "Anomalously low signal"
+        },
+        "MP_FULLSAMPLE": {
+          "value": "12",
+          "comment": "Pixel full sample history is available"
+        },
+        "MP_PHANMISS": {
+          "value": "14",
+          "comment": "Phantom correction was not applied"
+        },
+        "MP_NONLINEAR": {
+          "value": "15",
+          "comment": "Nonlinearity correction cannot be applied reliably"
+        },
+        "MP_PERSIST": {
+          "value": "17",
+          "comment": "Persistent charge above threshold"
+        },
+        "MP_OUTLIER": {
+          "value": "19",
+          "comment": "Pixel flagged by Detect Outliers"
+        },
+        "MP_SOURCE": {
+          "value": "21",
+          "comment": "Pixel mapped to a known source"
+        }
+      },
+      "approximate_spectral_corner_center_samples_um": [
+        [
+          0.7500404329860912,
+          0.7469990975322379,
+          0.7485203095125905
+        ],
+        [
+          0.017792675571114414,
+          0.017536738965143288,
+          0.017666289704790575
+        ]
+      ],
+      "filename": "sample_D1_row0.fits",
+      "source_path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row0.fits",
+      "source_sha256": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b",
+      "observation_id": "2025W21_1B_0485_2",
+      "timestamp": "2025-05-21T12:21:34.537Z",
+      "mjd": 60816.514983067,
+      "detector": 1,
+      "release": "qr2",
+      "pipeline": "6.4+psffix1",
+      "wavelength_um": 0.7484803688911392,
+      "bandwidth_um": 0.0176653394139452,
+      "spectral_status": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "flags": "{\"2097152\": 520, \"2097153\": 7, \"2097157\": 2}",
+      "flag_bits": "{\"0\": 9, \"2\": 2, \"21\": 529}",
+      "excluded_pixels": 9,
+      "pixels": 529,
+      "variance_zero_pixels": 0,
+      "finite_pixels": 529,
+      "finast": 0,
+      "spatial_ctype": [
+        "RA---TAN-SIP",
+        "DEC--TAN-SIP"
+      ],
+      "sip_retained": true,
+      "wcs_roundtrip_max_pixels": 7.415127103335685e-09,
+      "warnings": [],
+      "l1": "Pass",
+      "l2": "Pass",
+      "calibration_verified": false,
+      "calibration_history": [
+        "[CALIB] dichroic b89fcd2a-fcce-483d-afb0-9c2641ba8810",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] initial_distortion_table f34a9ef8-e81a-4c7d-8322-e7da6e458ef9",
+        "[CALIB] nonfunc 6a7844ce-01e7-4c09-98d2-5cf864c83342",
+        "[CALIB] spectral_wcs 15a36c9f-e41f-451f-96a6-fede67db772b",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] nonlinear_pars 72d57b98-397f-4a56-9b09-030ffefd3669",
+        "[CALIB] readnoise_pars 2d866e7f-ee98-4f97-b456-4db171725c49",
+        "[CALIB] abs_gain_matrix 03070963-2dc3-47d8-b2ca-aa2d948b5dc4",
+        "[CALIB] average_psf 31ef78d0-3754-4acf-b33e-ee6d113dc368",
+        "[CALIB] dark 9149b16f-a042-4ece-883a-b2847f0cb06a",
+        "[CALIB] spectral_wcs 15a36c9f-e41f-451f-96a6-fede67db772b",
+        "[CALIB] spectral_wcs cd042489-a2c5-49ca-97f5-4bbf880d9900"
+      ]
+    },
+    {
+      "external_cwave_um": null,
+      "external_cband_um": null,
+      "external_calibration_status": "UNAVAILABLE",
+      "flag_header_definitions": {
+        "MP_TRANSIENT": {
+          "value": "0",
+          "comment": "Transient detected during SUR"
+        },
+        "MP_OVERFLOW": {
+          "value": "1",
+          "comment": "Overflow detected during SUR"
+        },
+        "MP_SUR_ERROR": {
+          "value": "2",
+          "comment": "Error in onboard processing"
+        },
+        "MP_PHANTOM": {
+          "value": "4",
+          "comment": "Phantom pixel"
+        },
+        "MP_REFERENCE": {
+          "value": "5",
+          "comment": "Reference pixel"
+        },
+        "MP_NONFUNC": {
+          "value": "6",
+          "comment": "Permanently unusable"
+        },
+        "MP_DICHROIC": {
+          "value": "7",
+          "comment": "Low efficiency due to dichroic"
+        },
+        "MP_MISSING_DATA": {
+          "value": "9",
+          "comment": "Onboard data lost"
+        },
+        "MP_HOT": {
+          "value": "10",
+          "comment": "Hot pixel"
+        },
+        "MP_COLD": {
+          "value": "11",
+          "comment": "Anomalously low signal"
+        },
+        "MP_FULLSAMPLE": {
+          "value": "12",
+          "comment": "Pixel full sample history is available"
+        },
+        "MP_PHANMISS": {
+          "value": "14",
+          "comment": "Phantom correction was not applied"
+        },
+        "MP_NONLINEAR": {
+          "value": "15",
+          "comment": "Nonlinearity correction cannot be applied reliably"
+        },
+        "MP_PERSIST": {
+          "value": "17",
+          "comment": "Persistent charge above threshold"
+        },
+        "MP_OUTLIER": {
+          "value": "19",
+          "comment": "Pixel flagged by Detect Outliers"
+        },
+        "MP_SOURCE": {
+          "value": "21",
+          "comment": "Pixel mapped to a known source"
+        },
+        "MP_GHOST": {
+          "value": "22",
+          "comment": "Affected by a bright source inside the exposure"
+        },
+        "MP_GHOST_FPA": {
+          "value": "23",
+          "comment": "Affected by a bright source on another detector"
+        },
+        "MP_GHOST_EXT": {
+          "value": "24",
+          "comment": "Pixel affected by a bright source outside FOV"
+        },
+        "MP_BLOOM": {
+          "value": "26",
+          "comment": "Pixel part of a bloom artifact"
+        },
+        "MP_SNOWBALL": {
+          "value": "27",
+          "comment": "Pixel part of a snowball artifact"
+        },
+        "MP_HALO": {
+          "value": "28",
+          "comment": "Pixel part of a transient halo"
+        }
+      },
+      "approximate_spectral_corner_center_samples_um": [
+        [
+          0.9588561719731614,
+          0.9546474209532101,
+          0.9567296431716339
+        ],
+        [
+          0.02445323753504742,
+          0.024255710892473813,
+          0.024343352538835357
+        ]
+      ],
+      "filename": "sample_D1_row52.fits",
+      "source_path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row52.fits",
+      "source_sha256": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6",
+      "observation_id": "2026W25_1A_0614_1",
+      "timestamp": "2026-06-18T00:38:42.293Z",
+      "mjd": 61209.026878391,
+      "detector": 1,
+      "release": "qr2",
+      "pipeline": "6.5.7",
+      "wavelength_um": 0.9566945260553066,
+      "bandwidth_um": 0.02434181680717791,
+      "spectral_status": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "flags": "{\"2097152\": 511, \"2097221\": 1, \"270532608\": 14, \"270532609\": 1, \"270532613\": 2}",
+      "flag_bits": "{\"0\": 4, \"2\": 3, \"6\": 1, \"21\": 529, \"28\": 17}",
+      "excluded_pixels": 18,
+      "pixels": 529,
+      "variance_zero_pixels": 0,
+      "finite_pixels": 529,
+      "finast": 0,
+      "spatial_ctype": [
+        "RA---TAN-SIP",
+        "DEC--TAN-SIP"
+      ],
+      "sip_retained": true,
+      "wcs_roundtrip_max_pixels": 1.3346058746906442e-07,
+      "warnings": [],
+      "l1": "Pass",
+      "l2": "Pass",
+      "calibration_verified": false,
+      "calibration_history": [
+        "[CALIB] dichroic b89fcd2a-fcce-483d-afb0-9c2641ba8810",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] initial_distortion_table f34a9ef8-e81a-4c7d-8322-e7da6e458ef9",
+        "[CALIB] nonfunc 019b2941-fd05-729f-8e85-c2b29d0eb2ef",
+        "[CALIB] spectral_wcs cd042489-a2c5-49ca-97f5-4bbf880d9900",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] nonlinear_pars 72d57b98-397f-4a56-9b09-030ffefd3669",
+        "[CALIB] readnoise_pars 2d866e7f-ee98-4f97-b456-4db171725c49",
+        "[CALIB] abs_gain_matrix 03070963-2dc3-47d8-b2ca-aa2d948b5dc4",
+        "[CALIB] average_psf 019d1d2c-48d0-784e-8649-022674e997b2",
+        "[CALIB] dark 9149b16f-a042-4ece-883a-b2847f0cb06a",
+        "[CALIB] sip 019b232f-0a9f-7ed0-8660-f4654d675144",
+        "[CALIB] spectral_wcs cd042489-a2c5-49ca-97f5-4bbf880d9900"
+      ]
+    },
+    {
+      "external_cwave_um": 1.489738941192627,
+      "external_cband_um": 0.03702513128519058,
+      "external_calibration_status": "AVAILABLE_PROVENANCE_UNVERIFIED",
+      "flag_header_definitions": {
+        "MP_TRANSIENT": {
+          "value": "0",
+          "comment": "Transient detected during SUR"
+        },
+        "MP_OVERFLOW": {
+          "value": "1",
+          "comment": "Overflow detected during SUR"
+        },
+        "MP_SUR_ERROR": {
+          "value": "2",
+          "comment": "Error in onboard processing"
+        },
+        "MP_PHANTOM": {
+          "value": "4",
+          "comment": "Phantom pixel"
+        },
+        "MP_REFERENCE": {
+          "value": "5",
+          "comment": "Reference pixel"
+        },
+        "MP_NONFUNC": {
+          "value": "6",
+          "comment": "Permanently unusable"
+        },
+        "MP_DICHROIC": {
+          "value": "7",
+          "comment": "Low efficiency due to dichroic"
+        },
+        "MP_MISSING_DATA": {
+          "value": "9",
+          "comment": "Onboard data lost"
+        },
+        "MP_HOT": {
+          "value": "10",
+          "comment": "Hot pixel"
+        },
+        "MP_COLD": {
+          "value": "11",
+          "comment": "Anomalously low signal"
+        },
+        "MP_FULLSAMPLE": {
+          "value": "12",
+          "comment": "Pixel full sample history is available"
+        },
+        "MP_PHANMISS": {
+          "value": "14",
+          "comment": "Phantom correction was not applied"
+        },
+        "MP_NONLINEAR": {
+          "value": "15",
+          "comment": "Nonlinearity correction cannot be applied reliably"
+        },
+        "MP_PERSIST": {
+          "value": "17",
+          "comment": "Persistent charge above threshold"
+        },
+        "MP_OUTLIER": {
+          "value": "19",
+          "comment": "Pixel flagged by Detect Outliers"
+        },
+        "MP_SOURCE": {
+          "value": "21",
+          "comment": "Pixel mapped to a known source"
+        },
+        "MP_GHOST": {
+          "value": "22",
+          "comment": "Affected by a bright source inside the exposure"
+        },
+        "MP_GHOST_FPA": {
+          "value": "23",
+          "comment": "Affected by a bright source on another detector"
+        },
+        "MP_GHOST_EXT": {
+          "value": "24",
+          "comment": "Pixel affected by a bright source outside FOV"
+        },
+        "MP_BLOOM": {
+          "value": "26",
+          "comment": "Pixel part of a bloom artifact"
+        },
+        "MP_SNOWBALL": {
+          "value": "27",
+          "comment": "Pixel part of a snowball artifact"
+        },
+        "MP_HALO": {
+          "value": "28",
+          "comment": "Pixel part of a transient halo"
+        }
+      },
+      "approximate_spectral_corner_center_samples_um": [
+        [
+          1.4938044667026256,
+          1.4862515623324974,
+          1.4900271792776856
+        ],
+        [
+          0.0365442674202785,
+          0.03637761314580721,
+          0.036460611090276734
+        ]
+      ],
+      "filename": "sample_D2_row136.fits",
+      "source_path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row136.fits",
+      "source_sha256": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+      "observation_id": "2026W26_1A_0500_1",
+      "timestamp": "2026-06-24T03:19:00.063Z",
+      "mjd": 61215.138195174,
+      "detector": 2,
+      "release": "qr2",
+      "pipeline": "6.5.7",
+      "wavelength_um": 1.489988171739384,
+      "bandwidth_um": 0.03645982019042382,
+      "spectral_status": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "flags": "{\"2097152\": 547, \"270532608\": 4, \"270532609\": 1}",
+      "flag_bits": "{\"0\": 1, \"21\": 552, \"28\": 5}",
+      "excluded_pixels": 5,
+      "pixels": 552,
+      "variance_zero_pixels": 0,
+      "finite_pixels": 552,
+      "finast": 0,
+      "spatial_ctype": [
+        "RA---TAN-SIP",
+        "DEC--TAN-SIP"
+      ],
+      "sip_retained": true,
+      "wcs_roundtrip_max_pixels": 4.109651067137263e-09,
+      "warnings": [],
+      "l1": "Pass",
+      "l2": "Pass",
+      "calibration_verified": false,
+      "calibration_history": [
+        "[CALIB] dichroic 2ca9ffb7-e6e9-4f8c-b85e-75ef2671614d",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] initial_distortion_table f34a9ef8-e81a-4c7d-8322-e7da6e458ef9",
+        "[CALIB] nonfunc 019b2942-1258-7f40-ba21-49fa7fa4e9a1",
+        "[CALIB] spectral_wcs a9cb438e-e37d-4888-a1a5-5a9db6ad0737",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] nonlinear_pars 81296b79-30e6-44ee-a7c1-5167be3e254a",
+        "[CALIB] readnoise_pars f6a0f49d-4bf8-43cb-ab45-46a912f0f98c",
+        "[CALIB] abs_gain_matrix 17b9dc97-03e7-4e17-9d1c-56abae92edc5",
+        "[CALIB] average_psf 019d1d2c-5a85-7ca8-85eb-7f3389d71fdd",
+        "[CALIB] dark c082adae-af5b-43f2-9130-03ddb1eeec1c",
+        "[CALIB] sip 019b232f-1fb2-7933-80f3-7f64c2a11b60",
+        "[CALIB] spectral_wcs a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+      ]
+    },
+    {
+      "external_cwave_um": 1.5058438777923584,
+      "external_cband_um": 0.03694658353924751,
+      "external_calibration_status": "AVAILABLE_PROVENANCE_UNVERIFIED",
+      "flag_header_definitions": {
+        "MP_TRANSIENT": {
+          "value": "0",
+          "comment": "Transient detected during SUR"
+        },
+        "MP_OVERFLOW": {
+          "value": "1",
+          "comment": "Overflow detected during SUR"
+        },
+        "MP_SUR_ERROR": {
+          "value": "2",
+          "comment": "Error in onboard processing"
+        },
+        "MP_PHANTOM": {
+          "value": "4",
+          "comment": "Phantom pixel"
+        },
+        "MP_REFERENCE": {
+          "value": "5",
+          "comment": "Reference pixel"
+        },
+        "MP_NONFUNC": {
+          "value": "6",
+          "comment": "Permanently unusable"
+        },
+        "MP_DICHROIC": {
+          "value": "7",
+          "comment": "Low efficiency due to dichroic"
+        },
+        "MP_MISSING_DATA": {
+          "value": "9",
+          "comment": "Onboard data lost"
+        },
+        "MP_HOT": {
+          "value": "10",
+          "comment": "Hot pixel"
+        },
+        "MP_COLD": {
+          "value": "11",
+          "comment": "Anomalously low signal"
+        },
+        "MP_FULLSAMPLE": {
+          "value": "12",
+          "comment": "Pixel full sample history is available"
+        },
+        "MP_PHANMISS": {
+          "value": "14",
+          "comment": "Phantom correction was not applied"
+        },
+        "MP_NONLINEAR": {
+          "value": "15",
+          "comment": "Nonlinearity correction cannot be applied reliably"
+        },
+        "MP_PERSIST": {
+          "value": "17",
+          "comment": "Persistent charge above threshold"
+        },
+        "MP_OUTLIER": {
+          "value": "19",
+          "comment": "Pixel flagged by Detect Outliers"
+        },
+        "MP_SOURCE": {
+          "value": "21",
+          "comment": "Pixel mapped to a known source"
+        }
+      },
+      "approximate_spectral_corner_center_samples_um": [
+        [
+          1.5094056060363676,
+          1.5031294078837905,
+          1.5062677322534908
+        ],
+        [
+          0.03699877794032794,
+          0.03689789526473898,
+          0.036949437572443566
+        ]
+      ],
+      "filename": "sample_D2_row53.fits",
+      "source_path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row53.fits",
+      "source_sha256": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+      "observation_id": "2025W19_2B_0346_1",
+      "timestamp": "2025-05-10T17:04:37.741Z",
+      "mjd": 60805.711547928,
+      "detector": 2,
+      "release": "qr2",
+      "pipeline": "6.4+psffix1",
+      "wavelength_um": 1.50641873138115,
+      "bandwidth_um": 0.03695268870639086,
+      "spectral_status": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "flags": "{\"2097152\": 521, \"2097157\": 3, \"2097216\": 1, \"2228224\": 4}",
+      "flag_bits": "{\"0\": 3, \"2\": 3, \"6\": 1, \"17\": 4, \"21\": 529}",
+      "excluded_pixels": 8,
+      "pixels": 529,
+      "variance_zero_pixels": 0,
+      "finite_pixels": 529,
+      "finast": 0,
+      "spatial_ctype": [
+        "RA---TAN-SIP",
+        "DEC--TAN-SIP"
+      ],
+      "sip_retained": true,
+      "wcs_roundtrip_max_pixels": 9.688056379663864e-08,
+      "warnings": [],
+      "l1": "Pass",
+      "l2": "Pass",
+      "calibration_verified": false,
+      "calibration_history": [
+        "[CALIB] dichroic 2ca9ffb7-e6e9-4f8c-b85e-75ef2671614d",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] initial_distortion_table f34a9ef8-e81a-4c7d-8322-e7da6e458ef9",
+        "[CALIB] nonfunc 14c3b71f-5632-4e40-925e-bfa636e01952",
+        "[CALIB] spectral_wcs bd447bc4-4f65-481b-84e9-a5f30a4f8715",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] nonlinear_pars 81296b79-30e6-44ee-a7c1-5167be3e254a",
+        "[CALIB] readnoise_pars f6a0f49d-4bf8-43cb-ab45-46a912f0f98c",
+        "[CALIB] abs_gain_matrix 17b9dc97-03e7-4e17-9d1c-56abae92edc5",
+        "[CALIB] average_psf b50151c0-9248-4ada-ae66-eff2f6879fa3",
+        "[CALIB] dark c082adae-af5b-43f2-9130-03ddb1eeec1c",
+        "[CALIB] spectral_wcs bd447bc4-4f65-481b-84e9-a5f30a4f8715",
+        "[CALIB] spectral_wcs a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+      ]
+    },
+    {
+      "external_cwave_um": null,
+      "external_cband_um": null,
+      "external_calibration_status": "UNAVAILABLE",
+      "flag_header_definitions": {
+        "MP_TRANSIENT": {
+          "value": "0",
+          "comment": "Transient detected during SUR"
+        },
+        "MP_OVERFLOW": {
+          "value": "1",
+          "comment": "Overflow detected during SUR"
+        },
+        "MP_SUR_ERROR": {
+          "value": "2",
+          "comment": "Error in onboard processing"
+        },
+        "MP_PHANTOM": {
+          "value": "4",
+          "comment": "Phantom pixel"
+        },
+        "MP_REFERENCE": {
+          "value": "5",
+          "comment": "Reference pixel"
+        },
+        "MP_NONFUNC": {
+          "value": "6",
+          "comment": "Permanently unusable"
+        },
+        "MP_DICHROIC": {
+          "value": "7",
+          "comment": "Low efficiency due to dichroic"
+        },
+        "MP_MISSING_DATA": {
+          "value": "9",
+          "comment": "Onboard data lost"
+        },
+        "MP_HOT": {
+          "value": "10",
+          "comment": "Hot pixel"
+        },
+        "MP_COLD": {
+          "value": "11",
+          "comment": "Anomalously low signal"
+        },
+        "MP_FULLSAMPLE": {
+          "value": "12",
+          "comment": "Pixel full sample history is available"
+        },
+        "MP_PHANMISS": {
+          "value": "14",
+          "comment": "Phantom correction was not applied"
+        },
+        "MP_NONLINEAR": {
+          "value": "15",
+          "comment": "Nonlinearity correction cannot be applied reliably"
+        },
+        "MP_PERSIST": {
+          "value": "17",
+          "comment": "Persistent charge above threshold"
+        },
+        "MP_OUTLIER": {
+          "value": "19",
+          "comment": "Pixel flagged by Detect Outliers"
+        },
+        "MP_SOURCE": {
+          "value": "21",
+          "comment": "Pixel mapped to a known source"
+        }
+      },
+      "approximate_spectral_corner_center_samples_um": [
+        [
+          2.200245282465891,
+          2.1907328602370506,
+          2.195488351232865
+        ],
+        [
+          0.055417604835391286,
+          0.055249779467726495,
+          0.05533240319174878
+        ]
+      ],
+      "filename": "sample_D3_row137.fits",
+      "source_path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row137.fits",
+      "source_sha256": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b",
+      "observation_id": "2025W19_2B_0101_1",
+      "timestamp": "2025-05-09T03:33:55.113Z",
+      "mjd": 60804.148554549,
+      "detector": 3,
+      "release": "qr2",
+      "pipeline": "6.4+psffix1",
+      "wavelength_um": 2.1955285420062847,
+      "bandwidth_um": 0.05533337729961879,
+      "spectral_status": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "flags": "{\"2097152\": 523, \"2097153\": 4, \"2097157\": 2}",
+      "flag_bits": "{\"0\": 6, \"2\": 2, \"21\": 529}",
+      "excluded_pixels": 6,
+      "pixels": 529,
+      "variance_zero_pixels": 0,
+      "finite_pixels": 529,
+      "finast": 0,
+      "spatial_ctype": [
+        "RA---TAN-SIP",
+        "DEC--TAN-SIP"
+      ],
+      "sip_retained": true,
+      "wcs_roundtrip_max_pixels": 1.4704218749095476e-08,
+      "warnings": [],
+      "l1": "Pass",
+      "l2": "Pass",
+      "calibration_verified": false,
+      "calibration_history": [
+        "[CALIB] dichroic 2acbff5a-51ba-4e28-a8df-95cd8260f966",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] initial_distortion_table f34a9ef8-e81a-4c7d-8322-e7da6e458ef9",
+        "[CALIB] nonfunc 7949f505-d12b-469e-b441-c22029fa893f",
+        "[CALIB] spectral_wcs 59b2d69e-bee1-4a58-8f03-8fa4ec553910",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] nonlinear_pars 4179b3b6-09a2-47db-a389-f2309f32ca94",
+        "[CALIB] readnoise_pars 89d43db3-ecdd-4552-a9e5-42e45e3b5187",
+        "[CALIB] abs_gain_matrix 2faaffc9-39c2-4168-870a-1bb481a43fae",
+        "[CALIB] average_psf 5ee7f8cd-ca95-4209-bfc4-e8045100dd54",
+        "[CALIB] dark 77acdcb1-6bd7-439c-934b-8feb4bd992c7",
+        "[CALIB] spectral_wcs 59b2d69e-bee1-4a58-8f03-8fa4ec553910",
+        "[CALIB] spectral_wcs 0d47d467-abe7-4583-b55d-3e9357b06aae"
+      ]
+    },
+    {
+      "external_cwave_um": null,
+      "external_cband_um": null,
+      "external_calibration_status": "UNAVAILABLE",
+      "flag_header_definitions": {
+        "MP_TRANSIENT": {
+          "value": "0",
+          "comment": "Transient detected during SUR"
+        },
+        "MP_OVERFLOW": {
+          "value": "1",
+          "comment": "Overflow detected during SUR"
+        },
+        "MP_SUR_ERROR": {
+          "value": "2",
+          "comment": "Error in onboard processing"
+        },
+        "MP_PHANTOM": {
+          "value": "4",
+          "comment": "Phantom pixel"
+        },
+        "MP_REFERENCE": {
+          "value": "5",
+          "comment": "Reference pixel"
+        },
+        "MP_NONFUNC": {
+          "value": "6",
+          "comment": "Permanently unusable"
+        },
+        "MP_DICHROIC": {
+          "value": "7",
+          "comment": "Low efficiency due to dichroic"
+        },
+        "MP_MISSING_DATA": {
+          "value": "9",
+          "comment": "Onboard data lost"
+        },
+        "MP_HOT": {
+          "value": "10",
+          "comment": "Hot pixel"
+        },
+        "MP_COLD": {
+          "value": "11",
+          "comment": "Anomalously low signal"
+        },
+        "MP_FULLSAMPLE": {
+          "value": "12",
+          "comment": "Pixel full sample history is available"
+        },
+        "MP_PHANMISS": {
+          "value": "14",
+          "comment": "Phantom correction was not applied"
+        },
+        "MP_NONLINEAR": {
+          "value": "15",
+          "comment": "Nonlinearity correction cannot be applied reliably"
+        },
+        "MP_PERSIST": {
+          "value": "17",
+          "comment": "Persistent charge above threshold"
+        },
+        "MP_OUTLIER": {
+          "value": "19",
+          "comment": "Pixel flagged by Detect Outliers"
+        },
+        "MP_SOURCE": {
+          "value": "21",
+          "comment": "Pixel mapped to a known source"
+        },
+        "MP_GHOST": {
+          "value": "22",
+          "comment": "Affected by a bright source inside the exposure"
+        },
+        "MP_GHOST_FPA": {
+          "value": "23",
+          "comment": "Affected by a bright source on another detector"
+        },
+        "MP_GHOST_EXT": {
+          "value": "24",
+          "comment": "Pixel affected by a bright source outside FOV"
+        },
+        "MP_BLOOM": {
+          "value": "26",
+          "comment": "Pixel part of a bloom artifact"
+        },
+        "MP_SNOWBALL": {
+          "value": "27",
+          "comment": "Pixel part of a snowball artifact"
+        },
+        "MP_HALO": {
+          "value": "28",
+          "comment": "Pixel part of a transient halo"
+        }
+      },
+      "approximate_spectral_corner_center_samples_um": [
+        [
+          2.1236854726389423,
+          2.113780193239289,
+          2.1187326242629494
+        ],
+        [
+          0.053246886138051557,
+          0.052925431576626054,
+          0.053086438500929325
+        ]
+      ],
+      "filename": "sample_D3_row186.fits",
+      "source_path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row186.fits",
+      "source_sha256": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03",
+      "observation_id": "2026W25_1A_0641_1",
+      "timestamp": "2026-06-18T03:54:38.021Z",
+      "mjd": 61209.162940058,
+      "detector": 3,
+      "release": "qr2",
+      "pipeline": "6.5.7",
+      "wavelength_um": 2.1186715310246047,
+      "bandwidth_um": 0.053084538078467386,
+      "spectral_status": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "flags": "{\"2097152\": 527, \"2097221\": 2}",
+      "flag_bits": "{\"0\": 2, \"2\": 2, \"6\": 2, \"21\": 529}",
+      "excluded_pixels": 2,
+      "pixels": 529,
+      "variance_zero_pixels": 0,
+      "finite_pixels": 529,
+      "finast": 0,
+      "spatial_ctype": [
+        "RA---TAN-SIP",
+        "DEC--TAN-SIP"
+      ],
+      "sip_retained": true,
+      "wcs_roundtrip_max_pixels": 4.0232890892879755e-07,
+      "warnings": [],
+      "l1": "Pass",
+      "l2": "Pass",
+      "calibration_verified": false,
+      "calibration_history": [
+        "[CALIB] dichroic 2acbff5a-51ba-4e28-a8df-95cd8260f966",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] initial_distortion_table f34a9ef8-e81a-4c7d-8322-e7da6e458ef9",
+        "[CALIB] nonfunc 019b2942-2772-73f3-a517-2abe19e0ecb4",
+        "[CALIB] spectral_wcs 0d47d467-abe7-4583-b55d-3e9357b06aae",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] nonlinear_pars 4179b3b6-09a2-47db-a389-f2309f32ca94",
+        "[CALIB] readnoise_pars 89d43db3-ecdd-4552-a9e5-42e45e3b5187",
+        "[CALIB] abs_gain_matrix 2faaffc9-39c2-4168-870a-1bb481a43fae",
+        "[CALIB] average_psf 019d1d2c-6bcd-7574-8cd0-2374697b7e7d",
+        "[CALIB] dark 77acdcb1-6bd7-439c-934b-8feb4bd992c7",
+        "[CALIB] sip 019b232f-349e-7c9a-a640-7d9b2e09277c",
+        "[CALIB] spectral_wcs 0d47d467-abe7-4583-b55d-3e9357b06aae"
+      ]
+    },
+    {
+      "external_cwave_um": null,
+      "external_cband_um": null,
+      "external_calibration_status": "UNAVAILABLE",
+      "flag_header_definitions": {
+        "MP_TRANSIENT": {
+          "value": "0",
+          "comment": "Transient detected during SUR"
+        },
+        "MP_OVERFLOW": {
+          "value": "1",
+          "comment": "Overflow detected during SUR"
+        },
+        "MP_SUR_ERROR": {
+          "value": "2",
+          "comment": "Error in onboard processing"
+        },
+        "MP_PHANTOM": {
+          "value": "4",
+          "comment": "Phantom pixel"
+        },
+        "MP_REFERENCE": {
+          "value": "5",
+          "comment": "Reference pixel"
+        },
+        "MP_NONFUNC": {
+          "value": "6",
+          "comment": "Permanently unusable"
+        },
+        "MP_DICHROIC": {
+          "value": "7",
+          "comment": "Low efficiency due to dichroic"
+        },
+        "MP_MISSING_DATA": {
+          "value": "9",
+          "comment": "Onboard data lost"
+        },
+        "MP_HOT": {
+          "value": "10",
+          "comment": "Hot pixel"
+        },
+        "MP_COLD": {
+          "value": "11",
+          "comment": "Anomalously low signal"
+        },
+        "MP_FULLSAMPLE": {
+          "value": "12",
+          "comment": "Pixel full sample history is available"
+        },
+        "MP_PHANMISS": {
+          "value": "14",
+          "comment": "Phantom correction was not applied"
+        },
+        "MP_NONLINEAR": {
+          "value": "15",
+          "comment": "Nonlinearity correction cannot be applied reliably"
+        },
+        "MP_PERSIST": {
+          "value": "17",
+          "comment": "Persistent charge above threshold"
+        },
+        "MP_OUTLIER": {
+          "value": "19",
+          "comment": "Pixel flagged by Detect Outliers"
+        },
+        "MP_SOURCE": {
+          "value": "21",
+          "comment": "Pixel mapped to a known source"
+        }
+      },
+      "approximate_spectral_corner_center_samples_um": [
+        [
+          2.440509389068926,
+          2.433032390229842,
+          2.436674832876991
+        ],
+        [
+          0.05269405935774381,
+          0.04816760476897744,
+          0.04938146102132605
+        ]
+      ],
+      "filename": "sample_D4_row187.fits",
+      "source_path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row187.fits",
+      "source_sha256": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa",
+      "observation_id": "2025W21_1B_0485_2",
+      "timestamp": "2025-05-21T12:21:34.537Z",
+      "mjd": 60816.514983067,
+      "detector": 4,
+      "release": "qr2",
+      "pipeline": "6.4+psffix1",
+      "wavelength_um": 2.4366961283908726,
+      "bandwidth_um": 0.04938818351189377,
+      "spectral_status": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "flags": "{\"2097152\": 527, \"2097153\": 2}",
+      "flag_bits": "{\"0\": 2, \"21\": 529}",
+      "excluded_pixels": 2,
+      "pixels": 529,
+      "variance_zero_pixels": 0,
+      "finite_pixels": 529,
+      "finast": 0,
+      "spatial_ctype": [
+        "RA---TAN-SIP",
+        "DEC--TAN-SIP"
+      ],
+      "sip_retained": true,
+      "wcs_roundtrip_max_pixels": 9.825630285881364e-08,
+      "warnings": [],
+      "l1": "Pass",
+      "l2": "Pass",
+      "calibration_verified": false,
+      "calibration_history": [
+        "[CALIB] dichroic 156fadbc-131d-4561-a63e-a7a99971d383",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] initial_distortion_table f34a9ef8-e81a-4c7d-8322-e7da6e458ef9",
+        "[CALIB] nonfunc 08ace76f-3d46-4f59-9999-76abd316ad0d",
+        "[CALIB] spectral_wcs 1303e33f-8b3c-460d-a2d2-042d176e0a8b",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] nonlinear_pars cc55b49f-e797-4f36-811d-9651c7ceb446",
+        "[CALIB] readnoise_pars 6a836212-775d-4e9f-ac6f-a0b2dbf61601",
+        "[CALIB] abs_gain_matrix 8c6c4b22-c49a-47c9-8e97-95dff59cdd48",
+        "[CALIB] average_psf d53ad673-a5d0-47b2-b5b9-b32fce701ef4",
+        "[CALIB] dark d2f2d7f9-6ba0-41bd-82d4-e1d7e086bd09",
+        "[CALIB] spectral_wcs 1303e33f-8b3c-460d-a2d2-042d176e0a8b",
+        "[CALIB] spectral_wcs 4cf935ad-6e0a-4075-a642-198bc6a728e6"
+      ]
+    },
+    {
+      "external_cwave_um": null,
+      "external_cband_um": null,
+      "external_calibration_status": "UNAVAILABLE",
+      "flag_header_definitions": {
+        "MP_TRANSIENT": {
+          "value": "0",
+          "comment": "Transient detected during SUR"
+        },
+        "MP_OVERFLOW": {
+          "value": "1",
+          "comment": "Overflow detected during SUR"
+        },
+        "MP_SUR_ERROR": {
+          "value": "2",
+          "comment": "Error in onboard processing"
+        },
+        "MP_PHANTOM": {
+          "value": "4",
+          "comment": "Phantom pixel"
+        },
+        "MP_REFERENCE": {
+          "value": "5",
+          "comment": "Reference pixel"
+        },
+        "MP_NONFUNC": {
+          "value": "6",
+          "comment": "Permanently unusable"
+        },
+        "MP_DICHROIC": {
+          "value": "7",
+          "comment": "Low efficiency due to dichroic"
+        },
+        "MP_MISSING_DATA": {
+          "value": "9",
+          "comment": "Onboard data lost"
+        },
+        "MP_HOT": {
+          "value": "10",
+          "comment": "Hot pixel"
+        },
+        "MP_COLD": {
+          "value": "11",
+          "comment": "Anomalously low signal"
+        },
+        "MP_FULLSAMPLE": {
+          "value": "12",
+          "comment": "Pixel full sample history is available"
+        },
+        "MP_PHANMISS": {
+          "value": "14",
+          "comment": "Phantom correction was not applied"
+        },
+        "MP_NONLINEAR": {
+          "value": "15",
+          "comment": "Nonlinearity correction cannot be applied reliably"
+        },
+        "MP_PERSIST": {
+          "value": "17",
+          "comment": "Persistent charge above threshold"
+        },
+        "MP_OUTLIER": {
+          "value": "19",
+          "comment": "Pixel flagged by Detect Outliers"
+        },
+        "MP_SOURCE": {
+          "value": "21",
+          "comment": "Pixel mapped to a known source"
+        },
+        "MP_GHOST": {
+          "value": "22",
+          "comment": "Affected by a bright source inside the exposure"
+        },
+        "MP_GHOST_FPA": {
+          "value": "23",
+          "comment": "Affected by a bright source on another detector"
+        },
+        "MP_GHOST_EXT": {
+          "value": "24",
+          "comment": "Pixel affected by a bright source outside FOV"
+        },
+        "MP_BLOOM": {
+          "value": "26",
+          "comment": "Pixel part of a bloom artifact"
+        },
+        "MP_SNOWBALL": {
+          "value": "27",
+          "comment": "Pixel part of a snowball artifact"
+        },
+        "MP_HALO": {
+          "value": "28",
+          "comment": "Pixel part of a transient halo"
+        }
+      },
+      "approximate_spectral_corner_center_samples_um": [
+        [
+          3.228189541031332,
+          3.2122141828536988,
+          3.2201359251433725
+        ],
+        [
+          0.09344772756976238,
+          0.0929203275044759,
+          0.09321222486449222
+        ]
+      ],
+      "filename": "sample_D4_row239.fits",
+      "source_path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row239.fits",
+      "source_sha256": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b",
+      "observation_id": "2026W25_1A_0614_1",
+      "timestamp": "2026-06-18T00:38:42.292Z",
+      "mjd": 61209.02687838,
+      "detector": 4,
+      "release": "qr2",
+      "pipeline": "6.5.7",
+      "wavelength_um": 3.220096347631241,
+      "bandwidth_um": 0.0932156328122756,
+      "spectral_status": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "flags": "{\"0\": 7, \"2097152\": 518, \"2097221\": 2, \"2097223\": 1, \"270532608\": 1}",
+      "flag_bits": "{\"0\": 3, \"1\": 1, \"2\": 3, \"6\": 3, \"21\": 522, \"28\": 1}",
+      "excluded_pixels": 4,
+      "pixels": 529,
+      "variance_zero_pixels": 0,
+      "finite_pixels": 529,
+      "finast": 0,
+      "spatial_ctype": [
+        "RA---TAN-SIP",
+        "DEC--TAN-SIP"
+      ],
+      "sip_retained": true,
+      "wcs_roundtrip_max_pixels": 1.0810812846235344e-07,
+      "warnings": [],
+      "l1": "Pass",
+      "l2": "Pass",
+      "calibration_verified": false,
+      "calibration_history": [
+        "[CALIB] dichroic 156fadbc-131d-4561-a63e-a7a99971d383",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] initial_distortion_table f34a9ef8-e81a-4c7d-8322-e7da6e458ef9",
+        "[CALIB] nonfunc 019b2942-3cad-7a1a-911e-7beac6326a2c",
+        "[CALIB] spectral_wcs 4cf935ad-6e0a-4075-a642-198bc6a728e6",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] nonlinear_pars cc55b49f-e797-4f36-811d-9651c7ceb446",
+        "[CALIB] readnoise_pars 6a836212-775d-4e9f-ac6f-a0b2dbf61601",
+        "[CALIB] abs_gain_matrix 8c6c4b22-c49a-47c9-8e97-95dff59cdd48",
+        "[CALIB] average_psf 019d1d2c-7dd0-7818-8b22-1b1ce3cb7571",
+        "[CALIB] dark d2f2d7f9-6ba0-41bd-82d4-e1d7e086bd09",
+        "[CALIB] sip 019b232f-4950-72d9-959b-83241fef59a9",
+        "[CALIB] spectral_wcs 4cf935ad-6e0a-4075-a642-198bc6a728e6"
+      ]
+    },
+    {
+      "external_cwave_um": null,
+      "external_cband_um": null,
+      "external_calibration_status": "UNAVAILABLE",
+      "flag_header_definitions": {
+        "MP_TRANSIENT": {
+          "value": "0",
+          "comment": "Transient detected during SUR"
+        },
+        "MP_OVERFLOW": {
+          "value": "1",
+          "comment": "Overflow detected during SUR"
+        },
+        "MP_SUR_ERROR": {
+          "value": "2",
+          "comment": "Error in onboard processing"
+        },
+        "MP_PHANTOM": {
+          "value": "4",
+          "comment": "Phantom pixel"
+        },
+        "MP_REFERENCE": {
+          "value": "5",
+          "comment": "Reference pixel"
+        },
+        "MP_NONFUNC": {
+          "value": "6",
+          "comment": "Permanently unusable"
+        },
+        "MP_DICHROIC": {
+          "value": "7",
+          "comment": "Low efficiency due to dichroic"
+        },
+        "MP_MISSING_DATA": {
+          "value": "9",
+          "comment": "Onboard data lost"
+        },
+        "MP_HOT": {
+          "value": "10",
+          "comment": "Hot pixel"
+        },
+        "MP_COLD": {
+          "value": "11",
+          "comment": "Anomalously low signal"
+        },
+        "MP_FULLSAMPLE": {
+          "value": "12",
+          "comment": "Pixel full sample history is available"
+        },
+        "MP_PHANMISS": {
+          "value": "14",
+          "comment": "Phantom correction was not applied"
+        },
+        "MP_NONLINEAR": {
+          "value": "15",
+          "comment": "Nonlinearity correction cannot be applied reliably"
+        },
+        "MP_PERSIST": {
+          "value": "17",
+          "comment": "Persistent charge above threshold"
+        },
+        "MP_OUTLIER": {
+          "value": "19",
+          "comment": "Pixel flagged by Detect Outliers"
+        },
+        "MP_SOURCE": {
+          "value": "21",
+          "comment": "Pixel mapped to a known source"
+        }
+      },
+      "approximate_spectral_corner_center_samples_um": [
+        [
+          4.28268302490692,
+          4.27625892979051,
+          4.279470335435795
+        ],
+        [
+          0.037124243703474225,
+          0.03708090283612548,
+          0.03710405380495168
+        ]
+      ],
+      "filename": "sample_D5_row240.fits",
+      "source_path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row240.fits",
+      "source_sha256": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66",
+      "observation_id": "2025W19_2B_0346_1",
+      "timestamp": "2025-05-10T17:04:37.742Z",
+      "mjd": 60805.71154794,
+      "detector": 5,
+      "release": "qr2",
+      "pipeline": "6.4+psffix1",
+      "wavelength_um": 4.279348375710111,
+      "bandwidth_um": 0.037102582977708236,
+      "spectral_status": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "flags": "{\"2097152\": 525, \"2097153\": 2, \"2097157\": 1, \"2099205\": 1}",
+      "flag_bits": "{\"0\": 4, \"2\": 2, \"11\": 1, \"21\": 529}",
+      "excluded_pixels": 4,
+      "pixels": 529,
+      "variance_zero_pixels": 0,
+      "finite_pixels": 529,
+      "finast": 0,
+      "spatial_ctype": [
+        "RA---TAN-SIP",
+        "DEC--TAN-SIP"
+      ],
+      "sip_retained": true,
+      "wcs_roundtrip_max_pixels": 4.086243222828927e-08,
+      "warnings": [],
+      "l1": "Pass",
+      "l2": "Pass",
+      "calibration_verified": false,
+      "calibration_history": [
+        "[CALIB] dichroic 2add14f7-df63-4b5b-9bcd-1feb8332e378",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] initial_distortion_table f34a9ef8-e81a-4c7d-8322-e7da6e458ef9",
+        "[CALIB] nonfunc f915200f-82d8-4a03-b038-29b7a7dc8b7f",
+        "[CALIB] spectral_wcs a12d3790-e8e8-4d2f-95fc-eaa0efe07af0",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] nonlinear_pars f32c26c1-db37-46fb-8208-d0174a1f5f74",
+        "[CALIB] readnoise_pars e44db3fe-eb3a-43d9-932e-30d10625fc7e",
+        "[CALIB] abs_gain_matrix 6f596274-57ac-421f-99b2-131b0349a1ec",
+        "[CALIB] average_psf 496658ad-746d-487d-9e54-70c99ddfc1eb",
+        "[CALIB] dark f603e79a-2cec-497f-b5c9-ba762d41ff79",
+        "[CALIB] spectral_wcs a12d3790-e8e8-4d2f-95fc-eaa0efe07af0",
+        "[CALIB] spectral_wcs e106c789-52b3-4e5e-b7b2-23dc3aa2f86b"
+      ]
+    },
+    {
+      "external_cwave_um": null,
+      "external_cband_um": null,
+      "external_calibration_status": "UNAVAILABLE",
+      "flag_header_definitions": {
+        "MP_TRANSIENT": {
+          "value": "0",
+          "comment": "Transient detected during SUR"
+        },
+        "MP_OVERFLOW": {
+          "value": "1",
+          "comment": "Overflow detected during SUR"
+        },
+        "MP_SUR_ERROR": {
+          "value": "2",
+          "comment": "Error in onboard processing"
+        },
+        "MP_PHANTOM": {
+          "value": "4",
+          "comment": "Phantom pixel"
+        },
+        "MP_REFERENCE": {
+          "value": "5",
+          "comment": "Reference pixel"
+        },
+        "MP_NONFUNC": {
+          "value": "6",
+          "comment": "Permanently unusable"
+        },
+        "MP_DICHROIC": {
+          "value": "7",
+          "comment": "Low efficiency due to dichroic"
+        },
+        "MP_MISSING_DATA": {
+          "value": "9",
+          "comment": "Onboard data lost"
+        },
+        "MP_HOT": {
+          "value": "10",
+          "comment": "Hot pixel"
+        },
+        "MP_COLD": {
+          "value": "11",
+          "comment": "Anomalously low signal"
+        },
+        "MP_FULLSAMPLE": {
+          "value": "12",
+          "comment": "Pixel full sample history is available"
+        },
+        "MP_PHANMISS": {
+          "value": "14",
+          "comment": "Phantom correction was not applied"
+        },
+        "MP_NONLINEAR": {
+          "value": "15",
+          "comment": "Nonlinearity correction cannot be applied reliably"
+        },
+        "MP_PERSIST": {
+          "value": "17",
+          "comment": "Persistent charge above threshold"
+        },
+        "MP_OUTLIER": {
+          "value": "19",
+          "comment": "Pixel flagged by Detect Outliers"
+        },
+        "MP_SOURCE": {
+          "value": "21",
+          "comment": "Pixel mapped to a known source"
+        },
+        "MP_GHOST": {
+          "value": "22",
+          "comment": "Affected by a bright source inside the exposure"
+        },
+        "MP_GHOST_FPA": {
+          "value": "23",
+          "comment": "Affected by a bright source on another detector"
+        },
+        "MP_GHOST_EXT": {
+          "value": "24",
+          "comment": "Pixel affected by a bright source outside FOV"
+        },
+        "MP_BLOOM": {
+          "value": "26",
+          "comment": "Pixel part of a bloom artifact"
+        },
+        "MP_SNOWBALL": {
+          "value": "27",
+          "comment": "Pixel part of a snowball artifact"
+        },
+        "MP_HALO": {
+          "value": "28",
+          "comment": "Pixel part of a transient halo"
+        }
+      },
+      "approximate_spectral_corner_center_samples_um": [
+        [
+          4.266538210806138,
+          4.258945211544718,
+          4.262740916756197
+        ],
+        [
+          0.03720647817558506,
+          0.03719109291212919,
+          0.03720065605323955
+        ]
+      ],
+      "filename": "sample_D5_row321.fits",
+      "source_path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row321.fits",
+      "source_sha256": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd",
+      "observation_id": "2026W26_1A_0500_1",
+      "timestamp": "2026-06-24T03:19:00.063Z",
+      "mjd": 61215.138195174,
+      "detector": 5,
+      "release": "qr2",
+      "pipeline": "6.5.7",
+      "wavelength_um": 4.262711052366933,
+      "bandwidth_um": 0.03720078724181986,
+      "spectral_status": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "flags": "{\"2097152\": 508, \"270532608\": 15, \"270532609\": 1, \"270532613\": 5}",
+      "flag_bits": "{\"0\": 6, \"2\": 5, \"21\": 529, \"28\": 21}",
+      "excluded_pixels": 21,
+      "pixels": 529,
+      "variance_zero_pixels": 0,
+      "finite_pixels": 529,
+      "finast": 0,
+      "spatial_ctype": [
+        "RA---TAN-SIP",
+        "DEC--TAN-SIP"
+      ],
+      "sip_retained": true,
+      "wcs_roundtrip_max_pixels": 9.559629335180673e-09,
+      "warnings": [],
+      "l1": "Pass",
+      "l2": "Pass",
+      "calibration_verified": false,
+      "calibration_history": [
+        "[CALIB] dichroic 2add14f7-df63-4b5b-9bcd-1feb8332e378",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] initial_distortion_table f34a9ef8-e81a-4c7d-8322-e7da6e458ef9",
+        "[CALIB] nonfunc 019b2942-522c-7ff7-bf52-defb44a94d26",
+        "[CALIB] spectral_wcs e106c789-52b3-4e5e-b7b2-23dc3aa2f86b",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] nonlinear_pars f32c26c1-db37-46fb-8208-d0174a1f5f74",
+        "[CALIB] readnoise_pars e44db3fe-eb3a-43d9-932e-30d10625fc7e",
+        "[CALIB] abs_gain_matrix 6f596274-57ac-421f-99b2-131b0349a1ec",
+        "[CALIB] average_psf 019d1d2c-9035-75be-95e1-c83523653c55",
+        "[CALIB] dark f603e79a-2cec-497f-b5c9-ba762d41ff79",
+        "[CALIB] sip 019b232f-5e53-7264-8643-d57b3f61f4a5",
+        "[CALIB] spectral_wcs e106c789-52b3-4e5e-b7b2-23dc3aa2f86b"
+      ]
+    },
+    {
+      "external_cwave_um": null,
+      "external_cband_um": null,
+      "external_calibration_status": "UNAVAILABLE",
+      "flag_header_definitions": {
+        "MP_TRANSIENT": {
+          "value": "0",
+          "comment": "Transient detected during SUR"
+        },
+        "MP_OVERFLOW": {
+          "value": "1",
+          "comment": "Overflow detected during SUR"
+        },
+        "MP_SUR_ERROR": {
+          "value": "2",
+          "comment": "Error in onboard processing"
+        },
+        "MP_PHANTOM": {
+          "value": "4",
+          "comment": "Phantom pixel"
+        },
+        "MP_REFERENCE": {
+          "value": "5",
+          "comment": "Reference pixel"
+        },
+        "MP_NONFUNC": {
+          "value": "6",
+          "comment": "Permanently unusable"
+        },
+        "MP_DICHROIC": {
+          "value": "7",
+          "comment": "Low efficiency due to dichroic"
+        },
+        "MP_MISSING_DATA": {
+          "value": "9",
+          "comment": "Onboard data lost"
+        },
+        "MP_HOT": {
+          "value": "10",
+          "comment": "Hot pixel"
+        },
+        "MP_COLD": {
+          "value": "11",
+          "comment": "Anomalously low signal"
+        },
+        "MP_FULLSAMPLE": {
+          "value": "12",
+          "comment": "Pixel full sample history is available"
+        },
+        "MP_PHANMISS": {
+          "value": "14",
+          "comment": "Phantom correction was not applied"
+        },
+        "MP_NONLINEAR": {
+          "value": "15",
+          "comment": "Nonlinearity correction cannot be applied reliably"
+        },
+        "MP_PERSIST": {
+          "value": "17",
+          "comment": "Persistent charge above threshold"
+        },
+        "MP_OUTLIER": {
+          "value": "19",
+          "comment": "Pixel flagged by Detect Outliers"
+        },
+        "MP_SOURCE": {
+          "value": "21",
+          "comment": "Pixel mapped to a known source"
+        }
+      },
+      "approximate_spectral_corner_center_samples_um": [
+        [
+          4.847782365455291,
+          4.841068730730508,
+          4.84442101088832
+        ],
+        [
+          0.036745022217285414,
+          0.036773217065348675,
+          0.03675845573011079
+        ]
+      ],
+      "filename": "sample_D6_row322.fits",
+      "source_path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D6_row322.fits",
+      "source_sha256": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219",
+      "observation_id": "2025W19_2B_0101_1",
+      "timestamp": "2025-05-09T03:33:55.113Z",
+      "mjd": 60804.148554549,
+      "detector": 6,
+      "release": "qr2",
+      "pipeline": "6.4+psffix1",
+      "wavelength_um": 4.8445100135297245,
+      "bandwidth_um": 0.036759275226334216,
+      "spectral_status": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "flags": "{\"2097152\": 527, \"2097153\": 1, \"2097157\": 1}",
+      "flag_bits": "{\"0\": 2, \"2\": 1, \"21\": 529}",
+      "excluded_pixels": 2,
+      "pixels": 529,
+      "variance_zero_pixels": 0,
+      "finite_pixels": 529,
+      "finast": 0,
+      "spatial_ctype": [
+        "RA---TAN-SIP",
+        "DEC--TAN-SIP"
+      ],
+      "sip_retained": true,
+      "wcs_roundtrip_max_pixels": 6.827683347151496e-09,
+      "warnings": [],
+      "l1": "Pass",
+      "l2": "Pass",
+      "calibration_verified": false,
+      "calibration_history": [
+        "[CALIB] dichroic d65a8c18-edbc-4eac-bd43-fa060978f51c",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] initial_distortion_table f34a9ef8-e81a-4c7d-8322-e7da6e458ef9",
+        "[CALIB] nonfunc e226dfa4-efdf-4684-b810-0c3e98142887",
+        "[CALIB] spectral_wcs 272d2e65-1ba5-4089-9401-a33fb100729f",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] nonlinear_pars fa70ec78-d117-4dc4-bb58-002dea5b28b3",
+        "[CALIB] readnoise_pars 8724644b-66fe-494d-9cc9-e20b2cafc6a1",
+        "[CALIB] abs_gain_matrix 0b762d1b-bec8-473f-9e6e-436fff6c631f",
+        "[CALIB] average_psf e51cf62a-8d0f-48c0-8590-0a4b8b8da34f",
+        "[CALIB] dark 6726d220-b10e-4c9c-beb5-bb325ef04f27",
+        "[CALIB] spectral_wcs 272d2e65-1ba5-4089-9401-a33fb100729f",
+        "[CALIB] spectral_wcs 2dc965d6-bad3-4916-83ca-54e9e9cfcbd3"
+      ]
+    }
+  ],
+  "selected_candidate_count": 2,
+  "analyses": [
+    {
+      "pair_id": "temporal-20",
+      "a": "2026W26_1A_0500_1",
+      "b": "2025W19_2B_0346_1",
+      "method": "Primary celestial TAN-SIP WCS, origin=0; A native pixel grid; scipy.ndimage.map_coordinates bilinear order=1; no fitted transform",
+      "spatial_sip_retained": true,
+      "shape_yx": [
+        23,
+        24
+      ],
+      "geometric_overlap_pixels": 476,
+      "outside_overlap_pixels": 76,
+      "common_valid_pixels": 446,
+      "common_valid_fraction_a": 0.8079710144927537,
+      "mask_method": "finite IMAGE and finite positive VARIANCE; retain informational SOURCE bit21; reject every other set bit; require all bilinear contributors valid",
+      "variance_interpretation": "positive variance required; zero never treated as exact",
+      "image_correlation_exploratory": 0.9901042879116025,
+      "local_5sigma_peak_pixels": [
+        [
+          [
+            6,
+            0
+          ],
+          [
+            12,
+            11
+          ]
+        ],
+        [
+          [
+            4,
+            0
+          ],
+          [
+            17,
+            5
+          ],
+          [
+            11,
+            11
+          ]
+        ]
+      ],
+      "independent_background_sources_established": 0,
+      "background_source_matching": {
+        "executed": true,
+        "criteria": "Native local maxima within 5x5, intensity > median+5*(1.4826*MAD); complete valid 5x5 kernel excludes edges and flags; radius >4 native pixels from M101 reference; project B with primary TAN-SIP onto A; mutual nearest neighbor <=2 A pixels. At least 3 spatially separated non-collinear matches and source identity review required for residual validation.",
+        "a_candidate_xy": [],
+        "b_candidate_xy": [
+          [
+            17.0,
+            5.0
+          ]
+        ],
+        "b_projected_a_xy": [
+          [
+            18.31193897565801,
+            6.283688591874013
+          ]
+        ],
+        "matches": [],
+        "match_count": 0,
+        "minimum_matches_for_validation": 3,
+        "residual_validation_pass": false,
+        "interpretation": "Insufficient candidate matches for independent residual validation; candidates are not identified stars and this does not prove absence of background sources."
+      },
+      "background_source_matching_status": "EXECUTED_BOUNDED_CANDIDATE_ATTEMPT_INSUFFICIENT_MATCHES",
+      "residual_pixels": null,
+      "residual_status": "NOT_VALIDATED: bounded mutual-nearest peak matching produced insufficient independent field points; no residual fit justified; WCS inverse roundtrip is numerical consistency only, not astrometric accuracy",
+      "a_filename": "sample_D2_row136.fits",
+      "b_filename": "sample_D2_row53.fits",
+      "external_rectangular_overlap_fraction": 0.5651651333419307,
+      "external_calibration_provenance_verified": false,
+      "approximate_center_difference_bandwidths": 0.4506484002376258,
+      "approximate_rectangular_overlap_fraction": 0.5561106637593016,
+      "spectral_status": "NOT_VALIDATED: half-bandwidth offset; approximation does not establish equal spectral response",
+      "level2_pass": false,
+      "assets_emitted": false
+    },
+    {
+      "pair_id": "temporal-53",
+      "a": "2025W19_2B_0346_1",
+      "b": "2026W26_1A_0500_1",
+      "method": "Primary celestial TAN-SIP WCS, origin=0; A native pixel grid; scipy.ndimage.map_coordinates bilinear order=1; no fitted transform",
+      "spatial_sip_retained": true,
+      "shape_yx": [
+        23,
+        23
+      ],
+      "geometric_overlap_pixels": 481,
+      "outside_overlap_pixels": 48,
+      "common_valid_pixels": 439,
+      "common_valid_fraction_a": 0.8298676748582231,
+      "mask_method": "finite IMAGE and finite positive VARIANCE; retain informational SOURCE bit21; reject every other set bit; require all bilinear contributors valid",
+      "variance_interpretation": "positive variance required; zero never treated as exact",
+      "image_correlation_exploratory": 0.9808982538179124,
+      "local_5sigma_peak_pixels": [
+        [
+          [
+            4,
+            1
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        [
+          [
+            5,
+            0
+          ],
+          [
+            11,
+            11
+          ]
+        ]
+      ],
+      "independent_background_sources_established": 0,
+      "background_source_matching": {
+        "executed": true,
+        "criteria": "Native local maxima within 5x5, intensity > median+5*(1.4826*MAD); complete valid 5x5 kernel excludes edges and flags; radius >4 native pixels from M101 reference; project B with primary TAN-SIP onto A; mutual nearest neighbor <=2 A pixels. At least 3 spatially separated non-collinear matches and source identity review required for residual validation.",
+        "a_candidate_xy": [],
+        "b_candidate_xy": [],
+        "b_projected_a_xy": [],
+        "matches": [],
+        "match_count": 0,
+        "minimum_matches_for_validation": 3,
+        "residual_validation_pass": false,
+        "interpretation": "Insufficient candidate matches for independent residual validation; candidates are not identified stars and this does not prove absence of background sources."
+      },
+      "background_source_matching_status": "EXECUTED_BOUNDED_CANDIDATE_ATTEMPT_INSUFFICIENT_MATCHES",
+      "residual_pixels": null,
+      "residual_status": "NOT_VALIDATED: bounded mutual-nearest peak matching produced insufficient independent field points; no residual fit justified; WCS inverse roundtrip is numerical consistency only, not astrometric accuracy",
+      "a_filename": "sample_D5_row240.fits",
+      "b_filename": "sample_D5_row321.fits",
+      "external_rectangular_overlap_fraction": null,
+      "external_calibration_provenance_verified": false,
+      "approximate_center_difference_bandwidths": 0.4484141536230321,
+      "approximate_rectangular_overlap_fraction": 0.552909261840669,
+      "spectral_status": "NOT_VALIDATED: half-bandwidth offset; approximation does not establish equal spectral response",
+      "level2_pass": false,
+      "assets_emitted": false
+    }
+  ],
+  "observation_identity_note": "OBSID alone is shared across detectors; pair order is verified against original exposure combinations and file names uniquely key arrays.",
+  "hashes_before": {
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-M101-cube\\M101_irsa.fits": "44e89f460c55f46f7e384ba7dfe8927fa8e56163875aba3766499a5646813447",
+    "C:\\Users\\ishan\\Downloads\\spectral_channels_spx_cal-sch-v1-2026-106.fits.gz": "b0fa238dcbc5bcbfcc786b35676cd9e0c735ab2e10e234d3a05f7d327ab9b095",
+    "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\observations_11.csv": "4850de265227a38aec206da9d6591ad4614b8e340294f2fb87df86ee070cb235",
+    "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\validation_report.json": "3aa48a636e93093139892d6f2af66924b0f4045b42cea1ff9bac519cebf2a989",
+    "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\calibration_provenance.json": "c1b46dd938dd8695aaa35e61e7e4cca25d3865dd73a910cc7a80e72e4ca11d2a",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\spectral_coverage.json": "b53c34f6282359bc4cbde387ef7aa64592920be64baed9605c27f267a1c7f5dc",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row0.fits": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row52.fits": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row136.fits": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row53.fits": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row137.fits": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row186.fits": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row187.fits": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row239.fits": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row240.fits": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row321.fits": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D6_row322.fits": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219"
+  },
+  "hashes_after": {
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-M101-cube\\M101_irsa.fits": "44e89f460c55f46f7e384ba7dfe8927fa8e56163875aba3766499a5646813447",
+    "C:\\Users\\ishan\\Downloads\\spectral_channels_spx_cal-sch-v1-2026-106.fits.gz": "b0fa238dcbc5bcbfcc786b35676cd9e0c735ab2e10e234d3a05f7d327ab9b095",
+    "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\observations_11.csv": "4850de265227a38aec206da9d6591ad4614b8e340294f2fb87df86ee070cb235",
+    "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\validation_report.json": "3aa48a636e93093139892d6f2af66924b0f4045b42cea1ff9bac519cebf2a989",
+    "C:\\Users\\ishan\\Documents\\Codex\\2026-10-29\\superpowers-plugin-superpowers-openai-curated-remote\\outputs\\PARALLAX-M101-automated-channel-map\\calibration_provenance.json": "c1b46dd938dd8695aaa35e61e7e4cca25d3865dd73a910cc7a80e72e4ca11d2a",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\spectral_coverage.json": "b53c34f6282359bc4cbde387ef7aa64592920be64baed9605c27f267a1c7f5dc",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row0.fits": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row52.fits": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row136.fits": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row53.fits": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row137.fits": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row186.fits": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row187.fits": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row239.fits": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row240.fits": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row321.fits": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D6_row322.fits": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219"
+  },
+  "input_integrity_unchanged": true,
+  "baseline_hashes_match": true,
+  "spatial_sip_policy": "Retain primary TAN-SIP. Spectral alternate WCS cleaning must never be applied to celestial WCS.",
+  "warnings_policy": "Captured Python warnings per observation; primary spatial CTYPE has -SIP and SIP coefficients are consistent. Alternate A/W may trigger Astropy informational SIP inconsistency logs if naively built; do not use those for spatial geometry.",
+  "scope": "11 local dated FITS, all 55 original pairs; two best pairs resampled only in memory; no original files or mosaic modified"
+}

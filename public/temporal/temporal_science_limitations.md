@@ -1,0 +1,21 @@
+# Temporal science decision
+
+NO-GO for Level 2; DATED_IMAGES_ONLY for Level 1. All 55 comparisons remain disabled.
+
+The two closest same-detector pairs (D2 and D5) were actually transformed in memory onto the first observation spatial grid with primary TAN-SIP WCS and bilinear interpolation. Geometric overlap, all-contributor mask propagation, positive variance, per-bit distributions and approximate bandwidths are recorded in temporal_registration_report.json. Original arrays were preserved. No comparison assets were emitted.
+
+A small numerical WCS roundtrip error verifies inversion consistency only. It does not measure independent registration residual. A bounded mutual-nearest matching attempt was executed on native 5-sigma local maxima after WCS projection, excluding the central 4-pixel galaxy radius and requiring complete valid 5x5 kernels. The 2-pixel match radius and minimum 3 non-collinear independent field points are documented with candidate positions and offsets. Neither pair supplied enough matches for residual validation. Candidates are not identified stars; this result does not establish absence of background sources. No residual fit was justified; the recorded validated residual is null. FINAST is supporting pipeline metadata, not our own residual measurement. Correlation and local peak counts are exploratory diagnostics, not proof of astrometric registration or variability.
+
+Both best pairs differ by roughly 0.45 of the narrower bandwidth and overlap only about 55% under an approximate rectangular model. The former 2% center threshold is insufficient. WAVE-TAB values are explicitly approximate visualization wavelength and bandwidth; external CWAVE/CBAND are available for D2 (separately recorded, provenance unverified), while unavailable for other detectors; this availability/provenance limitation alone would not disqualify exploratory Level 2, but the large relative bandpass displacement and lack of demonstrated equal response are substantive limitations. Different spectral weighting can alter apparent galaxy morphology.
+
+Primary RA---TAN-SIP/DEC--TAN-SIP retains SIP coefficients. A/W alternate WCS uses distinct detector/spectral mappings; their SIP cleanup convention must not be transferred to the celestial spatial solution. Astropy warnings are captured in the report. Informational warnings from alternate WCS construction describe a different solution, not permission to remove primary distortion.
+
+SOURCE bit 21 is informational and retained; every other nonzero bit is conservatively excluded, not interpreted as universally fatal. This conservative display mask may exclude usable pixels. Bilinear pixels require all contributing inputs valid; outside-overlap pixels remain excluded. Zero or nonfinite variance never represents zero uncertainty. No flagged value is replaced with synthetic image measurements.
+
+Calibration HISTORY identifiers, actual source hashes, observation dates, processing release and pipeline versions are recorded. These do not establish external calibration identity or cross-epoch photometric equivalence. QR2 processing versions differ for the closest pairs. Source-core quality can limit brightness measurements even where a field display remains feasible.
+
+Level 3 is unsupported: no flux change, motion, discovery, or numerical astronomical difference is asserted. The authentic native gallery must label images independently scaled and spatially unregistered. Original OBSID values are shared across detectors, so unique filenames/SHA256 identify the 11 distinct image products; the original 55 ordered pair records are verified against exposure combinations. This lookup ambiguity is an implementation restriction, recorded as category C.
+
+Reproduce from explorer: `C:/Users/ishan/Desktop/PARALLAX-Research/.venv/Scripts/python.exe scripts/audit_temporal.py`. The script hashes the 17 recorded original inputs before and after, reads FITS without writes, audits every pair, ranks all pairs and analyzes only the two closest candidates.
+
+Reference: [Official SPHEREx Explanatory Supplement v1.2.1](https://irsa.ipac.caltech.edu/data/SPHEREx/docs/SPHEREx_Expsupp_QR_v1.2.1.pdf), spectral WCS visualization and calibration definitions.

@@ -1,0 +1,42 @@
+{
+  "status": "PASS_OFFLINE_SLICE_PREPARATION",
+  "tests": [
+    {
+      "observation": "rdra_row_0001",
+      "checksumMatch": true,
+      "requiredExtensions": true,
+      "dimensionalConsistency": true,
+      "nativeWcsRoundTripMaxPixels": 2.5349219964900565e-10,
+      "bufferRoundTrip": true,
+      "coreExcluded": 19
+    },
+    {
+      "observation": "rdra_row_0052",
+      "checksumMatch": true,
+      "requiredExtensions": true,
+      "dimensionalConsistency": true,
+      "nativeWcsRoundTripMaxPixels": 1.6628827184598424e-08,
+      "bufferRoundTrip": true,
+      "coreExcluded": 21
+    }
+  ],
+  "observations": 2,
+  "assets": 14,
+  "scienceCapabilities": {
+    "nativeInspection": true,
+    "decodedHeaderFlags": true,
+    "nativeWcsCoordinateReadout": true,
+    "registeredComparison": false,
+    "difference": false,
+    "motion": false,
+    "photometry": false
+  },
+  "blockedReasons": {
+    "registration": "Independent native detector grids; no external astrometric registration or reprojection has been validated.",
+    "spectralResponse": "WCS-WAVE is explicitly approximate visualization metadata, not validated wavelength calibration or equivalent response.",
+    "psf": "PSF extension is present but spatial PSF selection, evaluation and cross-epoch matching have not been validated.",
+    "photometry": "Central pixels are missing or quality flagged; no aperture correction, background matching or calibrated flux comparison.",
+    "motion": "Source identity and cross-epoch astrometry are not independently confirmed; image differences cannot establish motion."
+  },
+  "sourceArchiveSha256": "a777eb996f06fe1827d6867774243a708f4b9afd35ba21227e9a6a5fb3ca10fd"
+}

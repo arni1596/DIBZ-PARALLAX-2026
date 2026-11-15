@@ -1,0 +1,3 @@
+import {chromium} from '@playwright/test';import fs from 'node:fs';
+const browser=await chromium.launch({channel:'chrome'});const page=await browser.newPage({viewport:{width:1440,height:900}});const out='../screenshots';
+await page.goto('http://127.0.0.1:5173/#investigation-find');await page.getByRole('heading',{name:/What can this patch/}).waitFor();await page.screenshot({path:out+'/before-desktop.png'});await page.setViewportSize({width:390,height:844});await page.screenshot({path:out+'/before-mobile.png'});console.log(JSON.stringify({canonicalBaselineDesktop:[1440,900],canonicalBaselineMobile:[390,844],authenticPreviewLoaded:await page.locator('.inv-hero img').count()}));await browser.close();

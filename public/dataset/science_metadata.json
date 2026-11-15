@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "product_kind": "spectral_mosaic_not_time_series",
+  "cube": {
+    "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-M101-cube\\M101_irsa.fits",
+    "sha256": "44e89f460c55f46f7e384ba7dfe8927fa8e56163875aba3766499a5646813447",
+    "bytes": 87295680,
+    "file_identity_status": "LOCAL_BYTES_IDENTIFIED_REMOTE_ORIGIN_UNVERIFIED",
+    "primary_header_version": "v4.2",
+    "origin_header": null,
+    "history": [],
+    "date_headers": {
+      "PRIMARY": {},
+      "IMAGE": {},
+      "NHITS": {},
+      "FLAGS": {},
+      "SPECTRAL_CHANNELS": {},
+      "WCS-WAVE": {}
+    },
+    "archive_release": null,
+    "contributing_exposure_list_available": false,
+    "contributing_exposure_count": null,
+    "calibration_uuid_linkage_verified": false,
+    "candidate_documented_origin": {
+      "url": "https://irsa.ipac.caltech.edu/data/demos/notebooks/spherex/M101_irsa.fits",
+      "evidence": "Tutorial lists same filename/structure/pixel scale. Remote bytes NOT fetched or checksum matched.",
+      "identity_verified": false
+    },
+    "limitations": [
+      "No source receipt, authenticated remote checksum, job parameters, exposure list, processing date, archive release or calibration UUID lineage is embedded in the cube.",
+      "NHITS counts per-pixel contributing images; it is neither a distinct exposure inventory nor integration time.",
+      "Mosaic tool version v4.2 does not establish archive release."
+    ]
+  },
+  "official_channel_calibration": {
+    "path": "C:\\Users\\ishan\\Downloads\\spectral_channels_spx_cal-sch-v1-2026-106.fits.gz",
+    "sha256": "b0fa238dcbc5bcbfcc786b35676cd9e0c735ab2e10e234d3a05f7d327ab9b095",
+    "all_table_fields_match_cube": true,
+    "matching_values_verify_lineage": false
+  },
+  "spatial": {
+    "shape_yx": [
+      267,
+      267
+    ],
+    "wcs_header": {
+      "WCSAXES": 2,
+      "CRPIX1": 134.0,
+      "CRPIX2": 134.0,
+      "CDELT1": -0.0025,
+      "CDELT2": 0.0025,
+      "CUNIT1": "deg",
+      "CUNIT2": "deg",
+      "CTYPE1": "RA---TAN",
+      "CTYPE2": "DEC--TAN",
+      "CRVAL1": 210.8022671,
+      "CRVAL2": 54.34895,
+      "LONPOLE": 180.0,
+      "LATPOLE": 54.34895,
+      "MJDREF": 0.0,
+      "RADESYS": "ICRS"
+    },
+    "pixel_scale_arcsec": [
+      9.0,
+      9.0
+    ],
+    "pixel_origin_zero_based": true,
+    "png_origin": "original y=0 at bottom; PNG scanline 0 is highest FITS y",
+    "no_spatial_resampling": true,
+    "same_native_grid_all_planes": true,
+    "reference_frame": "ICRS",
+    "approximate_footprint_corners_ra_dec_deg": [
+      [
+        211.36814566102353,
+        54.01512511674852
+      ],
+      [
+        211.37737634056873,
+        54.68008469064659
+      ],
+      [
+        210.22715785943126,
+        54.68008469064659
+      ],
+      [
+        210.23638853897646,
+        54.01512511674852
+      ]
+    ],
+    "target_reference_ra_dec_deg": [
+      210.80227,
+      54.34895
+    ],
+    "target_fractional_xy": [
+      132.999323897241,
+      133.00000000001305
+    ],
+    "target_selected_xy": [
+      133,
+      133
+    ]
+  },
+  "image_units": "MJy/sr",
+  "wavelength_units": "um",
+  "spectral_metadata": {
+    "ordering_status": "CONFIRMED_FROM_WCS_WAVE_AND_UNIQUE_TABLE_JOIN",
+    "method": "Evaluate WCS on each actual plane; verify one-based PLANE entries; uniquely join wavelength AND bandwidth to cube table; compare full rows to official table. No row-number identity assumption.",
+    "plane_index_range_zero_based": [
+      0,
+      101
+    ],
+    "spectral_values_are_nominal": true,
+    "comparison_tolerance": "Exact equality of stored lookup and table values, no relaxed numerical tolerance",
+    "virtual_fourth_axis": "Bandwidth world axis depends on cube axis 3; fourth pixel axis is degenerate, not time."
+  },
+  "display": {
+    "algorithm": "One shared linear mapping; grayscale=round_to_even(255*clip((IMAGE-low)/(high-low),0,1)); alpha=255 only on visualization mask",
+    "low": 0.012902578106150031,
+    "high": 0.7647500932216644,
+    "unit": "MJy/sr",
+    "bounds_source": "NumPy linear-method percentiles 1 and 99 pooled over every eligible native pixel across all planes",
+    "percentiles": [
+      1,
+      99
+    ],
+    "per_channel_autoscale": false,
+    "nonfinite_zero_hit_or_rejected": "transparent, never filled",
+    "color_representation": "grayscale intensity display only",
+    "quantization_bits": 8,
+    "interpretation": "Display only; clipping and quantization do not change numerical data. Spectral brightness differences are not time variability or certified flux measurements."
+  },
+  "flags": {
+    "bits": {
+      "OVERFLOW": 1,
+      "OUTLIER": 19,
+      "SOURCE": 21
+    },
+    "source_header": "FLAGS MP_OVERFLOW/MP_OUTLIER/MP_SOURCE",
+    "aggregation": "Bitwise OR of selected propagated input flags, per official documentation",
+    "known_bit_mask": 2621442,
+    "visualization_reject_bit_mask": 524290,
+    "source_bit_is_not_rejected": true,
+    "unknown_bits": "Reject affected pixels and disclose counts",
+    "assessment_scope": "Three mosaic-propagated flags only; absent source-level flags are not assumed good",
+    "science_assessed": false
+  },
+  "regions": [
+    {
+      "id": "full_frame",
+      "kind": "all native mosaic pixel centers",
+      "pixel_count": 71289
+    },
+    {
+      "id": "target_pixel",
+      "kind": "nearest center; floor(x+0.5), no clipping",
+      "fractional_xy": [
+        132.999323897241,
+        133.00000000001305
+      ],
+      "selected_xy": [
+        133,
+        133
+      ],
+      "inside_frame": true,
+      "pixel_count": 1
+    },
+    {
+      "id": "core_30arcsec",
+      "inner_radius_arcsec": 0,
+      "outer_radius_arcsec": 30,
+      "kind": "sky-centered region using pixel-center membership, no fractional weights",
+      "boundary_within_frame": true,
+      "center_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "selection_source": "Analyst defaults for coverage QA; not validated photometry/background apertures",
+      "background_validated": false,
+      "pixel_count": 37
+    },
+    {
+      "id": "central_120arcsec",
+      "inner_radius_arcsec": 0,
+      "outer_radius_arcsec": 120,
+      "kind": "sky-centered region using pixel-center membership, no fractional weights",
+      "boundary_within_frame": true,
+      "center_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "selection_source": "Analyst defaults for coverage QA; not validated photometry/background apertures",
+      "background_validated": false,
+      "pixel_count": 553
+    },
+    {
+      "id": "reference_annulus_240_360arcsec",
+      "inner_radius_arcsec": 240,
+      "outer_radius_arcsec": 360,
+      "kind": "sky-centered region using pixel-center membership, no fractional weights",
+      "boundary_within_frame": true,
+      "center_ra_dec_deg": [
+        210.80227,
+        54.34895
+      ],
+      "selection_source": "Analyst defaults for coverage QA; not validated photometry/background apertures",
+      "background_validated": false,
+      "pixel_count": 2787
+    }
+  ],
+  "target_metadata_source": {
+    "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\spectral_coverage.json",
+    "sha256": "b53c34f6282359bc4cbde387ef7aa64592920be64baed9605c27f267a1c7f5dc",
+    "saved_note": "Fixed M101 field default; coordinate not a target identity verification"
+  },
+  "scientific_measurements": {
+    "established": false,
+    "specific_measurement": null,
+    "requirements": [
+      "Authenticated origin and exposure/release/calibration lineage",
+      "PSF and effective-bandpass modeling",
+      "Noise/variance and correlated-noise assessment; no variance extension supplied",
+      "Measurement-specific apertures/background/masks and quality",
+      "Independent astrometry for any time comparison"
+    ]
+  },
+  "documentation_sources": [
+    {
+      "url": "https://irsa.ipac.caltech.edu/onlinehelp/spherex/spherex/mosaic.html",
+      "purpose": "NHITS counts inputs; selected FLAGS accumulate by OR.",
+      "accessed": "2026-10-29"
+    },
+    {
+      "url": "https://caltech-ipac.github.io/irsa-tutorials/spherex-mosaic/",
+      "purpose": "Same filename/structure example; candidate origin only, not local file authentication.",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "limitations": [
+    "No source receipt, authenticated remote checksum, job parameters, exposure list, processing date, archive release or calibration UUID lineage is embedded in the cube.",
+    "NHITS counts per-pixel contributing images; it is neither a distinct exposure inventory nor integration time.",
+    "Mosaic tool version v4.2 does not establish archive release.",
+    "Not every sky pixel has data or passes visualization masking in every plane.",
+    "Shared mosaic WCS is a common grid, not independent certification of astrometric accuracy.",
+    "Conservative OR-based masking does not certify remaining pixels for science.",
+    "Zero flags do not restore unpropagated source-level quality information.",
+    "No flux, SED, line, discovery or variability claim is certified.",
+    "Reference regions are coverage tests, not validated photometry or blank sky."
+  ]
+}

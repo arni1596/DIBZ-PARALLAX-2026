@@ -1,0 +1,24 @@
+{
+  "CLEARED": {
+    "files": 630,
+    "bytes": 114751955
+  },
+  "HOLD": {
+    "files": 0,
+    "bytes": 0
+  },
+  "EXCLUDE": {
+    "files": 0,
+    "bytes": 0
+  },
+  "totalFiles": 630,
+  "totalBytes": 114751955,
+  "decisionUtc": "2026-11-14T21:50:31.396467+00:00",
+  "groups": {
+    "Factual metadata / deterministic display or evidence records": 24,
+    "QR2 M101-field dated observation derivative": 44,
+    "Byte-matched public M101 demo numerical/PNG derivative": 510,
+    "QR2 native observations and deterministic derivatives/records": 52
+  },
+  "scope": "Scientific data assets only. Source/ownership/competition eligibility remain separate. IRSA terms support public scientific data use; original records and file bytes are preserved."
+}

@@ -1,0 +1,13 @@
+> **Superseded for the current630-file data release:** assets are included in the collaboration branch under the evidence/terms in ../release/PARALLAX_ASSET_RIGHTS_SUMMARY.md. Use ../release/PARALLAX_DATA_INSTALL.md. The earlier source-only restrictions below are preserved as historical context; original provenance/JSON is not rewritten.
+
+# Scientific asset provisioning — local only
+
+No dataset redistribution authorization is recorded. The branch intentionally excludes `public/` and `tests/fixtures/`. All exact630 relative paths, native byte sizes and SHA-256 values are in LOCAL_ASSET_REQUIREMENTS.json. This preserves the distinction between source review and a data-enabled working copy. Do not commit these files or upload an entire local release archive, whose history/assets may include restricted data.
+
+The existing authorized neutral working copy already holds the exact original assets. After specific rights/transfer permission, another authorized local working copy may copy the matching `public/` and `tests/fixtures/` directories from an existing verified RC2 checkout, without overwriting mismatched files. Verify every relative path/hash before serving or testing. No public/team download link for this bundle is established. Do not interpret this instruction as permission to share it.
+
+Recorded QR2 product acquisition URLs are evidence references in the local manifests, not a grant to redistribute them. M101 source/release lineage remains unresolved: do not replace it with an arbitrary IRSA demonstration FITS, assign DR1/QR3 DOIs, or claim it can be reconstructed through a verified public download. Rights-cleared provisioning is a genuine blocker to a fully functional fresh clone.
+
+A new clone can run the build/typecheck without assets. Scientific Node/Python/browser tests require the matching asset bundle; no tests using missing assets are reported as passing. Python needs existing NumPy/Astropy/Pillow and the recorded source FITS for offline reproduction. Atlas tests accept PARALLAX_ATLAS_RECORDS pointing to an authorized local observation-evidence.json and its referenced originals; the default is `.local-data/atlas/observation-evidence.json`. Missing inputs are prerequisites, not fabricated successes.
+
+Runtime browser requests use relative scientific URLs; there are no machine-specific Windows paths required by the app. The local launcher defaults to `python`; pass `-Python` explicitly for an existing environment. Historical path strings inside original scientific reports are retained as provenance, not silently rewritten.

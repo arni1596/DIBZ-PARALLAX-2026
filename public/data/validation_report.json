@@ -1,0 +1,519 @@
+{
+  "execution_utc": "2026-10-29T07:40:40.056357+00:00",
+  "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "astropy": "8.0.2",
+  "numpy": "2.5.4",
+  "summary": {
+    "fits_discovered": 11,
+    "mapped_to_detector_channels": 11,
+    "external_cwave_measurements": 2,
+    "crosschecks_passed": 2,
+    "verified_calibration_provenance": 0,
+    "unique_provisional_global_channels": 11,
+    "scientifically_verified_channels": 0,
+    "blocked_by_missing_external_calibration": 9
+  },
+  "conclusions": {
+    "D2_MAPPING_REPRODUCED": true,
+    "MULTIDETECTOR_MAPPING_PROVISIONAL": true,
+    "102_CHANNEL_COVERAGE_VERIFIED": false
+  },
+  "reference_tests": [
+    {
+      "filename": "sample_D2_row53.fits",
+      "checks": {
+        "detector_2": true,
+        "channel_lookup": true,
+        "cwave_crosscheck": true,
+        "center_11_11": true,
+        "pixel_1783_475": true,
+        "subchannel_14": true,
+        "global_31": true,
+        "cwave_reference": true,
+        "cband_reference": true,
+        "approximate_wavelength_reference": true,
+        "approximate_bandwidth_reference": true
+      },
+      "passed": true,
+      "failed_checks": [],
+      "diagnostics": [
+        {
+          "correction_status": "CORRECTED_REFERENCE_EXPECTATION",
+          "cause": "Former supplied expected pixel was off by one in both axes. Saved alternate-A header CRPIX=(-1771,-463), CRVAL=(0,0), unit CDELT and identity matrix give (1+11+1771,1+11+463)=(1783,475). Validated coordinate formula is unchanged.",
+          "former_expected_detector_pixel": [
+            1782,
+            474
+          ],
+          "corrected_expected_detector_pixel": [
+            1783,
+            475
+          ],
+          "former_supplied_cwave_um": 1.506155601,
+          "former_supplied_cband_um": 0.036533109,
+          "former_supplied_approximate_wcs_um": [
+            1.506015569,
+            0.036822283
+          ],
+          "former_reference_test_passed": false,
+          "former_failed_checks": [
+            "pixel_1782_474",
+            "cwave_reference",
+            "cband_reference",
+            "approximate_wavelength_reference",
+            "approximate_bandwidth_reference"
+          ],
+          "actual_lookup_at_former_pixel": {
+            "detector": 2,
+            "subchannel": 14,
+            "global_channel": 31,
+            "nominal_wavelength_um": 1.5169999599456787,
+            "wl_min_um": 1.496000051498413,
+            "wl_max_um": 1.5369999408721924,
+            "nominal_bandwidth_um": 0.03700000047683716,
+            "R": 41.0,
+            "R_STD": 0.30000001192092896,
+            "channel_map_value": 14,
+            "cwave_um": 1.506155014038086,
+            "cband_um": 0.036533109843730927
+          },
+          "actual_lookup_at_corrected_pixel": {
+            "detector": 2,
+            "subchannel": 14,
+            "global_channel": 31,
+            "nominal_wavelength_um": 1.5169999599456787,
+            "wl_min_um": 1.496000051498413,
+            "wl_max_um": 1.5369999408721924,
+            "nominal_bandwidth_um": 0.03700000047683716,
+            "R": 41.0,
+            "R_STD": 0.30000001192092896,
+            "channel_map_value": 14,
+            "cwave_um": 1.5058438777923584,
+            "cband_um": 0.03694658353924751
+          },
+          "actual_observation_wcs_at_center_um": [
+            1.5062677322534908,
+            0.036949437572443566
+          ],
+          "baseline_source": "Recomputed from the existing local FITS arrays and observation WCS at corrected center; regression baseline, not independent calibration identity evidence",
+          "tolerances_changed": false
+        }
+      ],
+      "observed": {
+        "filename": "sample_D2_row53.fits",
+        "sha256": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+        "errors": [],
+        "warnings": [],
+        "CHANNEL_ASSIGNED_PROVISIONAL": true,
+        "CWAVE_CROSSCHECK_PASSED": true,
+        "CALIBRATION_PROVENANCE_VERIFIED": false,
+        "MISSING_EXTERNAL_CALIBRATION": false,
+        "FAILED_CHANNEL_LOOKUP": false,
+        "USABLE_FOR_SCIENCE": false,
+        "image_available": true,
+        "flags_available": true,
+        "detector": 2,
+        "image_dimensions_xy": [
+          23,
+          23
+        ],
+        "observation_id": "2025W19_2B_0346_1",
+        "observation_timestamp": "2025-05-10T17:04:37.741",
+        "mjd_obs": 60805.711547928,
+        "pipeline_version": "6.4+psffix1",
+        "detcoord": "sky",
+        "alternate_a": {
+          "WCSAXESA": 2,
+          "CRPIX1A": -1771.0,
+          "CRPIX2A": -463.0,
+          "CDELT1A": 1.0,
+          "CDELT2A": 1.0,
+          "CUNIT1A": "pixel",
+          "CUNIT2A": "pixel",
+          "CTYPE1A": "LINEAR",
+          "CTYPE2A": "LINEAR",
+          "CRVAL1A": 0.0,
+          "CRVAL2A": 0.0,
+          "LATPOLEA": 90.0,
+          "WCSNAMEA": "0-based active pixel coordinates"
+        },
+        "alternate_w": {
+          "WCSAXESW": 2,
+          "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+          "CNAME1W": "Wavelength",
+          "CNAME2W": "Bandwidth",
+          "CRPIX1W": -1771.0,
+          "CRPIX2W": -463.0,
+          "CDELT1W": 1,
+          "CDELT2W": 1,
+          "CUNIT1W": "um",
+          "CUNIT2W": "um",
+          "CTYPE1W": "WAVE-TAB",
+          "CTYPE2W": "WAVE-TAB",
+          "CRVAL1W": 1,
+          "CRVAL2W": 1,
+          "PV1_3W": 1,
+          "PV2_3W": 2,
+          "PS1_0W": "WCS-WAVE",
+          "PS2_0W": "WCS-WAVE",
+          "PS1_1W": "VALUES",
+          "PS2_1W": "VALUES",
+          "PS1_2W": "X",
+          "PS2_2W": "Y"
+        },
+        "approximate_spectral_wcs_present": true,
+        "spectral_wcs_history": [
+          "[CALIB] spectral_wcs bd447bc4-4f65-481b-84e9-a5f30a4f8715",
+          "[CALIB] spectral_wcs bd447bc4-4f65-481b-84e9-a5f30a4f8715",
+          "[CALIB] spectral_wcs a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+        ],
+        "spectral_wcs_uuids": [
+          "bd447bc4-4f65-481b-84e9-a5f30a4f8715",
+          "a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+        ],
+        "final_recorded_spectral_wcs_uuid": "a9cb438e-e37d-4888-a1a5-5a9db6ad0737",
+        "inventory_metadata": {
+          "row": "53",
+          "band": "SPHEREx-D2",
+          "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/2/level2_2025W19_2B_0346_1D2_spx_l2b-v20-2025-247.fits",
+          "time_start": "60805.711548",
+          "time_end": "60805.71288",
+          "provenance_version": "6.4",
+          "version": "6.4+psffix1",
+          "wavelength_um": "1.50641873138115",
+          "bandwidth_um": "0.03695268870639086",
+          "status": "MEASURED_VISUALIZATION_WCS",
+          "fits_sha256": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/2/level2_2025W19_2B_0346_1D2_spx_l2b-v20-2025-247.fits?center=210.802270000,54.348950000d&size=0.04",
+          "error": ""
+        },
+        "archive_release": "qr2",
+        "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W19_2B/l2b-v20-2025-247/2/level2_2025W19_2B_0346_1D2_spx_l2b-v20-2025-247.fits",
+        "reference_ra_dec_deg": [
+          210.80227,
+          54.34895
+        ],
+        "position_kind": "reference_center_test",
+        "cutout_xy_fractional": [
+          11.0,
+          11.0
+        ],
+        "cutout_center_xy": [
+          11.0,
+          11.0
+        ],
+        "detector_xy_fractional": [
+          1783.0,
+          475.0
+        ],
+        "detector_xy_selected": [
+          1783,
+          475
+        ],
+        "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+        "near_pixel_boundary": false,
+        "alternate_a_simplified_formula_valid": true,
+        "flags_at_selected_cutout_pixel": 2097152,
+        "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+        "l1dqaflg": "Pass",
+        "l2dqaflg": "Pass",
+        "approximate_wavelength_um": 1.5062677322534908,
+        "approximate_bandwidth_um": 0.036949437572443566,
+        "subchannel": 14,
+        "global_channel": 31,
+        "nominal_wavelength_um": 1.5169999599456787,
+        "wl_min_um": 1.496000051498413,
+        "wl_max_um": 1.5369999408721924,
+        "nominal_bandwidth_um": 0.03700000047683716,
+        "R": 41.0,
+        "R_STD": 0.30000001192092896,
+        "channel_map_value": 14,
+        "cwave_um": 1.5058438777923584,
+        "cband_um": 0.03694658353924751,
+        "channel_map_orientation_agrees": true,
+        "channel_map_version_linkage_verified": false,
+        "near_channel_boundary": false,
+        "external_wavelength_status": "EXTERNAL_CWAVE_MEASURED_PROVENANCE_UNVERIFIED",
+        "external_values_valid": true,
+        "cwave_in_nominal_interval": true,
+        "external_detector_agrees": true,
+        "external_orientation_agrees": true,
+        "cwave_minus_approx_um": -0.0004238544611323558,
+        "cband_minus_approx_um": -2.854033196053596e-06
+      }
+    },
+    {
+      "filename": "sample_D2_row136.fits",
+      "checks": {
+        "detector_2": true,
+        "channel_lookup": true,
+        "cwave_crosscheck": true
+      },
+      "passed": true,
+      "failed_checks": [],
+      "diagnostics": [],
+      "observed": {
+        "filename": "sample_D2_row136.fits",
+        "sha256": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+        "errors": [],
+        "warnings": [],
+        "CHANNEL_ASSIGNED_PROVISIONAL": true,
+        "CWAVE_CROSSCHECK_PASSED": true,
+        "CALIBRATION_PROVENANCE_VERIFIED": false,
+        "MISSING_EXTERNAL_CALIBRATION": false,
+        "FAILED_CHANNEL_LOOKUP": false,
+        "USABLE_FOR_SCIENCE": false,
+        "image_available": true,
+        "flags_available": true,
+        "detector": 2,
+        "image_dimensions_xy": [
+          24,
+          23
+        ],
+        "observation_id": "2026W26_1A_0500_1",
+        "observation_timestamp": "2026-06-24T03:19:00.063",
+        "mjd_obs": 61215.138195174,
+        "pipeline_version": "6.5.7",
+        "detcoord": "sky",
+        "alternate_a": {
+          "WCSAXESA": 2,
+          "CRPIX1A": -25.0,
+          "CRPIX2A": -534.0,
+          "CDELT1A": 1.0,
+          "CDELT2A": 1.0,
+          "CUNIT1A": "pixel",
+          "CUNIT2A": "pixel",
+          "CTYPE1A": "LINEAR",
+          "CTYPE2A": "LINEAR",
+          "CRVAL1A": 0.0,
+          "CRVAL2A": 0.0,
+          "LATPOLEA": 90.0,
+          "WCSNAMEA": "0-based active pixel coordinates"
+        },
+        "alternate_w": {
+          "WCSAXESW": 2,
+          "WCSNAMEW": "Approximated per-pixel wavelength and bandwidth",
+          "CNAME1W": "Wavelength",
+          "CNAME2W": "Bandwidth",
+          "CRPIX1W": -25.0,
+          "CRPIX2W": -534.0,
+          "CDELT1W": 1,
+          "CDELT2W": 1,
+          "CUNIT1W": "um",
+          "CUNIT2W": "um",
+          "CTYPE1W": "WAVE-TAB",
+          "CTYPE2W": "WAVE-TAB",
+          "CRVAL1W": 1,
+          "CRVAL2W": 1,
+          "PV1_3W": 1,
+          "PV2_3W": 2,
+          "PS1_0W": "WCS-WAVE",
+          "PS2_0W": "WCS-WAVE",
+          "PS1_1W": "VALUES",
+          "PS2_1W": "VALUES",
+          "PS1_2W": "X",
+          "PS2_2W": "Y"
+        },
+        "approximate_spectral_wcs_present": true,
+        "spectral_wcs_history": [
+          "[CALIB] spectral_wcs a9cb438e-e37d-4888-a1a5-5a9db6ad0737",
+          "[CALIB] spectral_wcs a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+        ],
+        "spectral_wcs_uuids": [
+          "a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+        ],
+        "final_recorded_spectral_wcs_uuid": "a9cb438e-e37d-4888-a1a5-5a9db6ad0737",
+        "inventory_metadata": {
+          "row": "136",
+          "band": "SPHEREx-D2",
+          "uri": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W26_1A/l2b-v25-2026-180/2/level2_2026W26_1A_0500_1D2_spx_l2b-v25-2026-180.fits",
+          "time_start": "61215.138195",
+          "time_end": "61215.139528",
+          "provenance_version": "6.5.7",
+          "version": "6.5.7",
+          "wavelength_um": "1.489988171739384",
+          "bandwidth_um": "0.03645982019042382",
+          "status": "MEASURED_VISUALIZATION_WCS",
+          "fits_sha256": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+          "url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W26_1A/l2b-v25-2026-180/2/level2_2026W26_1A_0500_1D2_spx_l2b-v25-2026-180.fits?center=210.802270000,54.348950000d&size=0.04",
+          "error": ""
+        },
+        "archive_release": "qr2",
+        "archive_release_evidence": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2026W26_1A/l2b-v25-2026-180/2/level2_2026W26_1A_0500_1D2_spx_l2b-v25-2026-180.fits",
+        "reference_ra_dec_deg": [
+          210.80227,
+          54.34895
+        ],
+        "position_kind": "saved_M101_reference",
+        "cutout_xy_fractional": [
+          11.814901481031805,
+          11.094652738394064
+        ],
+        "cutout_center_xy": [
+          11.5,
+          11.0
+        ],
+        "detector_xy_fractional": [
+          37.814901481031804,
+          546.0946527383941
+        ],
+        "detector_xy_selected": [
+          38,
+          546
+        ],
+        "rounding": "nearest pixel center; floor(x+0.5); ties toward positive infinity; no clipping",
+        "near_pixel_boundary": false,
+        "alternate_a_simplified_formula_valid": true,
+        "flags_at_selected_cutout_pixel": 2097152,
+        "quality_assessment": "NOT_ASSESSED: raw flags recorded; no measurement-specific science criteria evaluated",
+        "l1dqaflg": "Pass",
+        "l2dqaflg": "Pass",
+        "approximate_wavelength_um": 1.489988171739384,
+        "approximate_bandwidth_um": 0.03645982019042382,
+        "subchannel": 13,
+        "global_channel": 30,
+        "nominal_wavelength_um": 1.4809999465942383,
+        "wl_min_um": 1.4609999656677246,
+        "wl_max_um": 1.5,
+        "nominal_bandwidth_um": 0.035999998450279236,
+        "R": 41.0,
+        "R_STD": 0.30000001192092896,
+        "channel_map_value": 13,
+        "cwave_um": 1.489738941192627,
+        "cband_um": 0.03702513128519058,
+        "channel_map_orientation_agrees": true,
+        "channel_map_version_linkage_verified": false,
+        "near_channel_boundary": false,
+        "external_wavelength_status": "EXTERNAL_CWAVE_MEASURED_PROVENANCE_UNVERIFIED",
+        "external_values_valid": true,
+        "cwave_in_nominal_interval": true,
+        "external_detector_agrees": true,
+        "external_orientation_agrees": true,
+        "cwave_minus_approx_um": -0.0002492305467569622,
+        "cband_minus_approx_um": 0.0005653110947667628
+      }
+    }
+  ],
+  "reference_corrections": [
+    {
+      "correction_status": "CORRECTED_REFERENCE_EXPECTATION",
+      "cause": "Former supplied expected pixel was off by one in both axes. Saved alternate-A header CRPIX=(-1771,-463), CRVAL=(0,0), unit CDELT and identity matrix give (1+11+1771,1+11+463)=(1783,475). Validated coordinate formula is unchanged.",
+      "former_expected_detector_pixel": [
+        1782,
+        474
+      ],
+      "corrected_expected_detector_pixel": [
+        1783,
+        475
+      ],
+      "former_supplied_cwave_um": 1.506155601,
+      "former_supplied_cband_um": 0.036533109,
+      "former_supplied_approximate_wcs_um": [
+        1.506015569,
+        0.036822283
+      ],
+      "former_reference_test_passed": false,
+      "former_failed_checks": [
+        "pixel_1782_474",
+        "cwave_reference",
+        "cband_reference",
+        "approximate_wavelength_reference",
+        "approximate_bandwidth_reference"
+      ],
+      "actual_lookup_at_former_pixel": {
+        "detector": 2,
+        "subchannel": 14,
+        "global_channel": 31,
+        "nominal_wavelength_um": 1.5169999599456787,
+        "wl_min_um": 1.496000051498413,
+        "wl_max_um": 1.5369999408721924,
+        "nominal_bandwidth_um": 0.03700000047683716,
+        "R": 41.0,
+        "R_STD": 0.30000001192092896,
+        "channel_map_value": 14,
+        "cwave_um": 1.506155014038086,
+        "cband_um": 0.036533109843730927
+      },
+      "actual_lookup_at_corrected_pixel": {
+        "detector": 2,
+        "subchannel": 14,
+        "global_channel": 31,
+        "nominal_wavelength_um": 1.5169999599456787,
+        "wl_min_um": 1.496000051498413,
+        "wl_max_um": 1.5369999408721924,
+        "nominal_bandwidth_um": 0.03700000047683716,
+        "R": 41.0,
+        "R_STD": 0.30000001192092896,
+        "channel_map_value": 14,
+        "cwave_um": 1.5058438777923584,
+        "cband_um": 0.03694658353924751
+      },
+      "actual_observation_wcs_at_center_um": [
+        1.5062677322534908,
+        0.036949437572443566
+      ],
+      "baseline_source": "Recomputed from the existing local FITS arrays and observation WCS at corrected center; regression baseline, not independent calibration identity evidence",
+      "tolerances_changed": false
+    }
+  ],
+  "full_directory_processed_after_both_d2_tests": true,
+  "input_hashes_unchanged": true,
+  "input_hashes_before": {
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row0.fits": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row52.fits": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row136.fits": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row53.fits": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row137.fits": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row186.fits": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row187.fits": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row239.fits": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row240.fits": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row321.fits": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D6_row322.fits": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\spectral_coverage.json": "b53c34f6282359bc4cbde387ef7aa64592920be64baed9605c27f267a1c7f5dc",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\footprint_matches.csv": "62807ef2f52d033ccb6ada1ac83a284ebdd74f24aafbc42b36693c74b8403694",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sampled_wavelengths.csv": "7251aad4f8e0a0fcbeee5b3801be71c8e7c18597353b50dc90e62539246b5382",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\query.adql": "e463f89dd3fc9d0c487bfe47550c827c15f6649d4acf31e50e60fad9f8dd20ad",
+    "C:\\Users\\ishan\\Downloads\\spectral_channels_spx_cal-sch-v1-2026-106.fits.gz": "b0fa238dcbc5bcbfcc786b35676cd9e0c735ab2e10e234d3a05f7d327ab9b095",
+    "C:\\Users\\ishan\\Downloads\\spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7"
+  },
+  "input_hashes_after": {
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row0.fits": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row52.fits": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row136.fits": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row53.fits": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row137.fits": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row186.fits": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row187.fits": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row239.fits": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row240.fits": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row321.fits": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D6_row322.fits": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\spectral_coverage.json": "b53c34f6282359bc4cbde387ef7aa64592920be64baed9605c27f267a1c7f5dc",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\footprint_matches.csv": "62807ef2f52d033ccb6ada1ac83a284ebdd74f24aafbc42b36693c74b8403694",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sampled_wavelengths.csv": "7251aad4f8e0a0fcbeee5b3801be71c8e7c18597353b50dc90e62539246b5382",
+    "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\query.adql": "e463f89dd3fc9d0c487bfe47550c827c15f6649d4acf31e50e60fad9f8dd20ad",
+    "C:\\Users\\ishan\\Downloads\\spectral_channels_spx_cal-sch-v1-2026-106.fits.gz": "b0fa238dcbc5bcbfcc786b35676cd9e0c735ab2e10e234d3a05f7d327ab9b095",
+    "C:\\Users\\ishan\\Downloads\\spectral_wcs_D2_spx_cal-wcs-v4-2025-254.fits": "40c49a5acbf7047b7cebf3d46471cb99639867996f48a22d0e283f7e529249d7"
+  },
+  "tolerances": {
+    "reference_cwave_absolute_um": 5e-07,
+    "reference_cband_absolute_um": 2e-08,
+    "approximate_wcs_regression_absolute_um": 5e-09,
+    "approximate_regression_reason": "Fixed decimal regression tolerance for repeated evaluation of the same observation TAB WCS, distinct from cross-method accuracy",
+    "reference_reason": "CWAVE threshold approximately 4 float32 ULPs at 1.5 um; CBAND approximately 5 ULPs at 0.037 um, allowing decimal reference rounding; unchanged from the original run; updated baselines reflect the corrected detector pixel",
+    "crosscheck_wavelength_and_bandwidth_absolute_um": 0.001,
+    "crosscheck_reason": "Engineering screening threshold rounded above external calibration WLERRP99=0.000726 and BWERRP99=0.000928 um; not a guaranteed error bound or provenance proof",
+    "pixel_boundary_distance_px": 0.05,
+    "channel_boundary": "Any differing CHANNEL_MAP value in 3x3 neighborhood"
+  },
+  "warnings": [
+    "All channel assignments provisional: channel calibration version linkage unverified.",
+    "No measurement-specific science-usability assessment performed.",
+    "Saved target note: Fixed M101 field default; coordinate not a target identity verification"
+  ],
+  "calibration_errors": {
+    "channels": null,
+    "d2": null
+  },
+  "failures": []
+}

@@ -1,0 +1,118 @@
+{
+  "local": {
+    "sha256": "44e89f460c55f46f7e384ba7dfe8927fa8e56163875aba3766499a5646813447",
+    "bytes": 87295680,
+    "hdus": [
+      {
+        "name": "PRIMARY",
+        "shape": null,
+        "unit": null,
+        "copyrightHeaders": {}
+      },
+      {
+        "name": "IMAGE",
+        "shape": [
+          102,
+          267,
+          267
+        ],
+        "unit": "MJy/sr",
+        "copyrightHeaders": {}
+      },
+      {
+        "name": "NHITS",
+        "shape": [
+          102,
+          267,
+          267
+        ],
+        "unit": "count",
+        "copyrightHeaders": {}
+      },
+      {
+        "name": "FLAGS",
+        "shape": [
+          102,
+          267,
+          267
+        ],
+        "unit": "",
+        "copyrightHeaders": {}
+      },
+      {
+        "name": "SPECTRAL_CHANNELS",
+        "shape": [
+          102
+        ],
+        "unit": null,
+        "copyrightHeaders": {}
+      },
+      {
+        "name": "WCS-WAVE",
+        "shape": [
+          1
+        ],
+        "unit": null,
+        "copyrightHeaders": {}
+      }
+    ]
+  },
+  "remote": {
+    "sha256": "44e89f460c55f46f7e384ba7dfe8927fa8e56163875aba3766499a5646813447",
+    "bytes": 87295680,
+    "hdus": [
+      {
+        "name": "PRIMARY",
+        "shape": null,
+        "unit": null,
+        "copyrightHeaders": {}
+      },
+      {
+        "name": "IMAGE",
+        "shape": [
+          102,
+          267,
+          267
+        ],
+        "unit": "MJy/sr",
+        "copyrightHeaders": {}
+      },
+      {
+        "name": "NHITS",
+        "shape": [
+          102,
+          267,
+          267
+        ],
+        "unit": "count",
+        "copyrightHeaders": {}
+      },
+      {
+        "name": "FLAGS",
+        "shape": [
+          102,
+          267,
+          267
+        ],
+        "unit": "",
+        "copyrightHeaders": {}
+      },
+      {
+        "name": "SPECTRAL_CHANNELS",
+        "shape": [
+          102
+        ],
+        "unit": null,
+        "copyrightHeaders": {}
+      },
+      {
+        "name": "WCS-WAVE",
+        "shape": [
+          1
+        ],
+        "unit": null,
+        "copyrightHeaders": {}
+      }
+    ]
+  }
+}

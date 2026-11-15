@@ -1,0 +1,14 @@
+node_modules/
+__pycache__/
+dist/
+playwright-report/
+test-results/
+.venv/
+.test-work/
+
+# Unreviewed scientific files stay ignored; only the630 explicitly cleared manifest paths are force-added and tracked.
+/public/
+/tests/fixtures/
+/.local-data/
+/.openai/
+/.github/workflows/

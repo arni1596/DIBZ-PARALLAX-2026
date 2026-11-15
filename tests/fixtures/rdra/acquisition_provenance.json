@@ -1,0 +1,11 @@
+{
+  "classification": "Observed",
+  "kind": "Recorded acquisition metadata subset",
+  "originalArchiveName": "PARALLAX-target-results-v2.zip",
+  "originalArchiveSha256": "a777eb996f06fe1827d6867774243a708f4b9afd35ba21227e9a6a5fb3ca10fd",
+  "subsetRows": [
+    1,
+    52
+  ],
+  "note": "Curated real observations and recorded parent archive metadata; no simulated observations. Full historical acquisition archive is not bundled."
+}

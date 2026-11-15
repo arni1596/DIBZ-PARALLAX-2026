@@ -1,0 +1,1083 @@
+[
+  {
+    "extension_index": 0,
+    "extension_name": "PRIMARY",
+    "cards": [
+      {
+        "keyword": "SIMPLE",
+        "value": true,
+        "comment": "conforms to FITS standard"
+      },
+      {
+        "keyword": "BITPIX",
+        "value": 8,
+        "comment": "array data type"
+      },
+      {
+        "keyword": "NAXIS",
+        "value": 0,
+        "comment": "number of array dimensions"
+      },
+      {
+        "keyword": "EXTEND",
+        "value": true,
+        "comment": ""
+      },
+      {
+        "keyword": "VERSION",
+        "value": "v4.2",
+        "comment": "Mosaic tool version"
+      }
+    ]
+  },
+  {
+    "extension_index": 1,
+    "extension_name": "IMAGE",
+    "cards": [
+      {
+        "keyword": "XTENSION",
+        "value": "IMAGE",
+        "comment": "Image extension"
+      },
+      {
+        "keyword": "BITPIX",
+        "value": -32,
+        "comment": "array data type"
+      },
+      {
+        "keyword": "NAXIS",
+        "value": 3,
+        "comment": "number of array dimensions"
+      },
+      {
+        "keyword": "NAXIS1",
+        "value": 267,
+        "comment": ""
+      },
+      {
+        "keyword": "NAXIS2",
+        "value": 267,
+        "comment": ""
+      },
+      {
+        "keyword": "NAXIS3",
+        "value": 102,
+        "comment": ""
+      },
+      {
+        "keyword": "PCOUNT",
+        "value": 0,
+        "comment": "number of parameters"
+      },
+      {
+        "keyword": "GCOUNT",
+        "value": 1,
+        "comment": "number of groups"
+      },
+      {
+        "keyword": "EXTNAME",
+        "value": "IMAGE",
+        "comment": "extension name"
+      },
+      {
+        "keyword": "WCSAXES",
+        "value": 4,
+        "comment": "Number of coordinate axes"
+      },
+      {
+        "keyword": "CRPIX1",
+        "value": 134.0,
+        "comment": "Pixel coordinate of reference point"
+      },
+      {
+        "keyword": "CRPIX2",
+        "value": 134.0,
+        "comment": "Pixel coordinate of reference point"
+      },
+      {
+        "keyword": "CDELT1",
+        "value": -0.0025,
+        "comment": "[deg] Coordinate increment at reference point"
+      },
+      {
+        "keyword": "CDELT2",
+        "value": 0.0025,
+        "comment": "[deg] Coordinate increment at reference point"
+      },
+      {
+        "keyword": "CUNIT1",
+        "value": "deg",
+        "comment": "Units of coordinate increment and value"
+      },
+      {
+        "keyword": "CUNIT2",
+        "value": "deg",
+        "comment": "Units of coordinate increment and value"
+      },
+      {
+        "keyword": "CTYPE1",
+        "value": "RA---TAN",
+        "comment": "Right ascension, gnomonic projection"
+      },
+      {
+        "keyword": "CTYPE2",
+        "value": "DEC--TAN",
+        "comment": "Declination, gnomonic projection"
+      },
+      {
+        "keyword": "CRVAL1",
+        "value": 210.8022671,
+        "comment": "[deg] Coordinate value at reference point"
+      },
+      {
+        "keyword": "CRVAL2",
+        "value": 54.34895,
+        "comment": "[deg] Coordinate value at reference point"
+      },
+      {
+        "keyword": "LONPOLE",
+        "value": 180.0,
+        "comment": "[deg] Native longitude of celestial pole"
+      },
+      {
+        "keyword": "LATPOLE",
+        "value": 54.34895,
+        "comment": "[deg] Native latitude of celestial pole"
+      },
+      {
+        "keyword": "MJDREF",
+        "value": 0.0,
+        "comment": "[d] MJD of fiducial time"
+      },
+      {
+        "keyword": "RADESYS",
+        "value": "ICRS",
+        "comment": "Equatorial coordinate system"
+      },
+      {
+        "keyword": "CTYPE3",
+        "value": "WAVE-TAB",
+        "comment": "Coordinate via lookup table"
+      },
+      {
+        "keyword": "CNAME3",
+        "value": "WAVELENGTH",
+        "comment": "Spectral axis: wavelength"
+      },
+      {
+        "keyword": "CUNIT3",
+        "value": "um",
+        "comment": "Microns"
+      },
+      {
+        "keyword": "CRPIX3",
+        "value": 1,
+        "comment": "TAB reference pixel (convention)"
+      },
+      {
+        "keyword": "CDELT3",
+        "value": 1,
+        "comment": "TAB increment (convention)"
+      },
+      {
+        "keyword": "CRVAL3",
+        "value": 1,
+        "comment": "TAB reference value (convention)"
+      },
+      {
+        "keyword": "PS3_0",
+        "value": "WCS-WAVE",
+        "comment": "Extension with lookup table"
+      },
+      {
+        "keyword": "PS3_1",
+        "value": "WAVELENGTHS",
+        "comment": "Column with wavelength values"
+      },
+      {
+        "keyword": "PS3_2",
+        "value": "PLANE",
+        "comment": "Column with plane indices"
+      },
+      {
+        "keyword": "PV3_3",
+        "value": 1,
+        "comment": "Index of wavelength in the WAVELENGTHS array"
+      },
+      {
+        "keyword": "CTYPE4",
+        "value": "WAVE-TAB",
+        "comment": "Coordinate via lookup table"
+      },
+      {
+        "keyword": "CNAME4",
+        "value": "BANDWIDTH",
+        "comment": "Spectral axis: bandwidth"
+      },
+      {
+        "keyword": "CUNIT4",
+        "value": "um",
+        "comment": "Microns"
+      },
+      {
+        "keyword": "CRPIX4",
+        "value": 1,
+        "comment": "TAB reference pixel (convention)"
+      },
+      {
+        "keyword": "CDELT4",
+        "value": 1,
+        "comment": "TAB increment (convention)"
+      },
+      {
+        "keyword": "CRVAL4",
+        "value": 1,
+        "comment": "TAB reference value (convention)"
+      },
+      {
+        "keyword": "PS4_0",
+        "value": "WCS-WAVE",
+        "comment": "Extension with lookup table"
+      },
+      {
+        "keyword": "PS4_1",
+        "value": "BANDWIDTHS",
+        "comment": "Column with bandwidth values"
+      },
+      {
+        "keyword": "PS4_2",
+        "value": "PLANE",
+        "comment": "Column with plane indices"
+      },
+      {
+        "keyword": "PV4_3",
+        "value": 1,
+        "comment": "Index of bandwidth in BANDWIDTHS array"
+      },
+      {
+        "keyword": "PC3_3",
+        "value": 1.0,
+        "comment": "Wavelength depends on image axis 3"
+      },
+      {
+        "keyword": "PC4_3",
+        "value": 1.0,
+        "comment": "Bandwidth depends on image axis 3"
+      },
+      {
+        "keyword": "PC4_4",
+        "value": 0.0,
+        "comment": "No independent 4th pixel axis"
+      },
+      {
+        "keyword": "NCHAN",
+        "value": 102,
+        "comment": "Number of spectral channels"
+      },
+      {
+        "keyword": "WLMIN",
+        "value": 0.753,
+        "comment": "Minimum wavelength [micron]"
+      },
+      {
+        "keyword": "WLMAX",
+        "value": 4.982,
+        "comment": "Maximum wavelength [micron]"
+      },
+      {
+        "keyword": "BUNIT",
+        "value": "MJy/sr",
+        "comment": "Data units"
+      }
+    ]
+  },
+  {
+    "extension_index": 2,
+    "extension_name": "NHITS",
+    "cards": [
+      {
+        "keyword": "XTENSION",
+        "value": "IMAGE",
+        "comment": "Image extension"
+      },
+      {
+        "keyword": "BITPIX",
+        "value": 32,
+        "comment": "array data type"
+      },
+      {
+        "keyword": "NAXIS",
+        "value": 3,
+        "comment": "number of array dimensions"
+      },
+      {
+        "keyword": "NAXIS1",
+        "value": 267,
+        "comment": ""
+      },
+      {
+        "keyword": "NAXIS2",
+        "value": 267,
+        "comment": ""
+      },
+      {
+        "keyword": "NAXIS3",
+        "value": 102,
+        "comment": ""
+      },
+      {
+        "keyword": "PCOUNT",
+        "value": 0,
+        "comment": "number of parameters"
+      },
+      {
+        "keyword": "GCOUNT",
+        "value": 1,
+        "comment": "number of groups"
+      },
+      {
+        "keyword": "EXTNAME",
+        "value": "NHITS",
+        "comment": "extension name"
+      },
+      {
+        "keyword": "WCSAXES",
+        "value": 4,
+        "comment": "Number of coordinate axes"
+      },
+      {
+        "keyword": "CRPIX1",
+        "value": 134.0,
+        "comment": "Pixel coordinate of reference point"
+      },
+      {
+        "keyword": "CRPIX2",
+        "value": 134.0,
+        "comment": "Pixel coordinate of reference point"
+      },
+      {
+        "keyword": "CDELT1",
+        "value": -0.0025,
+        "comment": "[deg] Coordinate increment at reference point"
+      },
+      {
+        "keyword": "CDELT2",
+        "value": 0.0025,
+        "comment": "[deg] Coordinate increment at reference point"
+      },
+      {
+        "keyword": "CUNIT1",
+        "value": "deg",
+        "comment": "Units of coordinate increment and value"
+      },
+      {
+        "keyword": "CUNIT2",
+        "value": "deg",
+        "comment": "Units of coordinate increment and value"
+      },
+      {
+        "keyword": "CTYPE1",
+        "value": "RA---TAN",
+        "comment": "Right ascension, gnomonic projection"
+      },
+      {
+        "keyword": "CTYPE2",
+        "value": "DEC--TAN",
+        "comment": "Declination, gnomonic projection"
+      },
+      {
+        "keyword": "CRVAL1",
+        "value": 210.8022671,
+        "comment": "[deg] Coordinate value at reference point"
+      },
+      {
+        "keyword": "CRVAL2",
+        "value": 54.34895,
+        "comment": "[deg] Coordinate value at reference point"
+      },
+      {
+        "keyword": "LONPOLE",
+        "value": 180.0,
+        "comment": "[deg] Native longitude of celestial pole"
+      },
+      {
+        "keyword": "LATPOLE",
+        "value": 54.34895,
+        "comment": "[deg] Native latitude of celestial pole"
+      },
+      {
+        "keyword": "MJDREF",
+        "value": 0.0,
+        "comment": "[d] MJD of fiducial time"
+      },
+      {
+        "keyword": "RADESYS",
+        "value": "ICRS",
+        "comment": "Equatorial coordinate system"
+      },
+      {
+        "keyword": "CTYPE3",
+        "value": "WAVE-TAB",
+        "comment": "Coordinate via lookup table"
+      },
+      {
+        "keyword": "CNAME3",
+        "value": "WAVELENGTH",
+        "comment": "Spectral axis: wavelength"
+      },
+      {
+        "keyword": "CUNIT3",
+        "value": "um",
+        "comment": "Microns"
+      },
+      {
+        "keyword": "CRPIX3",
+        "value": 1,
+        "comment": "TAB reference pixel (convention)"
+      },
+      {
+        "keyword": "CDELT3",
+        "value": 1,
+        "comment": "TAB increment (convention)"
+      },
+      {
+        "keyword": "CRVAL3",
+        "value": 1,
+        "comment": "TAB reference value (convention)"
+      },
+      {
+        "keyword": "PS3_0",
+        "value": "WCS-WAVE",
+        "comment": "Extension with lookup table"
+      },
+      {
+        "keyword": "PS3_1",
+        "value": "WAVELENGTHS",
+        "comment": "Column with wavelength values"
+      },
+      {
+        "keyword": "PS3_2",
+        "value": "PLANE",
+        "comment": "Column with plane indices"
+      },
+      {
+        "keyword": "PV3_3",
+        "value": 1,
+        "comment": "Index of wavelength in the WAVELENGTHS array"
+      },
+      {
+        "keyword": "CTYPE4",
+        "value": "WAVE-TAB",
+        "comment": "Coordinate via lookup table"
+      },
+      {
+        "keyword": "CNAME4",
+        "value": "BANDWIDTH",
+        "comment": "Spectral axis: bandwidth"
+      },
+      {
+        "keyword": "CUNIT4",
+        "value": "um",
+        "comment": "Microns"
+      },
+      {
+        "keyword": "CRPIX4",
+        "value": 1,
+        "comment": "TAB reference pixel (convention)"
+      },
+      {
+        "keyword": "CDELT4",
+        "value": 1,
+        "comment": "TAB increment (convention)"
+      },
+      {
+        "keyword": "CRVAL4",
+        "value": 1,
+        "comment": "TAB reference value (convention)"
+      },
+      {
+        "keyword": "PS4_0",
+        "value": "WCS-WAVE",
+        "comment": "Extension with lookup table"
+      },
+      {
+        "keyword": "PS4_1",
+        "value": "BANDWIDTHS",
+        "comment": "Column with bandwidth values"
+      },
+      {
+        "keyword": "PS4_2",
+        "value": "PLANE",
+        "comment": "Column with plane indices"
+      },
+      {
+        "keyword": "PV4_3",
+        "value": 1,
+        "comment": "Index of bandwidth in BANDWIDTHS array"
+      },
+      {
+        "keyword": "PC3_3",
+        "value": 1.0,
+        "comment": "Wavelength depends on image axis 3"
+      },
+      {
+        "keyword": "PC4_3",
+        "value": 1.0,
+        "comment": "Bandwidth depends on image axis 3"
+      },
+      {
+        "keyword": "PC4_4",
+        "value": 0.0,
+        "comment": "No independent 4th pixel axis"
+      },
+      {
+        "keyword": "NCHAN",
+        "value": 102,
+        "comment": "Number of spectral channels"
+      },
+      {
+        "keyword": "WLMIN",
+        "value": 0.753,
+        "comment": "Minimum wavelength [micron]"
+      },
+      {
+        "keyword": "WLMAX",
+        "value": 4.982,
+        "comment": "Maximum wavelength [micron]"
+      },
+      {
+        "keyword": "BUNIT",
+        "value": "count",
+        "comment": "Hit count"
+      }
+    ]
+  },
+  {
+    "extension_index": 3,
+    "extension_name": "FLAGS",
+    "cards": [
+      {
+        "keyword": "XTENSION",
+        "value": "IMAGE",
+        "comment": "Image extension"
+      },
+      {
+        "keyword": "BITPIX",
+        "value": 32,
+        "comment": "array data type"
+      },
+      {
+        "keyword": "NAXIS",
+        "value": 3,
+        "comment": "number of array dimensions"
+      },
+      {
+        "keyword": "NAXIS1",
+        "value": 267,
+        "comment": ""
+      },
+      {
+        "keyword": "NAXIS2",
+        "value": 267,
+        "comment": ""
+      },
+      {
+        "keyword": "NAXIS3",
+        "value": 102,
+        "comment": ""
+      },
+      {
+        "keyword": "PCOUNT",
+        "value": 0,
+        "comment": "number of parameters"
+      },
+      {
+        "keyword": "GCOUNT",
+        "value": 1,
+        "comment": "number of groups"
+      },
+      {
+        "keyword": "EXTNAME",
+        "value": "FLAGS",
+        "comment": "extension name"
+      },
+      {
+        "keyword": "WCSAXES",
+        "value": 4,
+        "comment": "Number of coordinate axes"
+      },
+      {
+        "keyword": "CRPIX1",
+        "value": 134.0,
+        "comment": "Pixel coordinate of reference point"
+      },
+      {
+        "keyword": "CRPIX2",
+        "value": 134.0,
+        "comment": "Pixel coordinate of reference point"
+      },
+      {
+        "keyword": "CDELT1",
+        "value": -0.0025,
+        "comment": "[deg] Coordinate increment at reference point"
+      },
+      {
+        "keyword": "CDELT2",
+        "value": 0.0025,
+        "comment": "[deg] Coordinate increment at reference point"
+      },
+      {
+        "keyword": "CUNIT1",
+        "value": "deg",
+        "comment": "Units of coordinate increment and value"
+      },
+      {
+        "keyword": "CUNIT2",
+        "value": "deg",
+        "comment": "Units of coordinate increment and value"
+      },
+      {
+        "keyword": "CTYPE1",
+        "value": "RA---TAN",
+        "comment": "Right ascension, gnomonic projection"
+      },
+      {
+        "keyword": "CTYPE2",
+        "value": "DEC--TAN",
+        "comment": "Declination, gnomonic projection"
+      },
+      {
+        "keyword": "CRVAL1",
+        "value": 210.8022671,
+        "comment": "[deg] Coordinate value at reference point"
+      },
+      {
+        "keyword": "CRVAL2",
+        "value": 54.34895,
+        "comment": "[deg] Coordinate value at reference point"
+      },
+      {
+        "keyword": "LONPOLE",
+        "value": 180.0,
+        "comment": "[deg] Native longitude of celestial pole"
+      },
+      {
+        "keyword": "LATPOLE",
+        "value": 54.34895,
+        "comment": "[deg] Native latitude of celestial pole"
+      },
+      {
+        "keyword": "MJDREF",
+        "value": 0.0,
+        "comment": "[d] MJD of fiducial time"
+      },
+      {
+        "keyword": "RADESYS",
+        "value": "ICRS",
+        "comment": "Equatorial coordinate system"
+      },
+      {
+        "keyword": "CTYPE3",
+        "value": "WAVE-TAB",
+        "comment": "Coordinate via lookup table"
+      },
+      {
+        "keyword": "CNAME3",
+        "value": "WAVELENGTH",
+        "comment": "Spectral axis: wavelength"
+      },
+      {
+        "keyword": "CUNIT3",
+        "value": "um",
+        "comment": "Microns"
+      },
+      {
+        "keyword": "CRPIX3",
+        "value": 1,
+        "comment": "TAB reference pixel (convention)"
+      },
+      {
+        "keyword": "CDELT3",
+        "value": 1,
+        "comment": "TAB increment (convention)"
+      },
+      {
+        "keyword": "CRVAL3",
+        "value": 1,
+        "comment": "TAB reference value (convention)"
+      },
+      {
+        "keyword": "PS3_0",
+        "value": "WCS-WAVE",
+        "comment": "Extension with lookup table"
+      },
+      {
+        "keyword": "PS3_1",
+        "value": "WAVELENGTHS",
+        "comment": "Column with wavelength values"
+      },
+      {
+        "keyword": "PS3_2",
+        "value": "PLANE",
+        "comment": "Column with plane indices"
+      },
+      {
+        "keyword": "PV3_3",
+        "value": 1,
+        "comment": "Index of wavelength in the WAVELENGTHS array"
+      },
+      {
+        "keyword": "CTYPE4",
+        "value": "WAVE-TAB",
+        "comment": "Coordinate via lookup table"
+      },
+      {
+        "keyword": "CNAME4",
+        "value": "BANDWIDTH",
+        "comment": "Spectral axis: bandwidth"
+      },
+      {
+        "keyword": "CUNIT4",
+        "value": "um",
+        "comment": "Microns"
+      },
+      {
+        "keyword": "CRPIX4",
+        "value": 1,
+        "comment": "TAB reference pixel (convention)"
+      },
+      {
+        "keyword": "CDELT4",
+        "value": 1,
+        "comment": "TAB increment (convention)"
+      },
+      {
+        "keyword": "CRVAL4",
+        "value": 1,
+        "comment": "TAB reference value (convention)"
+      },
+      {
+        "keyword": "PS4_0",
+        "value": "WCS-WAVE",
+        "comment": "Extension with lookup table"
+      },
+      {
+        "keyword": "PS4_1",
+        "value": "BANDWIDTHS",
+        "comment": "Column with bandwidth values"
+      },
+      {
+        "keyword": "PS4_2",
+        "value": "PLANE",
+        "comment": "Column with plane indices"
+      },
+      {
+        "keyword": "PV4_3",
+        "value": 1,
+        "comment": "Index of bandwidth in BANDWIDTHS array"
+      },
+      {
+        "keyword": "PC3_3",
+        "value": 1.0,
+        "comment": "Wavelength depends on image axis 3"
+      },
+      {
+        "keyword": "PC4_3",
+        "value": 1.0,
+        "comment": "Bandwidth depends on image axis 3"
+      },
+      {
+        "keyword": "PC4_4",
+        "value": 0.0,
+        "comment": "No independent 4th pixel axis"
+      },
+      {
+        "keyword": "NCHAN",
+        "value": 102,
+        "comment": "Number of spectral channels"
+      },
+      {
+        "keyword": "WLMIN",
+        "value": 0.753,
+        "comment": "Minimum wavelength [micron]"
+      },
+      {
+        "keyword": "WLMAX",
+        "value": 4.982,
+        "comment": "Maximum wavelength [micron]"
+      },
+      {
+        "keyword": "BUNIT",
+        "value": "",
+        "comment": "Bit flags"
+      },
+      {
+        "keyword": "EXTTYPE",
+        "value": "MASK",
+        "comment": "Extension can be used as a mask overlay"
+      },
+      {
+        "keyword": "MP_OVERFLOW",
+        "value": 1,
+        "comment": "Overflow detected during SUR"
+      },
+      {
+        "keyword": "MP_OUTLIER",
+        "value": 19,
+        "comment": "Pixel flagged by Detect Outliers"
+      },
+      {
+        "keyword": "MP_SOURCE",
+        "value": 21,
+        "comment": "Pixel mapped to a known source"
+      }
+    ]
+  },
+  {
+    "extension_index": 4,
+    "extension_name": "SPECTRAL_CHANNELS",
+    "cards": [
+      {
+        "keyword": "XTENSION",
+        "value": "BINTABLE",
+        "comment": "binary table extension"
+      },
+      {
+        "keyword": "BITPIX",
+        "value": 8,
+        "comment": "array data type"
+      },
+      {
+        "keyword": "NAXIS",
+        "value": 2,
+        "comment": "number of array dimensions"
+      },
+      {
+        "keyword": "NAXIS1",
+        "value": 28,
+        "comment": "length of dimension 1"
+      },
+      {
+        "keyword": "NAXIS2",
+        "value": 102,
+        "comment": "length of dimension 2"
+      },
+      {
+        "keyword": "PCOUNT",
+        "value": 0,
+        "comment": "number of group parameters"
+      },
+      {
+        "keyword": "GCOUNT",
+        "value": 1,
+        "comment": "number of groups"
+      },
+      {
+        "keyword": "TFIELDS",
+        "value": 8,
+        "comment": "number of table fields"
+      },
+      {
+        "keyword": "TTYPE1",
+        "value": "DETECTOR",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM1",
+        "value": "I",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE2",
+        "value": "SUBCHAN",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM2",
+        "value": "I",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE3",
+        "value": "WAVELENGTH",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM3",
+        "value": "E",
+        "comment": ""
+      },
+      {
+        "keyword": "TUNIT3",
+        "value": "um",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE4",
+        "value": "WL_MIN",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM4",
+        "value": "E",
+        "comment": ""
+      },
+      {
+        "keyword": "TUNIT4",
+        "value": "um",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE5",
+        "value": "WL_MAX",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM5",
+        "value": "E",
+        "comment": ""
+      },
+      {
+        "keyword": "TUNIT5",
+        "value": "um",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE6",
+        "value": "BANDWIDTH",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM6",
+        "value": "E",
+        "comment": ""
+      },
+      {
+        "keyword": "TUNIT6",
+        "value": "um",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE7",
+        "value": "R",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM7",
+        "value": "E",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE8",
+        "value": "R_STD",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM8",
+        "value": "E",
+        "comment": ""
+      },
+      {
+        "keyword": "EXTNAME",
+        "value": "SPECTRAL_CHANNELS",
+        "comment": "extension name"
+      }
+    ]
+  },
+  {
+    "extension_index": 5,
+    "extension_name": "WCS-WAVE",
+    "cards": [
+      {
+        "keyword": "XTENSION",
+        "value": "BINTABLE",
+        "comment": "binary table extension"
+      },
+      {
+        "keyword": "BITPIX",
+        "value": 8,
+        "comment": "array data type"
+      },
+      {
+        "keyword": "NAXIS",
+        "value": 2,
+        "comment": "number of array dimensions"
+      },
+      {
+        "keyword": "NAXIS1",
+        "value": 1224,
+        "comment": "length of dimension 1"
+      },
+      {
+        "keyword": "NAXIS2",
+        "value": 1,
+        "comment": "length of dimension 2"
+      },
+      {
+        "keyword": "PCOUNT",
+        "value": 0,
+        "comment": "number of group parameters"
+      },
+      {
+        "keyword": "GCOUNT",
+        "value": 1,
+        "comment": "number of groups"
+      },
+      {
+        "keyword": "TFIELDS",
+        "value": 3,
+        "comment": "number of table fields"
+      },
+      {
+        "keyword": "EXTNAME",
+        "value": "WCS-WAVE",
+        "comment": "extension name"
+      },
+      {
+        "keyword": "TTYPE1",
+        "value": "PLANE",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM1",
+        "value": "102J",
+        "comment": ""
+      },
+      {
+        "keyword": "TDIM1",
+        "value": "(102)",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE2",
+        "value": "WAVELENGTHS",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM2",
+        "value": "102E",
+        "comment": ""
+      },
+      {
+        "keyword": "TDIM2",
+        "value": "(1,102)",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE3",
+        "value": "BANDWIDTHS",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM3",
+        "value": "102E",
+        "comment": ""
+      },
+      {
+        "keyword": "TDIM3",
+        "value": "(1,102)",
+        "comment": ""
+      }
+    ]
+  }
+]

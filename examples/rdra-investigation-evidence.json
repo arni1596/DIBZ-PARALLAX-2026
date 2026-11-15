@@ -1,0 +1,693 @@
+{
+  "schemaVersion": "parallax.local-report.v1",
+  "reportKind": "Local exploratory observational investigation",
+  "createdAt": "2026-10-31T16:26:12.410Z",
+  "officialApproval": false,
+  "institutionalSubmission": false,
+  "investigationId": "rdra-v1",
+  "target": {
+    "name": "R Draconis search field",
+    "raDeg": 248.16761083333336,
+    "decDeg": 66.75497941666667,
+    "frame": "ICRS",
+    "identityStatus": "Search coordinates from prior research; source identity not independently verified"
+  },
+  "localIntegrity": {
+    "algorithm": "SHA-256",
+    "manifestSha256": "fcc3c809d69a3041d7332df647f02ebd93ea6683b13dd64d071c93eb744accb9",
+    "scope": "Local byte integrity only; not scientific certification or NASA approval"
+  },
+  "observations": [
+    {
+      "id": "rdra_row_0001",
+      "observedAt": "2025-06-08T18:56:30.592Z",
+      "source": {
+        "path": "rdra_row_0001.fits",
+        "sha256": "3d5dbe6632da1755a8ea45a3569c2a39d166a81e395935d72816de2f9faa260e",
+        "byteLength": 5094720,
+        "archiveUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W23_2B/l2b-v20-2025-251/2/level2_2025W23_2B_0696_2D2_spx_l2b-v20-2025-251.fits",
+        "archiveProductId": "level2_2025W23_2B_0696_2D2_spx_l2b-v20-2025-251.fits",
+        "archiveRelease": "SPHEREx Quick Release 2 (qr2 path); prior package folder SPHEREx-D2",
+        "pipelineVersion": "6.4+psffix1",
+        "archiveOriginStatus": "Official IRSA URL recorded in prior acquisition metadata; no new download or online revalidation",
+        "priorOrigin": "IRSA_NEW_DOWNLOAD",
+        "digestScope": "Local preserved IRSA cutout FITS bytes; not the checksum of the linked full-frame parent archive product",
+        "priorChecksumMatch": true,
+        "archiveTableRow": 1
+      },
+      "wavelength": {
+        "approximateUm": 1.438605215843444,
+        "classification": "Unavailable or unverified",
+        "source": "Prior WCS-WAVE target-center visualization lookup",
+        "scientificCalibration": false,
+        "note": "Approximate display label only; no scientific spectral matching."
+      },
+      "quality": {
+        "classification": "Processed",
+        "maskPolicy": "Accept finite IMAGE and finite strictly positive VARIANCE with all FLAGS bits clear except MP_SOURCE=21; other bits conservatively excluded. No core filling.",
+        "totalPixels": 2209,
+        "finiteImagePixels": 2190,
+        "validPixels": 2051,
+        "excludedPixels": 158,
+        "zeroVariancePixels": 0,
+        "nonfiniteImagePixels": 19,
+        "flagDefinitions": {
+          "TRANSIENT": {
+            "bit": 0,
+            "meaning": "Transient detected during SUR"
+          },
+          "OVERFLOW": {
+            "bit": 1,
+            "meaning": "Overflow detected during SUR"
+          },
+          "SUR_ERROR": {
+            "bit": 2,
+            "meaning": "Error in onboard processing"
+          },
+          "PHANTOM": {
+            "bit": 4,
+            "meaning": "Phantom pixel"
+          },
+          "REFERENCE": {
+            "bit": 5,
+            "meaning": "Reference pixel"
+          },
+          "NONFUNC": {
+            "bit": 6,
+            "meaning": "Permanently unusable"
+          },
+          "DICHROIC": {
+            "bit": 7,
+            "meaning": "Low efficiency due to dichroic"
+          },
+          "MISSING_DATA": {
+            "bit": 9,
+            "meaning": "Onboard data lost"
+          },
+          "HOT": {
+            "bit": 10,
+            "meaning": "Hot pixel"
+          },
+          "COLD": {
+            "bit": 11,
+            "meaning": "Anomalously low signal"
+          },
+          "FULLSAMPLE": {
+            "bit": 12,
+            "meaning": "Pixel full sample history is available"
+          },
+          "PHANMISS": {
+            "bit": 14,
+            "meaning": "Phantom correction was not applied"
+          },
+          "NONLINEAR": {
+            "bit": 15,
+            "meaning": "Nonlinearity correction cannot be applied reliably"
+          },
+          "PERSIST": {
+            "bit": 17,
+            "meaning": "Persistent charge above threshold"
+          },
+          "OUTLIER": {
+            "bit": 19,
+            "meaning": "Pixel flagged by Detect Outliers"
+          },
+          "SOURCE": {
+            "bit": 21,
+            "meaning": "Pixel mapped to a known source"
+          }
+        },
+        "bitCounts": {
+          "TRANSIENT": 127,
+          "OVERFLOW": 29,
+          "SUR_ERROR": 113,
+          "PHANTOM": 0,
+          "REFERENCE": 0,
+          "NONFUNC": 0,
+          "DICHROIC": 0,
+          "MISSING_DATA": 0,
+          "HOT": 0,
+          "COLD": 1,
+          "FULLSAMPLE": 0,
+          "PHANMISS": 0,
+          "NONLINEAR": 0,
+          "PERSIST": 6,
+          "OUTLIER": 0,
+          "SOURCE": 2209
+        },
+        "sourceCore": {
+          "radiusPixels": 2.5,
+          "totalPixels": 19,
+          "acceptedPixels": 0,
+          "excludedPixels": 19,
+          "nonfinitePixels": 18,
+          "note": "Search-coordinate core only; not independently confirmed source identity. Bright finite core pixels carry overflow flags; calibrated surface brightness alone cannot diagnose detector saturation."
+        },
+        "psfExtensionShape": [
+          121,
+          101,
+          101
+        ],
+        "psfValidated": false
+      }
+    },
+    {
+      "id": "rdra_row_0052",
+      "observedAt": "2025-12-10T20:57:48.807Z",
+      "source": {
+        "path": "rdra_row_0052.fits",
+        "sha256": "8d416539f59b7dbb355ea06109a348e99a2a3c10f26773efaf2cec35eb6ceaf3",
+        "byteLength": 5094720,
+        "archiveUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_1A/l2b-v20-2025-345/2/level2_2025W50_1A_0661_2D2_spx_l2b-v20-2025-345.fits",
+        "archiveProductId": "level2_2025W50_1A_0661_2D2_spx_l2b-v20-2025-345.fits",
+        "archiveRelease": "SPHEREx Quick Release 2 (qr2 path); prior package folder SPHEREx-D2",
+        "pipelineVersion": "6.4+psffix1",
+        "archiveOriginStatus": "Official IRSA URL recorded in prior acquisition metadata; no new download or online revalidation",
+        "priorOrigin": "EXISTING_ZIP",
+        "digestScope": "Local preserved IRSA cutout FITS bytes; not the checksum of the linked full-frame parent archive product",
+        "priorChecksumMatch": true,
+        "archiveTableRow": 52
+      },
+      "wavelength": {
+        "approximateUm": 1.4395879412912633,
+        "classification": "Unavailable or unverified",
+        "source": "Prior WCS-WAVE target-center visualization lookup",
+        "scientificCalibration": false,
+        "note": "Approximate display label only; no scientific spectral matching."
+      },
+      "quality": {
+        "classification": "Processed",
+        "maskPolicy": "Accept finite IMAGE and finite strictly positive VARIANCE with all FLAGS bits clear except MP_SOURCE=21; other bits conservatively excluded. No core filling.",
+        "totalPixels": 2209,
+        "finiteImagePixels": 2193,
+        "validPixels": 2077,
+        "excludedPixels": 132,
+        "zeroVariancePixels": 0,
+        "nonfiniteImagePixels": 16,
+        "flagDefinitions": {
+          "TRANSIENT": {
+            "bit": 0,
+            "meaning": "Transient detected during SUR"
+          },
+          "OVERFLOW": {
+            "bit": 1,
+            "meaning": "Overflow detected during SUR"
+          },
+          "SUR_ERROR": {
+            "bit": 2,
+            "meaning": "Error in onboard processing"
+          },
+          "PHANTOM": {
+            "bit": 4,
+            "meaning": "Phantom pixel"
+          },
+          "REFERENCE": {
+            "bit": 5,
+            "meaning": "Reference pixel"
+          },
+          "NONFUNC": {
+            "bit": 6,
+            "meaning": "Permanently unusable"
+          },
+          "DICHROIC": {
+            "bit": 7,
+            "meaning": "Low efficiency due to dichroic"
+          },
+          "MISSING_DATA": {
+            "bit": 9,
+            "meaning": "Onboard data lost"
+          },
+          "HOT": {
+            "bit": 10,
+            "meaning": "Hot pixel"
+          },
+          "COLD": {
+            "bit": 11,
+            "meaning": "Anomalously low signal"
+          },
+          "FULLSAMPLE": {
+            "bit": 12,
+            "meaning": "Pixel full sample history is available"
+          },
+          "PHANMISS": {
+            "bit": 14,
+            "meaning": "Phantom correction was not applied"
+          },
+          "NONLINEAR": {
+            "bit": 15,
+            "meaning": "Nonlinearity correction cannot be applied reliably"
+          },
+          "PERSIST": {
+            "bit": 17,
+            "meaning": "Persistent charge above threshold"
+          },
+          "OUTLIER": {
+            "bit": 19,
+            "meaning": "Pixel flagged by Detect Outliers"
+          },
+          "SOURCE": {
+            "bit": 21,
+            "meaning": "Pixel mapped to a known source"
+          }
+        },
+        "bitCounts": {
+          "TRANSIENT": 111,
+          "OVERFLOW": 21,
+          "SUR_ERROR": 98,
+          "PHANTOM": 0,
+          "REFERENCE": 0,
+          "NONFUNC": 0,
+          "DICHROIC": 0,
+          "MISSING_DATA": 0,
+          "HOT": 0,
+          "COLD": 0,
+          "FULLSAMPLE": 0,
+          "PHANMISS": 0,
+          "NONLINEAR": 0,
+          "PERSIST": 0,
+          "OUTLIER": 0,
+          "SOURCE": 2209
+        },
+        "sourceCore": {
+          "radiusPixels": 2.5,
+          "totalPixels": 21,
+          "acceptedPixels": 0,
+          "excludedPixels": 21,
+          "nonfinitePixels": 16,
+          "note": "Search-coordinate core only; not independently confirmed source identity. Bright finite core pixels carry overflow flags; calibrated surface brightness alone cannot diagnose detector saturation."
+        },
+        "psfExtensionShape": [
+          121,
+          101,
+          101
+        ],
+        "psfValidated": false
+      }
+    }
+  ],
+  "processedAssets": {
+    "image": {
+      "path": "investigations/rdra-v1/rdra_row_0052.image.f32",
+      "sha256": "dc38eac110934c95d54304150821cad4398aa1f85b3a8da149675f4f9ff02fb2",
+      "byteLength": 8836,
+      "dtype": "float32",
+      "shape": [
+        47,
+        47
+      ],
+      "classification": "Observed"
+    },
+    "variance": {
+      "path": "investigations/rdra-v1/rdra_row_0052.variance.f32",
+      "sha256": "7ea18675c2181f9be35aed672abeab2bce67ef6135b3528deef71e0270ff9385",
+      "byteLength": 8836,
+      "dtype": "float32",
+      "shape": [
+        47,
+        47
+      ],
+      "classification": "Observed"
+    },
+    "flags": {
+      "path": "investigations/rdra-v1/rdra_row_0052.flags.u32",
+      "sha256": "dc79e6e8a57242633afde1268586d428038217558f25aca317c978b4a6c68865",
+      "byteLength": 8836,
+      "dtype": "uint32",
+      "shape": [
+        47,
+        47
+      ],
+      "classification": "Observed"
+    },
+    "mask": {
+      "path": "investigations/rdra-v1/rdra_row_0052.mask.u8",
+      "sha256": "63957091598e541d6e0feef916593c84be54743d680162238cc811567d0c5e54",
+      "byteLength": 2209,
+      "dtype": "uint8",
+      "shape": [
+        47,
+        47
+      ],
+      "classification": "Processed"
+    },
+    "sky": {
+      "path": "investigations/rdra-v1/rdra_row_0052.sky.f64",
+      "sha256": "b659bc6758c7e84a11083f352c2ea25f22389214b66606b6cc0b89bcc1c01845",
+      "byteLength": 35344,
+      "dtype": "float64",
+      "shape": [
+        47,
+        47,
+        2
+      ],
+      "classification": "Processed"
+    },
+    "preview": {
+      "path": "investigations/rdra-v1/rdra_row_0052.preview.png",
+      "sha256": "0372b76c7ddc841017cb5f0ff4cea9e492a6e2bbed468710fc8658050e75a400",
+      "byteLength": 2437,
+      "dtype": "uint8",
+      "shape": [
+        47,
+        47,
+        4
+      ],
+      "classification": "Processed"
+    },
+    "qualityOverlay": {
+      "path": "investigations/rdra-v1/rdra_row_0052.quality.png",
+      "sha256": "9a0bae20d3e9ed270d89f9171085712a431ccb8fe8878dacd6c15acf6264ff74",
+      "byteLength": 175,
+      "dtype": "uint8",
+      "shape": [
+        47,
+        47,
+        4
+      ],
+      "classification": "Processed"
+    }
+  },
+  "observation": {
+    "id": "rdra_row_0052",
+    "observedAt": "2025-12-10T20:57:48.807Z",
+    "classification": "Observed",
+    "source": {
+      "path": "rdra_row_0052.fits",
+      "sha256": "8d416539f59b7dbb355ea06109a348e99a2a3c10f26773efaf2cec35eb6ceaf3",
+      "byteLength": 5094720,
+      "archiveUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W50_1A/l2b-v20-2025-345/2/level2_2025W50_1A_0661_2D2_spx_l2b-v20-2025-345.fits",
+      "archiveProductId": "level2_2025W50_1A_0661_2D2_spx_l2b-v20-2025-345.fits",
+      "archiveRelease": "SPHEREx Quick Release 2 (qr2 path); prior package folder SPHEREx-D2",
+      "pipelineVersion": "6.4+psffix1",
+      "archiveOriginStatus": "Official IRSA URL recorded in prior acquisition metadata; no new download or online revalidation",
+      "priorOrigin": "EXISTING_ZIP",
+      "digestScope": "Local preserved IRSA cutout FITS bytes; not the checksum of the linked full-frame parent archive product",
+      "priorChecksumMatch": true,
+      "archiveTableRow": 52
+    },
+    "units": {
+      "image": "MJy / sr",
+      "variance": "MJy2 / sr2",
+      "flags": "dimensionless"
+    },
+    "wavelength": {
+      "approximateUm": 1.4395879412912633,
+      "classification": "Unavailable or unverified",
+      "source": "Prior WCS-WAVE target-center visualization lookup",
+      "scientificCalibration": false,
+      "note": "Approximate display label only; no scientific spectral matching."
+    },
+    "calibration": {
+      "classification": "Unavailable or unverified",
+      "responseValidated": false,
+      "calibrationVersion": null,
+      "recordedReferencesClassification": "Observed",
+      "recordedReferences": [
+        "[CALIB] dichroic 2ca9ffb7-e6e9-4f8c-b85e-75ef2671614d",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] initial_distortion_table f34a9ef8-e81a-4c7d-8322-e7da6e458ef9",
+        "[CALIB] nonfunc 14c3b71f-5632-4e40-925e-bfa636e01952",
+        "[CALIB] spectral_wcs a9cb438e-e37d-4888-a1a5-5a9db6ad0737",
+        "[CALIB] gain_factors 74478304-abf1-4a9c-9eb2-926090a84446",
+        "[CALIB] nonlinear_pars 81296b79-30e6-44ee-a7c1-5167be3e254a",
+        "[CALIB] readnoise_pars f6a0f49d-4bf8-43cb-ab45-46a912f0f98c",
+        "[CALIB] abs_gain_matrix 17b9dc97-03e7-4e17-9d1c-56abae92edc5",
+        "[CALIB] average_psf b50151c0-9248-4ada-ae66-eff2f6879fa3",
+        "[CALIB] dark c082adae-af5b-43f2-9130-03ddb1eeec1c",
+        "[CALIB] spectral_wcs a9cb438e-e37d-4888-a1a5-5a9db6ad0737"
+      ],
+      "pipelineVersion": "6.4+psffix1",
+      "note": "Pipeline version is preserved; independent calibration reference files are unavailable."
+    },
+    "wcs": {
+      "classification": "Observed",
+      "status": "Native primary celestial WCS from IMAGE header; no cross-epoch registration",
+      "ctype": [
+        "RA---TAN-SIP",
+        "DEC--TAN-SIP"
+      ],
+      "frame": "ICRS",
+      "sipOrder": [
+        3,
+        3
+      ],
+      "headerPath": "investigations/rdra-v1/rdra_row_0052.header.json",
+      "sky": {
+        "path": "investigations/rdra-v1/rdra_row_0052.sky.f64",
+        "sha256": "b659bc6758c7e84a11083f352c2ea25f22389214b66606b6cc0b89bcc1c01845",
+        "byteLength": 35344,
+        "dtype": "float64",
+        "shape": [
+          47,
+          47,
+          2
+        ],
+        "classification": "Processed"
+      },
+      "pixelScaleArcsec": [
+        6.127146026471844,
+        6.146833872676736
+      ],
+      "roundTripMaxPixels": 1.6628827184598424e-8,
+      "targetPixel": [
+        22.886660270738037,
+        22.866524330208552
+      ],
+      "finast": 0,
+      "finastComment": "good fine-astrometric solution",
+      "finastInterpretation": "0 = good fine-astrometric solution in product header; does not certify cross-epoch registration",
+      "documentationUrl": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/SPHEREx_Expsupp_QR.pdf"
+    },
+    "quality": {
+      "classification": "Processed",
+      "maskPolicy": "Accept finite IMAGE and finite strictly positive VARIANCE with all FLAGS bits clear except MP_SOURCE=21; other bits conservatively excluded. No core filling.",
+      "totalPixels": 2209,
+      "finiteImagePixels": 2193,
+      "validPixels": 2077,
+      "excludedPixels": 132,
+      "zeroVariancePixels": 0,
+      "nonfiniteImagePixels": 16,
+      "flagDefinitions": {
+        "TRANSIENT": {
+          "bit": 0,
+          "meaning": "Transient detected during SUR"
+        },
+        "OVERFLOW": {
+          "bit": 1,
+          "meaning": "Overflow detected during SUR"
+        },
+        "SUR_ERROR": {
+          "bit": 2,
+          "meaning": "Error in onboard processing"
+        },
+        "PHANTOM": {
+          "bit": 4,
+          "meaning": "Phantom pixel"
+        },
+        "REFERENCE": {
+          "bit": 5,
+          "meaning": "Reference pixel"
+        },
+        "NONFUNC": {
+          "bit": 6,
+          "meaning": "Permanently unusable"
+        },
+        "DICHROIC": {
+          "bit": 7,
+          "meaning": "Low efficiency due to dichroic"
+        },
+        "MISSING_DATA": {
+          "bit": 9,
+          "meaning": "Onboard data lost"
+        },
+        "HOT": {
+          "bit": 10,
+          "meaning": "Hot pixel"
+        },
+        "COLD": {
+          "bit": 11,
+          "meaning": "Anomalously low signal"
+        },
+        "FULLSAMPLE": {
+          "bit": 12,
+          "meaning": "Pixel full sample history is available"
+        },
+        "PHANMISS": {
+          "bit": 14,
+          "meaning": "Phantom correction was not applied"
+        },
+        "NONLINEAR": {
+          "bit": 15,
+          "meaning": "Nonlinearity correction cannot be applied reliably"
+        },
+        "PERSIST": {
+          "bit": 17,
+          "meaning": "Persistent charge above threshold"
+        },
+        "OUTLIER": {
+          "bit": 19,
+          "meaning": "Pixel flagged by Detect Outliers"
+        },
+        "SOURCE": {
+          "bit": 21,
+          "meaning": "Pixel mapped to a known source"
+        }
+      },
+      "bitCounts": {
+        "TRANSIENT": 111,
+        "OVERFLOW": 21,
+        "SUR_ERROR": 98,
+        "PHANTOM": 0,
+        "REFERENCE": 0,
+        "NONFUNC": 0,
+        "DICHROIC": 0,
+        "MISSING_DATA": 0,
+        "HOT": 0,
+        "COLD": 0,
+        "FULLSAMPLE": 0,
+        "PHANMISS": 0,
+        "NONLINEAR": 0,
+        "PERSIST": 0,
+        "OUTLIER": 0,
+        "SOURCE": 2209
+      },
+      "sourceCore": {
+        "radiusPixels": 2.5,
+        "totalPixels": 21,
+        "acceptedPixels": 0,
+        "excludedPixels": 21,
+        "nonfinitePixels": 16,
+        "note": "Search-coordinate core only; not independently confirmed source identity. Bright finite core pixels carry overflow flags; calibrated surface brightness alone cannot diagnose detector saturation."
+      },
+      "psfExtensionShape": [
+        121,
+        101,
+        101
+      ],
+      "psfValidated": false
+    }
+  },
+  "sample": {
+    "x": 23,
+    "y": 23,
+    "classification": "Observed",
+    "coordinatesClassification": "Processed",
+    "rawValue": null,
+    "value": null,
+    "variance": null,
+    "sigma": null,
+    "sigmaClassification": "Processed",
+    "flags": 2097158,
+    "flagNames": [
+      "OVERFLOW",
+      "SUR_ERROR",
+      "SOURCE"
+    ],
+    "accepted": false,
+    "raDeg": 248.16800006802282,
+    "decDeg": 66.75523810565882,
+    "exclusionReasons": [
+      "IMAGE is missing or nonfinite",
+      "VARIANCE is missing, nonfinite or nonpositive; no usable uncertainty",
+      "Quality flags exclude this native pixel under the documented conservative policy"
+    ]
+  },
+  "display": {
+    "quality": true,
+    "smooth": false,
+    "zoom": 8,
+    "panNative": {
+      "x": 20.5625,
+      "y": 0
+    },
+    "devicePixelRatio": 1.0000000298023224,
+    "mapping": {
+      "classification": "Processed",
+      "method": "Independent per-observation asinh grayscale using accepted pixels only",
+      "percentiles": [
+        2,
+        99.5
+      ],
+      "min": 0.5873482131958008,
+      "max": 18.499028930664032,
+      "asinhSoftening": 8,
+      "pixelOrigin": "Zero based x right, y up; binary rows increase native FITS y",
+      "pngOrientation": "Native detector orientation with vertical flip so PNG top row corresponds to highest FITS y; not north-up",
+      "interpolation": "none",
+      "nativeSize": [
+        47,
+        47
+      ],
+      "maskedPixels": "Transparent in preview over a black background; amber in optional quality overlay; never filled",
+      "maskEncoding": {
+        "0": "accepted",
+        "1": "excluded"
+      }
+    },
+    "orientation": "native detector; x right, y up; display vertically flipped; not north-up",
+    "classification": "Processed"
+  },
+  "comparison": {
+    "classification": "Unavailable or unverified",
+    "registered": false,
+    "blink": false,
+    "difference": false,
+    "photometry": false,
+    "motion": false,
+    "sideBySide": true,
+    "baselineDays": 185.0842385989963,
+    "gates": {
+      "registration": {
+        "passed": false,
+        "reason": "Independent native detector grids; no external astrometric registration or reprojection has been validated."
+      },
+      "spectralResponse": {
+        "passed": false,
+        "reason": "WCS-WAVE is explicitly approximate visualization metadata, not validated wavelength calibration or equivalent response."
+      },
+      "psf": {
+        "passed": false,
+        "reason": "PSF extension is present but spatial PSF selection, evaluation and cross-epoch matching have not been validated."
+      },
+      "photometry": {
+        "passed": false,
+        "reason": "Central pixels are missing or quality flagged; no aperture correction, background matching or calibrated flux comparison."
+      },
+      "motion": {
+        "passed": false,
+        "reason": "Source identity and cross-epoch astrometry are not independently confirmed; image differences cannot establish motion."
+      }
+    }
+  },
+  "processing": {
+    "classification": "Processed",
+    "script": "scripts/prepare_rdra.py",
+    "networkUsed": false,
+    "reprojected": false,
+    "syntheticData": false,
+    "originalFilesModified": false,
+    "byteOrder": "little-endian",
+    "uncertainty": "Accepted native pixels expose sqrt(VARIANCE) only; zero/nonfinite variance is excluded, not zero error. No aperture photometry or cross-epoch significance."
+  },
+  "conclusion": {
+    "classification": "Processed",
+    "status": "QUALITY_WARNING",
+    "headline": "The core cannot support a reliable brightness comparison.",
+    "detail": "Both native cutouts contain missing or flagged pixels at the search-coordinate core. These observations support inspecting data quality, not a variability, motion or discovery claim.",
+    "alternatives": [
+      "Instrumental overflow and onboard processing errors",
+      "Missing core data",
+      "Unvalidated registration, wavelength response and PSF differences"
+    ]
+  },
+  "limitations": [
+    "Search coordinates from prior research; source identity not independently verified",
+    "Accepted native pixels expose sqrt(VARIANCE) only; zero/nonfinite variance is excluded, not zero error. No aperture photometry or cross-epoch significance.",
+    "Independent native detector grids; no external astrometric registration or reprojection has been validated.",
+    "WCS-WAVE is explicitly approximate visualization metadata, not validated wavelength calibration or equivalent response.",
+    "PSF extension is present but spatial PSF selection, evaluation and cross-epoch matching have not been validated.",
+    "Central pixels are missing or quality flagged; no aperture correction, background matching or calibrated flux comparison.",
+    "Source identity and cross-epoch astrometry are not independently confirmed; image differences cannot establish motion.",
+    "This report is generated by PARALLAX, not an official NASA finding or institutional approval."
+  ]
+}

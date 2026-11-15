@@ -1,0 +1,87 @@
+{
+  "retrievedUtc": "2026-11-14T21:49:30.342Z",
+  "scope": "Authoritative public pages only; no local content uploaded; sanitized metadata, not website tokens.",
+  "sources": [
+    {
+      "id": "R0",
+      "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "status": 200,
+      "retrievedUtc": "2026-11-14T21:49:30.340Z",
+      "title": "Guidelines for using NASA Images and Media Guidelines",
+      "contentSha256": null,
+      "finding": "NASA factual educational/informational media use is permitted subject to third-party, identity/logo and endorsement exceptions. Not the sole rights basis for archive data."
+    },
+    {
+      "id": "R1",
+      "url": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_qr.html",
+      "status": 200,
+      "retrievedUtc": "2026-11-14T21:49:30.340Z",
+      "title": "SPHEREx QR",
+      "contentSha256": null,
+      "finding": "SPHEREx QR overview identifies QR2 DOI10.26131/IRSA652, archive release history and prescribed mission credit. Citation alone is not permission."
+    },
+    {
+      "id": "R2",
+      "url": "https://www.ipac.caltech.edu/doi/irsa/10.26131/IRSA652",
+      "status": 200,
+      "retrievedUtc": "2026-11-14T21:49:30.341Z",
+      "title": "\nDigital Object Identifiers | IPAC\n\n",
+      "contentSha256": null,
+      "finding": "Publisher identifies SPHEREx Team, IPAC,2025, and QR2 spectral images. Does not itself supply a blanket copyright license."
+    },
+    {
+      "id": "R3",
+      "url": "https://irsa.ipac.caltech.edu/ack.html",
+      "status": 200,
+      "retrievedUtc": "2026-11-14T21:49:30.341Z",
+      "title": "Acknowledging IRSA",
+      "contentSha256": null,
+      "finding": "IRSA requests archive and mission/dataset acknowledgments and citations."
+    },
+    {
+      "id": "R4",
+      "url": "https://www.ipac.caltech.edu/page/image-use-policy",
+      "status": 200,
+      "retrievedUtc": "2026-11-14T21:49:30.341Z",
+      "title": "\nImage Use Policy | IPAC\nImage Use Policy | IPAC\n\n",
+      "contentSha256": null,
+      "finding": "IPAC public-site images/video may be reused subject to credits, no endorsement and enumerated exceptions. No people/logos/third-party illustrations are in the audited scientific asset bundle."
+    },
+    {
+      "id": "R5",
+      "url": "https://irsa.ipac.caltech.edu/privacy.html",
+      "status": 200,
+      "retrievedUtc": "2026-11-14T21:49:30.341Z",
+      "title": "IRSA Privacy Statement",
+      "contentSha256": null,
+      "finding": "IRSA privacy/disclaimer page is not a grant of data-use permission."
+    },
+    {
+      "id": "R6",
+      "url": "https://www.spaceappschallenge.org/legal/",
+      "status": 200,
+      "retrievedUtc": "2026-11-14T21:49:30.342Z",
+      "title": "NASA Space Apps Challenge",
+      "contentSha256": null,
+      "finding": "2026 participant terms require sufficient dissemination rights, citations, third-party license documentation and owner decisions for original content. This release does not establish event eligibility or license the original application."
+    },
+    {
+      "id": "R7",
+      "url": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_dr1.html",
+      "status": 200,
+      "retrievedUtc": "2026-11-14T21:49:30.342Z",
+      "title": "SPHEREx DR1",
+      "contentSha256": null,
+      "finding": "DR1 spectral and all-sky cube identifiers are678/679; not assigned to the byte-matched M101 demo or existing QR2 sources."
+    },
+    {
+      "id": "R8",
+      "url": "https://irsa.ipac.caltech.edu/data_use_terms.html",
+      "status": 200,
+      "retrievedUtc": "2026-11-14T21:49:30.342Z",
+      "title": "Terms of Use of Data Hosted By IRSA",
+      "contentSha256": null,
+      "finding": "IRSA Public Data §1.1 states public data has no usage restrictions. Proprietary/exclusive access and copyrighted DSS are separately excepted. Verified sources here are public SPHEREx, not those exceptions."
+    }
+  ]
+}

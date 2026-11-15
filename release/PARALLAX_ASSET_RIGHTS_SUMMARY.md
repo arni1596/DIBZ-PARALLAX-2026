@@ -1,0 +1,13 @@
+# PARALLAX scientific asset release
+
+Decision date: November14,2026. **CLEARED630 / HOLD0 / EXCLUDE0**;114,751,955bytes. This resolves the enumerated scientific asset distribution question under the applicable IRSA public-data terms and IPAC imagery conditions, plus authorized distribution of PARALLAX-generated factual processing records. It does not license the original app or determine event eligibility.
+
+The previous folder-based533/52/45 inventory mixed parentage. Verified lineage grouping is510 M101 numerical/PNG derivatives,44 QR2 dated-field derivatives,52 QR2 investigation/fixture records/assets,24 mixed factual processing/provenance/display records. The eleven public/dataset/exposure_previews files come from independently dated QR2 products, not from the M101 mosaic.
+
+M101's entire public87,295,680-byte object matches the original SHA-256. Its102 IMAGE/NHITS/FLAGS planes directly match306 shipped arrays. Existing tests verify the102 PNGs and masks. The eight recorded calibration-table columns also match the public cube; this does not verify independent detector calibration or identify a data-release DOI. Named HDUs: PRIMARY,IMAGE,NHITS,FLAGS,SPECTRAL_CHANNELS,WCS-WAVE.
+
+QR2 parents for the six R Draconis/Atlas originals and eleven dated fields are identified through recorded acquisition URLs, product IDs, unchanged local SHA-256 and FITS provenance. Public HEAD responses were200 for ordinary parents; cutout HEAD returned405. Two December GET responses matched preserved cutout hashes exactly. One August cutout GET returned503; its underlying exact parent URL returned200. That service failure is retained, not represented as a successful fresh cutout match. Existing preserved acquisition evidence and independently checked derivative reproduction remain available.
+
+Terms: https://irsa.ipac.caltech.edu/data_use_terms.html ; imagery: https://www.ipac.caltech.edu/page/image-use-policy ; QR2 publisher: https://www.ipac.caltech.edu/doi/irsa/10.26131/IRSA652 . Retrieval timestamps, sanitized source receipts and per-product status codes are included here. IRSA's data-use permission, not just citation or URL domain, is the basis. No proprietary-login data, DSS, external textures, stock illustrations, people or logo assets were found in this bounded630-file scientific bundle. Required credits are in ATTRIBUTION.md.
+
+All exact original paths/bytes are preserved. Original JSON/provenance flags are not rewritten. The complete FIND→SEE→VERIFY runtime, M101's102-channel exploration, native dated observations, R Draconis investigation and Passport can be exercised using these assets; actual test outcomes are in PARALLAX_RELEASE_VALIDATION.md. No remaining runtime asset dependency is on HOLD.

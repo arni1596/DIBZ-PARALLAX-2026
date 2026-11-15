@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "input_kind": "Observed curated IRSA FITS cutouts",
+  "checks": [
+    {
+      "id": "rdra_row_0001",
+      "source_sha256": "3d5dbe6632da1755a8ea45a3569c2a39d166a81e395935d72816de2f9faa260e",
+      "native_pixels": 2209,
+      "accepted_pixels": 2051,
+      "core_measurement_available": false,
+      "all_native_arrays_and_preview_alpha_match": true,
+      "primary_sip_retained": true
+    },
+    {
+      "id": "rdra_row_0052",
+      "source_sha256": "8d416539f59b7dbb355ea06109a348e99a2a3c10f26773efaf2cec35eb6ceaf3",
+      "native_pixels": 2209,
+      "accepted_pixels": 2077,
+      "core_measurement_available": false,
+      "all_native_arrays_and_preview_alpha_match": true,
+      "primary_sip_retained": true
+    }
+  ],
+  "calibrated_wavelength_or_cross_epoch_registration_validated": false
+}

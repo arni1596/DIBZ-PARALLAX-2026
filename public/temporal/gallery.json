@@ -1,0 +1,527 @@
+{
+  "schema_version": 1,
+  "capability": "DATED_IMAGES_ONLY",
+  "source_pair_count": 55,
+  "enabled_pair_count": 0,
+  "exposures": [
+    {
+      "observation_id": "2025W21_1B_0485_2",
+      "filename": "sample_D1_row0.fits",
+      "timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "detector": 1,
+      "archive_release": "qr2",
+      "pipeline_version": "6.4+psffix1",
+      "source_fits": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row0.fits",
+        "sha256": "9814434f79b241dce4b13e87db5062c99fc946e8f42ccd82f9a889bdc50c834b"
+      },
+      "wavelength_um": 0.7484803688911392,
+      "bandwidth_um": 0.0176653394139452,
+      "wavelength_method": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "external_calibration": {
+        "cwave_um": null,
+        "cband_um": null,
+        "status": "UNAVAILABLE",
+        "provenance_status": "UNVERIFIED",
+        "method": "External CWAVE/CBAND unavailable; approximate WAVE-TAB displayed",
+        "provenance_verified": false
+      },
+      "preview": {
+        "path": "/temporal/sample_D1_row0.png",
+        "sha256": "87b74fd32ef45772ea795f9ccd6d7804133e05c41effe9db96d3c2dbfc2b2d35",
+        "width": 23,
+        "height": 23,
+        "low": 0.6687946826219558,
+        "high": 4.810791573524439,
+        "unit": "MJy / sr",
+        "display_method": "Independent 1/99 percentile linear grayscale; native unregistered pixels; transparent excluded mask"
+      },
+      "quality": {
+        "eligible_count": 520,
+        "total_count": 529,
+        "missing_count": 0,
+        "rejected_count": 9,
+        "policy": "Finite IMAGE, finite positive VARIANCE, retain SOURCE bit21 only; all other set bits including FULLSAMPLE excluded conservatively. No universally safe assertion.",
+        "flag_distribution": {
+          "2097152": 520,
+          "2097153": 7,
+          "2097157": 2
+        }
+      },
+      "calibration_status": "UNVERIFIED"
+    },
+    {
+      "observation_id": "2026W25_1A_0614_1",
+      "filename": "sample_D1_row52.fits",
+      "timestamp_utc": "2026-06-18T00:38:42.293Z",
+      "detector": 1,
+      "archive_release": "qr2",
+      "pipeline_version": "6.5.7",
+      "source_fits": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D1_row52.fits",
+        "sha256": "c154f6c42ac9f007c45bb04544f473e1b1bb69827312eaf980cb5b831afbb9e6"
+      },
+      "wavelength_um": 0.9566945260553066,
+      "bandwidth_um": 0.02434181680717791,
+      "wavelength_method": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "external_calibration": {
+        "cwave_um": null,
+        "cband_um": null,
+        "status": "UNAVAILABLE",
+        "provenance_status": "UNVERIFIED",
+        "method": "External CWAVE/CBAND unavailable; approximate WAVE-TAB displayed",
+        "provenance_verified": false
+      },
+      "preview": {
+        "path": "/temporal/sample_D1_row52.png",
+        "sha256": "77cb3564e87936d4937196d9eb05e6d3cabc9ce9fd21beb73f4ad2c8037fddca",
+        "width": 23,
+        "height": 23,
+        "low": 0.8086159884929657,
+        "high": 5.839044094085683,
+        "unit": "MJy / sr",
+        "display_method": "Independent 1/99 percentile linear grayscale; native unregistered pixels; transparent excluded mask"
+      },
+      "quality": {
+        "eligible_count": 511,
+        "total_count": 529,
+        "missing_count": 0,
+        "rejected_count": 18,
+        "policy": "Finite IMAGE, finite positive VARIANCE, retain SOURCE bit21 only; all other set bits including FULLSAMPLE excluded conservatively. No universally safe assertion.",
+        "flag_distribution": {
+          "2097152": 511,
+          "2097221": 1,
+          "270532608": 14,
+          "270532609": 1,
+          "270532613": 2
+        }
+      },
+      "calibration_status": "UNVERIFIED"
+    },
+    {
+      "observation_id": "2026W26_1A_0500_1",
+      "filename": "sample_D2_row136.fits",
+      "timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "detector": 2,
+      "archive_release": "qr2",
+      "pipeline_version": "6.5.7",
+      "source_fits": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row136.fits",
+        "sha256": "c51bf660b01a4797b3f84fb4690330515165bc5b193f9fd6a06394507f1d1604"
+      },
+      "wavelength_um": 1.489988171739384,
+      "bandwidth_um": 0.03645982019042382,
+      "wavelength_method": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "external_calibration": {
+        "cwave_um": 1.489738941192627,
+        "cband_um": 0.03702513128519058,
+        "status": "AVAILABLE_PROVENANCE_UNVERIFIED",
+        "provenance_status": "UNVERIFIED",
+        "method": "External CWAVE/CBAND values available but calibration lineage unverified",
+        "provenance_verified": false
+      },
+      "preview": {
+        "path": "/temporal/sample_D2_row136.png",
+        "sha256": "41607c5c9197a91bd45a2da599e910dcbd7833ba4a32080779fc8969e480aefe",
+        "width": 24,
+        "height": 23,
+        "low": 1.011705949306488,
+        "high": 8.435142002105684,
+        "unit": "MJy / sr",
+        "display_method": "Independent 1/99 percentile linear grayscale; native unregistered pixels; transparent excluded mask"
+      },
+      "quality": {
+        "eligible_count": 547,
+        "total_count": 552,
+        "missing_count": 0,
+        "rejected_count": 5,
+        "policy": "Finite IMAGE, finite positive VARIANCE, retain SOURCE bit21 only; all other set bits including FULLSAMPLE excluded conservatively. No universally safe assertion.",
+        "flag_distribution": {
+          "2097152": 547,
+          "270532608": 4,
+          "270532609": 1
+        }
+      },
+      "calibration_status": "UNVERIFIED"
+    },
+    {
+      "observation_id": "2025W19_2B_0346_1",
+      "filename": "sample_D2_row53.fits",
+      "timestamp_utc": "2025-05-10T17:04:37.741Z",
+      "detector": 2,
+      "archive_release": "qr2",
+      "pipeline_version": "6.4+psffix1",
+      "source_fits": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D2_row53.fits",
+        "sha256": "b00b242397e471bcb93698d01f8c45f07c601344cf076d2374ccd09db03708f4"
+      },
+      "wavelength_um": 1.50641873138115,
+      "bandwidth_um": 0.03695268870639086,
+      "wavelength_method": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "external_calibration": {
+        "cwave_um": 1.5058438777923584,
+        "cband_um": 0.03694658353924751,
+        "status": "AVAILABLE_PROVENANCE_UNVERIFIED",
+        "provenance_status": "UNVERIFIED",
+        "method": "External CWAVE/CBAND values available but calibration lineage unverified",
+        "provenance_verified": false
+      },
+      "preview": {
+        "path": "/temporal/sample_D2_row53.png",
+        "sha256": "975f1273d92578d3f26fe9232995d93ed4f7d3c8b27ac57709b2150f8953a41c",
+        "width": 23,
+        "height": 23,
+        "low": 1.055101466178894,
+        "high": 8.89778079986572,
+        "unit": "MJy / sr",
+        "display_method": "Independent 1/99 percentile linear grayscale; native unregistered pixels; transparent excluded mask"
+      },
+      "quality": {
+        "eligible_count": 521,
+        "total_count": 529,
+        "missing_count": 0,
+        "rejected_count": 8,
+        "policy": "Finite IMAGE, finite positive VARIANCE, retain SOURCE bit21 only; all other set bits including FULLSAMPLE excluded conservatively. No universally safe assertion.",
+        "flag_distribution": {
+          "2097152": 521,
+          "2097157": 3,
+          "2097216": 1,
+          "2228224": 4
+        }
+      },
+      "calibration_status": "UNVERIFIED"
+    },
+    {
+      "observation_id": "2025W19_2B_0101_1",
+      "filename": "sample_D3_row137.fits",
+      "timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "detector": 3,
+      "archive_release": "qr2",
+      "pipeline_version": "6.4+psffix1",
+      "source_fits": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row137.fits",
+        "sha256": "d1360488fde2d0442fa1e2e006a71244bbe583d9280dc5b439d1cbe83691023b"
+      },
+      "wavelength_um": 2.1955285420062847,
+      "bandwidth_um": 0.05533337729961879,
+      "wavelength_method": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "external_calibration": {
+        "cwave_um": null,
+        "cband_um": null,
+        "status": "UNAVAILABLE",
+        "provenance_status": "UNVERIFIED",
+        "method": "External CWAVE/CBAND unavailable; approximate WAVE-TAB displayed",
+        "provenance_verified": false
+      },
+      "preview": {
+        "path": "/temporal/sample_D3_row137.png",
+        "sha256": "259de98cf959a8f20dedee6ba6febb2d3edf314aa586cbf2caca693f985f1a74",
+        "width": 23,
+        "height": 23,
+        "low": 0.8779017317295075,
+        "high": 7.690596618652318,
+        "unit": "MJy / sr",
+        "display_method": "Independent 1/99 percentile linear grayscale; native unregistered pixels; transparent excluded mask"
+      },
+      "quality": {
+        "eligible_count": 523,
+        "total_count": 529,
+        "missing_count": 0,
+        "rejected_count": 6,
+        "policy": "Finite IMAGE, finite positive VARIANCE, retain SOURCE bit21 only; all other set bits including FULLSAMPLE excluded conservatively. No universally safe assertion.",
+        "flag_distribution": {
+          "2097152": 523,
+          "2097153": 4,
+          "2097157": 2
+        }
+      },
+      "calibration_status": "UNVERIFIED"
+    },
+    {
+      "observation_id": "2026W25_1A_0641_1",
+      "filename": "sample_D3_row186.fits",
+      "timestamp_utc": "2026-06-18T03:54:38.021Z",
+      "detector": 3,
+      "archive_release": "qr2",
+      "pipeline_version": "6.5.7",
+      "source_fits": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D3_row186.fits",
+        "sha256": "bc09be746d11e04e7a15f3a406930f88fc078793bc04fc5801a97adf60beab03"
+      },
+      "wavelength_um": 2.1186715310246047,
+      "bandwidth_um": 0.053084538078467386,
+      "wavelength_method": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "external_calibration": {
+        "cwave_um": null,
+        "cband_um": null,
+        "status": "UNAVAILABLE",
+        "provenance_status": "UNVERIFIED",
+        "method": "External CWAVE/CBAND unavailable; approximate WAVE-TAB displayed",
+        "provenance_verified": false
+      },
+      "preview": {
+        "path": "/temporal/sample_D3_row186.png",
+        "sha256": "05faaba631e69c9eae584bfc3387b7a9acbc5d79d1a30b97ab5309f5a537d02c",
+        "width": 23,
+        "height": 23,
+        "low": 0.9038761389255524,
+        "high": 7.477522268295292,
+        "unit": "MJy / sr",
+        "display_method": "Independent 1/99 percentile linear grayscale; native unregistered pixels; transparent excluded mask"
+      },
+      "quality": {
+        "eligible_count": 527,
+        "total_count": 529,
+        "missing_count": 0,
+        "rejected_count": 2,
+        "policy": "Finite IMAGE, finite positive VARIANCE, retain SOURCE bit21 only; all other set bits including FULLSAMPLE excluded conservatively. No universally safe assertion.",
+        "flag_distribution": {
+          "2097152": 527,
+          "2097221": 2
+        }
+      },
+      "calibration_status": "UNVERIFIED"
+    },
+    {
+      "observation_id": "2025W21_1B_0485_2",
+      "filename": "sample_D4_row187.fits",
+      "timestamp_utc": "2025-05-21T12:21:34.537Z",
+      "detector": 4,
+      "archive_release": "qr2",
+      "pipeline_version": "6.4+psffix1",
+      "source_fits": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row187.fits",
+        "sha256": "9086d1d15431c7fd83713bae004ccd7356a6f07e338d95c0fddf2c0c28ef86fa"
+      },
+      "wavelength_um": 2.4366961283908726,
+      "bandwidth_um": 0.04938818351189377,
+      "wavelength_method": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "external_calibration": {
+        "cwave_um": null,
+        "cband_um": null,
+        "status": "UNAVAILABLE",
+        "provenance_status": "UNVERIFIED",
+        "method": "External CWAVE/CBAND unavailable; approximate WAVE-TAB displayed",
+        "provenance_verified": false
+      },
+      "preview": {
+        "path": "/temporal/sample_D4_row187.png",
+        "sha256": "9ff5456b46ec6452863d569341b086371444e26a07243aea50abeecb3e80739d",
+        "width": 23,
+        "height": 23,
+        "low": 0.5960704636573791,
+        "high": 4.808353767395024,
+        "unit": "MJy / sr",
+        "display_method": "Independent 1/99 percentile linear grayscale; native unregistered pixels; transparent excluded mask"
+      },
+      "quality": {
+        "eligible_count": 527,
+        "total_count": 529,
+        "missing_count": 0,
+        "rejected_count": 2,
+        "policy": "Finite IMAGE, finite positive VARIANCE, retain SOURCE bit21 only; all other set bits including FULLSAMPLE excluded conservatively. No universally safe assertion.",
+        "flag_distribution": {
+          "2097152": 527,
+          "2097153": 2
+        }
+      },
+      "calibration_status": "UNVERIFIED"
+    },
+    {
+      "observation_id": "2026W25_1A_0614_1",
+      "filename": "sample_D4_row239.fits",
+      "timestamp_utc": "2026-06-18T00:38:42.292Z",
+      "detector": 4,
+      "archive_release": "qr2",
+      "pipeline_version": "6.5.7",
+      "source_fits": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D4_row239.fits",
+        "sha256": "0287c4175060fa1e6b252af232e943cdcae50fdab7ab75ae452e4df15236125b"
+      },
+      "wavelength_um": 3.220096347631241,
+      "bandwidth_um": 0.0932156328122756,
+      "wavelength_method": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "external_calibration": {
+        "cwave_um": null,
+        "cband_um": null,
+        "status": "UNAVAILABLE",
+        "provenance_status": "UNVERIFIED",
+        "method": "External CWAVE/CBAND unavailable; approximate WAVE-TAB displayed",
+        "provenance_verified": false
+      },
+      "preview": {
+        "path": "/temporal/sample_D4_row239.png",
+        "sha256": "eb02888866f1b6b49866737aa70e4d7f9eeaf68b08b0b1041b0082e28eacda5b",
+        "width": 23,
+        "height": 23,
+        "low": 0.5033898389339447,
+        "high": 4.045902385711668,
+        "unit": "MJy / sr",
+        "display_method": "Independent 1/99 percentile linear grayscale; native unregistered pixels; transparent excluded mask"
+      },
+      "quality": {
+        "eligible_count": 525,
+        "total_count": 529,
+        "missing_count": 0,
+        "rejected_count": 4,
+        "policy": "Finite IMAGE, finite positive VARIANCE, retain SOURCE bit21 only; all other set bits including FULLSAMPLE excluded conservatively. No universally safe assertion.",
+        "flag_distribution": {
+          "0": 7,
+          "2097152": 518,
+          "2097221": 2,
+          "2097223": 1,
+          "270532608": 1
+        }
+      },
+      "calibration_status": "UNVERIFIED"
+    },
+    {
+      "observation_id": "2025W19_2B_0346_1",
+      "filename": "sample_D5_row240.fits",
+      "timestamp_utc": "2025-05-10T17:04:37.742Z",
+      "detector": 5,
+      "archive_release": "qr2",
+      "pipeline_version": "6.4+psffix1",
+      "source_fits": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row240.fits",
+        "sha256": "84f2ef9eb4866ac03dca95666e3d89d36715f7349e4cc95e610eddc26fa50f66"
+      },
+      "wavelength_um": 4.279348375710111,
+      "bandwidth_um": 0.037102582977708236,
+      "wavelength_method": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "external_calibration": {
+        "cwave_um": null,
+        "cband_um": null,
+        "status": "UNAVAILABLE",
+        "provenance_status": "UNVERIFIED",
+        "method": "External CWAVE/CBAND unavailable; approximate WAVE-TAB displayed",
+        "provenance_verified": false
+      },
+      "preview": {
+        "path": "/temporal/sample_D5_row240.png",
+        "sha256": "3598cf00b39508e7317e894c9964221ad83cf65993b30f0d5c97eb7bd6be7c21",
+        "width": 23,
+        "height": 23,
+        "low": 0.4314961791038513,
+        "high": 2.3090017890930175,
+        "unit": "MJy / sr",
+        "display_method": "Independent 1/99 percentile linear grayscale; native unregistered pixels; transparent excluded mask"
+      },
+      "quality": {
+        "eligible_count": 525,
+        "total_count": 529,
+        "missing_count": 0,
+        "rejected_count": 4,
+        "policy": "Finite IMAGE, finite positive VARIANCE, retain SOURCE bit21 only; all other set bits including FULLSAMPLE excluded conservatively. No universally safe assertion.",
+        "flag_distribution": {
+          "2097152": 525,
+          "2097153": 2,
+          "2097157": 1,
+          "2099205": 1
+        }
+      },
+      "calibration_status": "UNVERIFIED"
+    },
+    {
+      "observation_id": "2026W26_1A_0500_1",
+      "filename": "sample_D5_row321.fits",
+      "timestamp_utc": "2026-06-24T03:19:00.063Z",
+      "detector": 5,
+      "archive_release": "qr2",
+      "pipeline_version": "6.5.7",
+      "source_fits": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D5_row321.fits",
+        "sha256": "907e5f63b2d565dc60898b47a43bed3b291adbd049d8e24386f5748e14eb1fcd"
+      },
+      "wavelength_um": 4.262711052366933,
+      "bandwidth_um": 0.03720078724181986,
+      "wavelength_method": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "external_calibration": {
+        "cwave_um": null,
+        "cband_um": null,
+        "status": "UNAVAILABLE",
+        "provenance_status": "UNVERIFIED",
+        "method": "External CWAVE/CBAND unavailable; approximate WAVE-TAB displayed",
+        "provenance_verified": false
+      },
+      "preview": {
+        "path": "/temporal/sample_D5_row321.png",
+        "sha256": "c2eb6108b8b901147d021d94ad3629cca2f21e71224feef1e5059d2cc6bc0bf5",
+        "width": 23,
+        "height": 23,
+        "low": 0.47335990458726884,
+        "high": 2.64708382844925,
+        "unit": "MJy / sr",
+        "display_method": "Independent 1/99 percentile linear grayscale; native unregistered pixels; transparent excluded mask"
+      },
+      "quality": {
+        "eligible_count": 508,
+        "total_count": 529,
+        "missing_count": 0,
+        "rejected_count": 21,
+        "policy": "Finite IMAGE, finite positive VARIANCE, retain SOURCE bit21 only; all other set bits including FULLSAMPLE excluded conservatively. No universally safe assertion.",
+        "flag_distribution": {
+          "2097152": 508,
+          "270532608": 15,
+          "270532609": 1,
+          "270532613": 5
+        }
+      },
+      "calibration_status": "UNVERIFIED"
+    },
+    {
+      "observation_id": "2025W19_2B_0101_1",
+      "filename": "sample_D6_row322.fits",
+      "timestamp_utc": "2025-05-09T03:33:55.113Z",
+      "detector": 6,
+      "archive_release": "qr2",
+      "pipeline_version": "6.4+psffix1",
+      "source_fits": {
+        "path": "C:\\Users\\ishan\\Desktop\\PARALLAX-Research\\PARALLAX-spectral-inventory\\sample_D6_row322.fits",
+        "sha256": "3a5465ae90fc82339933a27209a80a0099c6609d450899153b5153867014e219"
+      },
+      "wavelength_um": 4.8445100135297245,
+      "bandwidth_um": 0.036759275226334216,
+      "wavelength_method": "WAVE-TAB approximate visualization metadata; separately recorded external CWAVE/CBAND never imply verified provenance",
+      "external_calibration": {
+        "cwave_um": null,
+        "cband_um": null,
+        "status": "UNAVAILABLE",
+        "provenance_status": "UNVERIFIED",
+        "method": "External CWAVE/CBAND unavailable; approximate WAVE-TAB displayed",
+        "provenance_verified": false
+      },
+      "preview": {
+        "path": "/temporal/sample_D6_row322.png",
+        "sha256": "f7d4d3e9bc238a2992c5ccc6c0e98442577f77d5936638505a1fd8a7647812ef",
+        "width": 23,
+        "height": 23,
+        "low": 0.6016198658943176,
+        "high": 2.6011065292358406,
+        "unit": "MJy / sr",
+        "display_method": "Independent 1/99 percentile linear grayscale; native unregistered pixels; transparent excluded mask"
+      },
+      "quality": {
+        "eligible_count": 527,
+        "total_count": 529,
+        "missing_count": 0,
+        "rejected_count": 2,
+        "policy": "Finite IMAGE, finite positive VARIANCE, retain SOURCE bit21 only; all other set bits including FULLSAMPLE excluded conservatively. No universally safe assertion.",
+        "flag_distribution": {
+          "2097152": 527,
+          "2097153": 1,
+          "2097157": 1
+        }
+      },
+      "calibration_status": "UNVERIFIED"
+    }
+  ],
+  "decision_summary": "Authentic dated native images; Level 2 not established by independent residual and spectral response evidence.",
+  "limitations": [
+    "Independently scaled; do not compare brightness",
+    "Native grids are not aligned",
+    "Approximate wavelength and bandwidth; measured response equivalence unavailable",
+    "No variability or motion inference"
+  ],
+  "verdict_path": "/temporal/temporal_verdict.json"
+}

@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {contrastSettings,tone,renderPresentation,clampView} from '../src/display.ts';
+test('asinh preserves highlight distinctions rather than applying the old clipped ceiling',()=>{let p={image:new Float32Array([0,1,2,10,44]),mask:new Uint8Array([1,1,1,1,1])};const s=contrastSettings(p);assert.ok(tone(10,s)<tone(44,s));assert.equal(tone(44,s),1);assert.ok(tone(2,s)<1)});
+test('bilinear display never fills excluded native pixels or mutates measurements',()=>{const image=new Float32Array([0,1,2,8]),mask=new Uint8Array([1,0,1,1]);const before=[...image];const rgba=renderPresentation({image,mask},2,2,8,true);for(let sy=4;sy<8;sy++)for(let sx=4;sx<8;sx++)assert.equal(rgba[(sy*8+sx)*4+3],0);assert.deepEqual([...image],before)});
+test('pan cannot expose space beyond image bounds at fit or zoom',()=>{assert.deepEqual(clampView({x:999,y:-999},1,600),{x:0,y:0});assert.deepEqual(clampView({x:999,y:-999},2,600),{x:300,y:-300})});

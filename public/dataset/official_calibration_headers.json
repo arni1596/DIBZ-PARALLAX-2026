@@ -1,0 +1,352 @@
+[
+  {
+    "extension_name": "PRIMARY",
+    "cards": [
+      {
+        "keyword": "SIMPLE",
+        "value": true,
+        "comment": "conforms to FITS standard"
+      },
+      {
+        "keyword": "BITPIX",
+        "value": 8,
+        "comment": "array data type"
+      },
+      {
+        "keyword": "NAXIS",
+        "value": 0,
+        "comment": "number of array dimensions"
+      },
+      {
+        "keyword": "EXTEND",
+        "value": true,
+        "comment": ""
+      },
+      {
+        "keyword": "DATE",
+        "value": "2026-04-14T19:25:18",
+        "comment": "UTC file creation time"
+      },
+      {
+        "keyword": "TELESCOP",
+        "value": "SPHEREx",
+        "comment": "project name"
+      },
+      {
+        "keyword": "INSTRUME",
+        "value": "SPHEREx",
+        "comment": "instrument name"
+      },
+      {
+        "keyword": "HISTORY",
+        "value": "[SSDC] Channel map from 20260311_LVF_contour_17Ch.FITS",
+        "comment": ""
+      },
+      {
+        "keyword": "HISTORY",
+        "value": "[SSDC] Metadata from SPHEREx SpectralBandDef 202601, revision 2/24",
+        "comment": ""
+      }
+    ]
+  },
+  {
+    "extension_name": "CHANNEL_MAP",
+    "cards": [
+      {
+        "keyword": "XTENSION",
+        "value": "IMAGE",
+        "comment": "IMAGE extension"
+      },
+      {
+        "keyword": "BITPIX",
+        "value": 8,
+        "comment": "number of bits per data pixel"
+      },
+      {
+        "keyword": "NAXIS",
+        "value": 2,
+        "comment": "number of data axes"
+      },
+      {
+        "keyword": "NAXIS1",
+        "value": 2040,
+        "comment": "length of data axis 1"
+      },
+      {
+        "keyword": "NAXIS2",
+        "value": 2040,
+        "comment": "length of data axis 2"
+      },
+      {
+        "keyword": "PCOUNT",
+        "value": 0,
+        "comment": "required keyword; must = 0"
+      },
+      {
+        "keyword": "GCOUNT",
+        "value": 1,
+        "comment": "required keyword; must = 1"
+      },
+      {
+        "keyword": "EXTNAME",
+        "value": "CHANNEL_MAP",
+        "comment": "pixel-to-spectral-channel lookup map"
+      },
+      {
+        "keyword": "DATE",
+        "value": "2026-03-11T12:00:00",
+        "comment": "UTC HDU creation time"
+      },
+      {
+        "keyword": "ORIGIN",
+        "value": "SPHEREx Instrument Team",
+        "comment": "institution that created this HDU"
+      },
+      {
+        "keyword": "AUTHOR",
+        "value": "Howard Hui",
+        "comment": "contact person for this content"
+      },
+      {
+        "keyword": "TELESCOP",
+        "value": "SPHEREx",
+        "comment": "project name"
+      },
+      {
+        "keyword": "INSTRUME",
+        "value": "SPHEREx",
+        "comment": "instrument name"
+      },
+      {
+        "keyword": "DETECTOR",
+        "value": "ALL",
+        "comment": "detector array identifier (1-6 or ALL)"
+      },
+      {
+        "keyword": "DETSER",
+        "value": "ALL",
+        "comment": "detector serial number"
+      },
+      {
+        "keyword": "TESTENV",
+        "value": "TVAC4 + FPA + IOC",
+        "comment": "locations of spectral channel input data"
+      },
+      {
+        "keyword": "DETCOORD",
+        "value": "sky",
+        "comment": "pixel coordinates matched to L2 spectral images"
+      },
+      {
+        "keyword": "HISTORY",
+        "value": "[INST] Version 2.1.2",
+        "comment": ""
+      }
+    ]
+  },
+  {
+    "extension_name": "SPECTRAL_CHANNELS",
+    "cards": [
+      {
+        "keyword": "XTENSION",
+        "value": "BINTABLE",
+        "comment": "binary table extension"
+      },
+      {
+        "keyword": "BITPIX",
+        "value": 8,
+        "comment": "array data type"
+      },
+      {
+        "keyword": "NAXIS",
+        "value": 2,
+        "comment": "number of array dimensions"
+      },
+      {
+        "keyword": "NAXIS1",
+        "value": 26,
+        "comment": "length of dimension 1"
+      },
+      {
+        "keyword": "NAXIS2",
+        "value": 102,
+        "comment": "length of dimension 2"
+      },
+      {
+        "keyword": "PCOUNT",
+        "value": 0,
+        "comment": "number of group parameters"
+      },
+      {
+        "keyword": "GCOUNT",
+        "value": 1,
+        "comment": "number of groups"
+      },
+      {
+        "keyword": "TFIELDS",
+        "value": 8,
+        "comment": "number of table fields"
+      },
+      {
+        "keyword": "EXTNAME",
+        "value": "SPECTRAL_CHANNELS",
+        "comment": "extension name"
+      },
+      {
+        "keyword": "TTYPE1",
+        "value": "DETECTOR",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM1",
+        "value": "B",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE2",
+        "value": "SUBCHAN",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM2",
+        "value": "B",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE3",
+        "value": "WAVELENGTH",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM3",
+        "value": "E",
+        "comment": ""
+      },
+      {
+        "keyword": "TUNIT3",
+        "value": "um",
+        "comment": ""
+      },
+      {
+        "keyword": "TDISP3",
+        "value": "F10.3",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE4",
+        "value": "WL_MIN",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM4",
+        "value": "E",
+        "comment": ""
+      },
+      {
+        "keyword": "TUNIT4",
+        "value": "um",
+        "comment": ""
+      },
+      {
+        "keyword": "TDISP4",
+        "value": "F10.3",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE5",
+        "value": "WL_MAX",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM5",
+        "value": "E",
+        "comment": ""
+      },
+      {
+        "keyword": "TUNIT5",
+        "value": "um",
+        "comment": ""
+      },
+      {
+        "keyword": "TDISP5",
+        "value": "F10.3",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE6",
+        "value": "R",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM6",
+        "value": "E",
+        "comment": ""
+      },
+      {
+        "keyword": "TDISP6",
+        "value": "F10.0",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE7",
+        "value": "R_STD",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM7",
+        "value": "E",
+        "comment": ""
+      },
+      {
+        "keyword": "TDISP7",
+        "value": "F10.1",
+        "comment": ""
+      },
+      {
+        "keyword": "TTYPE8",
+        "value": "BANDWIDTH",
+        "comment": ""
+      },
+      {
+        "keyword": "TFORM8",
+        "value": "E",
+        "comment": ""
+      },
+      {
+        "keyword": "TUNIT8",
+        "value": "um",
+        "comment": ""
+      },
+      {
+        "keyword": "TDISP8",
+        "value": "F10.3",
+        "comment": ""
+      },
+      {
+        "keyword": "COMMENT",
+        "value": "WAVELENGTH is median per-pixel wavelength [um]",
+        "comment": ""
+      },
+      {
+        "keyword": "COMMENT",
+        "value": "R is median per-pixel spectral resolution",
+        "comment": ""
+      },
+      {
+        "keyword": "COMMENT",
+        "value": "BANDWIDTH is calculated as WAVELENGTH/R",
+        "comment": ""
+      },
+      {
+        "keyword": "HISTORY",
+        "value": "Metadata from SPHEREx SpectralBandDef 202601, revision 2/24",
+        "comment": ""
+      },
+      {
+        "keyword": "HISTORY",
+        "value": "Derived from SpecCal_202509",
+        "comment": ""
+      }
+    ]
+  }
+]

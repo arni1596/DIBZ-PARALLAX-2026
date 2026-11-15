@@ -1,0 +1,63 @@
+[
+  {
+    "id": "full_frame",
+    "kind": "all native mosaic pixel centers",
+    "pixel_count": 71289
+  },
+  {
+    "id": "target_pixel",
+    "kind": "nearest center; floor(x+0.5), no clipping",
+    "fractional_xy": [
+      132.999323897241,
+      133.00000000001305
+    ],
+    "selected_xy": [
+      133,
+      133
+    ],
+    "inside_frame": true,
+    "pixel_count": 1
+  },
+  {
+    "id": "core_30arcsec",
+    "inner_radius_arcsec": 0,
+    "outer_radius_arcsec": 30,
+    "kind": "sky-centered region using pixel-center membership, no fractional weights",
+    "boundary_within_frame": true,
+    "center_ra_dec_deg": [
+      210.80227,
+      54.34895
+    ],
+    "selection_source": "Analyst defaults for coverage QA; not validated photometry/background apertures",
+    "background_validated": false,
+    "pixel_count": 37
+  },
+  {
+    "id": "central_120arcsec",
+    "inner_radius_arcsec": 0,
+    "outer_radius_arcsec": 120,
+    "kind": "sky-centered region using pixel-center membership, no fractional weights",
+    "boundary_within_frame": true,
+    "center_ra_dec_deg": [
+      210.80227,
+      54.34895
+    ],
+    "selection_source": "Analyst defaults for coverage QA; not validated photometry/background apertures",
+    "background_validated": false,
+    "pixel_count": 553
+  },
+  {
+    "id": "reference_annulus_240_360arcsec",
+    "inner_radius_arcsec": 240,
+    "outer_radius_arcsec": 360,
+    "kind": "sky-centered region using pixel-center membership, no fractional weights",
+    "boundary_within_frame": true,
+    "center_ra_dec_deg": [
+      210.80227,
+      54.34895
+    ],
+    "selection_source": "Analyst defaults for coverage QA; not validated photometry/background apertures",
+    "background_validated": false,
+    "pixel_count": 2787
+  }
+]
