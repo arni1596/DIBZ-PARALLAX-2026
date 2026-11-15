@@ -10,10 +10,10 @@ import {atlasPassport,journeyAct} from './journeyState';
 import type {AtlasSnapshot} from './journeyState';
 const names=['The question','Light','Time','Evidence','A precedent','Passport'];
 export default function Journey(){
- const [act,setAct]=useState(location.hash?(journeyAct(location.hash)??0):1),[visited,setVisited]=useState(false),[data,setData]=useState<Bundle|null>(null),[dataError,setDataError]=useState(''),[manifest,setManifest]=useState<AtlasManifest|null>(null),[error,setError]=useState(''),[index,setIndex]=useState(2),[snapshot,setSnapshot]=useState<AtlasSnapshot|null>(null),[selection,setSelection]=useState<Selection>({kind:'disk',x:133,y:133,radius:45}),[revision,setRevision]=useState(0);
+ const [act,setAct]=useState(location.hash?(journeyAct(location.hash)??0):0),[visited,setVisited]=useState(false),[data,setData]=useState<Bundle|null>(null),[dataError,setDataError]=useState(''),[manifest,setManifest]=useState<AtlasManifest|null>(null),[error,setError]=useState(''),[index,setIndex]=useState(2),[snapshot,setSnapshot]=useState<AtlasSnapshot|null>(null),[selection,setSelection]=useState<Selection>({kind:'disk',x:133,y:133,radius:45}),[revision,setRevision]=useState(0);
  const [dataAttempt,setDataAttempt]=useState(0),[atlasAttempt,setAtlasAttempt]=useState(0);
  const heading=useRef<HTMLHeadingElement>(null);
- useEffect(()=>{const route=()=>setAct(location.hash?(journeyAct(location.hash)??0):1);window.addEventListener('hashchange',route);return()=>window.removeEventListener('hashchange',route)},[]);
+ useEffect(()=>{const route=()=>setAct(location.hash?(journeyAct(location.hash)??0):0);window.addEventListener('hashchange',route);return()=>window.removeEventListener('hashchange',route)},[]);
  useEffect(()=>{if(act===1)setVisited(true);heading.current?.focus();window.scrollTo({top:0,behavior:'instant'})},[act]);
  useEffect(()=>{if(!visited)return;let live=true;setDataError('');loadDataset().then(d=>{if(live)setData(d)}).catch(e=>{if(live)setDataError(String(e.message))});return()=>{live=false}},[visited,dataAttempt]);
  useEffect(()=>{let live=true;setError('');loadAtlas().then(m=>{if(live)setManifest(m)}).catch(e=>{if(live)setError(String(e.message))});return()=>{live=false}},[atlasAttempt]);
