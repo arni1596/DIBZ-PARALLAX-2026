@@ -1,0 +1,42 @@
+{
+  "utc": "2026-11-14T23:49:10.252Z",
+  "file": "PARALLAX_FIRST_IMPRESSION_DEMO.webm",
+  "durationSeconds": 28.45,
+  "bytes": 841386,
+  "sha256": "0ccb59b14a80c011a7a97992d54fc67272f6491a0b1faa6e6b1879a05598012a",
+  "mime": "video/webm;codecs=vp9",
+  "frames": 110,
+  "actions": [
+    {
+      "seconds": 6.312991599999999,
+      "action": "Begin the actual M101 investigation"
+    },
+    {
+      "seconds": 10.9714756,
+      "action": "Select channel36 and move the real divider by keyboard"
+    },
+    {
+      "seconds": 14.355117700000001,
+      "action": "Open dated observations and select the actual August1 product"
+    },
+    {
+      "seconds": 19.334616099999998,
+      "action": "Inspect a native sample; show actual receipt and evidence limits"
+    },
+    {
+      "seconds": 26.9005198,
+      "action": "Export the real current-state Passport and display its source/limits"
+    }
+  ],
+  "sourceSnapshot": {
+    "index.html": "08809d8ebf32a9422fbb006db06a13d725a0a038b5f54b8c3ff734f946da66df",
+    "src/journey.tsx": "0621c498351db3e7abd0ecbb0957ee8525813e16cbc5daa0be9f2fdd124b3ec3",
+    "src/journey.css": "6d472cc513f6655d6c50b18d1ddbc2a5d7fea9cbc2bee0beb019ada6ae8c3a85",
+    "src/reveal.tsx": "32c8f8225862f3b33ce6fddef5a96b46a7039ed0202dadb4007fc311685299e8",
+    "src/journeyState.ts": "8b5227d811095e2acdccab959fcfa855ea0cbaf62da88c5c0732fde95e194202",
+    "package-lock.json": "7dcc6a282e7084fdcd451f0cb52e639d3c24c2da0b2190e51097292787fd0fe5"
+  },
+  "durationGate": "PASS",
+  "provenance": "Actual live Chrome browser screenshot frames encoded by installed MediaRecorder at an8fps capture target; captions outside the app viewport. No generated imagery or astronomical result. No recorded voiceover; narration supplied separately.",
+  "published": false
+}
