@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-14T23:59:07.916639+00:00",
+  "artifact": "PARALLAX_UX_SITE.tar.gz",
+  "localOutput": "shareable/PARALLAX/UX_FIRST_IMPRESSION/PARALLAX_UX_SITE.tar.gz",
+  "bytes": 38265159,
+  "sha256": "e4f45273837931f4f00568369adf8e6a0919bf4adb85340d45564b2d289904c3",
+  "matchedDistFiles": 630,
+  "originalClearedRuntimeAssetsMatched": 624,
+  "nativeHostingIdentityIncluded": true,
+  "sourceSnapshot": {
+    "index.html": "08809d8ebf32a9422fbb006db06a13d725a0a038b5f54b8c3ff734f946da66df",
+    "src/journey.tsx": "0621c498351db3e7abd0ecbb0957ee8525813e16cbc5daa0be9f2fdd124b3ec3",
+    "src/journey.css": "6d472cc513f6655d6c50b18d1ddbc2a5d7fea9cbc2bee0beb019ada6ae8c3a85",
+    "src/reveal.tsx": "32c8f8225862f3b33ce6fddef5a96b46a7039ed0202dadb4007fc311685299e8",
+    "src/journeyState.ts": "8b5227d811095e2acdccab959fcfa855ea0cbaf62da88c5c0732fde95e194202",
+    "package-lock.json": "7dcc6a282e7084fdcd451f0cb52e639d3c24c2da0b2190e51097292787fd0fe5"
+  },
+  "published": false
+}

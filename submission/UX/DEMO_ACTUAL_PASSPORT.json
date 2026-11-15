@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "parallax.evidence-passport.v1",
+  "exportedAtUTC": "2026-11-14T23:49:06.944Z",
+  "observation": {
+    "id": "2025W31_2A_0156_1D6",
+    "label": "2025-08-01",
+    "observedAt": "2025-08-01T08:00:09.189Z",
+    "dimensions": [
+      117,
+      117
+    ],
+    "source": {
+      "path": "2025W31_2A_0156_1D6.cutout.fits",
+      "sha256": "6b3ebdc65678c2180786bf532bb9650ed55b6860c9991bf3939152f351ada7f9",
+      "byteLength": 5279040,
+      "archiveUrl": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W31_2A/l2b-v20-2025-264/6/level2_2025W31_2A_0156_1D6_spx_l2b-v20-2025-264.fits?center=252.66330208911876%2C-17.490409029955288d&size=.2",
+      "archiveProductId": "2025W31_2A_0156_1D6",
+      "archiveRelease": "qr2",
+      "pipelineVersion": "6.4+psffix1",
+      "archiveOriginStatus": "IRSA spatial cutout; parent full-file hash not calculated",
+      "priorChecksumMatch": true,
+      "digestScope": "IRSA spatial cutout; parent full-file hash not calculated"
+    },
+    "units": {
+      "image": "MJy/sr",
+      "variance": "(MJy/sr)^2",
+      "flags": "dimensionless"
+    },
+    "wavelength": {
+      "approximateUm": 4.746611861033597,
+      "approximateBandwidthUm": 0.0361562326542897,
+      "classification": "Unavailable or unverified",
+      "scientificCalibration": false,
+      "source": "Observation WCS-WAVE at predicted position",
+      "note": "Approximate native LVF response; not a calibrated equal-band comparison"
+    },
+    "render": {
+      "low": 0.37187841534614563,
+      "high": 3.969594717025757,
+      "soft": 0.4497145377099514,
+      "algorithm": "asinh8; independent eligible2–99.5percentiles; grayscale",
+      "orientation": "original detector orientation, y up; not north-up",
+      "heroBounds_yx": [
+        [
+          33,
+          84
+        ],
+        [
+          33,
+          84
+        ]
+      ]
+    },
+    "assets": {
+      "image": {
+        "path": "investigations/atlas-v1/2025W31_2A_0156_1D6.image.f32",
+        "sha256": "6a480b7aede099b8efb003a965e53d9654f052e323d80b3ed1bcd41c6294c61a",
+        "byteLength": 54756,
+        "dtype": "float32",
+        "shape": [
+          117,
+          117
+        ],
+        "classification": "Observed"
+      },
+      "variance": {
+        "path": "investigations/atlas-v1/2025W31_2A_0156_1D6.variance.f32",
+        "sha256": "9ba2073482c33e4645ad8daa71618f823df683702b34d8e396d257acf1fe46b9",
+        "byteLength": 54756,
+        "dtype": "float32",
+        "shape": [
+          117,
+          117
+        ],
+        "classification": "Observed"
+      },
+      "flags": {
+        "path": "investigations/atlas-v1/2025W31_2A_0156_1D6.flags.u32",
+        "sha256": "12dd16baf499bec2833797187f142f57f5a3527ce05296c737673231b2bcad17",
+        "byteLength": 54756,
+        "dtype": "uint32",
+        "shape": [
+          117,
+          117
+        ],
+        "classification": "Observed"
+      },
+      "mask": {
+        "path": "investigations/atlas-v1/2025W31_2A_0156_1D6.mask.u8",
+        "sha256": "23e906a4862be47ea129558f01b7aa42f1e9d10f736f1cede50e12fc3b7a959b",
+        "byteLength": 13689,
+        "dtype": "uint8",
+        "shape": [
+          117,
+          117
+        ],
+        "classification": "Processed"
+      },
+      "preview": {
+        "path": "investigations/atlas-v1/2025W31_2A_0156_1D6.png",
+        "sha256": "2884ba61a91b65f9125af8a61175bede26d594cc4d68c0fe4c9edd57718775e3",
+        "byteLength": 18103,
+        "dtype": "png",
+        "shape": [
+          117,
+          117
+        ],
+        "classification": "Processed"
+      },
+      "hero": {
+        "path": "investigations/atlas-v1/2025W31_2A_0156_1D6.hero.png",
+        "sha256": "fca13eb36de301367370b77940bf7b03b370e230fda732da61a6a326d04255f4",
+        "byteLength": 4058,
+        "dtype": "png",
+        "shape": [
+          51,
+          51
+        ],
+        "classification": "Processed"
+      }
+    },
+    "marker": {
+      "type": "MODEL PREDICTION",
+      "xy": [
+        57.64509990713401,
+        58.34141540040949
+      ],
+      "raDec": [
+        252.66330208911876,
+        -17.490409029955288
+      ],
+      "source": "IRSA official obscore_3I_Atlas.vot exposure-specific comet_ra/comet_dec; predicted, not measured"
+    },
+    "quality": {
+      "validPixels": 13476,
+      "totalPixels": 13689,
+      "core": {
+        "pixel_count": 20,
+        "eligible": 20,
+        "finite_image": 20,
+        "median_mjysr": 0.5092893838882446,
+        "flag_values": {
+          "0": 1,
+          "2097152": 19
+        },
+        "scope": "Coverage/basic pixel QA only; not background-subtracted comet photometry or detection significance"
+      },
+      "flagDefinitions": {
+        "TRANSIENT": {
+          "bit": 0,
+          "meaning": "Transient detected during SUR"
+        },
+        "OVERFLOW": {
+          "bit": 1,
+          "meaning": "Overflow detected during SUR"
+        },
+        "SUR_ERROR": {
+          "bit": 2,
+          "meaning": "Error in onboard processing"
+        },
+        "PHANTOM": {
+          "bit": 4,
+          "meaning": "Phantom pixel"
+        },
+        "REFERENCE": {
+          "bit": 5,
+          "meaning": "Reference pixel"
+        },
+        "NONFUNC": {
+          "bit": 6,
+          "meaning": "Permanently unusable"
+        },
+        "DICHROIC": {
+          "bit": 7,
+          "meaning": "Low efficiency due to dichroic"
+        },
+        "MISSING_DATA": {
+          "bit": 9,
+          "meaning": "Onboard data lost"
+        },
+        "HOT": {
+          "bit": 10,
+          "meaning": "Hot pixel"
+        },
+        "COLD": {
+          "bit": 11,
+          "meaning": "Anomalously low signal"
+        },
+        "FULLSAMPLE": {
+          "bit": 12,
+          "meaning": "Pixel full sample history is available"
+        },
+        "PHANMISS": {
+          "bit": 14,
+          "meaning": "Phantom correction was not applied"
+        },
+        "NONLINEAR": {
+          "bit": 15,
+          "meaning": "Nonlinearity correction cannot be applied reliably"
+        },
+        "PERSIST": {
+          "bit": 17,
+          "meaning": "Persistent charge above threshold"
+        },
+        "OUTLIER": {
+          "bit": 19,
+          "meaning": "Pixel flagged by Detect Outliers"
+        },
+        "SOURCE": {
+          "bit": 21,
+          "meaning": "Pixel mapped to a known source"
+        }
+      },
+      "maskPolicy": "finite IMAGE; finite positive VARIANCE; retain SOURCE21 alone; exclude every other native bit",
+      "headersPath": "investigations/atlas-v1/2025W31_2A_0156_1D6.headers.txt"
+    },
+    "lineage": {
+      "originalBounds_yx": [
+        [
+          0,
+          117
+        ],
+        [
+          0,
+          117
+        ]
+      ],
+      "originalShape": [
+        117,
+        117
+      ],
+      "resampled": false,
+      "originalModified": false
+    }
+  },
+  "inspection": {
+    "observationId": "2025W31_2A_0156_1D6",
+    "zoom": 1,
+    "pan": {
+      "x": 0,
+      "y": 0
+    },
+    "viewportCssPixels": 520,
+    "quality": true,
+    "smooth": false,
+    "marker": true,
+    "pixel": {
+      "x": 59,
+      "y": 58,
+      "eligible": true,
+      "flags": 2097152,
+      "value": 0.6635366678237915,
+      "variance": 0.0035197462420910597,
+      "sigma": 0.0593274493138805
+    }
+  },
+  "measurementValidated": false,
+  "limitations": [
+    "Independent dates and wavelengths; no registered time comparison.",
+    "Predicted position is not a measured detection.",
+    "Local hashes identify bytes, not scientific calibration.",
+    "Smoothing is presentation only; masks and source measurements are unchanged."
+  ]
+}
