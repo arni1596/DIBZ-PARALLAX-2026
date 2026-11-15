@@ -47,6 +47,15 @@ body{background:var(--bg);color:var(--ink)}
 
 @media(max-width:650px){.light-act .instrument-brief{display:none}}
 
+/* On the flagship M101 step, the contrast result follows the image. Curated pairs stay available below it. */
+.light-act .spectral-reveal{display:flex;flex-direction:column}
+.light-act .reveal-evidence-strip{order:5}
+.light-act .reveal-finding{order:6}
+.light-act .reveal-demonstrations{order:7}
+.light-act .comparison-verify,.light-act .share-investigation,.light-act .runtime-evidence{order:8}
+.light-act .reveal-finding{padding-top:28px}
+.light-act .reveal-demonstrations h2{font-size:clamp(26px,2.4vw,32px)}
+
 /* Editorial refinement around the unchanged native renderers. */
 .entry-hero{grid-template-columns:1fr 1fr;gap:8%;padding-block:72px;min-height:650px}
 .entry-hero h1{font-size:clamp(60px,6.2vw,90px);margin-bottom:28px}

@@ -60,6 +60,21 @@ test('short landscape keeps working viewers inside the viewport',async({page})=>
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
 
+test('M101 contrast is visible before the step that leaves for 3I/ATLAS',async({page})=>{
+ await page.goto('/#journey=1');
+ await expect(page.locator('.light-act .reveal-stage')).toHaveAttribute('data-ready','true');
+ const finding=page.locator('.light-act .reveal-finding');
+ await expect(finding).toContainText(/Central contrast:/);
+ const findingBox=await finding.boundingBox();
+ const cases=page.locator('.light-act .reveal-demonstrations');
+ const casesBox=await cases.boundingBox();
+ expect(findingBox!.y).toBeLessThan(casesBox!.y);
+ await page.getByRole('button',{name:'Show these measurements',exact:true}).click();
+ await expect(page.locator('.comparison-verify')).toHaveAttribute('open','');
+ await expect(page.locator('.comparison-verify')).toContainText('Mean IMAGE');
+ await expect(page.getByRole('button',{name:'Inspect 3I/ATLAS',exact:true})).toBeVisible();
+});
+
 test('sources menu closes with Escape and returns focus',async({page})=>{
  await page.goto('/');
  const summary=page.locator('.observatory-tools > summary');
