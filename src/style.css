@@ -47,3 +47,8 @@
 .dated-gallery .share-investigation{border-color:var(--rule);padding-inline:0}.dated-gallery .share-investigation h3{font:30px/1.2 var(--font-story)}
 @media(max-width:850px){.site-header{padding:16px 5vw;gap:14px}.site-purpose{display:none}.site-header nav{gap:18px}}
 @media(max-width:650px){.site-header .brand{font-size:18px;letter-spacing:3px}.site-header nav{width:100%;justify-content:space-between;gap:12px}.site-header nav button:not(:first-child){display:block}.site-header nav button{font-size:13px;min-height:44px}.spectral-workspace-tools{justify-content:flex-start;padding:12px 5vw;gap:8px}.spectral-workspace-tools button{font-size:12px;padding:8px 12px}.dated-gallery{padding-inline:20px}.dated-intro h1{font-size:38px}.dated-intro>p:last-child{font-size:15px}.dated-scope p{font-size:14px}.dated-image-stage{min-height:0;aspect-ratio:1.15}.dated-image figcaption>span,.dated-image figcaption>strong{font-size:21px}.dated-gallery .comparison-verify>summary{align-items:flex-start;gap:12px;flex-direction:column}}
+
+/* Selectively integrated from Zak's reviewed chart/phone-navigation work. */
+.profile-hit-area{fill:transparent;cursor:crosshair}
+.profile-point:focus-visible{outline:none;stroke:var(--accent);stroke-width:2.5}
+@media(max-width:650px){.site-header nav{flex-wrap:wrap;justify-content:flex-start;gap:6px 16px}.site-header nav>a{display:flex;min-height:44px}}
