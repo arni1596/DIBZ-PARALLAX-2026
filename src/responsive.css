@@ -13,6 +13,19 @@
   margin: 0;
 }
 
+/* Header: the "The evidence ↗" shortcut (shown as "Evidence" on small
+   screens) was hidden below 650px, so phone visitors lost it. Keep it, and
+   on very narrow phones tighten the spacing so all five items fit on one
+   row (longer labels already break onto two lines). */
+.site-header nav > a {
+  display: flex;
+}
+@media (max-width: 360px) {
+  .site-header nav {
+    gap: 6px;
+  }
+}
+
 /* Wavelength A/B control row: wrap instead of pushing the page sideways
    (it overflowed by 18px in an 812px-wide window). */
 .reveal-channel-bar {
