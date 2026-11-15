@@ -1,0 +1,26 @@
+/*
+  Short landscape screens: phones on their side and short laptop windows.
+  Viewers sized for portrait were taller than a ~375px-tall screen, so the
+  image and its controls could not be seen together. Cap each working viewer
+  at 85% of the visible height. Square viewers stay square.
+*/
+.reveal-channel-bar{flex-wrap:wrap}
+
+@media (orientation:landscape) and (max-height:600px){
+ .chapter-nav{flex-wrap:wrap;gap:4px 18px}
+ .reveal-stage,
+ .light-act .reveal-stage{
+  height:85svh;
+  min-height:0;
+ }
+ .entered .theater-stage{
+  height:85svh;
+  min-height:0;
+ }
+ .atlas-canvas-wrap,
+ .atlas-act .atlas-canvas-wrap{
+  max-width:min(100%,85svh);
+  max-height:85svh;
+  margin-inline:auto;
+ }
+}

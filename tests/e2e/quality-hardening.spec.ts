@@ -40,6 +40,36 @@ test('invalid coordinates are rejected and the field-guide dialog restores focus
 });
 
 
+test('short landscape keeps working viewers inside the viewport',async({page})=>{
+ await page.setViewportSize({width:844,height:390});
+ await page.goto('/#journey=1');
+ const stage=page.locator('.light-act .reveal-stage');
+ await expect(stage).toHaveAttribute('data-ready','true');
+ expect((await stage.boundingBox())!.height).toBeLessThanOrEqual(390);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.goto('/#journey=2');
+ const frame=page.locator('.atlas-act .atlas-canvas-wrap');
+ await expect(frame).toBeVisible();
+ expect((await frame.boundingBox())!.height).toBeLessThanOrEqual(390);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.goto('/#single');
+ await page.getByRole('button',{name:'Explore the sky',exact:false}).click();
+ const theater=page.locator('.entered .theater-stage');
+ await expect(theater).toBeVisible();
+ expect((await theater.boundingBox())!.height).toBeLessThanOrEqual(390);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+
+test('sources menu closes with Escape and returns focus',async({page})=>{
+ await page.goto('/');
+ const summary=page.locator('.observatory-tools > summary');
+ await summary.click();
+ await expect(page.locator('.observatory-tools')).toHaveAttribute('open','');
+ await page.keyboard.press('Escape');
+ await expect(page.locator('.observatory-tools')).not.toHaveAttribute('open','');
+ await expect(summary).toBeFocused();
+});
+
 test('copied source summary reflects the recorded match without claiming calibrated measurements',async({page})=>{
  await page.addInitScript(()=>{Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async(text:string)=>{(window as any).__copiedSummary=text}}})});
  await page.goto('/#journey=1');await expect(page.locator('.reveal-stage')).toHaveAttribute('data-ready','true');
