@@ -7,12 +7,12 @@ import './guidedStory.css';
  * Does not transmit scientific data or credentials to a remote speech service.
  */
 const story = [
-  {title:'The invitation',body:'Every image of the universe begins with a question. PARALLAX lets you explore authentic observations and follow the evidence back to its source. Start with M101, the Pinwheel Galaxy.',action:'Begin with M101',next:1},
-  {title:'One galaxy. Different light.',body:'You are viewing infrared observations of M101 from NASA and IPAC. Change the wavelengths and move the divider. Two wavelengths can reveal different measured brightness, but they are not two dates and cannot, by themselves, show a change over time.',action:'Explore dated observations',next:2},
-  {title:'A visitor from beyond our solar system',body:'Now inspect archived observations of the interstellar object 3I ATLAS. These exposures were recorded at different times. The crosshair is a predicted location, not proof that we independently detected the object.',action:'Examine the evidence',next:3},
-  {title:'The real question is what the data supports',body:'Select an observation and inspect a native pixel. Check its quality flags. The data and its source are real, but differences in wavelength, alignment and calibration mean PARALLAX does not claim to have measured motion or changing brightness.',action:'Keep the evidence',next:5},
-  {title:'Why we look twice',body:'In 1930, Clyde Tombaugh compared photographic plates to identify Pluto. His story is a reminder: seeing an apparent difference is the start of an investigation, not the end of one.',action:'See the evidence passport',next:5},
-  {title:'Evidence you can take with you',body:'Your Evidence Passport records the selected observation, source reference and any pixel you inspected. When a conclusion cannot be supported, it says so. That is the purpose of PARALLAX: to make the evidence accessible and the limits visible.',action:'Return to M101',next:1}
+  {title:'A closer look',body:'This is M101, the Pinwheel Galaxy. The image comes from infrared observations collected by SPHEREx. We can explore what the instrument recorded, one wavelength at a time.',action:'Explore M101',next:1},
+  {title:'Seeing beyond visible light',body:'Infrared light gives us another way to observe the same galaxy. Move the divider and choose a wavelength. Brightness can differ between channels. That tells us about the observations, not about a change over time.',action:'Look across dates',next:2},
+  {title:'An interstellar visitor',body:'These are archival observations of three I Atlas, an object from beyond our solar system. Choose an exposure and notice its date. The crosshair marks a predicted position. It is not, by itself, a detection.',action:'Inspect the evidence',next:3},
+  {title:'Look at the measurements',body:'Select a pixel and examine the recorded value and its quality flags. Some samples cannot be used. Other differences need careful alignment and calibration before we can make a claim about movement or changing brightness.',action:'Why comparisons matter',next:4},
+  {title:'A way of looking',body:'In 1930, Clyde Tombaugh compared photographic plates and identified Pluto. The principle still matters: an interesting difference asks for a closer examination. It does not answer the question on its own.',action:'Keep your evidence',next:5},
+  {title:'What remains',body:'Your Evidence Passport records the observation you selected, its source, and the pixel you inspected. It also records what the evidence cannot yet establish. You leave with a question you can revisit, and a source you can check.',action:'Explore again',next:1}
 ] as const;
 
 export default function GuidedStory({act,onNavigate}:{act:number;onNavigate:(next:number)=>void}){
@@ -37,7 +37,7 @@ export default function GuidedStory({act,onNavigate}:{act:number;onNavigate:(nex
  }
  function play(){
   stop();
-  const track=new Audio(`/narration/chapter-${String(act+1).padStart(2,'0')}.mp3`);
+  const track=new Audio(`/narration/editorial-v2/chapter-${String(act+1).padStart(2,'0')}.mp3`);
   audio.current=track;
   let handedOff=false;
   const fallback=()=>{if(handedOff||audio.current!==track)return;handedOff=true;audio.current=null;track.pause();speakBrowser()};
@@ -47,10 +47,10 @@ export default function GuidedStory({act,onNavigate}:{act:number;onNavigate:(nex
  }
  const item=story[act]??story[0];
  return <aside className={'guided-story '+(open?'is-open':'')} aria-label="Optional guided evidence narration">
-  {!open?<button className="guided-story-launch" type="button" onClick={()=>setOpen(true)} aria-expanded={false}>◉ &nbsp; Hear the story <span aria-hidden="true">↗</span></button>:
+  {!open?<button className="guided-story-launch" type="button" onClick={()=>setOpen(true)} aria-expanded={false}>Hear the story <span aria-hidden="true">↗</span></button>:
   <div className="guided-story-panel">
-   <div className="guided-story-top"><span>PARALLAX / GUIDED EVIDENCE</span><button type="button" aria-label="Close narration" onClick={()=>{stop();setOpen(false)}}>×</button></div>
-   <p className="guided-story-count">CHAPTER {String(act+1).padStart(2,'0')} / 06</p>
+   <div className="guided-story-top"><span>PARALLAX / STORY</span><button type="button" aria-label="Close narration" onClick={()=>{stop();setOpen(false)}}>×</button></div>
+   <p className="guided-story-count">{String(act+1).padStart(2,'0')} / 06</p>
    <h2>{item.title}</h2>
    <p className="guided-story-script">{item.body}</p>
    <div className="guided-story-controls">
