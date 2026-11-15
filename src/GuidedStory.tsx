@@ -20,12 +20,12 @@ export default function GuidedStory({act,onNavigate}:{act:number;onNavigate:(nex
  const [speaking,setSpeaking]=useState(false);
  const [available,setAvailable]=useState(false);
  const utterance=useRef<SpeechSynthesisUtterance|null>(null);
+ const audio=useRef<HTMLAudioElement|null>(null);
  useEffect(()=>{setAvailable(typeof window!=='undefined'&&'speechSynthesis' in window&&'SpeechSynthesisUtterance' in window);return()=>{if('speechSynthesis' in window)window.speechSynthesis.cancel()}},[]);
- useEffect(()=>{if('speechSynthesis' in window)window.speechSynthesis.cancel();utterance.current=null;setSpeaking(false)},[act]);
- function stop(){if('speechSynthesis' in window)window.speechSynthesis.cancel();utterance.current=null;setSpeaking(false)}
- function play(){
+ useEffect(()=>{if(audio.current){audio.current.pause();audio.current=null}if('speechSynthesis' in window)window.speechSynthesis.cancel();utterance.current=null;setSpeaking(false)},[act]);
+ function stop(){if(audio.current){audio.current.pause();audio.current=null}if('speechSynthesis' in window)window.speechSynthesis.cancel();utterance.current=null;setSpeaking(false)}
+ function speakBrowser(){
   if(!available)return;
-  stop();
   const u=new SpeechSynthesisUtterance(story[act]?.body??story[0].body);
   u.lang='en-US';u.rate=0.88;u.pitch=0.93;
   const voices=window.speechSynthesis.getVoices();
@@ -34,6 +34,16 @@ export default function GuidedStory({act,onNavigate}:{act:number;onNavigate:(nex
   u.onend=()=>{if(utterance.current===u){utterance.current=null;setSpeaking(false)}};
   u.onerror=()=>{if(utterance.current===u){utterance.current=null;setSpeaking(false)}};
   utterance.current=u;setSpeaking(true);window.speechSynthesis.speak(u);
+ }
+ function play(){
+  stop();
+  const track=new Audio(`/narration/chapter-${String(act+1).padStart(2,'0')}.mp3`);
+  audio.current=track;
+  let handedOff=false;
+  const fallback=()=>{if(handedOff||audio.current!==track)return;handedOff=true;audio.current=null;track.pause();speakBrowser()};
+  track.onended=()=>{if(audio.current===track){audio.current=null;setSpeaking(false)}};
+  track.onerror=fallback;
+  track.play().then(()=>{if(audio.current===track)setSpeaking(true)}).catch(fallback);
  }
  const item=story[act]??story[0];
  return <aside className={'guided-story '+(open?'is-open':'')} aria-label="Optional guided evidence narration">
@@ -44,10 +54,10 @@ export default function GuidedStory({act,onNavigate}:{act:number;onNavigate:(nex
    <h2>{item.title}</h2>
    <p className="guided-story-script">{item.body}</p>
    <div className="guided-story-controls">
-    {available?<button type="button" onClick={speaking?stop:play}>{speaking?'■ Stop narration':'▶ Play narration'}</button>:<span className="guided-story-unavailable">Audio unavailable in this browser. Full transcript shown.</span>}
+    <button type="button" onClick={speaking?stop:play}>{speaking?'■ Stop narration':'▶ Play narration'}</button>
     <button type="button" className="guided-story-next" onClick={()=>{stop();onNavigate(item.next)}}>{item.action} →</button>
    </div>
-   <p className="guided-story-note">Optional device-generated narration · Transcript always visible · No synthesized science</p>
+   <p className="guided-story-note">Optional Azure-prepared audio when installed · Browser speech fallback · Transcript always visible</p>
   </div>}
  </aside>;
 }
