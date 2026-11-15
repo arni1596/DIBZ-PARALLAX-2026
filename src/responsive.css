@@ -5,6 +5,14 @@
   not be seen together. Cap each viewer at 85% of the visible height;
   square viewers stay square.
 */
+/* Light chapter: the loading line and the data-error message sat flush
+   against the screen edge. Align them with the chapter heading's 5% inset. */
+.light-act > [role='status'],
+.light-act > [role='alert'] {
+  padding: 18px 5%;
+  margin: 0;
+}
+
 /* Wavelength A/B control row: wrap instead of pushing the page sideways
    (it overflowed by 18px in an 812px-wide window). */
 .reveal-channel-bar {
