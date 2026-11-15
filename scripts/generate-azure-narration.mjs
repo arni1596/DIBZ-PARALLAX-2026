@@ -5,7 +5,6 @@
  * Reads the exact text displayed in GuidedStory.tsx to prevent drift.
  */
 import {readFile,mkdir,writeFile} from 'node:fs/promises';
-import {join} from 'node:path';
 const region=process.env.AZURE_SPEECH_REGION;
 const key=process.env.AZURE_SPEECH_KEY;
 const voice=process.env.AZURE_SPEECH_VOICE||'en-US-JennyNeural';
@@ -16,7 +15,7 @@ const source=await readFile(new URL('../src/GuidedStory.tsx',import.meta.url),'u
 const snippets=[...source.matchAll(/\bbody:'((?:\\.|[^'\\])*)'/g)].map(m=>m[1].replace(/\\'/g,"'").replace(/\\\\/g,'\\'));
 if(snippets.length!==6)throw Error(`Expected 6 reviewed story chapters; found ${snippets.length}. Refusing partial generation.`);
 const escapeXml=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
-const target=new URL('../public/narration/',import.meta.url);
+const target=new URL('../public/narration/editorial-v2/',import.meta.url);
 await mkdir(target,{recursive:true});
 for(let i=0;i<snippets.length;i++){
  const ssml=`<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US"><voice name="${escapeXml(voice)}"><prosody rate="-10%" pitch="-2%">${escapeXml(snippets[i])}</prosody></voice></speak>`;
@@ -26,6 +25,6 @@ for(let i=0;i<snippets.length;i++){
  if(bytes.length<1000||!(bytes.toString('ascii',0,3)==='ID3'||bytes[0]===0xff)){throw Error(`Invalid audio response for chapter ${i+1}`)}
  const name=`chapter-${String(i+1).padStart(2,'0')}.mp3`;
  await writeFile(new URL(name,target),bytes);
- console.log(`Wrote public/narration/${name} (${bytes.length} bytes)`);
+ console.log(`Wrote public/narration/editorial-v2/${name} (${bytes.length} bytes)`);
 }
 console.log('Azure narration generated locally. Verify license, playback and project costs before committing audio.');
