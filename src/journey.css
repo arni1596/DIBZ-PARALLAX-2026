@@ -47,12 +47,7 @@ body{background:var(--bg);color:var(--ink)}
 
 @media(max-width:650px){.light-act .instrument-brief{display:none}}
 
-/* On the flagship M101 step, the contrast result follows the image. Curated pairs stay available below it. */
-.light-act .spectral-reveal{display:flex;flex-direction:column}
-.light-act .reveal-evidence-strip{order:5}
-.light-act .reveal-finding{order:6}
-.light-act .reveal-demonstrations{order:7}
-.light-act .comparison-verify,.light-act .share-investigation,.light-act .runtime-evidence{order:8}
+/* Contrast follows the comparison in source order, so reading order matches the page. */
 .light-act .reveal-finding{padding-top:28px}
 .light-act .reveal-demonstrations h2{font-size:clamp(26px,2.4vw,32px)}
 
