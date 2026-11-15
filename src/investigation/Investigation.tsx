@@ -55,6 +55,6 @@ export default function Investigation({onExploreM101,onExploreDates}:{onExploreM
    <details className="inv-display-note"><summary>How this display is made · Processed</summary><p>Native {observation.dimensions[1]} × {observation.dimensions[0]} data, vertically flipped so FITS y increases upward. Each observation uses its own accepted-pixel 2–99.5 percentile asinh grayscale. Zoom enlarges existing pixels. Smoothing changes display interpolation only, never measurements or masks. Black or amber excluded pixels are never filled. The field is not north-up.</p><p>Blink and difference are unavailable: registration, response and PSF compatibility have not been validated.</p></details>
   </section>
   {selectedData?<VerifyEvidence manifest={manifest} observation={observation} data={selectedData} x={pixel.x} y={pixel.y} display={display} onSelect={(x,y)=>inspect(observation.id,x,y)} onExploreM101={onExploreM101} onExploreDates={onExploreDates}/>:<section id="investigation-verify" className="inv-data-state"><h2 id="verify-title" tabIndex={-1}>Evidence follows the selected observation.</h2><p>{loadErrors[observation.id]?'Restore the observation assets above to inspect native pixel evidence.':'Waiting for the native observation buffers.'}</p></section>}
-  <footer className="inv-footer"><span>PARALLAX / Observations → evidence</span><span>Real data. Documented processing. Qualified conclusions.</span></footer>
+  <footer className="inv-footer"><span>PARALLAX / Observations → evidence</span><span>SPHEREx observations · NASA/IPAC IRSA</span></footer>
  </section>
 }
