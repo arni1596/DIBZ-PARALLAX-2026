@@ -3,8 +3,8 @@ import './guidedStory.css';
 
 /**
  * Curated, factual narration only. No language model or remote interpretation.
- * Audio uses the visitor's installed browser voices. It never sends astronomical
- * measurements, source files or personal data to a third-party API.
+ * Plays reviewed, pre-generated audio when present; otherwise uses browser speech.
+ * Does not transmit scientific data or credentials to a remote speech service.
  */
 const story = [
   {title:'The invitation',body:'Every image of the universe begins with a question. PARALLAX lets you explore authentic observations and follow the evidence back to its source. Start with M101, the Pinwheel Galaxy.',action:'Begin with M101',next:1},
@@ -21,7 +21,7 @@ export default function GuidedStory({act,onNavigate}:{act:number;onNavigate:(nex
  const [available,setAvailable]=useState(false);
  const utterance=useRef<SpeechSynthesisUtterance|null>(null);
  const audio=useRef<HTMLAudioElement|null>(null);
- useEffect(()=>{setAvailable(typeof window!=='undefined'&&'speechSynthesis' in window&&'SpeechSynthesisUtterance' in window);return()=>{if('speechSynthesis' in window)window.speechSynthesis.cancel()}},[]);
+ useEffect(()=>{setAvailable(typeof window!=='undefined'&&'speechSynthesis' in window&&'SpeechSynthesisUtterance' in window);return()=>{if(audio.current){audio.current.pause();audio.current=null}if('speechSynthesis' in window)window.speechSynthesis.cancel()}},[]);
  useEffect(()=>{if(audio.current){audio.current.pause();audio.current=null}if('speechSynthesis' in window)window.speechSynthesis.cancel();utterance.current=null;setSpeaking(false)},[act]);
  function stop(){if(audio.current){audio.current.pause();audio.current=null}if('speechSynthesis' in window)window.speechSynthesis.cancel();utterance.current=null;setSpeaking(false)}
  function speakBrowser(){
@@ -57,7 +57,6 @@ export default function GuidedStory({act,onNavigate}:{act:number;onNavigate:(nex
     <button type="button" onClick={speaking?stop:play}>{speaking?'■ Stop narration':'▶ Play narration'}</button>
     <button type="button" className="guided-story-next" onClick={()=>{stop();onNavigate(item.next)}}>{item.action} →</button>
    </div>
-   <p className="guided-story-note">Optional Azure-prepared audio when installed · Browser speech fallback · Transcript always visible</p>
-  </div>}
+   </div>}
  </aside>;
 }
