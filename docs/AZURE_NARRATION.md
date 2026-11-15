@@ -1,6 +1,6 @@
 # Azure AI Speech narration for PARALLAX
 
-The optional Guided Evidence Tour uses the reviewed six-chapter script in `src/GuidedStory.tsx`. If audio files `public/narration/chapter-01.mp3` through `chapter-06.mp3` exist, it plays those; otherwise it falls back to a visitor's browser speech synthesis. Transcripts are always visible. Nothing in the astronomical data requires Azure.
+The optional Guided Evidence Tour uses the reviewed six-chapter script in `src/story.ts`. If audio files `public/narration/editorial-2026-11-15/chapter-01.mp3` through `chapter-06.mp3` in the same revision directory exist, it plays those; otherwise it falls back to a visitor's browser speech synthesis. Transcripts are always visible. Nothing in the astronomical data requires Azure.
 
 ## One-time account setup
 
@@ -30,3 +30,7 @@ You must explicitly review the MP3s and decide whether to commit the six generat
 - Record Azure use and the actual service in the competition submission only if used. Azure use alone does not establish eligibility for a prize
 
 Official [Azure Speech REST reference](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-text-to-speech).
+
+## Editorial revision — November 15, 2026
+
+The current script uses revision-specific audio paths. Older unversioned MP3 files are preserved but never played against revised transcripts. The local generator reads the same shared `src/story.ts` as the UI and adds short sentence pauses at a measured pace. No new MP3s were generated in this revision. Browser voice quality depends on installed voices; composed delivery requires listening review of the generated tracks. Browser speech is not an Azure recording. Node 24 (the verified local runtime) supports the shared TypeScript module directly.
