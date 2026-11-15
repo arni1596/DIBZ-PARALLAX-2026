@@ -31,6 +31,34 @@
   }
 }
 
+/* Chapters 02 "Time" and 03 "Evidence" share one section and its comet
+   viewer (which must keep its state). Only the parts whose text changes
+   between them fade in; journey.tsx gives them a per-chapter key. */
+.atlas-act > .act-heading,
+.atlas-act > .quick-next,
+.atlas-act > .compact-verdict {
+  transition:
+    opacity 0.35s ease-out,
+    translate 0.35s ease-out;
+}
+@starting-style {
+  .atlas-act > .act-heading,
+  .atlas-act > .quick-next,
+  .atlas-act > .compact-verdict {
+    opacity: 0;
+    translate: 0 10px;
+  }
+}
+/* Keep this button's hover transitions alongside the fade */
+.atlas-act > .quick-next {
+  transition:
+    opacity 0.35s ease-out,
+    translate 0.35s ease-out,
+    background-color 0.18s ease,
+    filter 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
 /* --- 2. Hover feedback on every button, link and toggle --- */
 
 /* Smooth color changes instead of instant jumps */
@@ -92,6 +120,8 @@ summary,
   .public-experience > .dated-gallery,
   .atlas-experience,
   .spectral-reveal,
+  .atlas-act > .act-heading,
+  .atlas-act > .compact-verdict,
   button,
   a[href],
   summary,
