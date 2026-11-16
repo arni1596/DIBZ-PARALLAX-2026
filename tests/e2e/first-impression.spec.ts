@@ -3,13 +3,13 @@ import fs from 'node:fs';
 for(const [width,height] of [[1440,900],[1280,800],[390,844],[375,667]]){
  test(`first impression is real, readable and one action at ${width}x${height}`,async({page},info)=>{
   await page.setViewportSize({width,height});await page.goto('/');
-  await expect(page.getByRole('heading',{name:'The universe leaves evidence.',exact:true})).toBeVisible();await expect(page.locator('.hero-copy .eyebrow')).toContainText('NASA/IPAC IRSA');
-  const begin=page.getByRole('button',{name:'Begin exploring',exact:true});await expect(begin).toBeVisible();
+  await expect(page.getByRole('heading',{name:'M101, in infrared light.',exact:true})).toBeVisible();await expect(page.locator('.hero-copy .eyebrow')).toContainText('NASA/IPAC IRSA');
+  const begin=page.getByRole('button',{name:'Compare wavelengths',exact:true});await expect(begin).toBeVisible();
   const b=(await begin.boundingBox())!;expect(b.x).toBeGreaterThanOrEqual(0);expect(b.x+b.width).toBeLessThanOrEqual(width);expect(b.y+b.height).toBeLessThanOrEqual(height);
   const img=page.locator('.hero-observation img');await expect(img).toBeVisible();await expect(img).toHaveJSProperty('naturalWidth',267);await expect(img).toHaveJSProperty('naturalHeight',267);
   expect(await page.locator('.hero-description').evaluate(e=>parseFloat(getComputedStyle(e).fontSize))).toBeGreaterThanOrEqual(16);
   await page.screenshot({path:info.outputPath('HOME.png')});await begin.focus();expect(await begin.evaluate(e=>parseFloat(getComputedStyle(e).outlineWidth))).toBeGreaterThanOrEqual(2);await begin.press('Enter');
-  await expect(page.locator('.light-act .reveal-stage')).toHaveAttribute('data-ready','true');await expect(page.getByRole('heading',{name:'One galaxy. Different light.',exact:true})).toBeVisible();
+  await expect(page.locator('.light-act .reveal-stage')).toHaveAttribute('data-ready','true');await expect(page.getByRole('heading',{name:'Compare the wavelengths.',exact:true})).toBeVisible();
   await expect(page.locator('.light-act')).toContainText('wavelength');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   const divider=page.getByRole('slider',{name:'Spectral Reveal divider'});await divider.focus();const old=await divider.getAttribute('aria-valuenow');await divider.press('ArrowRight');expect(await divider.getAttribute('aria-valuenow')).not.toBe(old);await page.screenshot({path:info.outputPath('SEE.png')});
  });

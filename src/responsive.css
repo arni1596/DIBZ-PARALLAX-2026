@@ -24,3 +24,15 @@
   margin-inline:auto;
  }
 }
+@media (orientation:landscape) and (max-height:500px){
+ .observatory-header{min-height:52px;padding:6px 4%}
+ .chapter-nav{padding:0 4%}
+ .chapter-position{display:none}
+ .light-act .act-heading{padding:6px 4% 4px}
+ .light-act .act-heading h1{font-size:22px;margin:0}
+ .light-act .act-heading p{display:none}
+ .light-act .reveal-channel-bar{padding:6px 4%}
+ .light-act .reveal-stage{height:200px;min-height:0}
+ .light-act .reveal-finding{padding-top:8px}
+ .light-act .reveal-finding h2{font-size:20px}
+}
