@@ -1,8 +1,8 @@
-> **UX review build — `ux-first-impression`:** the functioning observation-led opening, evidence receipt and Passport are implemented here. [Actual before/after, tests and scope](docs/UX_FIRST_IMPRESSION.md) · [28.45second real demo](submission/UX/PARALLAX_FIRST_IMPRESSION_DEMO.webm) · [conditional Sites release steps](docs/UX_HOSTING_HANDOFF.md). Local production preview:http://127.0.0.1:5186/ . To run this branch elsewhere, clone with `git clone --branch ux-first-impression https://github.com/arni1596/DIBZ-PARALLAX-2026.git`, verify `python release/verify_assets.py`, use the existing lockfile dependencies, then `npm run build` and `npm run dev`. The630 original scientific assets and all55 unsupported-comparison gates are preserved. No teammate branch has been merged; public deployment and eligibility remain separate.
+> **Release branch to clone:** `release/rc2-collaboration`. Follow [Browse and run](#browse-and-run) below. Historical UX notes remain in [docs/UX_FIRST_IMPRESSION.md](docs/UX_FIRST_IMPRESSION.md). Public pages checked on 2026-11-15, both serving this release build: https://parallaxbydibz.ishanitalukder16.workers.dev/ and https://parallaxbydibz.earth/ . Deployment does not establish competition eligibility.
 
 > **Current scientific-data release:** all630 enumerated scientific assets are now cleared and included on `release/rc2-collaboration`, with114,751,955bytes verified. The older source-only snapshots below remain historical. Start with [complete setup](release/PARALLAX_DATA_INSTALL.md), [rights summary](release/PARALLAX_ASSET_RIGHTS_SUMMARY.md), [file decisions](docs/ASSET_RIGHTS_DECISIONS.csv), [actual staged validation](release/PARALLAX_RELEASE_VALIDATION.md), and [credits](release/ATTRIBUTION.md). Clone this branch, run `python release/verify_assets.py`, install the existing lockfile dependencies if needed/permitted, then `npm.cmd run build` and `npm.cmd run dev` (http://127.0.0.1:5173/). No separate private Windows data folder is required for the runtime. All55 unsupported comparisons remain blocked; data clearance does not establish event eligibility or license the original app.
 
-> **Current branch: application source is now integrated.** The older coordination snapshot below is retained for history. Read [current setup and restrictions](#current-collaboration-branch--dibz-parallax-2026). Scientific runtime assets remain local pending redistribution clearance; a fresh clone is source-review/build ready, not data-complete.
+> **Current branch: application source is integrated.** The older coordination snapshot below is retained for history. Read [current setup and restrictions](#current-collaboration-branch--dibz-parallax-2026). The public runtime files are in this branch under `public/`.
 
 # PARALLAX — DIBZ
 
@@ -10,7 +10,7 @@
 
 Team DIBZ is preparing a scientifically responsible interactive investigation of authentic SPHEREx / NASA-IPAC IRSA observations.
 
-> **Repository purpose:** Shared team coordination, human review and submission materials. The verified PARALLAX RC2 application is **not yet imported here**. Do not describe this repository as containing or publishing the tested application until its exact source archive has been imported and independently verified.
+> **Historical coordination note:** The checklist in this section described the repository before the RC2 source import. Setup for the imported application is [Current collaboration branch](#current-collaboration-branch--dibz-parallax-2026).
 
 ## Team workstreams
 
@@ -42,7 +42,7 @@ Do not claim that the app independently proved R Draconis brightness changes or 
 - [ ] Import the **exact** verified RC2 source archive, keeping its provenance and a reversible checkpoint.
 - [ ] Complete human scientific, visual and narrative acceptance.
 - [ ] Obtain necessary rights and eligibility clarification.
-- [ ] Approve and verify a public site accessible outside localhost.
+- [ ] Human approval of the public site. Reachable on 2026-11-15 at https://parallaxbydibz.ishanitalukder16.workers.dev/ and https://parallaxbydibz.earth/ .
 - [ ] Complete the actual competition submission and retain confirmation.
 
 ## Links
@@ -66,20 +66,19 @@ git clone --branch release/rc2-collaboration https://github.com/arni1596/DIBZ-PA
 Set-Location -LiteralPath DIBZ-PARALLAX-2026
 # On a new computer, install the locked existing dependencies when permitted:
 npm.cmd ci
-# Provision approved, hash-verified scientific assets as described below.
 npm.cmd run build
 npm.cmd run dev
 ```
 
-Open http://127.0.0.1:5173/ . Build/typecheck work without the scientific data; the investigation and scientific tests require the withheld local asset bundle. Do not mistake a missing-data/error screen in a fresh clone for the functioning data-enabled release. No dependencies were installed during this integration. For a production preview use `npm.cmd run preview -- --port 5183`.
+Open http://127.0.0.1:5173/ . This branch includes the public runtime files, so a normal clone is data-enabled after install and build. For a production preview use `npm.cmd run preview -- --port 5183`.
 
 ### Scientific assets — explicit limitation
 
-**GitHub does not contain the 624 public runtime assets or six scientific test fixtures.** Rights/redistribution clearance remains unresolved. The local neutral working copy retains those files unchanged for real regression testing; ignored local data is never staged. See [exact paths/hashes and exclusions](docs/LOCAL_ASSET_REQUIREMENTS.json) and [safe provisioning instructions](docs/LOCAL_DATA_SETUP.md). A new clone can review/build the source immediately, but cannot reproduce the full data-enabled experience until the approved assets are supplied. No replacement/synthetic data was introduced.
+`release/rc2-collaboration` tracks 624 files under `public/` and 6 files under `tests/fixtures/`, including `public/dataset/assets/channel_035.png`. The scientific redistribution decision is [CLEARED for the enumerated files](release/PARALLAX_ASSET_RIGHTS_SUMMARY.md). That decision does not license the application itself and does not establish event eligibility. Paths and hashes remain in [docs/LOCAL_ASSET_REQUIREMENTS.json](docs/LOCAL_ASSET_REQUIREMENTS.json).
 
 ### Review and release restrictions
 
-All55 unverified M101 temporal comparisons stay blocked. Wavelength is not time. No independent R Draconis variability, motion or comet detection is established. Verify source provenance; don't change FITS, masks or manifest bytes, regenerate datasets, merge this branch, publish or change DNS without specific authorization. This branch intentionally contains no hosting identity or deployment workflow. GitHub/host-wide webhooks could not be independently inspected through the available connection; no deployment is requested or performed.
+All55 unverified M101 temporal comparisons stay blocked. Wavelength is not time. No independent R Draconis variability, motion or comet detection is established. Verify source provenance; don't change FITS, masks or manifest bytes, regenerate datasets, merge this branch, publish or change DNS without specific authorization. `wrangler.jsonc` is in this branch. Do not deploy or change DNS without authorization.
 
 Existing scientific preparation uses relative paths or explicit parameters. Optional Atlas reproduction uses `PARALLAX_ATLAS_RECORDS` (or `.local-data/atlas/observation-evidence.json`); that source record/FITS dependency is not distributed. Preserved historical reports may name old local paths as provenance; those are not current runtime configuration.
 

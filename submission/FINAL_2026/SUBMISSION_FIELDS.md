@@ -6,7 +6,7 @@ Official form: [Project Submission Guide](https://www.spaceappschallenge.org/res
 
 Public application today: https://parallaxbydibz.ishanitalukder16.workers.dev/
 
-`parallaxbydibz.earth` resolves, but it does not serve this application. Use the workers.dev URL.
+`parallaxbydibz.earth` and the workers.dev URL both serve this application. Checked 2026-11-15: both return the PARALLAX page and `/assets/index-D4fazg-7.js`.
 
 ## Project name
 
