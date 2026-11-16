@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 
 test('the complete narrated journey includes history and preserves inspection',async({page})=>{
- await page.goto('/');await page.getByRole('button',{name:'Begin exploring',exact:true}).click();
+ await page.goto('/');await page.getByRole('button',{name:'Compare wavelengths',exact:true}).click();
  await expect(page.locator('.reveal-stage')).toHaveAttribute('data-ready','true');
  await page.getByRole('button',{name:'Listen or read'}).click();
  await expect(page.getByRole('button',{name:'Close narration'})).toBeFocused();

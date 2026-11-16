@@ -24,7 +24,7 @@ test('profile is one chart Tab stop and supports keyboard and near-miss selectio
 
 test('narrow, tablet and landscape journeys retain layout and original image dimensions',async({page},info)=>{
  for(const [width,height]of[[320,568],[768,1024],[844,390],[720,450]]){
-  await page.setViewportSize({width,height});await page.goto('/');await expect(page.getByRole('button',{name:'Begin exploring',exact:true})).toBeVisible();
+  await page.setViewportSize({width,height});await page.goto('/');await expect(page.getByRole('button',{name:'Compare wavelengths',exact:true})).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await expect(page.locator('.hero-observation img')).toHaveJSProperty('naturalWidth',267);
   await page.screenshot({path:info.outputPath(`home-${width}.png`)});

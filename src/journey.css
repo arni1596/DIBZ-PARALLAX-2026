@@ -51,14 +51,34 @@ body{background:var(--bg);color:var(--ink)}
 .light-act .reveal-finding{padding-top:28px}
 .light-act .reveal-demonstrations h2{font-size:clamp(26px,2.4vw,32px)}
 
-/* Editorial refinement around the unchanged native renderers. */
-.entry-hero{grid-template-columns:1fr 1fr;gap:8%;padding-block:72px;min-height:650px}
-.entry-hero h1{font-size:clamp(60px,6.2vw,90px);margin-bottom:28px}
-.hero-copy .hero-description{font-size:18px;line-height:1.75;max-width:35ch;margin-bottom:32px}
-.hero-observation{border:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:16px 0;background:transparent}
-.hero-observation img{max-width:430px;margin:20px auto;max-height:none}
+/* Observation leads. Copy sits beside it; one action follows. */
+.entry-hero{grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:6%;padding:36px 5% 48px;min-height:0;align-items:center}
+.entry-hero h1{font-size:clamp(42px,4.4vw,64px);margin-bottom:16px;max-width:14ch;line-height:1.05}
+.hero-copy .hero-description{font-size:18px;line-height:1.6;max-width:36ch;margin-bottom:22px}
+.hero-also{font-size:15px;margin:16px 0 0;max-width:40ch}
+.hero-also a{color:var(--ink)}
+.hero-observation{border:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;background:transparent;max-width:none;justify-self:stretch}
+.hero-observation img{width:min(100%,640px);max-width:none;max-height:min(68vh,640px);margin:12px auto}
 .hero-observation figcaption strong{font-size:23px}
 .hero-observation figcaption p{max-width:48ch}
+.light-act .act-heading{padding:16px 5% 10px}
+.light-act .act-heading h1{font-size:clamp(28px,3vw,40px);margin-bottom:6px}
+.light-act .act-heading .eyebrow{margin-bottom:8px}
+.light-act .act-heading p{font-size:15px;margin:0}
+.light-act .reveal-stage{min-height:240px;height:min(42vh,440px)}
+.light-act .reveal-view-tools{padding:10px 5%}
+.light-act .reveal-finding{padding:14px 0 8px}
+.light-act .reveal-finding h2{font-size:clamp(22px,2.2vw,30px)}
+.light-act .reveal-finding p{font-size:15px;margin-bottom:12px}
+.light-narration{margin:8px 5% 0}
+.observatory.is-light{display:flex;flex-direction:column}
+.observatory.is-light>.skip-link{order:0}
+.observatory.is-light>.observatory-header{order:1}
+.observatory.is-light>.chapter-nav{order:2}
+.observatory.is-light>.chapter-position{order:3}
+.observatory.is-light>main{order:4}
+.observatory.is-light>.guided-story{order:5;margin:8px 5% 0}
+.observatory.is-light>footer{order:6}
 .act-heading{padding-top:44px;padding-bottom:30px}
 .evidence-editorial h2{max-width:12ch}
 .history-act{max-width:1000px;padding-block:64px}
@@ -66,11 +86,14 @@ body{background:var(--bg);color:var(--ink)}
 .observatory footer p{font-size:12px}
 @media(max-width:1000px){.entry-hero{gap:5%;padding-block:48px}.entry-hero h1{font-size:clamp(54px,7vw,76px)}}
 @media(max-width:650px){
- .entry-hero{grid-template-columns:1fr;gap:28px;padding:30px 5% 24px;min-height:0}
- .entry-hero h1{font-size:53px;max-width:10ch;margin-bottom:22px}
- .hero-copy .hero-description{font-size:16px;margin-bottom:24px}
+ .entry-hero{grid-template-columns:1fr;gap:20px;padding:22px 5% 28px;min-height:0}
+ .hero-copy{order:1}
+ .hero-observation{order:2}
+ .entry-hero h1{font-size:36px;max-width:none;margin-bottom:12px}
+ .hero-copy .hero-description{font-size:16px;margin-bottom:16px}
+ .hero-begin{width:100%;min-width:0}
  .hero-observation{display:block;padding:12px 0 16px}
- .hero-observation img{width:min(100%,267px);margin:18px auto}
+ .hero-observation img{width:min(100%,320px);margin:12px auto}
  .hero-observation figcaption{border-top:1px solid var(--rule);padding-top:16px}
  .hero-observation figcaption>div{display:flex;gap:8px;align-items:baseline}
  .hero-observation figcaption strong{font-size:22px;margin:0}
